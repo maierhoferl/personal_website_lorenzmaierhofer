@@ -79,15 +79,93 @@ staggerElements.forEach((el, index) => {
     el.style.transitionDelay = `${index * 0.1}s`;
 });
 
-// Profile image interaction
+// Profile image interaction with AI explosion effect
 const profileImage = document.querySelector('.profile-image');
 if (profileImage) {
-    profileImage.addEventListener('click', () => {
+    profileImage.style.cursor = 'pointer';
+
+    profileImage.addEventListener('click', (e) => {
+        // Scale effect
         profileImage.style.transform = 'scale(1.05)';
         setTimeout(() => {
             profileImage.style.transform = 'scale(1)';
         }, 200);
+
+        // AI Explosion effect
+        createAIExplosion(e.clientX, e.clientY);
     });
+}
+
+// AI Explosion particle system
+function createAIExplosion(x, y) {
+    const particleCount = 30;
+    const symbols = ['◈', '⬡', '⬢', '◇', '△', '▽', '○', '●', '◎', '⊡', '⊞', '⋈', '∿', '≋'];
+    const colors = ['#00D4FF', '#FF00FF', '#00FF88', '#8B5CF6', '#003DA5'];
+
+    for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'ai-particle';
+        particle.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+        particle.style.cssText = `
+            position: fixed;
+            left: ${x}px;
+            top: ${y}px;
+            font-size: ${Math.random() * 16 + 10}px;
+            color: ${colors[Math.floor(Math.random() * colors.length)]};
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 1;
+            text-shadow: 0 0 10px currentColor;
+            font-family: var(--font-mono);
+        `;
+        document.body.appendChild(particle);
+
+        // Random direction and distance
+        const angle = (Math.PI * 2 * i) / particleCount + (Math.random() - 0.5);
+        const velocity = Math.random() * 150 + 100;
+        const dx = Math.cos(angle) * velocity;
+        const dy = Math.sin(angle) * velocity;
+        const rotation = Math.random() * 720 - 360;
+
+        // Animate particle
+        particle.animate([
+            {
+                transform: 'translate(-50%, -50%) scale(0) rotate(0deg)',
+                opacity: 1
+            },
+            {
+                transform: `translate(calc(-50% + ${dx}px), calc(-50% + ${dy}px)) scale(1.5) rotate(${rotation}deg)`,
+                opacity: 0
+            }
+        ], {
+            duration: Math.random() * 800 + 600,
+            easing: 'cubic-bezier(0, 0.5, 0.5, 1)'
+        }).onfinish = () => particle.remove();
+    }
+
+    // Add a central flash
+    const flash = document.createElement('div');
+    flash.style.cssText = `
+        position: fixed;
+        left: ${x}px;
+        top: ${y}px;
+        width: 100px;
+        height: 100px;
+        transform: translate(-50%, -50%);
+        background: radial-gradient(circle, rgba(0, 212, 255, 0.8) 0%, transparent 70%);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9998;
+    `;
+    document.body.appendChild(flash);
+
+    flash.animate([
+        { transform: 'translate(-50%, -50%) scale(0)', opacity: 1 },
+        { transform: 'translate(-50%, -50%) scale(3)', opacity: 0 }
+    ], {
+        duration: 500,
+        easing: 'ease-out'
+    }).onfinish = () => flash.remove();
 }
 
 // Typing effect for hero subtitle (optional enhancement)

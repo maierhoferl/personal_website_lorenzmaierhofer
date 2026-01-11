@@ -1,0 +1,17 @@
+# Claude
+.claude/
+
+# macOS
+.DS_Store
+
+# Editor
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Original large images (keep optimized versions)
+Portrait1.png
