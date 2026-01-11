@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Lorenz Maierhofer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated background -->
+    <div class="bg-animation">
+        <div class="neural-network"></div>
+        <div class="data-particles"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">LM</span>
+                <span class="logo-cursor">_</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">About</a></li>
+                <li><a href="news.html" class="nav-link">News</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+            </ul>
+            <div class="nav-social">
+                <a href="https://www.linkedin.com/in/lorenz-maierhofer-27904a68/" target="_blank" class="social-link" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M12 17.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm0 1.5a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-17a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 12 2zm0 18a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 12 20zM4.22 4.22a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 0 1-1.06 1.06L4.22 5.28a.75.75 0 0 1 0-1.06zm13.44 13.44a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 0 1-1.06 1.06l-1.06-1.06a.75.75 0 0 1 0-1.06zM2 12a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5A.75.75 0 0 1 2 12zm18 0a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5A.75.75 0 0 1 20 12zM5.28 17.66a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0zm13.44-13.44a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0z"/>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="page-header">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-label">PORTFOLIO</span>
+                    <h1 class="page-title">Projects</h1>
+                    <p class="page-subtitle">Key initiatives in AI transformation, data science, and enterprise analytics</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section class="projects-section">
+            <div class="section-container">
+                <div class="projects-grid">
+                    <!-- AI Factory -->
+                    <article class="project-card featured">
+                        <div class="project-visual">
+                            <div class="project-icon-large">
+                                <svg viewBox="0 0 24 24" width="64" height="64" fill="currentColor">
+                                    <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2m-4 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m8 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m-4 3c-1.1 0-2 .45-2 1s.9 1 2 1 2-.45 2-1-.9-1-2-1z"/>
+                                </svg>
+                            </div>
+                            <div class="project-status">
+                                <span class="status-dot active"></span>
+                                <span>Active</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Enterprise AI</span>
+                                <span class="project-year">2024 - Present</span>
+                            </div>
+                            <h2>P&G AI Factory</h2>
+                            <p>Building and leading P&G's enterprise AI platform that democratizes AI capabilities across the organization. The AI Factory enables rapid development, deployment, and scaling of AI solutions while ensuring governance and responsible AI practices.</p>
+                            <div class="project-highlights">
+                                <div class="highlight">
+                                    <span class="highlight-label">Scope</span>
+                                    <span class="highlight-value">Global</span>
+                                </div>
+                                <div class="highlight">
+                                    <span class="highlight-label">Focus</span>
+                                    <span class="highlight-value">Platform</span>
+                                </div>
+                                <div class="highlight">
+                                    <span class="highlight-label">Impact</span>
+                                    <span class="highlight-value">Enterprise-wide</span>
+                                </div>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag">MLOps</span>
+                                <span class="tag">Cloud</span>
+                                <span class="tag">AI Platform</span>
+                                <span class="tag">Governance</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- GenAI Program -->
+                    <article class="project-card featured">
+                        <div class="project-visual">
+                            <div class="project-icon-large">
+                                <svg viewBox="0 0 24 24" width="64" height="64" fill="currentColor">
+                                    <path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18-.21 0-.41-.06-.57-.18l-7.9-4.44A.991.991 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18.21 0 .41.06.57.18l7.9 4.44c.32.17.53.5.53.88v9M12 4.15L6.04 7.5 12 10.85l5.96-3.35L12 4.15M5 15.91l6 3.38v-6.71L5 9.21v6.7m14 0v-6.7l-6 3.37v6.71l6-3.38z"/>
+                                </svg>
+                            </div>
+                            <div class="project-status">
+                                <span class="status-dot active"></span>
+                                <span>Active</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Generative AI</span>
+                                <span class="project-year">2023 - Present</span>
+                            </div>
+                            <h2>Global GenAI Program</h2>
+                            <p>Leading P&G's global Generative AI initiatives, establishing frameworks for responsible LLM deployment across enterprise applications. Driving innovation in content generation, customer insights, and process automation using cutting-edge AI technologies.</p>
+                            <div class="project-highlights">
+                                <div class="highlight">
+                                    <span class="highlight-label">Models</span>
+                                    <span class="highlight-value">LLMs</span>
+                                </div>
+                                <div class="highlight">
+                                    <span class="highlight-label">Applications</span>
+                                    <span class="highlight-value">Multiple</span>
+                                </div>
+                                <div class="highlight">
+                                    <span class="highlight-label">Scale</span>
+                                    <span class="highlight-value">Global</span>
+                                </div>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag">LLMs</span>
+                                <span class="tag">RAG</span>
+                                <span class="tag">Fine-tuning</span>
+                                <span class="tag">Agents</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Retail DataScience -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Data Science</span>
+                                <span class="project-year">2022 - 2024</span>
+                            </div>
+                            <h3>Global Retail DataScience Transformation</h3>
+                            <p>Led the algorithmic transformation program for retail and sales-related business processes globally, from in-store execution guidance to investment and planning optimization.</p>
+                            <div class="project-tags">
+                                <span class="tag">Retail</span>
+                                <span class="tag">Optimization</span>
+                                <span class="tag">Analytics</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Commercial DataScience -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Team Leadership</span>
+                                <span class="project-year">2020 - 2024</span>
+                            </div>
+                            <h3>Europe Commercial DataScience</h3>
+                            <p>Built and led a team of 25+ data scientists and 100+ analytical team members across AdTech & Media optimization, Retailing, Investment & Portfolio optimization, and Digital Commerce.</p>
+                            <div class="project-tags">
+                                <span class="tag">AdTech</span>
+                                <span class="tag">Media</span>
+                                <span class="tag">Team Building</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Trade Investment -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Optimization</span>
+                                <span class="project-year">2018 - 2022</span>
+                            </div>
+                            <h3>Global Trade Investment Analytics</h3>
+                            <p>Developed and deployed trade promotion optimization algorithms that improved ROI on promotional spending across multiple markets and categories.</p>
+                            <div class="project-tags">
+                                <span class="tag">Trade Promo</span>
+                                <span class="tag">ROI</span>
+                                <span class="tag">ML</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Revenue Growth Management -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Analytics</span>
+                                <span class="project-year">2016 - 2020</span>
+                            </div>
+                            <h3>Revenue Growth Management</h3>
+                            <p>Led analytics for one of P&G's top global priorities, developing pricing optimization models and portfolio analysis frameworks to drive revenue growth.</p>
+                            <div class="project-tags">
+                                <span class="tag">Pricing</span>
+                                <span class="tag">Portfolio</span>
+                                <span class="tag">Strategy</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Digital Commerce -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">eCommerce</span>
+                                <span class="project-year">2019 - Present</span>
+                            </div>
+                            <h3>Digital Commerce Analytics</h3>
+                            <p>Established analytics capabilities for digital and eCommerce channels, enabling data-driven decision making for online retail optimization.</p>
+                            <div class="project-tags">
+                                <span class="tag">eCommerce</span>
+                                <span class="tag">Digital</span>
+                                <span class="tag">Analytics</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- MLOps -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Infrastructure</span>
+                                <span class="project-year">2018 - Present</span>
+                            </div>
+                            <h3>MLOps & Cloud Infrastructure</h3>
+                            <p>Implemented DevOps and MLOps best practices across major cloud platforms, enabling systematic movement of AI solutions from pilot to production at scale.</p>
+                            <div class="project-tags">
+                                <span class="tag">MLOps</span>
+                                <span class="tag">AWS</span>
+                                <span class="tag">Azure</span>
+                                <span class="tag">GCP</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies Section -->
+        <section class="tech-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-label">STACK</span>
+                    <h2 class="section-title">Technologies & Tools</h2>
+                </div>
+                <div class="tech-grid">
+                    <div class="tech-category">
+                        <h3>AI & ML</h3>
+                        <div class="tech-items">
+                            <span class="tech-item">PyTorch</span>
+                            <span class="tech-item">TensorFlow</span>
+                            <span class="tech-item">Scikit-learn</span>
+                            <span class="tech-item">Hugging Face</span>
+                            <span class="tech-item">LangChain</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h3>Cloud & MLOps</h3>
+                        <div class="tech-items">
+                            <span class="tech-item">AWS</span>
+                            <span class="tech-item">Azure</span>
+                            <span class="tech-item">GCP</span>
+                            <span class="tech-item">Kubernetes</span>
+                            <span class="tech-item">Docker</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h3>Data</h3>
+                        <div class="tech-items">
+                            <span class="tech-item">Python</span>
+                            <span class="tech-item">SQL</span>
+                            <span class="tech-item">Spark</span>
+                            <span class="tech-item">Databricks</span>
+                            <span class="tech-item">Snowflake</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h3>Visualization</h3>
+                        <div class="tech-items">
+                            <span class="tech-item">Tableau</span>
+                            <span class="tech-item">Power BI</span>
+                            <span class="tech-item">Plotly</span>
+                            <span class="tech-item">D3.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">LM<span class="cursor">_</span></span>
+                    <p>Senior Director - AI Factory / GenAI / AI Services at Procter & Gamble</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/lorenz-maierhofer-27904a68/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lorenz Maierhofer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

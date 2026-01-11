@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News | Lorenz Maierhofer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated background -->
+    <div class="bg-animation">
+        <div class="neural-network"></div>
+        <div class="data-particles"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">LM</span>
+                <span class="logo-cursor">_</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">About</a></li>
+                <li><a href="news.html" class="nav-link active">News</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+            </ul>
+            <div class="nav-social">
+                <a href="https://www.linkedin.com/in/lorenz-maierhofer-27904a68/" target="_blank" class="social-link" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M12 17.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm0 1.5a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-17a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 12 2zm0 18a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 12 20zM4.22 4.22a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 0 1-1.06 1.06L4.22 5.28a.75.75 0 0 1 0-1.06zm13.44 13.44a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 0 1-1.06 1.06l-1.06-1.06a.75.75 0 0 1 0-1.06zM2 12a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5A.75.75 0 0 1 2 12zm18 0a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5A.75.75 0 0 1 20 12zM5.28 17.66a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0zm13.44-13.44a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0z"/>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="page-header">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-label">UPDATES</span>
+                    <h1 class="page-title">Latest News</h1>
+                    <p class="page-subtitle">Insights on AI transformation, industry trends, and professional updates</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- LinkedIn Posts Section -->
+        <section class="linkedin-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-label">LINKEDIN</span>
+                    <h2 class="section-title">Latest Posts</h2>
+                </div>
+                <div class="linkedin-embeds" id="linkedinEmbeds">
+                    <!-- LinkedIn posts will be loaded dynamically from config.json -->
+                    <div class="linkedin-loading">Loading LinkedIn posts...</div>
+                </div>
+                <div class="linkedin-cta">
+                    <a href="https://www.linkedin.com/in/lorenz-maierhofer-27904a68/recent-activity/all/" target="_blank" class="btn btn-secondary">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        <span>View all posts on LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-section">
+            <div class="section-container">
+                <div class="news-grid">
+                    <!-- Featured News -->
+                    <article class="news-card featured">
+                        <div class="news-image">
+                            <div class="news-placeholder">
+                                <svg viewBox="0 0 24 24" width="48" height="48" fill="currentColor">
+                                    <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-category">AI Leadership</span>
+                                <span class="news-date">November 2024</span>
+                            </div>
+                            <h2>New Role: Leading AI Factory, GenAI & AI Services at P&G</h2>
+                            <p>Taking on expanded responsibilities to drive AI innovation across Procter & Gamble's global operations, leading the AI Factory, Generative AI initiatives, and AI Services teams.</p>
+                            <div class="news-tags">
+                                <span class="tag">AI Factory</span>
+                                <span class="tag">GenAI</span>
+                                <span class="tag">Leadership</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Regular News Items -->
+                    <article class="news-card">
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-category">Education</span>
+                                <span class="news-date">2024</span>
+                            </div>
+                            <h3>Completed Harvard Business School Disruptive Strategy Certificate</h3>
+                            <p>Enhanced strategic capabilities through Harvard's executive program focused on leveraging disruptive innovation for business growth.</p>
+                            <div class="news-tags">
+                                <span class="tag">Strategy</span>
+                                <span class="tag">Innovation</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-category">GenAI</span>
+                                <span class="news-date">2023</span>
+                            </div>
+                            <h3>Launched Global GenAI Program</h3>
+                            <p>Initiated and led P&G's global Generative AI program, establishing frameworks for responsible AI deployment across enterprise applications.</p>
+                            <div class="news-tags">
+                                <span class="tag">LLMs</span>
+                                <span class="tag">Enterprise AI</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-category">Data Science</span>
+                                <span class="news-date">2022</span>
+                            </div>
+                            <h3>Scaled Europe Commercial DataScience Team</h3>
+                            <p>Grew and led a team of 25+ data scientists and 100+ analytical team members across AdTech, Media, Retailing, and Digital Commerce.</p>
+                            <div class="news-tags">
+                                <span class="tag">Team Building</span>
+                                <span class="tag">Scale</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-category">Transformation</span>
+                                <span class="news-date">2021</span>
+                            </div>
+                            <h3>Global Trade Investment Analytics Leadership</h3>
+                            <p>Took on global responsibility for trade investment analytics, driving algorithmic optimization of promotional spending across markets.</p>
+                            <div class="news-tags">
+                                <span class="tag">Trade Promo</span>
+                                <span class="tag">Optimization</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-category">MLOps</span>
+                                <span class="news-date">2020</span>
+                            </div>
+                            <h3>Established MLOps Best Practices</h3>
+                            <p>Implemented DevOps and MLOps practices across major cloud platforms, enabling systematic scaling of AI solutions from pilot to production.</p>
+                            <div class="news-tags">
+                                <span class="tag">Cloud</span>
+                                <span class="tag">Production</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Topics Section -->
+        <section class="topics-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-label">INTERESTS</span>
+                    <h2 class="section-title">Topics I Follow</h2>
+                </div>
+                <div class="topics-grid">
+                    <div class="topic-card">
+                        <div class="topic-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                            </svg>
+                        </div>
+                        <h3>AI in FMCG</h3>
+                        <p>Applications of artificial intelligence in fast-moving consumer goods industry</p>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/>
+                            </svg>
+                        </div>
+                        <h3>Predictive Analytics</h3>
+                        <p>Forecasting and optimization models for business decision making</p>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                                <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
+                            </svg>
+                        </div>
+                        <h3>Large Language Models</h3>
+                        <p>Enterprise applications of LLMs and generative AI technologies</p>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                            </svg>
+                        </div>
+                        <h3>Responsible AI</h3>
+                        <p>Ethics, governance, and responsible deployment of AI systems</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">LM<span class="cursor">_</span></span>
+                    <p>Senior Director - AI Factory / GenAI / AI Services at Procter & Gamble</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/lorenz-maierhofer-27904a68/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lorenz Maierhofer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
