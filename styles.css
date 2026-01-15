@@ -239,6 +239,30 @@ body {
     gap: 1rem;
 }
 
+/* Language Switcher */
+.lang-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem 0.7rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    text-decoration: none;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: transparent;
+    transition: var(--transition-base);
+    letter-spacing: 0.05em;
+}
+
+.lang-switch:hover {
+    color: var(--accent-cyan);
+    border-color: var(--accent-cyan);
+    box-shadow: var(--glow-cyan);
+}
+
 .social-link {
     display: flex;
     align-items: center;
