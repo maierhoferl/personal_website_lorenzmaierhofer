@@ -228,7 +228,7 @@ console.log(`
 ║   LORENZ MAIERHOFER                          ║
 ║   AI & Data Science Leader                   ║
 ║                                               ║
-║   Senior Director - AI Factory / GenAI       ║
+║   Senior Director & Global Lead              ║
 ║   Procter & Gamble                           ║
 ║                                               ║
 ╚═══════════════════════════════════════════════╝

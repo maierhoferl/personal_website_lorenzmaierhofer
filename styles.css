@@ -1402,6 +1402,23 @@ body {
     color: var(--text-muted);
 }
 
+.footer-note {
+    margin-top: 0.5rem;
+    font-size: 0.65rem;
+    opacity: 0.6;
+}
+
+.footer-note a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.footer-note a:hover {
+    color: var(--text-secondary);
+    text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .hero-container {
