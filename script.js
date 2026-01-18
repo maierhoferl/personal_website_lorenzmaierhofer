@@ -3,43 +3,7 @@
    JavaScript for interactivity
    ============================================ */
 
-// Automatic Language Detection
-(function() {
-    // Only run on first visit (check if user has already chosen a language)
-    const hasChosenLanguage = localStorage.getItem('langChosen');
-
-    if (!hasChosenLanguage) {
-        // Get browser language
-        const browserLang = navigator.language || navigator.userLanguage;
-        const isGerman = browserLang.toLowerCase().startsWith('de');
-
-        // Get current path
-        const currentPath = window.location.pathname;
-        const isInGermanFolder = currentPath.includes('/de/');
-
-        // Redirect if needed
-        if (isGerman && !isInGermanFolder) {
-            // User has German browser but is on English site - redirect to German
-            const pageName = currentPath.split('/').pop() || 'index.html';
-            const germanPath = currentPath.replace(pageName, 'de/' + pageName);
-
-            // Set flag so we don't redirect again
-            localStorage.setItem('langChosen', 'de');
-            window.location.href = germanPath;
-        } else if (!isGerman && isInGermanFolder) {
-            // User has non-German browser but is on German site - redirect to English
-            const englishPath = currentPath.replace('/de/', '/');
-
-            localStorage.setItem('langChosen', 'en');
-            window.location.href = englishPath;
-        } else {
-            // User is on the correct version, mark their choice
-            localStorage.setItem('langChosen', isGerman ? 'de' : 'en');
-        }
-    }
-})();
-
-// Track manual language switches
+// Language preference tracking (no auto-redirect - Google uses hreflang tags)
 document.addEventListener('DOMContentLoaded', () => {
     const langSwitch = document.querySelector('.lang-switch');
     if (langSwitch) {
