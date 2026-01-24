@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <!-- Homepage -->
+    <url>
+        <loc>https://lorenzmaierhofer.com/index.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/index.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/de/index.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/index.html"/>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://lorenzmaierhofer.com/de/index.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/index.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/de/index.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/index.html"/>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- News -->
+    <url>
+        <loc>https://lorenzmaierhofer.com/news.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/news.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/de/news.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/news.html"/>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://lorenzmaierhofer.com/de/news.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/news.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/de/news.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/news.html"/>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Projects -->
+    <url>
+        <loc>https://lorenzmaierhofer.com/projects.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/projects.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/de/projects.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/projects.html"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://lorenzmaierhofer.com/de/projects.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/projects.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/de/projects.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/projects.html"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+</urlset>
