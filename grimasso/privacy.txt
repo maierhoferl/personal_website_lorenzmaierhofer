@@ -1,0 +1,109 @@
+DATENSCHUTZRICHTLINIEN FÜR GRIMASSO
+
+Stand: Januar 2024
+
+1. EINLEITUNG
+
+Der Schutz Ihrer persönlichen Daten und der Daten Ihrer Kinder hat für uns höchste Priorität. Diese Datenschutzrichtlinien erläutern, wie wir Daten in der Grimasso-App erheben, verarbeiten und schützen.
+
+2. VERANTWORTLICHER
+
+Verantwortlich für die Datenverarbeitung ist der Betreiber der Grimasso-App. Kontaktdaten finden Sie in der App unter Einstellungen.
+
+3. ERHOBENE DATEN
+
+3.1 Kontodaten (Eltern):
+- E-Mail-Adresse
+- Verschlüsseltes Passwort
+- Eltern-PIN (verschlüsselt gespeichert)
+
+3.2 Profildaten (Kinder):
+- Vorname oder Spitzname
+- Gewähltes Avatar
+- Fortschrittsdaten (Punkte, Übungen, Strähnen)
+
+3.3 Nutzungsdaten:
+- Abgeschlossene Übungen
+- Übungsdauer
+- App-Nutzungsstatistiken
+
+4. ZWECK DER DATENVERARBEITUNG
+
+Wir verarbeiten Ihre Daten für folgende Zwecke:
+- Bereitstellung und Verwaltung Ihres Kontos
+- Speicherung des Übungsfortschritts
+- Personalisierung der Lernerfahrung
+- Eltern-Dashboard und Fortschrittsübersicht
+- Verbesserung der App
+
+5. RECHTSGRUNDLAGE
+
+Die Verarbeitung erfolgt auf Grundlage von:
+- Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung)
+- Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)
+- Art. 6 Abs. 1 lit. f DSGVO (berechtigte Interessen)
+
+6. KINDERDATENSCHUTZ
+
+6.1 Unsere App richtet sich an Kinder, daher legen wir besonderen Wert auf den Schutz von Kinderdaten.
+
+6.2 Wir erheben nur die minimal notwendigen Daten von Kindern.
+
+6.3 Kinderprofile enthalten keine vollständigen Namen oder andere sensible persönliche Informationen.
+
+6.4 Die Registrierung erfolgt ausschließlich durch Eltern oder Erziehungsberechtigte.
+
+6.5 Kinder haben keinen direkten Zugang zu Kommunikationsfunktionen oder sozialen Netzwerken.
+
+7. DATENSPEICHERUNG
+
+7.1 Kontodaten und Fortschrittsdaten werden auf sicheren Servern von Firebase (Google) in der EU gespeichert.
+
+7.2 Daten werden so lange gespeichert, wie Ihr Konto aktiv ist.
+
+8. DATENWEITERGABE
+
+8.1 Wir verkaufen keine personenbezogenen Daten an Dritte.
+
+8.2 Wir teilen Daten nur mit:
+- Firebase (Google) für die Datenspeicherung
+- Ggf. Behörden bei rechtlicher Verpflichtung
+
+9. DATENSICHERHEIT
+
+Wir setzen technische und organisatorische Maßnahmen ein, um Ihre Daten zu schützen:
+- Verschlüsselte Datenübertragung (SSL/TLS)
+- Sichere Speicherung von Passwörtern
+- Regelmäßige Sicherheitsprüfungen
+- Zugriffsbeschränkungen
+
+10. IHRE RECHTE
+
+Sie haben folgende Rechte:
+- Auskunft über gespeicherte Daten
+- Berichtigung unrichtiger Daten
+- Löschung Ihrer Daten
+- Einschränkung der Verarbeitung
+- Datenübertragbarkeit
+- Widerruf von Einwilligungen
+- Beschwerde bei einer Aufsichtsbehörde
+
+11. KONTOLÖSCHUNG
+
+Sie können Ihr Konto und alle damit verbundenen Daten jederzeit über das Eltern-Dashboard löschen. Bei Kontolöschung werden alle personenbezogenen Daten unwiderruflich entfernt.
+
+12. COOKIES UND TRACKING
+
+Die App verwendet keine Cookies oder Tracking-Technologien zu Werbezwecken. Es werden nur technisch notwendige Daten für die App-Funktionalität gespeichert.
+
+13. ÄNDERUNGEN
+
+Bei Änderungen dieser Datenschutzrichtlinien werden Sie über die App oder per E-Mail informiert. Die aktuelle Version ist stets in der App einsehbar.
+
+14. KONTAKT
+
+Bei Fragen zum Datenschutz kontaktieren Sie uns bitte über die in der App angegebenen Kontaktmöglichkeiten.
+
+15. AUFSICHTSBEHÖRDE
+
+Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer Daten gegen die DSGVO verstößt.
