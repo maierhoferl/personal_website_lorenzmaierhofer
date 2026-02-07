@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grimasso - Exercices amusants de la langue pour les enfants</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Grimasso est une application ludique pour iPhone et iPad qui aide les enfants à entraîner leur langue, leurs lèvres et leurs muscles faciaux grâce à des exercices amusants et gamifiés. Téléchargement gratuit sur l'App Store.">
+    <meta name="keywords" content="Grimasso, entraînement langue, application enfants, exercices de parole, exercices faciaux, exercices des lèvres, exercices de respiration, enfants, développement de la parole, application iOS, apprentissage ludique">
+    <meta name="author" content="Lorenz Maierhofer">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Grimasso - Exercices amusants de la langue pour les enfants">
+    <meta property="og:description" content="Une application ludique qui aide les enfants à entraîner leur langue, leurs lèvres et leurs muscles faciaux grâce à des exercices amusants.">
+    <meta property="og:image" content="../../Grimasso_Main.png">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:url" content="https://lorenzmaierhofer.com/grimasso/fr/">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Grimasso - Exercices amusants de la langue pour les enfants">
+    <meta name="twitter:description" content="Une application ludique qui aide les enfants à entraîner leur langue, leurs lèvres et leurs muscles faciaux grâce à des exercices amusants.">
+    <meta name="twitter:image" content="../../Grimasso_Main.png">
+
+    <!-- Canonical URL and Language Alternatives -->
+    <link rel="canonical" href="https://lorenzmaierhofer.com/grimasso/fr/">
+    <link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/">
+    <link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/">
+    <link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/">
+    <link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "Grimasso",
+        "operatingSystem": "iOS",
+        "applicationCategory": "HealthApplication",
+        "description": "Une application ludique pour iPhone et iPad qui aide les enfants à entraîner leur langue, leurs lèvres et leurs muscles faciaux grâce à des exercices amusants et gamifiés.",
+        "inLanguage": "fr",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "EUR"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Lorenz Maierhofer"
+        },
+        "url": "https://lorenzmaierhofer.com/grimasso/fr/",
+        "downloadUrl": "https://apps.apple.com/ch/app/grimasso/id6758241652"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../grimasso-styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/grimasso/fr/" class="nav-logo">
+                <span class="logo-text">Grimasso</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="/grimasso/fr/" class="nav-link active">Accueil</a></li>
+                <li><a href="https://apps.apple.com/ch/app/grimasso/id6758241652" target="_blank" rel="noopener" class="nav-link">App Store</a></li>
+            </ul>
+            <div class="nav-social">
+                <a href="/" class="back-to-main">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+                    lorenzmaierhofer.com
+                </a>
+                <div class="grimasso-lang-switcher">
+                    <a href="/grimasso/" class="lang-switch" title="English">EN</a>
+                    <a href="/grimasso/fr/" class="lang-switch active" title="Fran&ccedil;ais">FR</a>
+                    <a href="/grimasso/de/" class="lang-switch" title="Deutsch">DE</a>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Changer le thème">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M12 17.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm0 1.5a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-17a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 12 2zm0 18a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 12 20zM4.22 4.22a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 0 1-1.06 1.06L4.22 5.28a.75.75 0 0 1 0-1.06zm13.44 13.44a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 0 1-1.06 1.06l-1.06-1.06a.75.75 0 0 1 0-1.06zM2 12a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5A.75.75 0 0 1 2 12zm18 0a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5A.75.75 0 0 1 20 12zM5.28 17.66a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0zm13.44-13.44a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0z"/>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Hero Section -->
+        <section class="grimasso-hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <div class="hero-badge">Exercices de la langue pour les enfants</div>
+                    <h1 class="hero-title">
+                        Des exercices de parole<br>
+                        <span class="grimasso-name">super amusants !</span>
+                    </h1>
+                    <p class="hero-tagline">
+                        Grimasso transforme les exercices de la langue, des lèvres et du visage en une aventure ludique. Les enfants adorent les grimaces, les parents adorent les progrès.
+                    </p>
+                    <div class="hero-cta-group">
+                        <a href="https://apps.apple.com/ch/app/grimasso/id6758241652" target="_blank" rel="noopener" class="btn-grimasso btn-grimasso-primary">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                <path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                            </svg>
+                            Télécharger sur l'App Store
+                        </a>
+                        <a href="#features" class="btn-grimasso btn-grimasso-secondary">
+                            En savoir plus
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-app-icon">
+                    <a href="https://apps.apple.com/ch/app/grimasso/id6758241652" target="_blank" rel="noopener">
+                        <img src="../../Grimasso_Main.png" alt="Icône de l'application Grimasso - un visage amusant faisant des grimaces">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="grimasso-section" id="features">
+            <div class="grimasso-section-header">
+                <span class="grimasso-section-label">Exercices</span>
+                <h2 class="grimasso-section-title">Quatre catégories amusantes</h2>
+                <p class="grimasso-section-subtitle">Chaque exercice est conçu par des experts en orthophonie et enveloppé dans un univers ludique.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">&#x1F445;</span>
+                    <h3>Exercices de la langue</h3>
+                    <p>Rouler, étirer et remuer ! Renforce les muscles de la langue avec des défis hilarants que les enfants ne peuvent plus arrêter.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">&#x1F48B;</span>
+                    <h3>Exercices des lèvres</h3>
+                    <p>Faire la moue et souffler ! Développe la coordination et la force des lèvres grâce à des sons amusants et des jeux de grimaces.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">&#x1F92A;</span>
+                    <h3>Exercices du visage</h3>
+                    <p>Sourire, froncer les sourcils et faire les grimaces les plus folles ! Entraîne tous les muscles qui aident les enfants à parler clairement.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">&#x1F32C;&#xFE0F;</span>
+                    <h3>Exercices de respiration</h3>
+                    <p>Inspirer, expirer ! Des activités apaisantes et amusantes qui améliorent le contrôle du souffle pour une meilleure élocution.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="grimasso-section" id="how-it-works">
+            <div class="grimasso-section-header">
+                <span class="grimasso-section-label">Comment ça marche</span>
+                <h2 class="grimasso-section-title">Simple comme 1-2-3</h2>
+                <p class="grimasso-section-subtitle">Commencer avec Grimasso ne prend que quelques secondes.</p>
+            </div>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <span class="step-emoji">&#x1F3AF;</span>
+                    <h3>Choisis un exercice</h3>
+                    <p>Parcours les exercices de la langue, des lèvres, du visage ou de respiration. Choisis celui qui te plaît !</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <span class="step-emoji">&#x1F440;</span>
+                    <h3>Regarde et imite</h3>
+                    <p>Suis les démonstrations animées. Fais la même grimace ou le même son rigolo !</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <span class="step-emoji">&#x1F31F;</span>
+                    <h3>Suis tes progrès</h3>
+                    <p>Gagne des récompenses en t'entraînant. Vois tout le chemin parcouru et débloque de nouveaux défis !</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="grimasso-section" id="benefits">
+            <div class="grimasso-section-header">
+                <span class="grimasso-section-label">Pourquoi les parents adorent</span>
+                <h2 class="grimasso-section-title">Bien plus que des grimaces</h2>
+                <p class="grimasso-section-subtitle">Grimasso combine de vrais bénéfices pour la parole avec le plaisir que les enfants recherchent.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <span class="benefit-icon">&#x1F3AE;</span>
+                    <div>
+                        <h3>Gamification amusante</h3>
+                        <p>Des points, des séries et des succès qui donnent envie aux enfants de revenir. S'entraîner n'a jamais été aussi motivant !</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon">&#x1F4AC;</span>
+                    <div>
+                        <h3>Développement de la parole</h3>
+                        <p>Des exercices conçus pour renforcer les muscles utilisés pour parler. Un excellent complément aux séances d'orthophonie.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon">&#x1F4F1;</span>
+                    <div>
+                        <h3>Du temps d'écran utile</h3>
+                        <p>Transforme le temps d'écran en temps d'entraînement. Chaque minute sur Grimasso est une minute de vrai exercice.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon">&#x1F46A;</span>
+                    <div>
+                        <h3>S'entraîner ensemble</h3>
+                        <p>Parents et frères et soeurs peuvent participer ! Faire des grimaces ensemble, c'est le meilleur moment en famille.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon">&#x1F6E1;&#xFE0F;</span>
+                    <div>
+                        <h3>Sûr pour les enfants</h3>
+                        <p>Pas de publicités, pas d'achats intégrés et aucune collecte de données des enfants. Juste du plaisir sans souci.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon">&#x1F30D;</span>
+                    <div>
+                        <h3>Disponible en plusieurs langues</h3>
+                        <p>Grimasso parle anglais, français et allemand pour que les enfants puissent s'entraîner dans leur langue.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="grimasso-cta-section">
+            <div class="cta-content">
+                <h2>Prêt à faire des grimaces ?</h2>
+                <p>Télécharge Grimasso aujourd'hui et regarde ton enfant devenir plus fort, plus drôle et plus confiant à chaque exercice.</p>
+                <a href="https://apps.apple.com/ch/app/grimasso/id6758241652" target="_blank" rel="noopener" class="btn-grimasso btn-grimasso-primary">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                        <path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                    </svg>
+                    Télécharger gratuitement sur l'App Store
+                </a>
+                <p class="cta-badge">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                    Disponible sur iPhone et iPad
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">Grimasso</span>
+                    <p>Exercices amusants de la langue pour les enfants. Une application de Lorenz Maierhofer.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="/grimasso/privacy.txt" target="_blank">Politique de confidentialité</a>
+                    <a href="/">lorenzmaierhofer.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lorenz Maierhofer. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../grimasso-script.js"></script>
+</body>
+</html>
