@@ -1,8 +1,11 @@
 ---
 id: REQ-003
 title: Grimasso features and benefits marketing content
-status: pending
+status: completed
 created_at: 2026-02-07T12:00:00Z
+claimed_at: 2026-02-07T22:20:00Z
+route: B
+completed_at: 2026-02-07T22:35:00Z
 user_request: UR-001
 related: [REQ-001, REQ-002, REQ-004, REQ-005, REQ-006]
 batch: grimasso-subsite
@@ -83,3 +86,40 @@ See [user-requests/UR-001/input.md](./user-requests/UR-001/input.md) for complet
 
 ---
 *Source: See UR-001/input.md for full verbatim input*
+
+---
+
+## Triage
+
+**Route: B** - Medium
+
+**Reasoning:** Clear content requirements with specific features/numbers from the app. Need to explore current page structure and enhance content sections with compelling marketing copy.
+
+**Planning:** Not required
+
+## Plan
+
+**Planning not required** - Route B: Exploration-guided implementation
+
+Rationale: Detailed feature list provided in the request. The page scaffolding and visual design already exist. This is about replacing placeholder content with rich, accurate marketing copy.
+
+*Skipped by work action*
+
+## Implementation Summary
+
+- Replaced features section: 4 generic categories -> 5 actual app categories (Tongue Tip, Strength, Control, Swallowing, Jaw Muscles)
+- Replaced How It Works with 12-item App Features grid (animated guide, 10 levels, voice recording, timers, points, streaks, badges, parent dashboard, calendar, multi-child, screen time, languages)
+- Added "By the Numbers" statistics section (51 exercises, 10 levels, 25+ achievements, 5 categories, 3 languages)
+- Enhanced Benefits section with parent-targeted copy (fun not a chore, built on science, kids look forward to it, safe & private, practice anywhere, parent controls)
+- Added Trust/Social Proof section (speech therapy principles, safe for kids, iPhone + iPad, free to download)
+- All content in all 3 languages (EN, DE, FR) with proper translations
+- Added CSS for new components: features-grid-5, app-features-grid, stats-grid, trust-grid
+
+*Completed by work action (Route B)*
+
+## Testing
+
+**Tests run:** N/A
+**Result:** No testing infrastructure detected - static HTML site
+
+*Verified by work action*

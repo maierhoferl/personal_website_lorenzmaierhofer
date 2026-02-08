@@ -1037,6 +1037,234 @@ p, li, a, span, div {
     line-height: 1.6;
 }
 
+/* ---- 5th FEATURE CARD COLOR ---- */
+.feature-card:nth-child(5) { border-top: 4px solid var(--grimasso-orange); }
+
+.feature-card:nth-child(5):hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(255, 153, 51, 0.15), 0 0 20px rgba(255, 153, 51, 0.08);
+    border-color: var(--grimasso-orange);
+}
+
+.feature-card:nth-child(5) .feature-icon {
+    background: rgba(255, 153, 51, 0.15);
+}
+
+[data-theme="dark"] .feature-card:nth-child(5) .feature-icon {
+    background: rgba(255, 153, 51, 0.2);
+}
+
+/* Features grid variant for 5 cards */
+.features-grid-5 {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/* ---- APP FEATURES GRID ---- */
+.app-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.25rem;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.app-feature-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    transition: all 0.3s ease;
+    align-items: flex-start;
+}
+
+.app-feature-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(51, 199, 89, 0.1);
+    border-color: rgba(51, 199, 89, 0.3);
+}
+
+.app-feature-emoji {
+    font-size: 1.8rem;
+    flex-shrink: 0;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: rgba(51, 199, 89, 0.08);
+    margin-top: 0.1rem;
+}
+
+/* Alternating background tints for app feature items */
+.app-feature-item:nth-child(odd) .app-feature-emoji {
+    background: rgba(51, 199, 89, 0.1);
+}
+
+.app-feature-item:nth-child(even) .app-feature-emoji {
+    background: rgba(102, 179, 255, 0.1);
+}
+
+[data-theme="dark"] .app-feature-item:nth-child(odd) .app-feature-emoji {
+    background: rgba(51, 199, 89, 0.16);
+}
+
+[data-theme="dark"] .app-feature-item:nth-child(even) .app-feature-emoji {
+    background: rgba(102, 179, 255, 0.16);
+}
+
+.app-feature-item h4 {
+    font-family: var(--grimasso-font);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.app-feature-item p {
+    font-family: var(--grimasso-font);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+}
+
+/* ---- STATISTICS SECTION ---- */
+.grimasso-stats-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: linear-gradient(135deg,
+        rgba(51, 199, 89, 0.06) 0%,
+        rgba(255, 217, 51, 0.06) 25%,
+        rgba(102, 179, 255, 0.06) 50%,
+        rgba(179, 128, 255, 0.06) 75%,
+        rgba(255, 128, 153, 0.06) 100%
+    );
+}
+
+[data-theme="dark"] .grimasso-stats-section {
+    background: linear-gradient(135deg,
+        rgba(51, 199, 89, 0.1) 0%,
+        rgba(255, 217, 51, 0.08) 25%,
+        rgba(102, 179, 255, 0.08) 50%,
+        rgba(179, 128, 255, 0.08) 75%,
+        rgba(255, 128, 153, 0.08) 100%
+    );
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    max-width: var(--container-max);
+    margin: 0 auto;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 120px;
+}
+
+.stat-number {
+    font-family: var(--grimasso-font);
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--grimasso-primary) 0%, var(--grimasso-blue) 50%, var(--grimasso-purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.1;
+}
+
+.stat-label {
+    font-family: var(--grimasso-font);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-top: 0.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+/* Colorful stat numbers individually */
+.stat-item:nth-child(1) .stat-number {
+    background: linear-gradient(135deg, var(--grimasso-primary) 0%, var(--grimasso-light) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.stat-item:nth-child(2) .stat-number {
+    background: linear-gradient(135deg, var(--grimasso-blue) 0%, var(--grimasso-purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.stat-item:nth-child(3) .stat-number {
+    background: linear-gradient(135deg, var(--grimasso-yellow) 0%, var(--grimasso-orange) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.stat-item:nth-child(4) .stat-number {
+    background: linear-gradient(135deg, var(--grimasso-pink) 0%, var(--grimasso-purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.stat-item:nth-child(5) .stat-number {
+    background: linear-gradient(135deg, var(--grimasso-orange) 0%, var(--grimasso-pink) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ---- TRUST SECTION ---- */
+.grimasso-trust-section {
+    padding: 3rem 2rem;
+    background: var(--bg-darker);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.trust-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem 3rem;
+    max-width: var(--container-max);
+    margin: 0 auto;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.trust-icon {
+    font-size: 1.6rem;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.trust-item p {
+    font-family: var(--grimasso-font);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
 /* ---- CTA SECTION ---- */
 .grimasso-cta-section {
     text-align: center;
@@ -1179,8 +1407,21 @@ p, li, a, span, div {
     }
 
     .features-grid,
-    .benefits-grid {
+    .benefits-grid,
+    .app-features-grid {
         padding: 0 1rem;
+    }
+
+    .app-features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        gap: 1.5rem 2rem;
+    }
+
+    .trust-grid {
+        gap: 1.5rem 2rem;
     }
 
     .footer-content {
@@ -1227,6 +1468,26 @@ p, li, a, span, div {
         grid-template-columns: 1fr;
     }
 
+    .stats-grid {
+        gap: 1.25rem 1.5rem;
+    }
+
+    .stat-item {
+        min-width: 100px;
+    }
+
+    .trust-grid {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .trust-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
     .grimasso-lang-switcher .lang-switch {
         padding: 0.25rem 0.4rem;
         font-size: 0.65rem;
@@ -1249,5 +1510,11 @@ p, li, a, span, div {
     .btn-grimasso-primary,
     .hero-bubble {
         animation: none;
+    }
+
+    .feature-card:hover,
+    .benefit-card:hover,
+    .app-feature-item:hover {
+        transform: none;
     }
 }
