@@ -1,8 +1,11 @@
 ---
 id: REQ-005
 title: Grimasso SEO optimization and sitemap integration
-status: pending
+status: completed
 created_at: 2026-02-07T12:00:00Z
+claimed_at: 2026-02-07T22:55:00Z
+route: A
+completed_at: 2026-02-07T23:05:00Z
 user_request: UR-001
 related: [REQ-001, REQ-002, REQ-003, REQ-004, REQ-006]
 batch: grimasso-subsite
@@ -71,3 +74,40 @@ See [user-requests/UR-001/input.md](./user-requests/UR-001/input.md) for complet
 
 ---
 *Source: See UR-001/input.md for full verbatim input*
+
+---
+
+## Triage
+
+**Route: A** - Simple
+
+**Reasoning:** Clear SEO requirements following existing site patterns. Meta tags and sitemap additions are straightforward - no architectural decisions needed. The Grimasso pages already have proper meta tag structure from REQ-001, just need to verify/enhance and add sitemap entries.
+
+**Planning:** Not required
+
+## Plan
+
+**Planning not required** - Route A: Direct implementation
+
+Rationale: Simple configuration tasks (meta tags, sitemap). Follow existing site patterns. No ambiguity.
+
+*Skipped by work action*
+
+## Implementation Summary
+
+- Verified meta tags on all 3 pages (EN/DE/FR): title, description, OG tags, Twitter cards all present and keyword-rich
+- Fixed image URLs: changed og:image and twitter:image from relative paths to absolute URLs for proper social media sharing
+- Verified structured data: MobileApplication schema with correct App Store link on all 3 pages
+- Verified canonical URLs and hreflang tags correctly configured on all pages
+- Updated sitemap.xml: added 3 Grimasso entries (EN, DE, FR) with proper hreflang alternates and xhtml:link elements following existing site pattern
+- All pages: language-appropriate meta descriptions under 160 characters
+- All pages: proper lang attributes (en, de, fr)
+
+*Completed by work action (Route A)*
+
+## Testing
+
+**Tests run:** N/A
+**Result:** No testing infrastructure detected - static HTML site
+
+*Verified by work action*
