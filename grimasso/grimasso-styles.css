@@ -534,6 +534,7 @@ p, li, a, span, div {
     position: relative;
 }
 
+.hero-app-icon video,
 .hero-app-icon img {
     width: 280px;
     height: 280px;
@@ -543,8 +544,11 @@ p, li, a, span, div {
         0 8px 24px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.4s ease;
     animation: grimasso-bounce 4s ease-in-out infinite;
+    object-fit: cover;
+    display: block;
 }
 
+.hero-app-icon video:hover,
 .hero-app-icon img:hover {
     box-shadow:
         0 24px 70px rgba(51, 199, 89, 0.35),
@@ -552,6 +556,7 @@ p, li, a, span, div {
         0 0 40px rgba(51, 199, 89, 0.2);
 }
 
+[data-theme="dark"] .hero-app-icon video,
 [data-theme="dark"] .hero-app-icon img {
     box-shadow:
         0 20px 60px rgba(51, 199, 89, 0.25),
