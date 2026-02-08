@@ -1501,6 +1501,106 @@ p, li, a, span, div {
     }
 }
 
+/* ============================================
+   INTERACTIVE ANIMATIONS & MICRO-INTERACTIONS
+   ============================================ */
+
+/* Scroll Progress Indicator */
+.grimasso-scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: linear-gradient(90deg,
+        var(--grimasso-primary) 0%,
+        var(--grimasso-yellow) 20%,
+        var(--grimasso-orange) 40%,
+        var(--grimasso-pink) 60%,
+        var(--grimasso-blue) 80%,
+        var(--grimasso-purple) 100%
+    );
+    z-index: 9999;
+    width: 0%;
+    transition: width 0.1s ease-out;
+    border-radius: 0 2px 2px 0;
+    box-shadow: 0 0 8px rgba(51, 199, 89, 0.4);
+}
+
+/* Confetti Particles */
+.grimasso-confetti {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9998;
+    animation: grimasso-confetti-fall 1s ease-out forwards;
+}
+
+@keyframes grimasso-confetti-fall {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(var(--vx), calc(var(--vy) + 300px)) rotate(var(--rotation));
+        opacity: 0;
+    }
+}
+
+/* Emoji Burst Animation */
+.grimasso-emoji-burst {
+    position: fixed;
+    font-size: 2rem;
+    pointer-events: none;
+    z-index: 9998;
+    animation: grimasso-emoji-burst-out 1s ease-out forwards;
+}
+
+@keyframes grimasso-emoji-burst-out {
+    0% {
+        transform: translate(0, 0) scale(0) rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(var(--tx), var(--ty)) scale(1.5) rotate(180deg);
+        opacity: 0;
+    }
+}
+
+/* App Icon Wobble */
+.grimasso-wobble {
+    animation: grimasso-wobble-shake 0.6s ease-in-out;
+}
+
+@keyframes grimasso-wobble-shake {
+    0%, 100% { transform: rotate(0deg); }
+    15% { transform: rotate(-15deg) scale(1.05); }
+    30% { transform: rotate(15deg) scale(1.05); }
+    45% { transform: rotate(-12deg) scale(1.03); }
+    60% { transform: rotate(12deg) scale(1.03); }
+    75% { transform: rotate(-8deg) scale(1.01); }
+    90% { transform: rotate(8deg) scale(1.01); }
+}
+
+/* Card Tilt Effect - Enhanced for smooth transitions */
+.feature-card,
+.benefit-card,
+.app-feature-item {
+    transform-style: preserve-3d;
+    transition: transform 0.15s ease-out, box-shadow 0.3s ease;
+    will-change: transform;
+}
+
+.feature-card:hover,
+.benefit-card:hover,
+.app-feature-item:hover {
+    transition: transform 0.15s ease-out, box-shadow 0.3s ease;
+}
+
 /* Reduce motion for accessibility */
 @media (prefers-reduced-motion: reduce) {
     .hero-app-icon img,
@@ -1516,5 +1616,20 @@ p, li, a, span, div {
     .benefit-card:hover,
     .app-feature-item:hover {
         transform: none;
+    }
+
+    .grimasso-scroll-progress {
+        display: none;
+    }
+
+    .grimasso-confetti,
+    .grimasso-emoji-burst,
+    .grimasso-wobble {
+        animation: none;
+        display: none;
+    }
+
+    .animate-in {
+        transition: opacity 0.3s ease !important;
     }
 }
