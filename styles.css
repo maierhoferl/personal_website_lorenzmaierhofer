@@ -1253,6 +1253,17 @@ body {
     text-decoration: underline;
 }
 
+.project-card p a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+    transition: var(--transition-base);
+}
+
+.project-card p a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
 .project-card h3 {
     font-family: var(--font-heading);
     font-size: 1.1rem;
