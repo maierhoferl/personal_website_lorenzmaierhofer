@@ -9,6 +9,7 @@
 *.swo
 .vscode/
 .idea/
+do-work/
 
 # Logs
 *.log
