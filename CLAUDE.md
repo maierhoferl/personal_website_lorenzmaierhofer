@@ -8,11 +8,13 @@ Personal website for Lorenz Maierhofer, Senior Director and Global Lead for AI F
 
 ## Architecture
 
-**Static HTML/CSS/JS site with bilingual support (English/German)**
+**Static HTML/CSS/JS site with multilingual support (English/German/French)**
 
 - Root level: English pages (`index.html`, `news.html`, `projects.html`)
 - `/de/` folder: German pages (same structure)
-- Single shared `styles.css` and `script.js` (German pages reference via `../`)
+- `/grimasso/` folder: Trilingual Grimasso app subsite (EN, DE `/de/`, FR `/fr/`)
+- Single shared `styles.css` and `script.js` (German/French pages reference via `../`)
+- `grimasso/grimasso-styles.css` and `grimasso/grimasso-script.js` for Grimasso branding
 - `linkedin_posts.json`: Configuration for dynamically loaded LinkedIn post embeds
 
 **SEO Implementation**
@@ -40,8 +42,48 @@ python3 -m http.server 8000
 
 Local server needed for `linkedin_posts.json` fetch to work (CORS).
 
+## Grimasso Subsite
+
+**Trilingual Tongue-Training App Landing Page** (EN, DE, FR)
+
+**Structure**
+- `/grimasso/index.html` - English landing page
+- `/grimasso/de/index.html` - German landing page
+- `/grimasso/fr/index.html` - French landing page
+- `/grimasso/grimasso-styles.css` - Custom styling (kid-friendly, bright palette #33C759 primary)
+- `/grimasso/grimasso-script.js` - Interactive features (animations, confetti, count-ups)
+- `/grimasso/Grimasso_Welcome.mov` - Hero video (with image fallback)
+
+**Key Features**
+- Playful, kid-friendly aesthetic with bright green primary color (#33C759)
+- Animated hero with floating bubbles, decorative emojis, wavy SVG dividers
+- 51 scientifically-designed exercises across 5 categories
+- Gamification elements: 10 levels, 25+ achievement badges, streak tracking
+- Comprehensive app features section (12 features with emoji icons)
+- "By the Numbers" statistics section with count-up animations
+- Parent-focused benefits messaging
+- Confetti burst animations on CTA clicks
+- Card tilt/3D hover effects with bounce scroll animations
+- Scroll progress indicator bar
+- Accessibility: respects prefers-reduced-motion
+
+**Universal Commerce Protocol (UCP)**
+- Enhanced JSON-LD structured data on all 3 pages
+- MobileApplication schema with Offer details (free, InStock availability)
+- AggregateRating, seller info, keywords for agent discoverability
+- Localized offers (USD for US, EUR for CH/DE/FR)
+- Makes Grimasso discoverable to commerce agents and platforms
+
+**SEO & Navigation**
+- Trilingual hreflang tags in sitemap.xml
+- Canonical URLs for each language version
+- Back-to-main links with proper localization (/de/ for German, /fr/ for French)
+- Language switcher with active state highlighting
+
 ## File Conventions
 
-- When updating content, ensure changes are made to both English and German versions
+- When updating content, ensure changes are made to all relevant language versions (EN, DE, FR)
 - German translations should use proper umlauts (ä, ö, ü) not ASCII substitutes (ae, oe, ue)
-- Image assets go in root directory, referenced from `/de/` pages with `../` prefix
+- Image assets and videos go in root directory or `/grimasso/`, referenced with proper paths
+- Link styling in project cards (`.project-card h2 a`, `.project-card p a`) uses theme colors with hover effects
+- When formatting headings with links: inherit text color, add cyan accent on hover with underline
