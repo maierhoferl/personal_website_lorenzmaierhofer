@@ -741,7 +741,7 @@ p, li, a, span, div {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: 24px;
-    padding: 2.25rem 2rem;
+    padding: 1.5rem 1rem;
     text-align: center;
     transition: all 0.3s ease;
 }
@@ -778,13 +778,13 @@ p, li, a, span, div {
 
 /* Feature icon with colored circular background */
 .feature-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1.25rem;
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 72px;
-    height: 72px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -825,17 +825,17 @@ p, li, a, span, div {
 
 .feature-card h3 {
     font-family: var(--grimasso-font);
-    font-size: 1.15rem;
+    font-size: 0.95rem;
     font-weight: 700;
     color: var(--text-primary);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.35rem;
 }
 
 .feature-card p {
     font-family: var(--grimasso-font);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: var(--text-secondary);
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 /* ---- HOW IT WORKS ---- */
@@ -1061,7 +1061,8 @@ p, li, a, span, div {
 
 /* Features grid variant for 5 cards */
 .features-grid-5 {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
 }
 
 /* ---- APP FEATURES GRID ---- */
