@@ -1639,3 +1639,102 @@ p, li, a, span, div {
         transition: opacity 0.3s ease !important;
     }
 }
+
+/* === Screenshot Gallery === */
+.grimasso-screenshots-section { padding: 60px 0 40px; }
+
+/* Device selector tabs */
+.screenshots-device-selector {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 36px;
+}
+.device-tab {
+    padding: 10px 32px;
+    border-radius: 100px;
+    border: 2px solid var(--grimasso-primary);
+    background: transparent;
+    color: var(--grimasso-primary);
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.device-tab.active {
+    background: var(--grimasso-primary);
+    color: #fff;
+}
+.device-tab:hover:not(.active) {
+    background: rgba(51,199,89,0.12);
+}
+
+/* Carousel container — shows/hides via JS */
+.screenshots-carousel { display: block; }
+.screenshots-carousel.hidden { display: none; }
+
+/* Horizontal scroll track */
+.screenshots-scroll {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 24px;
+    padding: 16px 48px 28px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+.screenshots-scroll::-webkit-scrollbar { display: none; }
+
+/* Individual slide */
+.screenshot-item {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+/* Device frame base */
+.device-frame {
+    background: #1a1a1a;
+    border: 10px solid #2a2a2a;
+    box-shadow:
+        inset 0 0 0 1.5px #444,
+        0 20px 40px rgba(0,0,0,0.22),
+        0 6px 12px rgba(0,0,0,0.14);
+    overflow: hidden;
+    position: relative;
+}
+.device-frame img { display: block; width: 100%; height: auto; }
+
+.device-frame-iphone {
+    border-radius: 44px;
+    width: 220px;
+}
+.device-frame-ipad {
+    border-radius: 24px;
+    width: 310px;
+}
+
+/* Caption */
+.screenshot-label {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--grimasso-primary);
+    text-align: center;
+    max-width: 200px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .screenshots-scroll { padding: 12px 24px 20px; gap: 16px; }
+    .device-frame-iphone { width: 175px; border-radius: 36px; border-width: 8px; }
+    .device-frame-ipad { width: 240px; border-radius: 18px; border-width: 8px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .screenshots-scroll { scroll-behavior: auto; }
+}

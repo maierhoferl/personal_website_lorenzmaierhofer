@@ -267,3 +267,20 @@ document.addEventListener('DOMContentLoaded', () => {
     createScrollProgress();
 
 });
+
+// Screenshot device tab switcher
+(function() {
+    const tabs = document.querySelectorAll('.device-tab');
+    const carousels = document.querySelectorAll('.screenshots-carousel');
+    if (!tabs.length) return;
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            const target = tab.dataset.device;
+            carousels.forEach(c => {
+                c.classList.toggle('hidden', c.dataset.device !== target);
+            });
+        });
+    });
+})();
