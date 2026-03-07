@@ -254,94 +254,41 @@ if ('IntersectionObserver' in window) {
     });
 }
 
-// Mobile menu toggle (for future enhancement)
-const createMobileMenu = () => {
-    const navMenu = document.querySelector('.nav-menu');
-    const hamburger = document.createElement('button');
-    hamburger.className = 'hamburger';
-    hamburger.setAttribute('aria-label', 'Toggle menu');
-    hamburger.innerHTML = `
-        <span></span>
-        <span></span>
-        <span></span>
-    `;
+// Hamburger navigation
+(function initHamburger() {
+    const hamburger = document.getElementById('hamburgerToggle');
+    const navMenu = document.getElementById('navMenu');
+    if (!hamburger || !navMenu) return;
 
-    // Only add hamburger on mobile
-    if (window.innerWidth <= 480) {
-        const navContainer = document.querySelector('.nav-container');
-        if (navContainer && !document.querySelector('.hamburger')) {
-            navContainer.insertBefore(hamburger, navMenu);
-
-            hamburger.addEventListener('click', () => {
-                navMenu.classList.toggle('active');
-                hamburger.classList.toggle('active');
-            });
-        }
+    function openMenu() {
+        navMenu.classList.add('is-open');
+        hamburger.setAttribute('aria-expanded', 'true');
+        document.addEventListener('click', outsideClick, true);
+        document.addEventListener('keydown', escKey);
     }
-};
-
-// Add hamburger styles
-const hamburgerStyles = document.createElement('style');
-hamburgerStyles.textContent = `
-    .hamburger {
-        display: none;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 24px;
-        height: 18px;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        padding: 0;
+    function closeMenu() {
+        navMenu.classList.remove('is-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.removeEventListener('click', outsideClick, true);
+        document.removeEventListener('keydown', escKey);
+    }
+    function outsideClick(e) {
+        if (!document.querySelector('.navbar').contains(e.target)) closeMenu();
+    }
+    function escKey(e) {
+        if (e.key === 'Escape') { closeMenu(); hamburger.focus(); }
     }
 
-    .hamburger span {
-        display: block;
-        width: 100%;
-        height: 2px;
-        background: var(--text-primary);
-        transition: var(--transition-base);
-    }
-
-    .hamburger.active span:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active span:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    @media (max-width: 480px) {
-        .hamburger {
-            display: flex;
-        }
-
-        .nav-menu {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: var(--bg-dark);
-            flex-direction: column;
-            padding: 1rem 2rem;
-            border-bottom: 1px solid var(--border-color);
-            display: none;
-        }
-
-        .nav-menu.active {
-            display: flex;
-        }
-    }
-`;
-document.head.appendChild(hamburgerStyles);
-
-// Initialize mobile menu
-createMobileMenu();
-window.addEventListener('resize', createMobileMenu);
+    hamburger.addEventListener('click', () => {
+        hamburger.getAttribute('aria-expanded') === 'true' ? closeMenu() : openMenu();
+    });
+    navMenu.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 480) closeMenu();
+    });
+})();
 
 // LinkedIn Posts Loader
 const loadLinkedInPosts = async () => {

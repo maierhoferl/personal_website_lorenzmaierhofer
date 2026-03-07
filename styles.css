@@ -233,6 +233,110 @@ body {
     width: 100%;
 }
 
+/* Grimasso spotlight nav item */
+.grimasso-nav {
+    color: #33C759 !important;
+    border: 1px solid rgba(51, 199, 89, 0.5);
+    border-radius: 4px;
+    padding: 0.2rem 0.65rem;
+    position: relative;
+    box-shadow: 0 0 8px rgba(51, 199, 89, 0.2), inset 0 0 6px rgba(51, 199, 89, 0.08);
+    animation: grimasso-pulse 3s ease-in-out infinite;
+    overflow: visible;
+}
+
+.grimasso-nav::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: 4px;
+    background: radial-gradient(ellipse at center, rgba(51, 199, 89, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.grimasso-nav::after {
+    content: 'APP';
+    position: absolute;
+    top: -8px;
+    right: -4px;
+    font-size: 0.45rem;
+    font-family: var(--font-mono);
+    letter-spacing: 0.05em;
+    color: #33C759;
+    background: var(--bg-primary);
+    padding: 0 2px;
+    line-height: 1;
+    width: auto !important;
+    height: auto !important;
+    background-color: var(--bg-primary);
+}
+
+.grimasso-nav:hover,
+.grimasso-nav.active {
+    color: #33C759 !important;
+    border-color: #33C759;
+    box-shadow: 0 0 16px rgba(51, 199, 89, 0.45), inset 0 0 10px rgba(51, 199, 89, 0.12);
+    transform: scale(1.04);
+    background: rgba(51, 199, 89, 0.06);
+}
+
+/* Override the ::after underline animation for grimasso-nav */
+.grimasso-nav:hover::after,
+.grimasso-nav.active::after {
+    width: auto !important;
+    background: var(--bg-primary) !important;
+}
+
+@keyframes grimasso-pulse {
+    0%, 100% { box-shadow: 0 0 8px rgba(51, 199, 89, 0.2), inset 0 0 6px rgba(51, 199, 89, 0.08); }
+    50% { box-shadow: 0 0 14px rgba(51, 199, 89, 0.38), inset 0 0 10px rgba(51, 199, 89, 0.14); }
+}
+
+/* Hamburger button (hidden on desktop) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 5px 4px;
+    cursor: pointer;
+    color: var(--text-secondary);
+    transition: var(--transition-base);
+    flex-shrink: 0;
+}
+
+.hamburger:hover,
+.hamburger[aria-expanded="true"] {
+    border-color: var(--accent-cyan);
+    box-shadow: var(--glow-cyan);
+    color: var(--accent-cyan);
+}
+
+.ham-bar {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    border-radius: 2px;
+    transition: var(--transition-base);
+}
+
+/* X animation when open */
+.hamburger[aria-expanded="true"] .ham-bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+.hamburger[aria-expanded="true"] .ham-bar:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+.hamburger[aria-expanded="true"] .ham-bar:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
 .nav-social {
     display: flex;
     align-items: center;
@@ -1560,58 +1664,125 @@ body {
 }
 
 @media (max-width: 480px) {
+    /* Show hamburger */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Nav panel: hidden via max-height/opacity (not display:none, so transitions work) */
     .nav-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(10, 14, 23, 0.97);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid var(--border-color);
+        border-top: 1px solid rgba(0, 212, 255, 0.15);
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease, opacity 0.25s ease;
+        opacity: 0;
+        pointer-events: none;
+        z-index: 99;
+    }
+
+    .nav-menu.is-open {
+        max-height: 280px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav-container {
+        position: relative;
+    }
+
+    .nav-menu li {
+        border-bottom: 1px solid var(--border-color);
+    }
+    .nav-menu li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-link {
+        display: block;
+        font-size: 0.875rem;
+        padding: 0.9rem 1.5rem;
+        letter-spacing: 0.12em;
+    }
+
+    /* Suppress underline animation in dropdown */
+    .nav-link::after {
         display: none;
     }
 
-    .hero-label {
-        font-size: 0.625rem;
+    /* Active link: left accent bar instead of underline */
+    .nav-link.active {
+        color: var(--accent-cyan);
+        border-left: 3px solid var(--accent-cyan);
+        padding-left: calc(1.5rem - 3px);
+        background: rgba(0, 212, 255, 0.05);
     }
 
-    .title-line {
-        font-size: 2rem;
+    /* Grimasso link keeps its green glow in the dropdown */
+    .grimasso-nav {
+        margin: 0.5rem 1rem;
+    }
+    .grimasso-nav::after {
+        display: block;
     }
 
+    /* Light mode dropdown bg */
+    [data-theme="light"] .nav-menu {
+        background: rgba(248, 250, 252, 0.97);
+    }
+
+    /* Profile image — larger on mobile */
     .profile-image {
-        width: 220px;
-        height: 220px;
+        width: 250px;
+        height: 250px;
     }
-
     .profile-glow {
-        width: 260px;
-        height: 260px;
+        width: 290px;
+        height: 290px;
     }
-
     .profile-data {
-        min-width: 220px;
-        padding: 0.75rem;
+        min-width: 250px;
+        padding: 0.75rem 1rem;
     }
 
-    .data-value {
-        font-size: 0.75rem;
+    /* Hero spacing — release full-viewport lock */
+    .hero {
+        min-height: auto;
+        padding: 1.5rem 1rem 2rem;
     }
-
+    .hero-label {
+        font-size: 0.6rem;
+    }
+    .title-line {
+        font-size: clamp(1.75rem, 8vw, 2.25rem);
+    }
     .hero-visual {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
     }
-
     .hero-cta {
         flex-direction: column;
         align-items: center;
     }
-
     .btn {
         width: 100%;
         justify-content: center;
     }
-
     .expertise-grid,
     .news-grid,
     .projects-grid,
     .topics-grid {
         grid-template-columns: 1fr;
     }
-
     .stat-card:hover {
         transform: none;
     }
