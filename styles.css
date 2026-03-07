@@ -1620,7 +1620,17 @@ body {
         height: 300px;
     }
 
+    .profile-frame {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 0;
+    }
+
     .profile-data {
+        position: static;
+        transform: none;
         min-width: 260px;
         flex-direction: column;
         gap: 0.5rem;
@@ -1750,7 +1760,14 @@ body {
         width: 290px;
         height: 290px;
     }
+    .profile-frame {
+        gap: 1rem;
+        padding: 0;
+    }
+
     .profile-data {
+        position: static;
+        transform: none;
         min-width: 250px;
         padding: 0.75rem 1rem;
     }
