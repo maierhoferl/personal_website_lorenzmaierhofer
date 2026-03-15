@@ -1738,3 +1738,90 @@ p, li, a, span, div {
 @media (prefers-reduced-motion: reduce) {
     .screenshots-scroll { scroll-behavior: auto; }
 }
+
+/* ============================================
+   CHINESE (ZH) CULTURAL OVERRIDES
+   Red/gold accent palette, Chinese font support
+   ============================================ */
+
+.zh {
+    font-family: 'Nunito', 'PingFang SC', 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+    line-height: 1.8;
+}
+
+/* CTA buttons — Chinese red with gold hover */
+.zh .btn-grimasso-primary {
+    background: #E53935;
+    box-shadow: 0 4px 15px rgba(229, 57, 53, 0.4);
+}
+
+.zh .btn-grimasso-primary:hover {
+    background: #FFD700;
+    color: #333;
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.5);
+}
+
+/* Hero accent text — gold gradient */
+.zh .grimasso-name {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA000 50%, #FFD700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Stats numbers — gold */
+.zh .stat-number {
+    color: #FFD700;
+}
+
+/* Screenshot labels — red accent */
+.zh .screenshot-label {
+    color: #E53935;
+}
+
+/* Device tab — red accent */
+.zh .device-tab {
+    border-color: #E53935;
+    color: #E53935;
+}
+
+.zh .device-tab.active {
+    background: #E53935;
+    color: #fff;
+}
+
+.zh .device-tab:hover:not(.active) {
+    background: rgba(229, 57, 53, 0.12);
+}
+
+/* Section labels — red */
+.zh .grimasso-section-label {
+    color: #E53935;
+}
+
+/* Hero badge — red border */
+.zh .hero-badge {
+    border-color: rgba(229, 57, 53, 0.3);
+    color: #E53935;
+}
+
+/* Trust section icon highlight */
+.zh .trust-item p {
+    color: var(--text-primary);
+}
+
+/* CTA section — red/gold gradient */
+.zh .grimasso-cta-section {
+    background: linear-gradient(135deg, rgba(229, 57, 53, 0.08) 0%, rgba(255, 215, 0, 0.08) 100%);
+}
+
+/* Scroll progress bar — red/gold gradient */
+.zh .grimasso-scroll-progress {
+    background: linear-gradient(90deg,
+        #E53935 0%,
+        #FFD700 30%,
+        #E53935 60%,
+        #FFD700 100%
+    );
+    box-shadow: 0 0 8px rgba(229, 57, 53, 0.4);
+}

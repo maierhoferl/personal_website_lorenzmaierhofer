@@ -62,6 +62,7 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/"/>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -73,6 +74,7 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/"/>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -84,6 +86,19 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Grimasso - Chinese -->
+    <url>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/"/>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>

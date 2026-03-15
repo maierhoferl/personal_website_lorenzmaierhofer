@@ -8,11 +8,11 @@ Personal website for Lorenz Maierhofer, Senior Director and Global Lead for AI F
 
 ## Architecture
 
-**Static HTML/CSS/JS site with multilingual support (English/German/French)**
+**Static HTML/CSS/JS site with multilingual support (English/German/French/Chinese)**
 
 - Root level: English pages (`index.html`, `news.html`, `projects.html`)
 - `/de/` folder: German pages (same structure)
-- `/grimasso/` folder: Trilingual Grimasso app subsite (EN, DE `/de/`, FR `/fr/`)
+- `/grimasso/` folder: Quadrilingual Grimasso app subsite (EN, DE `/de/`, FR `/fr/`, ZH `/zh/`)
 - Single shared `styles.css` and `script.js` (German/French pages reference via `../`)
 - `grimasso/grimasso-styles.css` and `grimasso/grimasso-script.js` for Grimasso branding
 - `linkedin_posts.json`: Configuration for dynamically loaded LinkedIn post embeds
@@ -44,12 +44,13 @@ Local server needed for `linkedin_posts.json` fetch to work (CORS).
 
 ## Grimasso Subsite
 
-**Trilingual Tongue-Training App Landing Page** (EN, DE, FR)
+**Quadrilingual Tongue-Training App Landing Page** (EN, DE, FR, ZH)
 
 **Structure**
 - `/grimasso/index.html` - English landing page
 - `/grimasso/de/index.html` - German landing page
 - `/grimasso/fr/index.html` - French landing page
+- `/grimasso/zh/index.html` - Chinese (Simplified) landing page
 - `/grimasso/grimasso-styles.css` - Custom styling (kid-friendly, bright palette #33C759 primary)
 - `/grimasso/grimasso-script.js` - Interactive features (animations, confetti, count-ups)
 - `/grimasso/Grimasso_Welcome.mov` - Hero video (with image fallback)
@@ -67,23 +68,34 @@ Local server needed for `linkedin_posts.json` fetch to work (CORS).
 - Scroll progress indicator bar
 - Accessibility: respects prefers-reduced-motion
 
+**Chinese (ZH) Cultural Adaptation**
+- `<body class="zh">` enables CSS overrides scoped to `.zh` in `grimasso-styles.css`
+- Red/gold color palette: CTA buttons #E53935 (Chinese red), hover #FFD700 (gold), gold stat numbers and hero text
+- Chinese font stack: `'PingFang SC', 'Noto Sans SC', 'Microsoft YaHei'` with 1.8 line-height
+- Noto Sans SC loaded from Google Fonts in the ZH page `<head>`
+- Chinese App Store link (`/cn/`), CNY currency in JSON-LD
+- Content tone: 您 (formal) for parents, 你 (casual) for kids
+- Key terminology: 口腔肌肉训练 (oral muscle training), 关卡 (game levels), 连续打卡 (streaks), 成就徽章 (badges)
+- Back-to-main link points to `/` (no Chinese main site)
+
 **Universal Commerce Protocol (UCP)**
-- Enhanced JSON-LD structured data on all 3 pages
+- Enhanced JSON-LD structured data on all 4 pages
 - MobileApplication schema with Offer details (free, InStock availability)
 - AggregateRating, seller info, keywords for agent discoverability
-- Localized offers (USD for US, EUR for CH/DE/FR)
+- Localized offers (USD for US, EUR for CH/DE/FR, CNY for CN)
 - Makes Grimasso discoverable to commerce agents and platforms
 
 **SEO & Navigation**
-- Trilingual hreflang tags in sitemap.xml
+- Quadrilingual hreflang tags in sitemap.xml (EN, DE, FR, ZH)
 - Canonical URLs for each language version
-- Back-to-main links with proper localization (/de/ for German, /fr/ for French)
-- Language switcher with active state highlighting
+- Back-to-main links with proper localization (/de/ for German, /fr/ for French, / for Chinese)
+- Language switcher with active state highlighting (EN/FR/DE/ZH)
 
 ## File Conventions
 
-- When updating content, ensure changes are made to all relevant language versions (EN, DE, FR)
+- When updating content, ensure changes are made to all relevant language versions (EN, DE, FR, ZH for Grimasso)
 - German translations should use proper umlauts (ä, ö, ü) not ASCII substitutes (ae, oe, ue)
+- Chinese translations should use Simplified Chinese characters, address parents with 您 (formal)
 - Image assets and videos go in root directory or `/grimasso/`, referenced with proper paths
 - Link styling in project cards (`.project-card h2 a`, `.project-card p a`) uses theme colors with hover effects
 - When formatting headings with links: inherit text color, add cyan accent on hover with underline
