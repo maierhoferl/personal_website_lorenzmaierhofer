@@ -1825,3 +1825,159 @@ p, li, a, span, div {
     );
     box-shadow: 0 0 8px rgba(229, 57, 53, 0.4);
 }
+
+/* ============================================
+   FAQ ACCORDION
+   ============================================ */
+.faq-list {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.faq-item {
+    background: var(--bg-card);
+    border: 1.5px solid var(--border-color);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faq-item:hover {
+    border-color: var(--grimasso-primary);
+    box-shadow: 0 4px 16px rgba(51, 199, 89, 0.12);
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--grimasso-font);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-align: left;
+    line-height: 1.4;
+    transition: color 0.2s ease;
+}
+
+.faq-question:hover,
+.faq-question[aria-expanded="true"] {
+    color: var(--grimasso-primary);
+}
+
+.faq-icon {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(51, 199, 89, 0.12);
+    color: var(--grimasso-primary);
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.25s ease, background 0.2s ease;
+    line-height: 1;
+}
+
+.faq-question[aria-expanded="true"] .faq-icon {
+    transform: rotate(45deg);
+    background: var(--grimasso-primary);
+    color: white;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+    padding: 0 24px;
+}
+
+.faq-answer.open {
+    max-height: 300px;
+    padding: 0 24px 20px;
+}
+
+.faq-answer p {
+    font-size: 0.97rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* ============================================
+   EMAIL CAPTURE SECTION
+   ============================================ */
+.grimasso-email-section {
+    padding: 64px 24px;
+    background: linear-gradient(135deg, rgba(51, 199, 89, 0.06) 0%, rgba(102, 179, 255, 0.06) 100%);
+    text-align: center;
+}
+
+.email-capture-form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 480px;
+    margin: 0 auto 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.email-input {
+    flex: 1;
+    min-width: 220px;
+    padding: 14px 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 50px;
+    font-family: var(--grimasso-font);
+    font-size: 1rem;
+    color: var(--text-primary);
+    background: var(--bg-card);
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.email-input:focus {
+    border-color: var(--grimasso-primary);
+    box-shadow: 0 0 0 4px rgba(51, 199, 89, 0.15);
+}
+
+.email-input::placeholder {
+    color: var(--text-muted);
+}
+
+.email-success-msg {
+    font-family: var(--grimasso-font);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--grimasso-primary);
+    margin: 8px 0;
+}
+
+.email-disclaimer {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin: 4px 0 0;
+}
+
+@media (max-width: 520px) {
+    .email-capture-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .email-input {
+        min-width: unset;
+        width: 100%;
+    }
+}

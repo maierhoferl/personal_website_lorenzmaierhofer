@@ -268,6 +268,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+// ============================================
+// FAQ ACCORDION
+// ============================================
+(function() {
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const isOpen = btn.getAttribute('aria-expanded') === 'true';
+                const answer = btn.nextElementSibling;
+
+                // Close all others
+                document.querySelectorAll('.faq-question').forEach(b => {
+                    b.setAttribute('aria-expanded', 'false');
+                    if (b.nextElementSibling) b.nextElementSibling.classList.remove('open');
+                });
+
+                // Toggle current
+                if (!isOpen) {
+                    btn.setAttribute('aria-expanded', 'true');
+                    answer.classList.add('open');
+                }
+            });
+        });
+    });
+})();
+
+// ============================================
+// EMAIL CAPTURE FORM
+// ============================================
+function handleEmailSubmit(event) {
+    event.preventDefault();
+    const form = document.getElementById('emailCaptureForm');
+    const successMsg = document.getElementById('emailSuccessMsg');
+    if (form && successMsg) {
+        form.style.display = 'none';
+        successMsg.style.display = 'block';
+    }
+}
+
 // Screenshot device tab switcher
 (function() {
     const tabs = document.querySelectorAll('.device-tab');
@@ -284,3 +323,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 })();
+
+// ============================================
+// EMAIL CAPTURE FORM - GERMAN
+// ============================================
+function handleEmailSubmitDE(event) {
+    event.preventDefault();
+    const form = document.getElementById('emailCaptureFormDE');
+    const successMsg = document.getElementById('emailSuccessMsgDE');
+    if (form && successMsg) {
+        form.style.display = 'none';
+        successMsg.style.display = 'block';
+    }
+}
