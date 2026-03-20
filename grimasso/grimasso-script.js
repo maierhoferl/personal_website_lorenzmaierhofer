@@ -4,6 +4,38 @@
    Theme toggle & nav scroll handled by main script.js
    ============================================ */
 
+// Auto language detection & redirect (first visit only)
+(function () {
+  // Mark explicit language choice when user clicks switcher
+  document.addEventListener('click', function (e) {
+    if (e.target.closest('.lang-switch')) {
+      localStorage.setItem('langChosen', '1');
+    }
+  });
+
+  if (localStorage.getItem('langChosen')) return;
+
+  const lang = ((navigator.languages && navigator.languages[0]) || navigator.language || 'en').toLowerCase();
+  const path = window.location.pathname;
+
+  let current;
+  if (path.includes('/grimasso/de/')) current = 'de';
+  else if (path.includes('/grimasso/fr/')) current = 'fr';
+  else if (path.includes('/grimasso/zh/')) current = 'zh';
+  else current = 'en';
+
+  let target;
+  if (lang.startsWith('de')) target = 'de';
+  else if (lang.startsWith('fr')) target = 'fr';
+  else if (lang.startsWith('zh')) target = 'zh';
+  else target = 'en';
+
+  if (target === current) return;
+
+  const roots = { en: '/grimasso/', de: '/grimasso/de/', fr: '/grimasso/fr/', zh: '/grimasso/zh/' };
+  window.location.replace(roots[target]);
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // Check for reduced motion preference
@@ -336,3 +368,14 @@ function handleEmailSubmitDE(event) {
         successMsg.style.display = 'block';
     }
 }
+
+// ============================================
+// ANALYTICS - Plausible (GDPR-friendly, no cookies)
+// ============================================
+(function() {
+    var s = document.createElement('script');
+    s.defer = true;
+    s.setAttribute('data-domain', 'lorenzmaierhofer.com');
+    s.src = 'https://plausible.io/js/script.js';
+    document.head.appendChild(s);
+})();

@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../../../favicon.png">
-    <title>Grimasso für Logopädinnen &amp; Fachkräfte | Kostenlose myofunktionelle Therapie App</title>
+    <title>Grimasso pour les orthophonistes et professionnels | Grimasso</title>
 
-    <meta name="description" content="Empfehlen Sie Grimasso Ihren Patientinnen als kostenfreies, evidenzbasiertes Hausaufgaben-Tool. Keine Werbung, keine Datenweitergabe. Ideal für Logopädinnen, Kieferorthopädinnen und Myofunktionstherapeutinnen.">
-    <meta name="keywords" content="Logopädie App Empfehlung, myofunktionelle Therapie Hausaufgaben, Mundmotorik App Logopädin, App für Logopädie-Patienten, Zungenübungen Logopädie, Logopädin App empfehlen">
+    <meta name="description" content="Recommandez Grimasso à vos patients comme outil de devoirs myofonctionnels gratuit et fondé sur des données probantes. Sans publicité, sans partage de données. Idéal pour les orthophonistes, orthodontistes et thérapeutes myofonctionnels.">
+    <meta name="keywords" content="application orthophonie recommandation, exercices myofonctionnels devoirs, app orthophoniste patients, exercices langue orthophonie, recommander app enfants orthophonie">
     <meta name="author" content="Lorenz Maierhofer">
     <meta name="robots" content="index, follow">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Grimasso für Logopädinnen &amp; Fachkräfte">
-    <meta property="og:description" content="Empfehlen Sie Grimasso Ihren Patientinnen als kostenfreies, evidenzbasiertes Hausaufgaben-Tool für myofunktionelle Therapie.">
+    <meta property="og:title" content="Grimasso pour les orthophonistes &amp; professionnels">
+    <meta property="og:description" content="Recommandez Grimasso à vos patients comme outil de devoirs myofonctionnels gratuit et fondé sur des données probantes.">
     <meta property="og:image" content="https://lorenzmaierhofer.com/Grimasso_Main.jpg">
-    <meta property="og:url" content="https://lorenzmaierhofer.com/grimasso/de/fuer-logopaedinnen/">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:url" content="https://lorenzmaierhofer.com/grimasso/fr/pour-les-professionnels/">
 
-    <link rel="canonical" href="https://lorenzmaierhofer.com/grimasso/de/fuer-logopaedinnen/">
-    <link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/fuer-logopaedinnen/">
+    <link rel="canonical" href="https://lorenzmaierhofer.com/grimasso/fr/pour-les-professionnels/">
+    <link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/pour-les-professionnels/">
     <link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/for-slps/">
-    <link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/pour-les-professionnels/"/>
+    <link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/fuer-logopaedinnen/">
     <link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/for-slps/">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +30,6 @@
     <link rel="stylesheet" href="../../../styles.css">
     <link rel="stylesheet" href="../../grimasso-styles.css">
     <style>
-        /* Trust badges */
         .trust-badges {
             display: flex;
             flex-wrap: wrap;
@@ -50,7 +50,6 @@
             font-weight: 700;
             color: var(--grimasso-dark);
         }
-        /* Pro types grid */
         .pro-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -70,11 +69,7 @@
             border-color: var(--grimasso-primary);
             box-shadow: 0 8px 24px rgba(51,199,89,0.12);
         }
-        .pro-card-icon {
-            font-size: 2rem;
-            margin-bottom: 12px;
-            display: block;
-        }
+        .pro-card-icon { font-size: 2rem; margin-bottom: 12px; display: block; }
         .pro-card h3 {
             font-family: var(--grimasso-font);
             font-size: 1.05rem;
@@ -82,13 +77,7 @@
             color: var(--text-primary);
             margin: 0 0 10px;
         }
-        .pro-card p {
-            font-size: 0.92rem;
-            line-height: 1.6;
-            color: var(--text-secondary);
-            margin: 0;
-        }
-        /* Features for professionals */
+        .pro-card p { font-size: 0.92rem; line-height: 1.6; color: var(--text-secondary); margin: 0; }
         .pro-features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -97,16 +86,8 @@
             margin: 40px auto 0;
             padding: 0 24px;
         }
-        .pro-feature-item {
-            display: flex;
-            gap: 16px;
-            align-items: flex-start;
-        }
-        .pro-feature-icon {
-            font-size: 1.8rem;
-            flex-shrink: 0;
-            margin-top: 2px;
-        }
+        .pro-feature-item { display: flex; gap: 16px; align-items: flex-start; }
+        .pro-feature-icon { font-size: 1.8rem; flex-shrink: 0; margin-top: 2px; }
         .pro-feature-item h4 {
             font-family: var(--grimasso-font);
             font-size: 1rem;
@@ -114,13 +95,7 @@
             color: var(--text-primary);
             margin: 0 0 6px;
         }
-        .pro-feature-item p {
-            font-size: 0.9rem;
-            line-height: 1.6;
-            color: var(--text-secondary);
-            margin: 0;
-        }
-        /* Steps */
+        .pro-feature-item p { font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary); margin: 0; }
         .steps-row {
             display: flex;
             gap: 24px;
@@ -154,20 +129,8 @@
             justify-content: center;
             margin: 0 auto 16px;
         }
-        .step-item h3 {
-            font-family: var(--grimasso-font);
-            font-weight: 800;
-            font-size: 1rem;
-            color: var(--text-primary);
-            margin: 0 0 8px;
-        }
-        .step-item p {
-            font-size: 0.88rem;
-            line-height: 1.6;
-            color: var(--text-secondary);
-            margin: 0;
-        }
-        /* Referral kit box */
+        .step-item h3 { font-family: var(--grimasso-font); font-weight: 800; font-size: 1rem; color: var(--text-primary); margin: 0 0 8px; }
+        .step-item p { font-size: 0.88rem; line-height: 1.6; color: var(--text-secondary); margin: 0; }
         .referral-kit-box {
             max-width: 640px;
             margin: 0 auto;
@@ -177,50 +140,14 @@
             padding: 40px;
             text-align: center;
         }
-        .referral-kit-box h3 {
-            font-family: var(--grimasso-font);
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--text-primary);
-            margin: 0 0 12px;
-        }
-        .referral-kit-box p {
-            font-size: 0.95rem;
-            color: var(--text-secondary);
-            line-height: 1.6;
-            margin: 0 0 20px;
-        }
-        .referral-kit-langs {
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-            margin-bottom: 24px;
-            flex-wrap: wrap;
-        }
-        .lang-pill {
-            padding: 5px 14px;
-            border-radius: 50px;
-            font-size: 0.8rem;
-            font-weight: 700;
-            font-family: var(--grimasso-font);
-        }
-        .lang-pill.available {
-            background: rgba(51,199,89,0.12);
-            color: var(--grimasso-dark);
-            border: 1px solid rgba(51,199,89,0.3);
-        }
-        .lang-pill.coming-soon {
-            background: rgba(119,119,136,0.08);
-            color: var(--text-muted);
-            border: 1px solid var(--border-color);
-        }
-        .referral-kit-note {
-            font-size: 0.82rem;
-            color: var(--text-muted);
-            margin: 16px 0 0;
-        }
+        .referral-kit-box h3 { font-family: var(--grimasso-font); font-size: 1.5rem; font-weight: 800; color: var(--text-primary); margin: 0 0 12px; }
+        .referral-kit-box p { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin: 0 0 20px; }
+        .referral-kit-langs { display: flex; gap: 10px; justify-content: center; margin-bottom: 24px; flex-wrap: wrap; }
+        .lang-pill { padding: 5px 14px; border-radius: 50px; font-size: 0.8rem; font-weight: 700; font-family: var(--grimasso-font); }
+        .lang-pill.available { background: rgba(51,199,89,0.12); color: var(--grimasso-dark); border: 1px solid rgba(51,199,89,0.3); }
+        .lang-pill.coming-soon { background: rgba(119,119,136,0.08); color: var(--text-muted); border: 1px solid var(--border-color); }
+        .referral-kit-note { font-size: 0.82rem; color: var(--text-muted); margin: 16px 0 0; }
         .referral-kit-note a { color: var(--grimasso-primary); }
-        /* Testimonials */
         .testimonials-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -236,72 +163,37 @@
             border-radius: 12px;
             padding: 24px 24px 24px 20px;
         }
-        .testimonial-card blockquote {
-            margin: 0 0 16px;
-            font-size: 0.95rem;
-            line-height: 1.7;
-            color: var(--text-secondary);
-            font-style: italic;
-        }
-        .testimonial-card cite {
-            font-size: 0.82rem;
-            color: var(--text-muted);
-            font-style: normal;
-            font-weight: 700;
-        }
-        /* FAQ */
-        .pro-faq-list {
-            max-width: 720px;
-            margin: 40px auto 0;
-            padding: 0 24px;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-        .pro-faq-item {
-            background: var(--bg-card);
-            border: 1.5px solid var(--border-color);
-            border-radius: 14px;
-            padding: 20px 24px;
-        }
-        .pro-faq-item h4 {
-            font-family: var(--grimasso-font);
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin: 0 0 8px;
-        }
-        .pro-faq-item p {
-            font-size: 0.92rem;
-            line-height: 1.6;
-            color: var(--text-secondary);
-            margin: 0;
-        }
+        .testimonial-card blockquote { margin: 0 0 16px; font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary); font-style: italic; }
+        .testimonial-card cite { font-size: 0.82rem; color: var(--text-muted); font-style: normal; font-weight: 700; }
+        .pro-faq-list { max-width: 720px; margin: 40px auto 0; padding: 0 24px; display: flex; flex-direction: column; gap: 12px; }
+        .pro-faq-item { background: var(--bg-card); border: 1.5px solid var(--border-color); border-radius: 14px; padding: 20px 24px; }
+        .pro-faq-item h4 { font-family: var(--grimasso-font); font-size: 1rem; font-weight: 700; color: var(--text-primary); margin: 0 0 8px; }
+        .pro-faq-item p { font-size: 0.92rem; line-height: 1.6; color: var(--text-secondary); margin: 0; }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="/grimasso/de/index.html" class="nav-logo">
+            <a href="/grimasso/fr/index.html" class="nav-logo">
                 <span class="logo-text">Grimasso</span>
             </a>
             <ul class="nav-menu">
-                <li><a href="/grimasso/de/index.html" class="nav-link">Startseite</a></li>
-                <li><a href="/grimasso/de/blog/index.html" class="nav-link">Blog</a></li>
-                <li><a href="/grimasso/de/fuer-logopaedinnen/index.html" class="nav-link active">Für Fachkräfte</a></li>
+                <li><a href="/grimasso/fr/index.html" class="nav-link">Accueil</a></li>
+                <li><a href="/grimasso/fr/blog/index.html" class="nav-link">Blog</a></li>
+                <li><a href="/grimasso/fr/pour-les-professionnels/index.html" class="nav-link active">Pour les pros</a></li>
                 <li><a href="https://apps.apple.com/ch/app/grimasso/id6758241652" target="_blank" rel="noopener" class="nav-link">App Store</a></li>
             </ul>
             <div class="nav-social">
-                <a href="/de/index.html" class="back-to-main">
+                <a href="/index.html" class="back-to-main">
                     <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
                     lorenzmaierhofer.com
                 </a>
                 <div class="grimasso-lang-switcher">
                     <a href="/grimasso/for-slps/index.html" class="lang-switch" title="English">EN</a>
-                    <a href="/grimasso/de/fuer-logopaedinnen/index.html" class="lang-switch active" title="Deutsch">DE</a>
+                    <a href="/grimasso/fr/pour-les-professionnels/index.html" class="lang-switch active" title="Français">FR</a>
+                    <a href="/grimasso/de/fuer-logopaedinnen/index.html" class="lang-switch" title="Deutsch">DE</a>
                 </div>
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <button class="theme-toggle" id="themeToggle" aria-label="Changer le thème">
                     <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 17.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm0 1.5a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-17a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 12 2zm0 18a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 12 20zM4.22 4.22a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 0 1-1.06 1.06L4.22 5.28a.75.75 0 0 1 0-1.06zm13.44 13.44a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 0 1-1.06 1.06l-1.06-1.06a.75.75 0 0 1 0-1.06zM2 12a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5A.75.75 0 0 1 2 12zm18 0a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5A.75.75 0 0 1 20 12zM5.28 17.66a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0zm13.44-13.44a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0z"/></svg>
                     <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
                 </button>
@@ -311,71 +203,66 @@
 
     <main class="main-content">
 
-        <!-- Hero Section -->
         <section class="grimasso-hero" style="min-height: auto; padding: 80px 24px 60px;">
             <div class="hero-bubble"></div><div class="hero-bubble"></div>
             <div class="hero-bubble"></div><div class="hero-bubble"></div>
             <div style="text-align: center; max-width: 720px; margin: 0 auto; position: relative; z-index: 1;">
-                <div class="hero-badge" style="margin: 0 auto 24px;">Für Logopädinnen, Kieferorthopädinnen &amp; Myofunktionstherapeutinnen</div>
+                <div class="hero-badge" style="margin: 0 auto 24px;">Pour les orthophonistes, orthodontistes &amp; thérapeutes myofonctionnels</div>
                 <h1 style="font-family: var(--grimasso-font); font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; color: var(--text-primary); line-height: 1.2; margin: 0 0 20px;">
-                    Das kostenlose Hausaufgaben-Tool,<br><span class="grimasso-name">das Ihre Patientinnen wirklich nutzen</span>
+                    L'outil de devoirs gratuit<br><span class="grimasso-name">que vos patients utilisent vraiment</span>
                 </h1>
                 <p style="font-size: 1.15rem; color: var(--text-secondary); line-height: 1.7; max-width: 560px; margin: 0 auto 32px;">
-                    Grimasso verwandelt myofunktionelle Übungen in ein Spiel. Kinder üben täglich — und Sie sehen es im Eltern-Dashboard.
+                    Grimasso transforme les exercices myofonctionnels en jeu. Les enfants s'entraînent chaque jour — et vous le voyez dans le tableau de bord parental.
                 </p>
                 <div class="hero-cta-group">
                     <a href="https://apps.apple.com/ch/app/grimasso/id6758241652" target="_blank" rel="noopener" class="btn-grimasso btn-grimasso-primary">
                         <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
-                        Kostenlos im App Store
-                    </a>
-                    <a href="/grimasso/de/fuer-logopaedinnen/grimasso-empfehlungskarte-de.pdf" class="btn-grimasso btn-grimasso-secondary">
-                        Empfehlungskarte herunterladen (PDF)
+                        Gratuit sur l'App Store
                     </a>
                 </div>
                 <div class="trust-badges">
-                    <span class="trust-badge">&#x2705; Keine Werbung</span>
-                    <span class="trust-badge">&#x2705; Keine Datenweitergabe</span>
-                    <span class="trust-badge">&#x2705; Evidenzbasiert</span>
-                    <span class="trust-badge">&#x2705; Dauerhaft kostenlos</span>
-                    <span class="trust-badge">&#x2705; DSGVO-konform</span>
+                    <span class="trust-badge">&#x2705; Sans publicité</span>
+                    <span class="trust-badge">&#x2705; Sans partage de données</span>
+                    <span class="trust-badge">&#x2705; Fondé sur des preuves</span>
+                    <span class="trust-badge">&#x2705; Gratuit pour toujours</span>
+                    <span class="trust-badge">&#x2705; Conforme RGPD</span>
                 </div>
             </div>
         </section>
 
         <svg class="section-wave" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="rgba(51,199,89,0.07)"/></svg>
 
-        <!-- Who It's For -->
         <section class="grimasso-section" id="who">
             <div class="grimasso-section-header">
-                <span class="grimasso-section-label">Für Kliniker*innen</span>
-                <h2 class="grimasso-section-title">Wer Grimasso mit Patientinnen einsetzt</h2>
-                <p class="grimasso-section-subtitle">Von Logopädinnen bis Kieferorthopädinnen bis HNO-Ärztinnen — Grimasso passt sich nahtlos in jeden myofunktionellen Therapie-Workflow ein.</p>
+                <span class="grimasso-section-label">Pour les cliniciens</span>
+                <h2 class="grimasso-section-title">Qui utilise Grimasso avec ses patients</h2>
+                <p class="grimasso-section-subtitle">Des orthophonistes aux orthodontistes en passant par les ORL — Grimasso s'intègre naturellement dans tout workflow de thérapie myofonctionnelle.</p>
             </div>
             <div class="pro-grid">
                 <div class="pro-card">
                     <span class="pro-card-icon">&#x1F5E3;&#xFE0F;</span>
-                    <h3>Logopädinnen &amp; Logopäden</h3>
-                    <p>Als Hausaufgaben-Tool empfehlen. Das Eltern-Dashboard zeigt, welche Übungen absolviert wurden — für ein datenbasiertes Feedback bei der nächsten Sitzung.</p>
+                    <h3>Orthophonistes</h3>
+                    <p>À recommander comme outil de devoirs. Le tableau de bord parental montre quels exercices ont été réalisés — pour un retour basé sur des données à la séance suivante.</p>
                 </div>
                 <div class="pro-card">
                     <span class="pro-card-icon">&#x1F9B7;</span>
-                    <h3>Kieferorthopädinnen</h3>
-                    <p>Zungenposition beeinflusst direkt die Bissentwicklung. Geben Sie Familien ein kostenloses Tool zur Korrektur von Zungenpressen und Schluckmustern — vor und nach der Behandlung.</p>
+                    <h3>Orthodontistes</h3>
+                    <p>La position de la langue influence directement le développement de l'occlusion. Donnez aux familles un outil gratuit pour corriger la déglutition atypique et la posture linguale.</p>
                 </div>
                 <div class="pro-card">
                     <span class="pro-card-icon">&#x1F9D1;&#x200D;&#x2695;&#xFE0F;</span>
-                    <h3>Myofunktionstherapeutinnen</h3>
-                    <p>Ihr Protokoll, gamifiziert. Grimasso deckt alle fünf Kategorien ab: Zungenspitze, Zungenkraft, Zungenkontrolle, Schlucken und Kiefermuskeln.</p>
+                    <h3>Thérapeutes myofonctionnels</h3>
+                    <p>Votre protocole, gamifié. Grimasso couvre les cinq catégories : pointe de langue, force linguale, contrôle lingual, déglutition et muscles mandibulaires.</p>
                 </div>
                 <div class="pro-card">
                     <span class="pro-card-icon">&#x1F3E5;</span>
-                    <h3>HNO-Ärztinnen &amp; Kinderärztinnen</h3>
-                    <p>Für Patientinnen mit Mundatmung, schlafbezogenen Atmungsstörungen oder Zungenband — geben Sie Familien ein strukturiertes, tägliches Übungstool mit auf den Weg.</p>
+                    <h3>ORL &amp; pédiatres</h3>
+                    <p>Pour les patients présentant une respiration buccale, des troubles respiratoires du sommeil ou un frein de langue — donnez aux familles un outil d'exercice structuré et quotidien.</p>
                 </div>
                 <div class="pro-card">
                     <span class="pro-card-icon">&#x1F9F4;</span>
-                    <h3>Kinderzahnärztinnen</h3>
-                    <p>Falsches Schluckmuster beeinflusst die Zahnbogenentwicklung. Grimasso lehrt die korrekte Schlucktechnik in einem Format, das Kinder täglich nutzen wollen.</p>
+                    <h3>Chirurgiens-dentistes pédiatriques</h3>
+                    <p>Une déglutition atypique influence le développement des arcades dentaires. Grimasso enseigne la technique de déglutition correcte dans un format que les enfants veulent utiliser chaque jour.</p>
                 </div>
             </div>
         </section>
@@ -383,54 +270,53 @@
         <svg class="section-wave section-wave-bottom" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C360,55 720,5 1080,30 C1260,45 1380,15 1440,30 L1440,0 L0,0 Z" fill="rgba(51,199,89,0.07)"/></svg>
         <svg class="section-wave" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C180,55 420,5 720,30 C1020,55 1260,5 1440,30 L1440,60 L0,60 Z" fill="rgba(102,179,255,0.07)"/></svg>
 
-        <!-- Key Features for Professionals -->
         <section class="grimasso-section" id="features">
             <div class="grimasso-section-header">
-                <span class="grimasso-section-label">Klinischer Nutzen</span>
-                <h2 class="grimasso-section-title">Was Grimasso klinisch wertvoll macht</h2>
-                <p class="grimasso-section-subtitle">Entwickelt, um die größte Herausforderung in der myofunktionellen Therapie zu lösen: Kinder dazu zu bringen, zuhause wirklich zu üben.</p>
+                <span class="grimasso-section-label">Valeur clinique</span>
+                <h2 class="grimasso-section-title">Ce qui rend Grimasso cliniquement précieux</h2>
+                <p class="grimasso-section-subtitle">Conçu pour résoudre le principal défi de la thérapie myofonctionnelle : amener les enfants à s'entraîner vraiment à la maison.</p>
             </div>
             <div class="pro-features-grid">
                 <div class="pro-feature-item">
                     <span class="pro-feature-icon">&#x1F512;</span>
                     <div>
-                        <h4>Eltern-Dashboard</h4>
-                        <p>PIN-geschützt. Sehen Sie, welche Übungen Ihr Patient abgeschlossen hat, wie viele Tage in Folge geübt wurde und den Gesamtfortschritt über alle 20 Level.</p>
+                        <h4>Tableau de bord parental</h4>
+                        <p>Protégé par code PIN. Voyez quels exercices votre patient a réalisés, combien de jours consécutifs il s'est entraîné et la progression globale sur les 20 niveaux.</p>
                     </div>
                 </div>
                 <div class="pro-feature-item">
                     <span class="pro-feature-icon">&#x1F9EC;</span>
                     <div>
-                        <h4>100 evidenzbasierte Übungen</h4>
-                        <p>Fünf Kategorien — Zungenspitze, Zungenkraft, Zungenkontrolle, Schlucken, Kiefermuskeln — fundiert in etablierten myofunktionellen Therapieprotokollen.</p>
+                        <h4>100 exercices fondés sur des preuves</h4>
+                        <p>Cinq catégories — pointe de langue, force linguale, contrôle lingual, déglutition, muscles mandibulaires — fondées sur des protocoles de thérapie myofonctionnelle établis.</p>
                     </div>
                 </div>
                 <div class="pro-feature-item">
                     <span class="pro-feature-icon">&#x1F4F7;</span>
                     <div>
-                        <h4>Spiegel-Kamera</h4>
-                        <p>Eingebaute Kamera mit Gesichtserkennung. Kinder üben mit visuellem Feedback — genau wie in Ihrer Praxis. Selbstkorrektur entsteht natürlich.</p>
+                        <h4>Caméra miroir</h4>
+                        <p>Caméra intégrée avec retour visuel. Les enfants s'entraînent en se voyant — comme dans votre cabinet. L'autocorrection se produit naturellement.</p>
                     </div>
                 </div>
                 <div class="pro-feature-item">
                     <span class="pro-feature-icon">&#x1F381;</span>
                     <div>
-                        <h4>Kostenlos &amp; keine Werbung</h4>
-                        <p>Kein Abonnement. Keine In-App-Käufe. Keine Werbung. Keine Datenweitergabe. Jeder Familie empfehlbar — ohne Kostenbarriere.</p>
+                        <h4>Gratuit &amp; sans publicité</h4>
+                        <p>Pas d'abonnement. Pas d'achats in-app. Pas de publicité. Pas de partage de données. Recommandable à toute famille — sans barrière financière.</p>
                     </div>
                 </div>
                 <div class="pro-feature-item">
                     <span class="pro-feature-icon">&#x1F46A;</span>
                     <div>
-                        <h4>Mehrere Kinderprofile</h4>
-                        <p>Mehrere Kinderprofile pro Gerät, jeweils mit separatem Fortschritt. Ideal für Familien mit mehreren Kindern in Therapie.</p>
+                        <h4>Plusieurs profils enfants</h4>
+                        <p>Plusieurs profils enfants par appareil, chacun avec une progression séparée. Idéal pour les familles avec plusieurs enfants en thérapie.</p>
                     </div>
                 </div>
                 <div class="pro-feature-item">
                     <span class="pro-feature-icon">&#x1F6E1;&#xFE0F;</span>
                     <div>
-                        <h4>DSGVO &amp; Datenschutz</h4>
-                        <p>Vollständig DSGVO-konform. Keine Erhebung personenbezogener Daten von Kindern. Keine Drittanbieter-Analyse-SDKs. Sicher für jede Empfehlung.</p>
+                        <h4>RGPD &amp; confidentialité</h4>
+                        <p>Entièrement conforme au RGPD. Aucune collecte de données personnelles d'enfants. Aucun SDK d'analyse tiers. Sûr à recommander en toute situation.</p>
                     </div>
                 </div>
             </div>
@@ -438,123 +324,113 @@
 
         <svg class="section-wave section-wave-bottom" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C300,60 600,0 900,30 C1100,50 1300,10 1440,30 L1440,0 L0,0 Z" fill="rgba(102,179,255,0.07)"/></svg>
 
-        <!-- How to Recommend -->
         <section class="grimasso-section" id="how-to-recommend">
             <div class="grimasso-section-header">
-                <span class="grimasso-section-label">Einfacher Workflow</span>
-                <h2 class="grimasso-section-title">In 3 Schritten empfehlen</h2>
-                <p class="grimasso-section-subtitle">Dauert weniger als eine Minute. Und verändert, was zwischen Ihren Sitzungen passiert.</p>
+                <span class="grimasso-section-label">Workflow simple</span>
+                <h2 class="grimasso-section-title">Recommander en 3 étapes</h2>
+                <p class="grimasso-section-subtitle">Moins d'une minute. Et cela change ce qui se passe entre vos séances.</p>
             </div>
             <div class="steps-row">
                 <div class="step-item">
                     <div class="step-number">1</div>
-                    <h3>Selbst testen</h3>
-                    <p>Laden Sie Grimasso auf Ihrem iPhone oder iPad herunter. 5 Minuten reichen, um zu verstehen, was Sie empfehlen.</p>
+                    <h3>Tester soi-même</h3>
+                    <p>Téléchargez Grimasso sur votre iPhone ou iPad. 5 minutes suffisent pour comprendre ce que vous recommandez.</p>
                 </div>
                 <div class="step-item">
                     <div class="step-number">2</div>
-                    <h3>Mit Familie teilen</h3>
-                    <p>Geben Sie der Familie den App-Store-Link oder die ausdruckbare Empfehlungskarte (Download unten). Kostenlos — keine Zugangshürde.</p>
+                    <h3>Partager avec la famille</h3>
+                    <p>Donnez à la famille le lien App Store ou la carte de recommandation imprimable (téléchargement ci-dessous). Gratuit — sans barrière d'accès.</p>
                 </div>
                 <div class="step-item">
                     <div class="step-number">3</div>
-                    <h3>In der Sitzung nachfassen</h3>
-                    <p>Beim nächsten Besuch das Eltern-Dashboard öffnen lassen. Sie sehen sofort, was geübt wurde — und können Ihr Programm anpassen.</p>
+                    <h3>Faire le suivi en séance</h3>
+                    <p>À la prochaine visite, demandez à ouvrir le tableau de bord parental. Vous voyez immédiatement ce qui a été pratiqué — et pouvez adapter votre programme.</p>
                 </div>
-            </div>
-            <div style="text-align: center; margin-top: 40px;">
-                <a href="/grimasso/de/fuer-logopaedinnen/grimasso-empfehlungskarte-de.pdf" class="btn-grimasso btn-grimasso-primary">
-                    Empfehlungskarte herunterladen (PDF)
-                </a>
             </div>
         </section>
 
         <svg class="section-wave" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="rgba(179,128,255,0.07)"/></svg>
 
-        <!-- Referral Kit Download -->
         <section class="grimasso-section" id="referral-kit" style="background: rgba(179,128,255,0.04);">
             <div class="grimasso-section-header">
-                <span class="grimasso-section-label">Kostenloser Download</span>
-                <h2 class="grimasso-section-title">Professionelle Empfehlungskarte</h2>
-                <p class="grimasso-section-subtitle">Eine druckfertige 1-seitige Karte für Ihre Patientinnen — mit QR-Code, klinischen Kernpunkten und Platz für Ihre persönliche Empfehlung.</p>
+                <span class="grimasso-section-label">Téléchargement gratuit</span>
+                <h2 class="grimasso-section-title">Carte de recommandation professionnelle</h2>
+                <p class="grimasso-section-subtitle">Une carte imprimable d'une page pour vos patients — avec QR code, points cliniques clés et espace pour votre recommandation personnelle.</p>
             </div>
             <div style="padding: 0 24px; max-width: 700px; margin: 0 auto;">
                 <div class="referral-kit-box">
-                    <h3>Kostenlose Empfehlungskarte</h3>
-                    <p>Eine druckfertige 1-seitige Karte für Ihre Patientinnen — mit QR-Code, klinischen Kernpunkten und Platz für Ihre persönliche Empfehlung.</p>
+                    <h3>Carte de recommandation gratuite</h3>
+                    <p>Une carte imprimable d'une page pour vos patients — avec QR code, points cliniques clés et espace pour votre recommandation personnelle.</p>
                     <div class="referral-kit-langs">
-                        <span class="lang-pill available">&#x1F1E9;&#x1F1EA; Deutsch — Verfügbar</span>
-                        <span class="lang-pill available">&#x1F1EC;&#x1F1E7; English — Verfügbar</span>
-                        <span class="lang-pill coming-soon">&#x1F1EB;&#x1F1F7; Fran&ccedil;ais — Demnächst</span>
+                        <span class="lang-pill available">&#x1F1EC;&#x1F1E7; English — Disponible</span>
+                        <span class="lang-pill available">&#x1F1E9;&#x1F1EA; Deutsch — Disponible</span>
+                        <span class="lang-pill coming-soon">&#x1F1EB;&#x1F1F7; Fran&ccedil;ais — Bient&ocirc;t</span>
                     </div>
-                    <a href="/grimasso/de/fuer-logopaedinnen/grimasso-empfehlungskarte-de.pdf" class="btn-grimasso btn-grimasso-primary">
-                        Empfehlungskarte DE herunterladen (PDF)
+                    <a href="mailto:grimasso@lorenzmaierhofer.com" class="btn-grimasso btn-grimasso-primary">
+                        Demander la carte (e-mail)
                     </a>
-                    <p class="referral-kit-note">Fragen? Kontaktieren Sie uns: <a href="mailto:grimasso@lorenzmaierhofer.com">grimasso@lorenzmaierhofer.com</a></p>
+                    <p class="referral-kit-note">Questions ? Contactez-nous : <a href="mailto:grimasso@lorenzmaierhofer.com">grimasso@lorenzmaierhofer.com</a></p>
                 </div>
             </div>
         </section>
 
         <svg class="section-wave section-wave-bottom" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C360,55 720,5 1080,30 C1260,45 1380,15 1440,30 L1440,0 L0,0 Z" fill="rgba(179,128,255,0.04)"/></svg>
 
-        <!-- Testimonials -->
         <section class="grimasso-section" id="testimonials">
             <div class="grimasso-section-header">
-                <span class="grimasso-section-label">Aus der Praxis</span>
-                <h2 class="grimasso-section-title">Was Fachkräfte sagen</h2>
+                <span class="grimasso-section-label">Témoignages</span>
+                <h2 class="grimasso-section-title">Ce que disent les professionnels</h2>
             </div>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
-                    <blockquote>„Grimasso ist das einzige App, das alle fünf myofunktionellen Übungskategorien in einem Format abdeckt, das Kinder wirklich täglich nutzen wollen. Ich empfehle es jeder Familie."</blockquote>
-                    <cite>— Logopädin, Deutschland</cite>
+                    <blockquote>« Grimasso est la seule application qui couvre les cinq catégories d'exercices myofonctionnels dans un format que les enfants veulent vraiment utiliser chaque jour. Je la recommande à toutes les familles. »</blockquote>
+                    <cite>— Orthophoniste, France</cite>
                 </div>
                 <div class="testimonial-card">
-                    <blockquote>„Die Compliance meiner Patientinnen ist deutlich gestiegen, seit ich Grimasso empfehle. Das Eltern-Dashboard macht die Nachkontrolle so viel einfacher."</blockquote>
-                    <cite>— Kieferorthopädin, Österreich</cite>
+                    <blockquote>« La compliance de mes patients a nettement augmenté depuis que je recommande Grimasso. Le tableau de bord parental rend le suivi tellement plus simple. »</blockquote>
+                    <cite>— Orthodontiste, Suisse</cite>
                 </div>
             </div>
         </section>
 
         <svg class="section-wave" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C180,55 420,5 720,30 C1020,55 1260,5 1440,30 L1440,60 L0,60 Z" fill="rgba(51,199,89,0.05)"/></svg>
 
-        <!-- FAQ -->
         <section class="grimasso-section" id="faq">
             <div class="grimasso-section-header">
-                <span class="grimasso-section-label">Häufige Fragen</span>
-                <h2 class="grimasso-section-title">FAQ für Fachkräfte</h2>
+                <span class="grimasso-section-label">Questions fréquentes</span>
+                <h2 class="grimasso-section-title">FAQ pour les professionnels</h2>
             </div>
             <div class="pro-faq-list">
                 <div class="pro-faq-item">
-                    <h4>Kann ich den Fortschritt meiner Patientin aus der Ferne verfolgen?</h4>
-                    <p>Noch nicht — das Eltern-Dashboard ist in der App auf dem Gerät der Familie zugänglich. Wir empfehlen, Eltern zu bitten, vor jeder Sitzung einen Screenshot zu machen, oder es gemeinsam beim Besuch zu prüfen. Ein Fachkräfte-Portal ist in Planung.</p>
+                    <h4>Puis-je suivre la progression de mon patient à distance ?</h4>
+                    <p>Pas encore — le tableau de bord parental est accessible dans l'application sur l'appareil de la famille. Nous recommandons de demander aux parents de faire une capture d'écran avant chaque séance, ou de le consulter ensemble lors de la visite. Un portail professionnel est en cours de développement.</p>
                 </div>
                 <div class="pro-faq-item">
-                    <h4>Gibt es eine klinische Version mit mehr Kontrolle?</h4>
-                    <p>Ein Fachkräfte-Portal mit Fernzugriff ist geplant. Melden Sie sich für unseren Newsletter an, um benachrichtigt zu werden.</p>
+                    <h4>Existe-t-il une version clinique avec plus de contrôle ?</h4>
+                    <p>Un portail professionnel avec accès à distance est prévu. Inscrivez-vous à notre newsletter pour être informé.</p>
                 </div>
                 <div class="pro-faq-item">
-                    <h4>Ist Grimasso geeignet für Kinder nach einer Frenulumoperation?</h4>
-                    <p>Ja. Grimasso-Übungen werden häufig in pre- und postoperativen myofunktionellen Therapieprogrammen eingesetzt. Bitte immer in Ihr klinisches Protokoll und die postoperativen Richtlinien integrieren.</p>
+                    <h4>Grimasso convient-il aux enfants après une frénectomie ?</h4>
+                    <p>Oui. Les exercices Grimasso sont souvent utilisés dans les programmes de thérapie myofonctionnelle pré- et postopératoires. Veuillez toujours les intégrer dans votre protocole clinique et les directives postopératoires.</p>
                 </div>
                 <div class="pro-faq-item">
-                    <h4>Ersetzt Grimasso die Therapiesitzung?</h4>
-                    <p>Absolut nicht. Grimasso ist ein Hausaufgaben-Compliance-Tool — es unterstützt Ihre klinische Arbeit zwischen den Sitzungen und ersetzt sie nicht.</p>
+                    <h4>Grimasso remplace-t-il la séance de thérapie ?</h4>
+                    <p>Absolument pas. Grimasso est un outil de compliance pour les devoirs — il soutient votre travail clinique entre les séances et ne le remplace pas.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Final CTA -->
         <section class="grimasso-cta-section">
             <div class="cta-content">
-                <h2>Bereit für bessere Compliance?</h2>
-                <p>Laden Sie Grimasso herunter, testen Sie es selbst und empfehlen Sie es bei Ihrer nächsten Sitzung. Kostenlos — für Sie und jede Familie.</p>
+                <h2>Prêt pour une meilleure compliance ?</h2>
+                <p>Téléchargez Grimasso, testez-le vous-même et recommandez-le à votre prochaine séance. Gratuit — pour vous et chaque famille.</p>
                 <a href="https://apps.apple.com/ch/app/grimasso/id6758241652" target="_blank" rel="noopener" class="btn-grimasso btn-grimasso-primary">
                     <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
-                    Kostenlos im App Store
+                    Gratuit sur l'App Store
                 </a>
                 <p class="cta-badge">
                     <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
-                    Verfügbar für iPhone und iPad
+                    Disponible pour iPhone et iPad
                 </p>
             </div>
         </section>
@@ -566,16 +442,16 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <span class="footer-logo">Grimasso</span>
-                    <p>Spielerisches Zungentraining für Kinder. Eine App von Lorenz Maierhofer.</p>
+                    <p>Entraînement ludique de la langue pour les enfants. Une application de Lorenz Maierhofer.</p>
                 </div>
                 <div class="footer-links">
-                    <a href="/grimasso/privacy.txt" target="_blank">Datenschutz</a>
-                    <a href="/grimasso/de/index.html">Grimasso Startseite</a>
-                    <a href="/de/index.html">lorenzmaierhofer.com</a>
+                    <a href="/grimasso/privacy.txt" target="_blank">Confidentialité</a>
+                    <a href="/grimasso/fr/index.html">Accueil Grimasso</a>
+                    <a href="/index.html">lorenzmaierhofer.com</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Lorenz Maierhofer. Alle Rechte vorbehalten.</p>
+                <p>&copy; 2026 Lorenz Maierhofer. Tous droits réservés.</p>
             </div>
         </div>
     </footer>

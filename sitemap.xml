@@ -7,6 +7,7 @@
         <loc>https://lorenzmaierhofer.com/</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/de/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/zh/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/"/>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -15,6 +16,16 @@
         <loc>https://lorenzmaierhofer.com/de/</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/de/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/zh/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/"/>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://lorenzmaierhofer.com/zh/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/de/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/zh/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/"/>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -25,6 +36,7 @@
         <loc>https://lorenzmaierhofer.com/news.html</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/news.html"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/de/news.html"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/zh/news.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/news.html"/>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -33,6 +45,16 @@
         <loc>https://lorenzmaierhofer.com/de/news.html</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/news.html"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/de/news.html"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/zh/news.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/news.html"/>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://lorenzmaierhofer.com/zh/news.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/news.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/de/news.html"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/zh/news.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/news.html"/>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -43,6 +65,7 @@
         <loc>https://lorenzmaierhofer.com/projects.html</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/projects.html"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/de/projects.html"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/zh/projects.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/projects.html"/>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -51,6 +74,16 @@
         <loc>https://lorenzmaierhofer.com/de/projects.html</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/projects.html"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/de/projects.html"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/zh/projects.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/projects.html"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://lorenzmaierhofer.com/zh/projects.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/projects.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/de/projects.html"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/zh/projects.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/projects.html"/>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -102,6 +135,173 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/"/>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+    </url>
+
+    <!-- Grimasso Blog - English -->
+    <url>
+        <loc>https://lorenzmaierhofer.com/grimasso/blog/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/"/>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Grimasso Blog - German -->
+    <url>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/blog/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/"/>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Grimasso Blog - French -->
+    <url>
+        <loc>https://lorenzmaierhofer.com/grimasso/fr/blog/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/"/>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Grimasso Blog - Chinese -->
+    <url>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/blog/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/"/>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Grimasso Blog Post: Tongue Thrust Exercises (EN) -->
+    <url>
+        <loc>https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-exercises-at-home/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-exercises-at-home/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungenubungen-fuer-kinder-zuhause/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/exercices-de-langue-enfants-maison/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/she-yue-lianxi-zai-jia/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-exercises-at-home/"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Grimasso Blog Post: Zungenübungen für Kinder (DE) -->
+    <url>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/blog/zungenubungen-fuer-kinder-zuhause/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-exercises-at-home/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungenubungen-fuer-kinder-zuhause/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/exercices-de-langue-enfants-maison/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/she-yue-lianxi-zai-jia/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-exercises-at-home/"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Grimasso Blog Post: Exercices de langue enfants (FR) -->
+    <url>
+        <loc>https://lorenzmaierhofer.com/grimasso/fr/blog/exercices-de-langue-enfants-maison/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-exercises-at-home/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungenubungen-fuer-kinder-zuhause/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/exercices-de-langue-enfants-maison/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/she-yue-lianxi-zai-jia/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-exercises-at-home/"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Grimasso Blog Post: 舌头推力练习 (ZH) -->
+    <url>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/blog/she-yue-lianxi-zai-jia/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-exercises-at-home/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungenubungen-fuer-kinder-zuhause/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/exercices-de-langue-enfants-maison/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/she-yue-lianxi-zai-jia/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-exercises-at-home/"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Grimasso Blog Post: 英语发音舌头训练 (ZH-exclusive) -->
+    <url>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/blog/ying-yu-fayin-she-tou/</loc>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/ying-yu-fayin-she-tou/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/zh/blog/ying-yu-fayin-she-tou/"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Grimasso Blog Post: What is Myofunctional Therapy (EN/DE) -->
+    <url>
+        <loc>https://lorenzmaierhofer.com/grimasso/blog/what-is-myofunctional-therapy/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/what-is-myofunctional-therapy/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/was-ist-myofunktionelle-therapie/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/what-is-myofunctional-therapy/"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Grimasso Blog Post: Was ist myofunktionelle Therapie (DE) -->
+    <url>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/blog/was-ist-myofunktionelle-therapie/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/what-is-myofunctional-therapy/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/was-ist-myofunktionelle-therapie/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/what-is-myofunctional-therapy/"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Grimasso Blog Post: 10 Silly Tongue Exercises (EN only) -->
+    <url>
+        <loc>https://lorenzmaierhofer.com/grimasso/blog/silly-tongue-exercises-kids-love/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/silly-tongue-exercises-kids-love/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/silly-tongue-exercises-kids-love/"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Grimasso For Professionals - English -->
+    <url>
+        <loc>https://lorenzmaierhofer.com/grimasso/for-slps/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/for-slps/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/fuer-logopaedinnen/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/pour-les-professionnels/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/for-slps/"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Grimasso Für Fachkräfte - German -->
+    <url>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/fuer-logopaedinnen/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/for-slps/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/fuer-logopaedinnen/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/pour-les-professionnels/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/for-slps/"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Grimasso Pour les professionnels - French -->
+    <url>
+        <loc>https://lorenzmaierhofer.com/grimasso/fr/pour-les-professionnels/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/for-slps/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/fuer-logopaedinnen/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/pour-les-professionnels/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/for-slps/"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 
 </urlset>

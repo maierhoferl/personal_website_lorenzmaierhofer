@@ -3,6 +3,27 @@
    JavaScript for interactivity
    ============================================ */
 
+// Auto language detection & redirect (first visit only)
+(function () {
+  if (localStorage.getItem('langChosen')) return;
+
+  const lang = ((navigator.languages && navigator.languages[0]) || navigator.language || 'en').toLowerCase();
+  const path = window.location.pathname;
+
+  const isDE = path.startsWith('/de/') || path === '/de';
+  const isZH = path.startsWith('/zh/') || path === '/zh';
+  const wantsDE = lang.startsWith('de');
+  const wantsZH = lang.startsWith('zh');
+
+  if (wantsDE && !isDE) {
+    window.location.replace('/de/');
+  } else if (wantsZH && !isZH) {
+    window.location.replace('/zh/');
+  } else if (!wantsDE && !wantsZH && (isDE || isZH)) {
+    window.location.replace('/');
+  }
+})();
+
 // Language preference tracking (no auto-redirect - Google uses hreflang tags)
 document.addEventListener('DOMContentLoaded', () => {
     const langSwitch = document.querySelector('.lang-switch');
