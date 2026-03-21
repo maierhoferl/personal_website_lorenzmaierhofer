@@ -518,7 +518,7 @@ def generate(fonts):
     c.saveState()
     c.setFont(fonts["bold"], 8.5)
     c.setFillColor(WHITE)
-    footer_text = "lorenzmaierhofer.com/grimasso  ·  Mehr über die App erfahren"
+    footer_text = "grimasso.lorenzmaierhofer.com  ·  Mehr über die App erfahren"
     ftw = c.stringWidth(footer_text, fonts["bold"], 8.5)
     c.drawString((W - ftw) / 2, FOOTER_Y + 9, footer_text)
     c.restoreState()
