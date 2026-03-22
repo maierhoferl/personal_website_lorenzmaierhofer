@@ -6,6 +6,8 @@
 // Auto language detection & redirect (first visit only)
 (function () {
   if (localStorage.getItem('langChosen')) return;
+  // Grimasso subsite handles its own language detection
+  if (window.location.pathname.startsWith('/grimasso/')) return;
 
   const lang = ((navigator.languages && navigator.languages[0]) || navigator.language || 'en').toLowerCase();
   const path = window.location.pathname;

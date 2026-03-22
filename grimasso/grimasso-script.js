@@ -58,7 +58,10 @@
         });
 
         select.addEventListener('change', () => {
-            if (select.value) window.location.href = select.value;
+            if (select.value) {
+                localStorage.setItem('langChosen', '1');
+                window.location.href = select.value;
+            }
         });
 
         switcher.appendChild(select);
