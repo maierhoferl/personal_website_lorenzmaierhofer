@@ -1,0 +1,34 @@
+# Grimasso — Myofunctional Therapy App for Children
+> iOS app with scientifically-designed tongue and oral muscle training exercises. Developed by Lorenz Maierhofer.
+
+Grimasso helps children aged 4+ improve speech clarity, correct tongue thrust, and strengthen oral muscles through playful gamified exercises. Recommended by speech-language pathologists (SLPs).
+
+## App Features
+- 51 exercises across 5 categories (tongue strength, mobility, coordination, lip/jaw, swallowing)
+- 20 levels, 25+ achievement badges, streak tracking
+- Parent dashboard with progress tracking
+- Free to download on iOS
+- Evidence-based myofunctional therapy approach
+- GDPR compliant
+
+## Pages
+- Home (EN): https://grimasso.lorenzmaierhofer.com/
+- Home (DE): https://grimasso.lorenzmaierhofer.com/de/
+- Home (FR): https://grimasso.lorenzmaierhofer.com/fr/
+- Home (ZH): https://grimasso.lorenzmaierhofer.com/zh/
+- For Speech-Language Pathologists (EN): https://grimasso.lorenzmaierhofer.com/for-slps/
+- Für Logopädinnen (DE): https://grimasso.lorenzmaierhofer.com/de/fuer-logopaedinnen/
+- Pour les professionnels (FR): https://grimasso.lorenzmaierhofer.com/fr/pour-les-professionnels/
+- 为专业人士 (ZH): https://grimasso.lorenzmaierhofer.com/zh/wei-zhuanye-renshi/
+- Blog (EN): https://grimasso.lorenzmaierhofer.com/blog/
+- Blog (DE): https://grimasso.lorenzmaierhofer.com/de/blog/
+- Blog (FR): https://grimasso.lorenzmaierhofer.com/fr/blog/
+- Blog (ZH): https://grimasso.lorenzmaierhofer.com/zh/blog/
+
+## Download
+- iOS App Store (US): https://apps.apple.com/us/app/grimasso/id6758241652
+- iOS App Store (CH/EU): https://apps.apple.com/ch/app/grimasso/id6758241652
+- iOS App Store (CN): https://apps.apple.com/cn/app/grimasso/id6758241652
+
+## Developer
+Lorenz Maierhofer — https://lorenzmaierhofer.com/

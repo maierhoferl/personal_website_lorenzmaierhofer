@@ -370,6 +370,15 @@ function handleEmailSubmitDE(event) {
 }
 
 // ============================================
+// Email obfuscation - reconstruct mailto links from data attributes
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.email-link').forEach(el => {
+        const addr = el.dataset.user + '@' + el.dataset.domain;
+        el.href = 'mailto:' + addr;
+        if (el.dataset.showaddr === 'true') el.textContent = addr;
+    });
+});
+
 // ANALYTICS - Plausible (GDPR-friendly, no cookies)
 // ============================================
 (function() {

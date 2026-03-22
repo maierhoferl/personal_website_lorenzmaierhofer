@@ -371,3 +371,12 @@ if (document.readyState === 'loading') {
 } else {
     loadLinkedInPosts();
 }
+
+// Email obfuscation - reconstruct mailto links from data attributes
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.email-link').forEach(el => {
+        const addr = el.dataset.user + '@' + el.dataset.domain;
+        el.href = 'mailto:' + addr + (el.dataset.subject ? '?subject=' + encodeURIComponent(el.dataset.subject) : '');
+        if (el.dataset.showaddr === 'true') el.textContent = addr;
+    });
+});
