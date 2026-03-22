@@ -257,6 +257,41 @@ p, li, a, span, div {
     box-shadow: 0 0 10px rgba(51, 199, 89, 0.2);
 }
 
+/* Mobile compact language select — hidden on desktop, shown on narrow screens */
+.lang-select-mobile {
+    display: none;
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 0.28rem 1.6rem 0.28rem 0.55rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    font-family: var(--grimasso-font);
+    color: var(--text-primary);
+    background-color: var(--bg-card);
+    border: 1.5px solid var(--grimasso-primary);
+    border-radius: 6px;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%2333C759' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.45rem center;
+    background-size: 10px 6px;
+    line-height: 1;
+}
+
+.lang-select-mobile:focus {
+    outline: 2px solid var(--grimasso-primary);
+    outline-offset: 1px;
+}
+
+@media (max-width: 600px) {
+    .grimasso-lang-switcher .lang-switch {
+        display: none;
+    }
+    .lang-select-mobile {
+        display: block;
+    }
+}
+
 /* Back to main site link */
 .back-to-main {
     font-family: var(--grimasso-font);

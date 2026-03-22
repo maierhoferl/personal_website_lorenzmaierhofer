@@ -36,6 +36,41 @@
   window.location.replace(roots[target]);
 })();
 
+// Compact language selector for mobile — replaces pills with a <select> on narrow screens
+(function () {
+    function buildLangSelect() {
+        const switcher = document.querySelector('.grimasso-lang-switcher');
+        if (!switcher || switcher.querySelector('.lang-select-mobile')) return;
+
+        const links = switcher.querySelectorAll('.lang-switch');
+        if (links.length < 2) return;
+
+        const select = document.createElement('select');
+        select.className = 'lang-select-mobile';
+        select.setAttribute('aria-label', 'Select language');
+
+        links.forEach(link => {
+            const opt = document.createElement('option');
+            opt.value = link.href;
+            opt.textContent = (link.getAttribute('title') || link.textContent.trim());
+            if (link.classList.contains('active')) opt.selected = true;
+            select.appendChild(opt);
+        });
+
+        select.addEventListener('change', () => {
+            if (select.value) window.location.href = select.value;
+        });
+
+        switcher.appendChild(select);
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', buildLangSelect);
+    } else {
+        buildLangSelect();
+    }
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // Check for reduced motion preference
