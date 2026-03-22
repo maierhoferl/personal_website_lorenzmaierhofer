@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grimasso — 帮孩子说一口地道英语</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* ===== RESET & BASE ===== */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --red:    #E53935;
+            --red-dark: #B71C1C;
+            --gold:   #FFD700;
+            --gold-dark: #F9A825;
+            --white:  #FFFFFF;
+            --off-white: #FFF8F0;
+            --text:   #1A1A1A;
+            --text-light: #555555;
+            --border: #F0E0C0;
+        }
+
+        html, body {
+            width: 210mm;
+            min-height: 297mm;
+            background: var(--white);
+            font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            color: var(--text);
+            line-height: 1.75;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        /* ===== PAGE LAYOUT ===== */
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 12mm 14mm 10mm;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        /* ===== HEADER ===== */
+        .header {
+            background: linear-gradient(135deg, var(--red) 0%, #C62828 60%, #8B0000 100%);
+            border-radius: 10px;
+            padding: 10mm 12mm 8mm;
+            margin-bottom: 6mm;
+            position: relative;
+            overflow: hidden;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -20px; right: -20px;
+            width: 120px; height: 120px;
+            background: rgba(255,215,0,0.15);
+            border-radius: 50%;
+        }
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: -30px; left: 40%;
+            width: 180px; height: 80px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+        }
+        .header-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 3mm;
+        }
+        .logo {
+            font-size: 28pt;
+            font-weight: 900;
+            color: var(--gold);
+            letter-spacing: -0.5px;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+        .header-badge {
+            background: var(--gold);
+            color: var(--red-dark);
+            font-size: 7.5pt;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 20px;
+            white-space: nowrap;
+        }
+        .header-tagline {
+            color: var(--white);
+            font-size: 15pt;
+            font-weight: 600;
+            margin-bottom: 2mm;
+            position: relative;
+            z-index: 1;
+        }
+        .header-sub {
+            color: rgba(255,255,255,0.8);
+            font-size: 8.5pt;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ===== SECTION SHARED ===== */
+        .section {
+            margin-bottom: 5mm;
+        }
+        .section-title {
+            font-size: 12pt;
+            font-weight: 700;
+            color: var(--red);
+            border-left: 4px solid var(--gold);
+            padding-left: 6px;
+            margin-bottom: 3mm;
+            line-height: 1.3;
+        }
+        .section-body {
+            font-size: 9pt;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        /* ===== SECTION 1: WHY HARD ===== */
+        .phoneme-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 8.5pt;
+            margin-top: 2mm;
+        }
+        .phoneme-table th {
+            background: var(--red);
+            color: var(--white);
+            font-weight: 600;
+            padding: 4px 8px;
+            text-align: left;
+        }
+        .phoneme-table th:first-child { border-radius: 4px 0 0 0; }
+        .phoneme-table th:last-child  { border-radius: 0 4px 0 0; }
+        .phoneme-table td {
+            padding: 4px 8px;
+            border-bottom: 1px solid var(--border);
+            vertical-align: middle;
+        }
+        .phoneme-table tr:nth-child(even) td { background: var(--off-white); }
+        .phoneme-table .phoneme { font-weight: 700; color: var(--red-dark); font-size: 10pt; }
+        .phoneme-table .check { color: #4CAF50; font-weight: 700; }
+        .phoneme-table .cross  { color: var(--red); font-weight: 700; }
+        .insight-box {
+            background: linear-gradient(135deg, rgba(229,57,53,0.06), rgba(255,215,0,0.06));
+            border: 1px solid rgba(229,57,53,0.2);
+            border-radius: 6px;
+            padding: 3mm 4mm;
+            margin-top: 3mm;
+            font-size: 8.5pt;
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .insight-box strong { color: var(--red-dark); }
+
+        /* ===== SECTION 2: SCIENCE ===== */
+        .science-row {
+            display: flex;
+            gap: 3mm;
+            margin-top: 2mm;
+        }
+        .science-card {
+            flex: 1;
+            background: var(--off-white);
+            border: 1px solid var(--border);
+            border-radius: 7px;
+            padding: 3mm;
+            text-align: center;
+        }
+        .science-card .sci-num {
+            font-size: 18pt;
+            font-weight: 900;
+            color: var(--gold-dark);
+            line-height: 1.1;
+        }
+        .science-card .sci-label {
+            font-size: 7.5pt;
+            color: var(--text-light);
+            margin-top: 1px;
+        }
+        .science-body {
+            font-size: 8.5pt;
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-top: 2mm;
+        }
+
+        /* ===== SECTION 3: 4 BENEFITS ===== */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3mm;
+            margin-top: 2mm;
+        }
+        .benefit-box {
+            background: var(--off-white);
+            border: 1.5px solid var(--border);
+            border-radius: 8px;
+            padding: 3.5mm 4mm;
+            display: flex;
+            align-items: flex-start;
+            gap: 3mm;
+        }
+        .benefit-box .b-icon {
+            font-size: 18pt;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+        .benefit-box .b-title {
+            font-size: 9pt;
+            font-weight: 700;
+            color: var(--red-dark);
+            margin-bottom: 1mm;
+        }
+        .benefit-box .b-desc {
+            font-size: 7.5pt;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* ===== CTA SECTION ===== */
+        .cta-section {
+            background: linear-gradient(135deg, var(--red) 0%, #C62828 100%);
+            border-radius: 10px;
+            padding: 6mm 10mm;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 6mm;
+            margin-top: auto;
+            margin-bottom: 4mm;
+        }
+        .cta-left { flex: 1; }
+        .cta-title {
+            font-size: 14pt;
+            font-weight: 900;
+            color: var(--gold);
+            margin-bottom: 1.5mm;
+        }
+        .cta-sub {
+            font-size: 8pt;
+            color: rgba(255,255,255,0.85);
+            line-height: 1.6;
+        }
+        .cta-right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2mm;
+            flex-shrink: 0;
+        }
+        .qr-placeholder {
+            width: 28mm;
+            height: 28mm;
+            background: var(--white);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 6.5pt;
+            color: var(--text-light);
+            text-align: center;
+            line-height: 1.4;
+            padding: 2mm;
+        }
+        .qr-label {
+            font-size: 7pt;
+            color: rgba(255,255,255,0.7);
+            text-align: center;
+        }
+        .app-store-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background: var(--white);
+            color: var(--red-dark);
+            font-size: 8pt;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 20px;
+            margin-top: 1.5mm;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid var(--border);
+            padding-top: 3mm;
+            font-size: 7pt;
+            color: #999;
+        }
+        .footer a { color: #999; text-decoration: none; }
+        .footer strong { color: var(--red); }
+
+        /* ===== PRINT ===== */
+        @media print {
+            html, body { width: 210mm; }
+            .page { padding: 12mm 14mm 10mm; }
+            @page { size: A4; margin: 0; }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-top">
+            <div class="logo">Grimasso</div>
+            <div class="header-badge">🎉 App Store 免费下载</div>
+        </div>
+        <div class="header-tagline">帮孩子说一口地道英语</div>
+        <div class="header-sub">口腔肌肉训练 × 游戏化学习 × 科学方法 — 专为普通话家庭设计的英语发音解决方案</div>
+    </header>
+
+    <!-- SECTION 1: WHY IS ENGLISH PRONUNCIATION HARD? -->
+    <section class="section">
+        <h2 class="section-title">🤔 为什么英语发音这么难？</h2>
+        <p class="section-body">
+            中文普通话中<strong style="color:var(--red-dark)">没有</strong>英语的几个核心音素。这些音不是"听多了就会"——
+            它们需要孩子的口腔肌肉学会新的动作模式。
+        </p>
+        <table class="phoneme-table">
+            <thead>
+                <tr>
+                    <th>英语音素</th>
+                    <th>例词</th>
+                    <th>英语中</th>
+                    <th>普通话中</th>
+                    <th>所需动作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="phoneme">/r/</td>
+                    <td>rabbit, red, run</td>
+                    <td class="check">✔</td>
+                    <td class="cross">✘ 无</td>
+                    <td>舌头中部隆起，不碰上颚</td>
+                </tr>
+                <tr>
+                    <td class="phoneme">/l/</td>
+                    <td>light, love, blue</td>
+                    <td class="check">✔</td>
+                    <td class="cross">✘ 不同</td>
+                    <td>舌尖顶上齿龈，侧面出气</td>
+                </tr>
+                <tr>
+                    <td class="phoneme">/th/</td>
+                    <td>the, think, that</td>
+                    <td class="check">✔</td>
+                    <td class="cross">✘ 无</td>
+                    <td>舌尖轻咬上齿，气流摩擦</td>
+                </tr>
+                <tr>
+                    <td class="phoneme">/v/</td>
+                    <td>very, voice, live</td>
+                    <td class="check">✔</td>
+                    <td class="cross">✘ 无</td>
+                    <td>上齿轻触下唇，振动发声</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="insight-box">
+            💡 <strong>关键洞察：</strong>这些音不是发音"技巧"问题，而是<strong>肌肉记忆</strong>问题。
+            就像学钢琴需要手指练习，学英语发音需要口腔肌肉专项训练。
+            语言习得研究表明，越早开始训练，肌肉适应性越强，效果越持久。
+        </div>
+    </section>
+
+    <!-- SECTION 2: SCIENCE -->
+    <section class="section">
+        <h2 class="section-title">🔬 科学发现：口腔肌肉训练是关键</h2>
+        <div class="science-row">
+            <div class="science-card">
+                <div class="sci-num">100</div>
+                <div class="sci-label">个专业练习<br>5大训练类别</div>
+            </div>
+            <div class="science-card">
+                <div class="sci-num">4–6</div>
+                <div class="sci-label">周后家长和老师<br>开始注意到进步</div>
+            </div>
+            <div class="science-card">
+                <div class="sci-num">10</div>
+                <div class="sci-label">分钟/天<br>轻松坚持</div>
+            </div>
+        </div>
+        <p class="science-body">
+            Grimasso基于<strong style="color:var(--red-dark)">口腔肌肉功能治疗（OMT）</strong>原理设计，这是言语语言病理学家广泛采用的循证治疗方案。
+            通过专项训练舌尖位置、舌头力量、下颌协调和嘴唇控制，孩子的口腔肌肉逐步建立发英语音所需的新模式。
+            游戏化设计确保孩子每天愿意坚持——而<strong style="color:var(--red-dark)">坚持性正是训练效果的最重要预测指标</strong>。
+        </p>
+    </section>
+
+    <!-- SECTION 3: 4 BENEFITS -->
+    <section class="section">
+        <h2 class="section-title">🏆 孩子的4大收获</h2>
+        <div class="benefits-grid">
+            <div class="benefit-box">
+                <div class="b-icon">🗣️</div>
+                <div>
+                    <div class="b-title">英语发音更标准</div>
+                    <div class="b-desc">/r/、/l/、/th/、/v/ 等难发音逐步改善，老师和同学都能听出进步</div>
+                </div>
+            </div>
+            <div class="benefit-box">
+                <div class="b-icon">💪</div>
+                <div>
+                    <div class="b-title">自信开口说英语</div>
+                    <div class="b-desc">发音更准确，课堂发言和英语对话时不再羞于开口，自信心显著提升</div>
+                </div>
+            </div>
+            <div class="benefit-box">
+                <div class="b-icon">🏅</div>
+                <div>
+                    <div class="b-title">在学校脱颖而出</div>
+                    <div class="b-desc">英语口语成绩提升，在学校演讲、朗读比赛中表现更出色</div>
+                </div>
+            </div>
+            <div class="benefit-box">
+                <div class="b-icon">😌</div>
+                <div>
+                    <div class="b-title">爸爸妈妈都放心</div>
+                    <div class="b-desc">无广告、无追踪、PIN码保护的家长控制台——安全可信赖</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta-section">
+        <div class="cta-left">
+            <div class="cta-title">立即免费下载 Grimasso</div>
+            <div class="cta-sub">
+                每天10分钟，轻松训练。<br>
+                全部100个练习完全免费，无需订阅，无广告。<br>
+                适用于 iPhone 和 iPad。
+            </div>
+            <div>
+                <span class="app-store-pill">
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor">
+                        <path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                    </svg>
+                    在 App Store 搜索"Grimasso"
+                </span>
+            </div>
+        </div>
+        <div class="cta-right">
+            <div class="qr-placeholder">
+                扫码下载<br>或搜索<br><strong>Grimasso</strong>
+            </div>
+            <div class="qr-label">App Store · 免费</div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <span><strong>Grimasso</strong> — 口腔肌肉训练应用</span>
+        <span>grimasso.lorenzmaierhofer.com/zh/</span>
+        <span><a href="#">隐私政策</a> · 无广告 · 免费</span>
+    </footer>
+
+</div>
+</body>
+</html>
