@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../favicon.png">
+    <title>Sigmatismus, Lisp, Sigmatisme: Three Languages, One Challenge | Grimasso</title>
+
+    <meta name="description" content="Sigmatismus, lisp, sigmatisme — same sibilant distortion, three clinical traditions. Learn which types self-correct and which always need therapy.">
+    <meta name="keywords" content="sigmatismus, lisp, sigmatisme, lateral lisp, interdental lisp, speech therapy children, sibilant distortion, Logopädie, orthophonie">
+    <meta name="author" content="Grimasso">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Sigmatismus, Lisp, Sigmatisme: Three Languages, One Challenge — and What to Do">
+    <meta property="og:description" content="Same clinical phenomenon, three professional traditions. Learn the crucial difference between developmental and non-developmental sibilant distortions.">
+    <meta property="og:image" content="https://lorenzmaierhofer.com/Grimasso_Main.jpg">
+    <meta property="og:url" content="https://grimasso.lorenzmaierhofer.com/blog/sigmatismus-lisp-sigmatisme/">
+
+    <link rel="canonical" href="https://grimasso.lorenzmaierhofer.com/blog/sigmatismus-lisp-sigmatisme/">
+    <link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/sigmatismus-lisp-sigmatisme/">
+    <link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/sigmatismus-lisp-sigmatisme/">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Sigmatismus, Lisp, Sigmatisme: Three Languages, One Challenge — and What to Do",
+        "description": "Same clinical phenomenon, three professional traditions. Learn the crucial difference between developmental and non-developmental sibilant distortions.",
+        "datePublished": "2026-02-11",
+        "dateModified": "2026-02-11",
+        "author": {"@type": "Organization", "name": "Grimasso"},
+        "publisher": {
+            "@type": "Organization",
+            "name": "Grimasso",
+            "url": "https://grimasso.lorenzmaierhofer.com/",
+            "logo": {"@type": "ImageObject", "url": "https://lorenzmaierhofer.com/Grimasso_Main.jpg"}
+        },
+        "mainEntityOfPage": {"@type": "WebPage", "@id": "https://grimasso.lorenzmaierhofer.com/blog/sigmatismus-lisp-sigmatisme/"}
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Grimasso", "item": "https://grimasso.lorenzmaierhofer.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://grimasso.lorenzmaierhofer.com/blog/"},
+            {"@type": "ListItem", "position": 3, "name": "Sigmatismus, Lisp, Sigmatisme"}
+        ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="../../grimasso-styles.css">
+    <style>
+        .blog-post-container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+        }
+        .blog-post-breadcrumb {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+        }
+        .blog-post-breadcrumb a { color: var(--grimasso-primary); text-decoration: none; }
+        .blog-post-breadcrumb a:hover { text-decoration: underline; }
+        .blog-post-category {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            font-family: var(--grimasso-font);
+            background: rgba(50, 200, 180, 0.12); color: #007A6E;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 16px;
+        }
+        .blog-post-title {
+            font-family: var(--grimasso-font);
+            font-size: clamp(1.8rem, 4vw, 2.6rem);
+            font-weight: 800;
+            color: var(--text-primary);
+            line-height: 1.25;
+            margin: 0 0 20px;
+        }
+        .blog-post-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1.5px solid var(--border-color);
+        }
+        .blog-post-body h2 {
+            font-family: var(--grimasso-font);
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin: 40px 0 16px;
+        }
+        .blog-post-body h3 {
+            font-family: var(--grimasso-font);
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--grimasso-dark);
+            margin: 24px 0 8px;
+        }
+        .blog-post-body p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin: 0 0 20px;
+        }
+        .blog-post-body ul, .blog-post-body ol {
+            padding-left: 24px;
+            margin: 0 0 20px;
+        }
+        .blog-post-body li {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+        .blog-post-body strong { color: var(--text-primary); }
+        .blog-post-body a { color: var(--grimasso-primary); }
+        .info-box {
+            background: rgba(102, 179, 255, 0.08);
+            border: 1.5px solid rgba(102, 179, 255, 0.3);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+        .info-box p { margin: 0; font-size: 0.95rem; }
+        .blog-tip-box {
+            background: rgba(255, 200, 50, 0.10);
+            border: 1.5px solid rgba(255, 200, 50, 0.4);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+        .blog-tip-box p { margin: 0; font-size: 0.95rem; }
+        .alert-box {
+            background: rgba(229, 57, 53, 0.07);
+            border: 1.5px solid rgba(229, 57, 53, 0.3);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+        .alert-box p { margin: 0; font-size: 0.95rem; }
+        .lang-compare-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 24px 0;
+            font-size: 0.9rem;
+        }
+        .lang-compare-table th {
+            background: rgba(50, 200, 180, 0.12);
+            color: #007A6E;
+            padding: 10px 14px;
+            text-align: left;
+            font-family: var(--grimasso-font);
+            font-weight: 700;
+        }
+        .lang-compare-table td {
+            padding: 10px 14px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+        .blog-cta-box {
+            background: linear-gradient(135deg, var(--grimasso-primary) 0%, var(--grimasso-dark) 100%);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            margin: 48px 0 0;
+        }
+        .blog-cta-box h3 {
+            font-family: var(--grimasso-font);
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: white;
+            margin: 0 0 12px;
+        }
+        .blog-cta-box p { color: rgba(255,255,255,0.85); margin: 0 0 24px; }
+        .btn-white {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: white;
+            color: var(--grimasso-dark);
+            border: none;
+            border-radius: 50px;
+            padding: 14px 28px;
+            font-family: var(--grimasso-font);
+            font-size: 1rem;
+            font-weight: 800;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+        .btn-white:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+        .blog-references li { font-size: 0.9rem; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/grimasso/index.html" class="nav-logo">
+                <span class="logo-text">Grimasso</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="/grimasso/index.html" class="nav-link">Home</a></li>
+                <li><a href="/grimasso/blog/index.html" class="nav-link active">Blog</a></li>
+                <li><a href="/grimasso/for-slps/index.html" class="nav-link">For Professionals</a></li>
+                <li><a href="https://apps.apple.com/us/app/grimasso/id6758241652" target="_blank" rel="noopener" class="nav-link">App Store</a></li>
+            </ul>
+            <div class="nav-social">
+                <div class="grimasso-lang-switcher">
+                    <a href="/grimasso/blog/sigmatismus-lisp-sigmatisme/index.html" class="lang-switch active" title="English">EN</a>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 17.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm0 1.5a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-17a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 12 2zm0 18a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 12 20zM4.22 4.22a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 0 1-1.06 1.06L4.22 5.28a.75.75 0 0 1 0-1.06zm13.44 13.44a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 0 1-1.06 1.06l-1.06-1.06a.75.75 0 0 1 0-1.06zM2 12a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5A.75.75 0 0 1 2 12zm18 0a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5A.75.75 0 0 1 20 12zM5.28 17.66a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0zm13.44-13.44a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0z"/></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <article class="blog-post-container">
+            <nav class="blog-post-breadcrumb" aria-label="Breadcrumb">
+                <a href="/grimasso/index.html">Grimasso</a> &rsaquo;
+                <a href="/grimasso/blog/index.html">Blog</a> &rsaquo;
+                Sigmatismus, Lisp, Sigmatisme
+            </nav>
+
+            <span class="blog-post-category">Multilingual</span>
+            <h1 class="blog-post-title">Sigmatismus, Lisp, Sigmatisme: Three Languages, One Challenge — and What to Do</h1>
+            <div class="blog-post-meta">
+                <span>February 11, 2026</span>
+                <span>&middot;</span>
+                <span>6 min read</span>
+                <span>&middot;</span>
+                <span>By the Grimasso Team</span>
+            </div>
+
+            <div class="blog-post-body">
+
+                <p>Your child's speech-language pathologist in Zurich calls it <em>Sigmatismus</em>. Your sister-in-law in London says the school nurse flagged a <em>lisp</em>. A Parisian orthophoniste mentions <em>sigmatisme</em>. Same sound, same tongue, same worry — three entirely different words.</p>
+
+                <p>These terms all describe the same underlying phenomenon: a distortion of sibilant sounds, primarily /s/ and /z/. But behind each word sits a rich clinical tradition with its own taxonomy, its own developmental norms, and its own treatment protocols. As a multilingual family, you may encounter all three. This post untangles them — and tells you the one thing that matters most, regardless of which language your SLP speaks.</p>
+
+                <h2>What Is a Sibilant Distortion?</h2>
+
+                <p>Sibilants are the hissing consonants: /s/, /z/, /ʃ/ (as in "shoe"), /ʒ/ (as in "measure"). To produce a clean /s/, the tongue tip must hover just behind the upper front teeth — close enough to create a narrow groove through which air rushes to produce a crisp, high-pitched hiss. This is a remarkably precise motor task. The tongue must not touch the teeth, must not spread sideways, and must hold a narrow channel with consistent pressure.</p>
+
+                <p>When that precision breaks down — because the tongue goes too far forward, pushes against the teeth, or lets air escape sideways — you get a sibilant distortion. It's one of the most common speech concerns in children under seven, and it goes by many names.</p>
+
+                <h2>The German Classification: Sigmatismus</h2>
+
+                <p>German-speaking speech-language pathologists (Logopäden) use a highly systematic taxonomy. Each subtype has a Latin suffix indicating the articulatory position of the tongue:</p>
+
+                <ul>
+                    <li><strong>Sigmatismus interdentalis</strong> — The tongue protrudes between the upper and lower front teeth, producing a /θ/-like sound (as in English "think") instead of /s/. This is the classic "lisp" that most parents recognize. It affects up to 35% of five-year-olds and is considered <em>developmental</em> — the nervous system is still refining its motor map. German SLPs typically wait until age 4;6–5;0 before beginning formal intervention.</li>
+                    <li><strong>Sigmatismus addentalis</strong> — The tongue contacts the back of the upper front teeth (rather than protruding through them), producing a dull, muffled /s/ with a slightly dental quality. This is also considered borderline developmental, though it rarely self-corrects as cleanly as interdentalis.</li>
+                    <li><strong>Sigmatismus lateralis</strong> — The tongue fails to brace against the back molars, allowing air to escape over the sides. The result is a wet, "slushy" or "hot potato" quality. This type <strong>never self-corrects at any age</strong> and is not developmental. Therapy is recommended from age 4 onward. It frequently co-occurs with tongue thrust.</li>
+                    <li><strong>Sigmatismus palatalis</strong> — The tongue dorsum rises toward the hard palate during /s/ production, resulting in a sound that resembles /ʃ/ (the "sh" sound). This is non-developmental and requires therapy.</li>
+                </ul>
+
+                <h2>The English Classification: Lisp</h2>
+
+                <p>Anglophone SLPs use nearly identical categories under a simpler naming scheme:</p>
+
+                <ul>
+                    <li><strong>Frontal (Interdental) Lisp</strong> — Tongue protrudes between teeth. Considered developmental; often self-corrects by age 5;0. The most common type.</li>
+                    <li><strong>Lateral Lisp</strong> — Air escapes over the sides of the tongue. <strong>Never developmental; never self-corrects.</strong> Intervention from age 4;0.</li>
+                    <li><strong>Palatal Lisp</strong> — Tongue contacts the hard palate; /s/ sounds like /ʃ/. Non-developmental; always requires therapy.</li>
+                    <li><strong>Dental Lisp</strong> — Tongue contacts (but does not protrude through) the teeth; borderline developmental; rarely self-corrects.</li>
+                </ul>
+
+                <h2>The French Classification: Sigmatisme</h2>
+
+                <p>French orthophonistes use the same structural framework with a French vocabulary:</p>
+
+                <ul>
+                    <li><strong>Sigmatisme interdental ("zozotement")</strong> — The French word <em>zozotement</em> is wonderfully onomatopoeic. Developmental; treat from ages 4–5 if not resolving.</li>
+                    <li><strong>Sigmatisme addental</strong> — Tongue contacts upper front teeth. Borderline developmental.</li>
+                    <li><strong>Sigmatisme latéral ("schlintement")</strong> — The slushy lateral air escape. The term <em>schlintement</em> is used in francophone clinical literature. <strong>Non-developmental; never self-corrects.</strong> Orthophoniste referral recommended immediately.</li>
+                </ul>
+
+                <h2>The One Rule That Crosses All Three Languages</h2>
+
+                <div class="alert-box">
+                    <p><strong>The lateral lisp/sigmatismus lateralis/sigmatisme latéral is NEVER developmental in any language.</strong> It does not self-correct. It does not get better with time. If your child has a wet, slushy quality on /s/ sounds — as if speaking with a mouth full of saliva — consult a speech-language pathologist now, regardless of your child's age.</p>
+                </div>
+
+                <p>Every other type of sibilant distortion exists on a spectrum: some are developmental, some borderline, most benefit from watchful waiting until age 5. But the lateral escape is categorically different. The muscle pattern underlying it — the failure of lateral tongue bracing — tends to become more ingrained over time, not less. Early intervention is dramatically more effective than late intervention.</p>
+
+                <h2>Comparison: All Three Traditions Side by Side</h2>
+
+                <table class="lang-compare-table">
+                    <thead>
+                        <tr>
+                            <th>German (Logopädie)</th>
+                            <th>English (SLP)</th>
+                            <th>French (Orthophonie)</th>
+                            <th>Developmental?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sigmatismus interdentalis</td>
+                            <td>Frontal/Interdental Lisp</td>
+                            <td>Sigmatisme interdental (zozotement)</td>
+                            <td>Yes — wait until 5;0</td>
+                        </tr>
+                        <tr>
+                            <td>Sigmatismus addentalis</td>
+                            <td>Dental Lisp</td>
+                            <td>Sigmatisme addental</td>
+                            <td>Borderline — monitor</td>
+                        </tr>
+                        <tr>
+                            <td>Sigmatismus lateralis</td>
+                            <td>Lateral Lisp</td>
+                            <td>Sigmatisme latéral (schlintement)</td>
+                            <td><strong>NO — seek therapy now</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Sigmatismus palatalis</td>
+                            <td>Palatal Lisp</td>
+                            <td>—</td>
+                            <td><strong>NO — therapy needed</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>What Causes a Lateral Lisp?</h2>
+
+                <p>The lateral lisp is almost always rooted in a failure of <strong>lateral tongue bracing</strong> — the ability of the sides of the tongue to press firmly against the upper back molars, creating a sealed channel that directs airflow centrally over the tongue tip. Without this seal, air escapes sideways, producing the characteristic wet sound.</p>
+
+                <p>This bracing pattern is also essential for producing English /r/ correctly, which is why children with lateral lisps sometimes also struggle with /r/ later on. It is also frequently associated with tongue thrust in swallowing — the tongue pushes forward or sideways during swallow instead of pressing up against the palate.</p>
+
+                <p>Lateral bracing exercises — pressing the tongue firmly against the upper molars, holding, releasing — are a cornerstone of therapy for lateral lisp across all three linguistic traditions.</p>
+
+                <h2>When Should Parents Act?</h2>
+
+                <div class="blog-tip-box">
+                    <p><strong>Quick decision guide:</strong><br>
+                    &#x2705; <strong>Interdental lisp</strong> in a child under 5 → Watch and wait. Check in at age 5 if not improving.<br>
+                    &#x26A0;&#xFE0F; <strong>Interdental lisp</strong> persisting after 5;0 → Consult an SLP.<br>
+                    &#x1F6A8; <strong>Lateral lisp</strong> at any age → Consult an SLP now. Do not wait.</p>
+                </div>
+
+                <p>If you're in a multilingual household and your child sees clinicians in different countries or systems, it helps to know the local terminology so you can ask the right questions. A Logopädin in Munich and an orthophoniste in Lyon may use different words, but if you ask specifically about <em>laterale Luftentweichung</em> or <em>échappement d'air latéral</em>, you'll be speaking directly to the clinical issue.</p>
+
+                <h2>Tongue Training at Home</h2>
+
+                <p>For families with children showing early sibilant difficulties (not yet ready for formal therapy, or waiting for an SLP appointment), simple lateral bracing exercises can begin at home. The core exercise: ask your child to press their "tongue wings" (the sides of the tongue) firmly against their back upper teeth, hold for five seconds, and release. Make it a game — "can you feel your tongue wings grip?"</p>
+
+                <p>Grimasso's tongue training exercises include lateral bracing sequences designed to be playful and age-appropriate, building the foundational muscle control that both /s/ and /r/ production depend on.</p>
+
+                <h2>References</h2>
+                <ol class="blog-references">
+                    <li>Fox, A. V., &amp; Dodd, B. (1999). Der Erwerb des phonologischen Systems in der deutschen Sprache. <em>Sprache Stimme Geh&ouml;r</em>, 23, 183&ndash;191.</li>
+                    <li>MacLeod, A. A., Sutton, A., Trudeau, N., &amp; Thordardottir, E. (2011). The acquisition of consonants in Qu&eacute;b&eacute;cois French. <em>International Journal of Speech-Language Pathology</em>, 13(2), 93&ndash;109.</li>
+                    <li>Crowe, K., &amp; McLeod, S. (2020). Children&rsquo;s consonant acquisition in 27 languages. <em>American Journal of Speech-Language Pathology</em>, 29(3), 1220&ndash;1239.</li>
+                    <li>McLeod, S., &amp; Baker, E. (2017). <em>Children&rsquo;s Speech: An Evidence-Based Approach to Assessment and Intervention</em>. Pearson.</li>
+                </ol>
+
+                <div class="blog-cta-box">
+                    <h3>Build Lateral Bracing the Fun Way &#x1F438;</h3>
+                    <p>Grimasso's tongue exercises target the exact muscle patterns underlying healthy /s/ — including the lateral bracing skills that speech therapists train in clinic.</p>
+                    <a href="https://apps.apple.com/us/app/grimasso/id6758241652" target="_blank" rel="noopener" class="btn-white">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                        Download Free on App Store
+                    </a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">Grimasso</span>
+                    <p>Fun tongue training for kids. An app by Lorenz Maierhofer.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="/grimasso/privacy.txt" target="_blank">Privacy Policy</a>
+                    <a href="/grimasso/blog/index.html">Blog</a>
+                    <a href="/grimasso/index.html">Grimasso Home</a>
+                    <a href="/index.html">lorenzmaierhofer.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lorenz Maierhofer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../../script.js"></script>
+    <script src="../../grimasso-script.js"></script>
+</body>
+</html>
