@@ -152,7 +152,7 @@
         <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/"/>
-        <lastmod>2026-03-20</lastmod>
+        <lastmod>2026-03-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -188,6 +188,128 @@
         <lastmod>2026-03-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+    </url>
+
+    <!-- Grimasso Blog Posts: EN-only (new, Sept 2025–Mar 2026) -->
+    <url>
+        <loc>https://grimasso.lorenzmaierhofer.com/blog/speech-sound-milestones-guide/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/speech-sound-milestones-guide/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/speech-sound-milestones-guide/"/>
+        <lastmod>2025-09-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://grimasso.lorenzmaierhofer.com/blog/tongue-thrust-epidemic/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-thrust-epidemic/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-thrust-epidemic/"/>
+        <lastmod>2025-09-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://grimasso.lorenzmaierhofer.com/blog/daily-practice-science/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/daily-practice-science/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/daily-practice-science/"/>
+        <lastmod>2025-10-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://grimasso.lorenzmaierhofer.com/blog/tongue-agility-not-strength/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-agility-not-strength/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-agility-not-strength/"/>
+        <lastmod>2025-10-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://grimasso.lorenzmaierhofer.com/blog/swallowing-600-times-a-day/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/swallowing-600-times-a-day/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/swallowing-600-times-a-day/"/>
+        <lastmod>2025-11-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://grimasso.lorenzmaierhofer.com/blog/german-french-english-r/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/german-french-english-r/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/german-french-english-r/"/>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://grimasso.lorenzmaierhofer.com/blog/tongue-tie-controversy/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-tie-controversy/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-tie-controversy/"/>
+        <lastmod>2025-12-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://grimasso.lorenzmaierhofer.com/blog/nsome-tongue-exercise-science/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/nsome-tongue-exercise-science/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/nsome-tongue-exercise-science/"/>
+        <lastmod>2025-12-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://grimasso.lorenzmaierhofer.com/blog/tongue-home-base-alveolar-ridge/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-home-base-alveolar-ridge/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-home-base-alveolar-ridge/"/>
+        <lastmod>2025-12-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://grimasso.lorenzmaierhofer.com/blog/mandarin-retroflex-tones/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/mandarin-retroflex-tones/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/mandarin-retroflex-tones/"/>
+        <lastmod>2026-02-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://grimasso.lorenzmaierhofer.com/blog/sigmatismus-lisp-sigmatisme/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/sigmatismus-lisp-sigmatisme/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/sigmatismus-lisp-sigmatisme/"/>
+        <lastmod>2026-02-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://grimasso.lorenzmaierhofer.com/blog/german-r-age-3-english-r-age-8/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/german-r-age-3-english-r-age-8/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/german-r-age-3-english-r-age-8/"/>
+        <lastmod>2026-02-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://grimasso.lorenzmaierhofer.com/blog/french-nasal-vowels/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/french-nasal-vowels/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/french-nasal-vowels/"/>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://grimasso.lorenzmaierhofer.com/blog/zungenbrecher-speech-therapy/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/zungenbrecher-speech-therapy/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/zungenbrecher-speech-therapy/"/>
+        <lastmod>2026-03-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://grimasso.lorenzmaierhofer.com/blog/bilingual-transfer-vs-disorder/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/bilingual-transfer-vs-disorder/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/bilingual-transfer-vs-disorder/"/>
+        <lastmod>2026-03-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 
     <!-- Grimasso Blog Post: Tongue Thrust / Zungenübungen (4 languages) -->
