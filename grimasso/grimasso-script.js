@@ -417,6 +417,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Patch hamburger close threshold for Grimasso (768px instead of base 480px)
+// Runs after script.js which sets up the initial resize listener
+window.addEventListener('resize', function () {
+    if (window.innerWidth > 768) {
+        const navMenu = document.getElementById('navMenu');
+        const hamburger = document.getElementById('hamburgerToggle');
+        if (navMenu && hamburger) {
+            navMenu.classList.remove('is-open');
+            hamburger.setAttribute('aria-expanded', 'false');
+        }
+    }
+});
+
 // ANALYTICS - Plausible (GDPR-friendly, no cookies)
 // ============================================
 (function() {
