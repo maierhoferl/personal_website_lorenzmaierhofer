@@ -31,9 +31,10 @@
   else target = 'en';
 
   if (target === current) return;
+  if (current !== 'en') return;  // only redirect from the English root, never away from language pages
 
-  const roots = { en: '/grimasso/', de: '/grimasso/de/', fr: '/grimasso/fr/', zh: '/grimasso/zh/' };
-  window.location.replace(roots[target]);
+  const roots = { de: '/grimasso/de/', fr: '/grimasso/fr/', zh: '/grimasso/zh/' };
+  if (roots[target]) window.location.replace(roots[target]);
 })();
 
 // Compact language selector for mobile — replaces pills with a <select> on narrow screens

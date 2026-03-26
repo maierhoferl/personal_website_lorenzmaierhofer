@@ -21,8 +21,6 @@
     window.location.replace('/de/');
   } else if (wantsZH && !isZH) {
     window.location.replace('/zh/');
-  } else if (!wantsDE && !wantsZH && (isDE || isZH)) {
-    window.location.replace('/');
   }
 })();
 
