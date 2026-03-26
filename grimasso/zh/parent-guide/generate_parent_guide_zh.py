@@ -441,7 +441,7 @@ def generate(f):
     y -= 13
     c.setFont(f["r"], 6.5); c.setFillColor(colors.HexColor("#999999"))
     left  = "Grimasso — 口腔肌肉训练应用"
-    mid   = "grimasso.lorenzmaierhofer.com/zh/"
+    mid   = "lorenzmaierhofer.com/grimasso/zh/"
     right = "隐私政策 · 无广告 · 免费"
     c.drawString(ML, y, left)
     mw = c.stringWidth(mid, f["r"], 6.5)

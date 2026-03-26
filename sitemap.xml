@@ -100,45 +100,45 @@
 
     <!-- Grimasso Landing Pages -->
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/"/>
         <lastmod>2026-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/de/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/"/>
         <lastmod>2026-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/fr/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/fr/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/"/>
         <lastmod>2026-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/zh/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/"/>
         <lastmod>2026-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -146,45 +146,45 @@
 
     <!-- Grimasso Blog Indexes -->
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/blog/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/blog/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/"/>
         <lastmod>2026-03-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/de/blog/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/blog/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/"/>
         <lastmod>2026-03-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/fr/blog/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/fr/blog/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/"/>
         <lastmod>2026-03-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/zh/blog/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/blog/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/"/>
         <lastmod>2026-03-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -192,121 +192,121 @@
 
     <!-- Grimasso Blog Posts: EN-only (new, Sept 2025–Mar 2026) -->
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/blog/speech-sound-milestones-guide/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/speech-sound-milestones-guide/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/speech-sound-milestones-guide/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/blog/speech-sound-milestones-guide/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/speech-sound-milestones-guide/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/speech-sound-milestones-guide/"/>
         <lastmod>2025-09-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/blog/tongue-thrust-epidemic/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-thrust-epidemic/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-thrust-epidemic/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-epidemic/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-epidemic/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-epidemic/"/>
         <lastmod>2025-09-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/blog/daily-practice-science/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/daily-practice-science/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/daily-practice-science/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/blog/daily-practice-science/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/daily-practice-science/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/daily-practice-science/"/>
         <lastmod>2025-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/blog/tongue-agility-not-strength/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-agility-not-strength/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-agility-not-strength/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/blog/tongue-agility-not-strength/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-agility-not-strength/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-agility-not-strength/"/>
         <lastmod>2025-10-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/blog/swallowing-600-times-a-day/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/swallowing-600-times-a-day/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/swallowing-600-times-a-day/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/blog/swallowing-600-times-a-day/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/swallowing-600-times-a-day/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/swallowing-600-times-a-day/"/>
         <lastmod>2025-11-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/blog/german-french-english-r/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/german-french-english-r/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/german-french-english-r/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/blog/german-french-english-r/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/german-french-english-r/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/german-french-english-r/"/>
         <lastmod>2025-11-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/blog/tongue-tie-controversy/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-tie-controversy/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-tie-controversy/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/blog/tongue-tie-controversy/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-tie-controversy/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-tie-controversy/"/>
         <lastmod>2025-12-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/blog/nsome-tongue-exercise-science/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/nsome-tongue-exercise-science/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/nsome-tongue-exercise-science/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/blog/nsome-tongue-exercise-science/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/nsome-tongue-exercise-science/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/nsome-tongue-exercise-science/"/>
         <lastmod>2025-12-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/blog/tongue-home-base-alveolar-ridge/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-home-base-alveolar-ridge/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-home-base-alveolar-ridge/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/blog/tongue-home-base-alveolar-ridge/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-home-base-alveolar-ridge/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-home-base-alveolar-ridge/"/>
         <lastmod>2025-12-31</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/blog/mandarin-retroflex-tones/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/mandarin-retroflex-tones/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/mandarin-retroflex-tones/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/blog/mandarin-retroflex-tones/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/mandarin-retroflex-tones/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/mandarin-retroflex-tones/"/>
         <lastmod>2026-02-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/blog/sigmatismus-lisp-sigmatisme/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/sigmatismus-lisp-sigmatisme/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/sigmatismus-lisp-sigmatisme/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/blog/sigmatismus-lisp-sigmatisme/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/sigmatismus-lisp-sigmatisme/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/sigmatismus-lisp-sigmatisme/"/>
         <lastmod>2026-02-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/blog/german-r-age-3-english-r-age-8/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/german-r-age-3-english-r-age-8/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/german-r-age-3-english-r-age-8/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/blog/german-r-age-3-english-r-age-8/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/german-r-age-3-english-r-age-8/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/german-r-age-3-english-r-age-8/"/>
         <lastmod>2026-02-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/blog/french-nasal-vowels/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/french-nasal-vowels/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/french-nasal-vowels/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/blog/french-nasal-vowels/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/french-nasal-vowels/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/french-nasal-vowels/"/>
         <lastmod>2026-02-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/blog/zungenbrecher-speech-therapy/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/zungenbrecher-speech-therapy/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/zungenbrecher-speech-therapy/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/blog/zungenbrecher-speech-therapy/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/zungenbrecher-speech-therapy/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/zungenbrecher-speech-therapy/"/>
         <lastmod>2026-03-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/blog/bilingual-transfer-vs-disorder/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/bilingual-transfer-vs-disorder/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/bilingual-transfer-vs-disorder/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/blog/bilingual-transfer-vs-disorder/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/bilingual-transfer-vs-disorder/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/bilingual-transfer-vs-disorder/"/>
         <lastmod>2026-03-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -314,45 +314,45 @@
 
     <!-- Grimasso Blog Post: Tongue Thrust / Zungenübungen (4 languages) -->
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/blog/tongue-thrust-exercises-at-home/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-thrust-exercises-at-home/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/zungenubungen-fuer-kinder-zuhause/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/exercices-de-langue-enfants-maison/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/she-yue-lianxi-zai-jia/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-thrust-exercises-at-home/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-exercises-at-home/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-exercises-at-home/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungenubungen-fuer-kinder-zuhause/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/exercices-de-langue-enfants-maison/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/she-yue-lianxi-zai-jia/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-exercises-at-home/"/>
         <lastmod>2026-03-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/de/blog/zungenubungen-fuer-kinder-zuhause/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-thrust-exercises-at-home/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/zungenubungen-fuer-kinder-zuhause/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/exercices-de-langue-enfants-maison/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/she-yue-lianxi-zai-jia/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-thrust-exercises-at-home/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/blog/zungenubungen-fuer-kinder-zuhause/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-exercises-at-home/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungenubungen-fuer-kinder-zuhause/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/exercices-de-langue-enfants-maison/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/she-yue-lianxi-zai-jia/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-exercises-at-home/"/>
         <lastmod>2026-03-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/fr/blog/exercices-de-langue-enfants-maison/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-thrust-exercises-at-home/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/zungenubungen-fuer-kinder-zuhause/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/exercices-de-langue-enfants-maison/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/she-yue-lianxi-zai-jia/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-thrust-exercises-at-home/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/fr/blog/exercices-de-langue-enfants-maison/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-exercises-at-home/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungenubungen-fuer-kinder-zuhause/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/exercices-de-langue-enfants-maison/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/she-yue-lianxi-zai-jia/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-exercises-at-home/"/>
         <lastmod>2026-03-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/zh/blog/she-yue-lianxi-zai-jia/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-thrust-exercises-at-home/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/zungenubungen-fuer-kinder-zuhause/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/exercices-de-langue-enfants-maison/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/she-yue-lianxi-zai-jia/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-thrust-exercises-at-home/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/blog/she-yue-lianxi-zai-jia/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-exercises-at-home/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungenubungen-fuer-kinder-zuhause/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/exercices-de-langue-enfants-maison/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/she-yue-lianxi-zai-jia/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-exercises-at-home/"/>
         <lastmod>2026-03-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -360,9 +360,9 @@
 
     <!-- Grimasso Blog Post: English pronunciation tongue training (ZH-exclusive) -->
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/zh/blog/ying-yu-fayin-she-tou/</loc>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/ying-yu-fayin-she-tou/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/zh/blog/ying-yu-fayin-she-tou/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/blog/ying-yu-fayin-she-tou/</loc>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/ying-yu-fayin-she-tou/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/zh/blog/ying-yu-fayin-she-tou/"/>
         <lastmod>2026-03-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -370,31 +370,31 @@
 
     <!-- Grimasso Blog Post: Myofunctional Therapy (EN/DE/FR) -->
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/blog/what-is-myofunctional-therapy/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/what-is-myofunctional-therapy/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/was-ist-myofunktionelle-therapie/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/quest-ce-que-la-therapie-myofonctionnelle/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/what-is-myofunctional-therapy/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/blog/what-is-myofunctional-therapy/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/what-is-myofunctional-therapy/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/was-ist-myofunktionelle-therapie/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/quest-ce-que-la-therapie-myofonctionnelle/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/what-is-myofunctional-therapy/"/>
         <lastmod>2026-03-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/de/blog/was-ist-myofunktionelle-therapie/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/what-is-myofunctional-therapy/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/was-ist-myofunktionelle-therapie/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/quest-ce-que-la-therapie-myofonctionnelle/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/what-is-myofunctional-therapy/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/blog/was-ist-myofunktionelle-therapie/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/what-is-myofunctional-therapy/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/was-ist-myofunktionelle-therapie/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/quest-ce-que-la-therapie-myofonctionnelle/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/what-is-myofunctional-therapy/"/>
         <lastmod>2026-03-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/fr/blog/quest-ce-que-la-therapie-myofonctionnelle/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/what-is-myofunctional-therapy/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/was-ist-myofunktionelle-therapie/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/quest-ce-que-la-therapie-myofonctionnelle/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/what-is-myofunctional-therapy/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/fr/blog/quest-ce-que-la-therapie-myofonctionnelle/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/what-is-myofunctional-therapy/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/was-ist-myofunktionelle-therapie/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/quest-ce-que-la-therapie-myofonctionnelle/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/what-is-myofunctional-therapy/"/>
         <lastmod>2026-03-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -402,45 +402,45 @@
 
     <!-- Grimasso Blog Post: Silly Tongue Exercises (EN/DE/FR/ZH) -->
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/blog/silly-tongue-exercises-kids-love/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/silly-tongue-exercises-kids-love/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/lustige-zungenubungen-kinder/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/exercices-langue-rigolos-enfants/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/haowan-shejian-youxi/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/silly-tongue-exercises-kids-love/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/blog/silly-tongue-exercises-kids-love/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/silly-tongue-exercises-kids-love/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/lustige-zungenubungen-kinder/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/exercices-langue-rigolos-enfants/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/haowan-shejian-youxi/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/silly-tongue-exercises-kids-love/"/>
         <lastmod>2026-03-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/de/blog/lustige-zungenubungen-kinder/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/silly-tongue-exercises-kids-love/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/lustige-zungenubungen-kinder/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/exercices-langue-rigolos-enfants/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/haowan-shejian-youxi/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/silly-tongue-exercises-kids-love/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/blog/lustige-zungenubungen-kinder/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/silly-tongue-exercises-kids-love/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/lustige-zungenubungen-kinder/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/exercices-langue-rigolos-enfants/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/haowan-shejian-youxi/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/silly-tongue-exercises-kids-love/"/>
         <lastmod>2026-03-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/fr/blog/exercices-langue-rigolos-enfants/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/silly-tongue-exercises-kids-love/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/lustige-zungenubungen-kinder/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/exercices-langue-rigolos-enfants/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/haowan-shejian-youxi/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/silly-tongue-exercises-kids-love/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/fr/blog/exercices-langue-rigolos-enfants/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/silly-tongue-exercises-kids-love/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/lustige-zungenubungen-kinder/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/exercices-langue-rigolos-enfants/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/haowan-shejian-youxi/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/silly-tongue-exercises-kids-love/"/>
         <lastmod>2026-03-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/zh/blog/haowan-shejian-youxi/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/silly-tongue-exercises-kids-love/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/lustige-zungenubungen-kinder/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/exercices-langue-rigolos-enfants/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/haowan-shejian-youxi/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/silly-tongue-exercises-kids-love/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/blog/haowan-shejian-youxi/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/silly-tongue-exercises-kids-love/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/lustige-zungenubungen-kinder/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/exercices-langue-rigolos-enfants/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/haowan-shejian-youxi/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/silly-tongue-exercises-kids-love/"/>
         <lastmod>2026-03-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -448,45 +448,45 @@
 
     <!-- Grimasso For Professionals (EN/DE/FR/ZH) -->
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/for-slps/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/for-slps/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/fuer-logopaedinnen/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/pour-les-professionnels/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/wei-zhuanye-renshi/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/for-slps/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/for-slps/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/for-slps/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/fuer-logopaedinnen/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/pour-les-professionnels/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/wei-zhuanye-renshi/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/for-slps/"/>
         <lastmod>2026-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/de/fuer-logopaedinnen/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/for-slps/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/fuer-logopaedinnen/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/pour-les-professionnels/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/wei-zhuanye-renshi/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/for-slps/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/fuer-logopaedinnen/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/for-slps/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/fuer-logopaedinnen/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/pour-les-professionnels/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/wei-zhuanye-renshi/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/for-slps/"/>
         <lastmod>2026-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/fr/pour-les-professionnels/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/for-slps/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/fuer-logopaedinnen/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/pour-les-professionnels/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/wei-zhuanye-renshi/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/for-slps/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/fr/pour-les-professionnels/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/for-slps/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/fuer-logopaedinnen/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/pour-les-professionnels/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/wei-zhuanye-renshi/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/for-slps/"/>
         <lastmod>2026-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/zh/wei-zhuanye-renshi/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/for-slps/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/fuer-logopaedinnen/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/pour-les-professionnels/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/wei-zhuanye-renshi/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/for-slps/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/wei-zhuanye-renshi/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/for-slps/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/fuer-logopaedinnen/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/pour-les-professionnels/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/wei-zhuanye-renshi/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/for-slps/"/>
         <lastmod>2026-03-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -494,330 +494,330 @@
 
     <!-- Grimasso Blog Posts: FR + ZH + DE (Sept 2025–Mar 2026) -->
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/fr/blog/jalons-phonologiques-guide-parents/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/speech-sound-milestones-guide/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/lautentwicklung-meilensteine-elternratgeber/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/jalons-phonologiques-guide-parents/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/fayin-lichengbei-jiazhangjishang/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/speech-sound-milestones-guide/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/fr/blog/jalons-phonologiques-guide-parents/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/speech-sound-milestones-guide/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/lautentwicklung-meilensteine-elternratgeber/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/jalons-phonologiques-guide-parents/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/fayin-lichengbei-jiazhangjishang/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/speech-sound-milestones-guide/"/>
         <lastmod>2025-09-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/zh/blog/fayin-lichengbei-jiazhangjishang/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/speech-sound-milestones-guide/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/lautentwicklung-meilensteine-elternratgeber/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/jalons-phonologiques-guide-parents/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/fayin-lichengbei-jiazhangjishang/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/speech-sound-milestones-guide/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/blog/fayin-lichengbei-jiazhangjishang/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/speech-sound-milestones-guide/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/lautentwicklung-meilensteine-elternratgeber/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/jalons-phonologiques-guide-parents/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/fayin-lichengbei-jiazhangjishang/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/speech-sound-milestones-guide/"/>
         <lastmod>2025-09-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/fr/blog/epidemie-poussee-linguale/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-thrust-epidemic/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/zungenpressen-verbreitung-ursachen/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/epidemie-poussee-linguale/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/she-tui-wenti-liuxingbing/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-thrust-epidemic/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/fr/blog/epidemie-poussee-linguale/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-epidemic/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungenpressen-verbreitung-ursachen/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/epidemie-poussee-linguale/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/she-tui-wenti-liuxingbing/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-epidemic/"/>
         <lastmod>2025-09-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/zh/blog/she-tui-wenti-liuxingbing/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-thrust-epidemic/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/zungenpressen-verbreitung-ursachen/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/epidemie-poussee-linguale/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/she-tui-wenti-liuxingbing/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-thrust-epidemic/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/blog/she-tui-wenti-liuxingbing/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-epidemic/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungenpressen-verbreitung-ursachen/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/epidemie-poussee-linguale/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/she-tui-wenti-liuxingbing/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-epidemic/"/>
         <lastmod>2025-09-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/fr/blog/science-pratique-quotidienne/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/daily-practice-science/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/taeglich-ueben-wissenschaft/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/science-pratique-quotidienne/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/mei-ri-lianxi-kexue/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/daily-practice-science/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/fr/blog/science-pratique-quotidienne/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/daily-practice-science/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/taeglich-ueben-wissenschaft/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/science-pratique-quotidienne/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/mei-ri-lianxi-kexue/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/daily-practice-science/"/>
         <lastmod>2025-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/zh/blog/mei-ri-lianxi-kexue/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/daily-practice-science/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/taeglich-ueben-wissenschaft/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/science-pratique-quotidienne/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/mei-ri-lianxi-kexue/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/daily-practice-science/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/blog/mei-ri-lianxi-kexue/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/daily-practice-science/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/taeglich-ueben-wissenschaft/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/science-pratique-quotidienne/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/mei-ri-lianxi-kexue/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/daily-practice-science/"/>
         <lastmod>2025-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/fr/blog/agilite-pas-force-langue/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-agility-not-strength/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/zungengeschicklichkeit-nicht-kraft/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/agilite-pas-force-langue/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/she-tou-linghuoxing-bu-shi-liliang/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-agility-not-strength/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/fr/blog/agilite-pas-force-langue/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-agility-not-strength/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungengeschicklichkeit-nicht-kraft/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/agilite-pas-force-langue/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/she-tou-linghuoxing-bu-shi-liliang/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-agility-not-strength/"/>
         <lastmod>2025-10-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/zh/blog/she-tou-linghuoxing-bu-shi-liliang/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-agility-not-strength/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/zungengeschicklichkeit-nicht-kraft/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/agilite-pas-force-langue/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/she-tou-linghuoxing-bu-shi-liliang/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-agility-not-strength/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/blog/she-tou-linghuoxing-bu-shi-liliang/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-agility-not-strength/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungengeschicklichkeit-nicht-kraft/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/agilite-pas-force-langue/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/she-tou-linghuoxing-bu-shi-liliang/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-agility-not-strength/"/>
         <lastmod>2025-10-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/fr/blog/avaler-600-fois-par-jour/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/swallowing-600-times-a-day/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/600-mal-schlucken-pro-tag/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/avaler-600-fois-par-jour/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/mei-tian-tunyan-600-ci/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/swallowing-600-times-a-day/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/fr/blog/avaler-600-fois-par-jour/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/swallowing-600-times-a-day/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/600-mal-schlucken-pro-tag/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/avaler-600-fois-par-jour/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/mei-tian-tunyan-600-ci/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/swallowing-600-times-a-day/"/>
         <lastmod>2025-11-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/zh/blog/mei-tian-tunyan-600-ci/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/swallowing-600-times-a-day/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/600-mal-schlucken-pro-tag/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/avaler-600-fois-par-jour/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/mei-tian-tunyan-600-ci/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/swallowing-600-times-a-day/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/blog/mei-tian-tunyan-600-ci/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/swallowing-600-times-a-day/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/600-mal-schlucken-pro-tag/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/avaler-600-fois-par-jour/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/mei-tian-tunyan-600-ci/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/swallowing-600-times-a-day/"/>
         <lastmod>2025-11-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/fr/blog/r-allemand-r-francais-r-anglais/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/german-french-english-r/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/deutsches-franzoesisches-englisches-r/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/r-allemand-r-francais-r-anglais/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/de-fa-ying-r-yin-bijiao/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/german-french-english-r/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/fr/blog/r-allemand-r-francais-r-anglais/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/german-french-english-r/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/deutsches-franzoesisches-englisches-r/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/r-allemand-r-francais-r-anglais/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/de-fa-ying-r-yin-bijiao/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/german-french-english-r/"/>
         <lastmod>2025-11-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/zh/blog/de-fa-ying-r-yin-bijiao/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/german-french-english-r/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/deutsches-franzoesisches-englisches-r/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/r-allemand-r-francais-r-anglais/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/de-fa-ying-r-yin-bijiao/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/german-french-english-r/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/blog/de-fa-ying-r-yin-bijiao/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/german-french-english-r/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/deutsches-franzoesisches-englisches-r/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/r-allemand-r-francais-r-anglais/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/de-fa-ying-r-yin-bijiao/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/german-french-english-r/"/>
         <lastmod>2025-11-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/fr/blog/frein-de-langue-controverse/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-tie-controversy/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/zungenband-kontroverse/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/frein-de-langue-controverse/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/she-xizhang-zhengyi/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-tie-controversy/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/fr/blog/frein-de-langue-controverse/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-tie-controversy/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungenband-kontroverse/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/frein-de-langue-controverse/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/she-xizhang-zhengyi/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-tie-controversy/"/>
         <lastmod>2025-12-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/zh/blog/she-xizhang-zhengyi/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-tie-controversy/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/zungenband-kontroverse/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/frein-de-langue-controverse/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/she-xizhang-zhengyi/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-tie-controversy/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/blog/she-xizhang-zhengyi/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-tie-controversy/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungenband-kontroverse/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/frein-de-langue-controverse/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/she-xizhang-zhengyi/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-tie-controversy/"/>
         <lastmod>2025-12-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/fr/blog/exercices-oraux-non-verbaux-science/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/nsome-tongue-exercise-science/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/zungenubungen-wirksamkeit-wissenschaft/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/exercices-oraux-non-verbaux-science/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/fei-yuyan-kouqiang-lianxi-kexue/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/nsome-tongue-exercise-science/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/fr/blog/exercices-oraux-non-verbaux-science/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/nsome-tongue-exercise-science/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungenubungen-wirksamkeit-wissenschaft/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/exercices-oraux-non-verbaux-science/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/fei-yuyan-kouqiang-lianxi-kexue/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/nsome-tongue-exercise-science/"/>
         <lastmod>2025-12-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/zh/blog/fei-yuyan-kouqiang-lianxi-kexue/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/nsome-tongue-exercise-science/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/zungenubungen-wirksamkeit-wissenschaft/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/exercices-oraux-non-verbaux-science/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/fei-yuyan-kouqiang-lianxi-kexue/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/nsome-tongue-exercise-science/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/blog/fei-yuyan-kouqiang-lianxi-kexue/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/nsome-tongue-exercise-science/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungenubungen-wirksamkeit-wissenschaft/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/exercices-oraux-non-verbaux-science/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/fei-yuyan-kouqiang-lianxi-kexue/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/nsome-tongue-exercise-science/"/>
         <lastmod>2025-12-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/fr/blog/position-repos-langue/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-home-base-alveolar-ridge/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/zungenruheposition-alveolarfortsatz/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/position-repos-langue/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/she-tou-xiuxi-weizhi/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-home-base-alveolar-ridge/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/fr/blog/position-repos-langue/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-home-base-alveolar-ridge/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungenruheposition-alveolarfortsatz/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/position-repos-langue/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/she-tou-xiuxi-weizhi/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-home-base-alveolar-ridge/"/>
         <lastmod>2025-12-31</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/zh/blog/she-tou-xiuxi-weizhi/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-home-base-alveolar-ridge/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/zungenruheposition-alveolarfortsatz/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/position-repos-langue/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/she-tou-xiuxi-weizhi/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-home-base-alveolar-ridge/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/blog/she-tou-xiuxi-weizhi/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-home-base-alveolar-ridge/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungenruheposition-alveolarfortsatz/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/position-repos-langue/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/she-tou-xiuxi-weizhi/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-home-base-alveolar-ridge/"/>
         <lastmod>2025-12-31</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/zh/blog/jigong-zhiliao-shenme-shi/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/what-is-myofunctional-therapy/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/was-ist-myofunktionelle-therapie/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/quest-ce-que-la-therapie-myofonctionnelle/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/jigong-zhiliao-shenme-shi/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/what-is-myofunctional-therapy/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/blog/jigong-zhiliao-shenme-shi/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/what-is-myofunctional-therapy/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/was-ist-myofunktionelle-therapie/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/quest-ce-que-la-therapie-myofonctionnelle/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/jigong-zhiliao-shenme-shi/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/what-is-myofunctional-therapy/"/>
         <lastmod>2026-01-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/fr/blog/retroflexes-mandarin-tons/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/mandarin-retroflex-tones/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/mandarin-retroflexlaute-toene/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/retroflexes-mandarin-tons/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/putonghua-juanshe-yin-shengdiao/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/mandarin-retroflex-tones/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/fr/blog/retroflexes-mandarin-tons/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/mandarin-retroflex-tones/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/mandarin-retroflexlaute-toene/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/retroflexes-mandarin-tons/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/putonghua-juanshe-yin-shengdiao/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/mandarin-retroflex-tones/"/>
         <lastmod>2026-02-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/zh/blog/putonghua-juanshe-yin-shengdiao/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/mandarin-retroflex-tones/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/mandarin-retroflexlaute-toene/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/retroflexes-mandarin-tons/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/putonghua-juanshe-yin-shengdiao/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/mandarin-retroflex-tones/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/blog/putonghua-juanshe-yin-shengdiao/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/mandarin-retroflex-tones/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/mandarin-retroflexlaute-toene/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/retroflexes-mandarin-tons/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/putonghua-juanshe-yin-shengdiao/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/mandarin-retroflex-tones/"/>
         <lastmod>2026-02-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/fr/blog/sigmatisme-zezaiement-guide/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/sigmatismus-lisp-sigmatisme/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/sigmatismus-lispeln-ratgeber/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/sigmatisme-zezaiement-guide/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/sigmatismus-lisp-sigmatisme/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/fr/blog/sigmatisme-zezaiement-guide/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/sigmatismus-lisp-sigmatisme/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/sigmatismus-lispeln-ratgeber/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/sigmatisme-zezaiement-guide/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/sigmatismus-lisp-sigmatisme/"/>
         <lastmod>2026-02-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/fr/blog/r-allemand-3-ans-r-anglais-8-ans/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/german-r-age-3-english-r-age-8/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/deutsches-r-mit-3-englisches-r-mit-8/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/r-allemand-3-ans-r-anglais-8-ans/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/de-r-3-sui-ying-r-8-sui/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/german-r-age-3-english-r-age-8/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/fr/blog/r-allemand-3-ans-r-anglais-8-ans/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/german-r-age-3-english-r-age-8/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/deutsches-r-mit-3-englisches-r-mit-8/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/r-allemand-3-ans-r-anglais-8-ans/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/de-r-3-sui-ying-r-8-sui/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/german-r-age-3-english-r-age-8/"/>
         <lastmod>2026-02-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/zh/blog/de-r-3-sui-ying-r-8-sui/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/german-r-age-3-english-r-age-8/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/deutsches-r-mit-3-englisches-r-mit-8/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/r-allemand-3-ans-r-anglais-8-ans/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/de-r-3-sui-ying-r-8-sui/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/german-r-age-3-english-r-age-8/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/blog/de-r-3-sui-ying-r-8-sui/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/german-r-age-3-english-r-age-8/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/deutsches-r-mit-3-englisches-r-mit-8/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/r-allemand-3-ans-r-anglais-8-ans/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/de-r-3-sui-ying-r-8-sui/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/german-r-age-3-english-r-age-8/"/>
         <lastmod>2026-02-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/fr/blog/voyelles-nasales-francaises/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/french-nasal-vowels/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/franzoesische-nasalvokale/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/voyelles-nasales-francaises/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/faguo-biyin-muyin-jieshao/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/french-nasal-vowels/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/fr/blog/voyelles-nasales-francaises/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/french-nasal-vowels/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/franzoesische-nasalvokale/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/voyelles-nasales-francaises/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/faguo-biyin-muyin-jieshao/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/french-nasal-vowels/"/>
         <lastmod>2026-02-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/zh/blog/faguo-biyin-muyin-jieshao/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/french-nasal-vowels/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/franzoesische-nasalvokale/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/voyelles-nasales-francaises/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/faguo-biyin-muyin-jieshao/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/french-nasal-vowels/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/blog/faguo-biyin-muyin-jieshao/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/french-nasal-vowels/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/franzoesische-nasalvokale/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/voyelles-nasales-francaises/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/faguo-biyin-muyin-jieshao/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/french-nasal-vowels/"/>
         <lastmod>2026-02-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/fr/blog/virelangues-orthophonie/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/zungenbrecher-speech-therapy/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/zungenbrecher-logopaedie/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/virelangues-orthophonie/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/raokouling-yuyin-zhiliao/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/zungenbrecher-speech-therapy/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/fr/blog/virelangues-orthophonie/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/zungenbrecher-speech-therapy/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungenbrecher-logopaedie/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/virelangues-orthophonie/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/raokouling-yuyin-zhiliao/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/zungenbrecher-speech-therapy/"/>
         <lastmod>2026-03-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/zh/blog/raokouling-yuyin-zhiliao/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/zungenbrecher-speech-therapy/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/zungenbrecher-logopaedie/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/virelangues-orthophonie/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/raokouling-yuyin-zhiliao/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/zungenbrecher-speech-therapy/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/blog/raokouling-yuyin-zhiliao/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/zungenbrecher-speech-therapy/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungenbrecher-logopaedie/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/virelangues-orthophonie/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/raokouling-yuyin-zhiliao/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/zungenbrecher-speech-therapy/"/>
         <lastmod>2026-03-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/fr/blog/transfert-bilingue-vs-trouble/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/bilingual-transfer-vs-disorder/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/bilinguale-transferfehler-vs-stoerung/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/transfert-bilingue-vs-trouble/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/shuangyu-qianyi-vs-zhangai/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/bilingual-transfer-vs-disorder/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/fr/blog/transfert-bilingue-vs-trouble/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/bilingual-transfer-vs-disorder/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/bilinguale-transferfehler-vs-stoerung/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/transfert-bilingue-vs-trouble/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/shuangyu-qianyi-vs-zhangai/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/bilingual-transfer-vs-disorder/"/>
         <lastmod>2026-03-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/zh/blog/shuangyu-qianyi-vs-zhangai/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/bilingual-transfer-vs-disorder/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/bilinguale-transferfehler-vs-stoerung/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/transfert-bilingue-vs-trouble/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/shuangyu-qianyi-vs-zhangai/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/bilingual-transfer-vs-disorder/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/zh/blog/shuangyu-qianyi-vs-zhangai/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/bilingual-transfer-vs-disorder/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/bilinguale-transferfehler-vs-stoerung/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/transfert-bilingue-vs-trouble/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/shuangyu-qianyi-vs-zhangai/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/bilingual-transfer-vs-disorder/"/>
         <lastmod>2026-03-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -825,165 +825,165 @@
 
     <!-- Grimasso Blog Posts: DE (15 plan posts, Sept 2025–Mar 2026) -->
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/de/blog/lautentwicklung-meilensteine-elternratgeber/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/speech-sound-milestones-guide/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/lautentwicklung-meilensteine-elternratgeber/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/jalons-phonologiques-guide-parents/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/fayin-lichengbei-jiazhangjishang/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/speech-sound-milestones-guide/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/blog/lautentwicklung-meilensteine-elternratgeber/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/speech-sound-milestones-guide/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/lautentwicklung-meilensteine-elternratgeber/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/jalons-phonologiques-guide-parents/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/fayin-lichengbei-jiazhangjishang/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/speech-sound-milestones-guide/"/>
         <lastmod>2025-09-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/de/blog/zungenpressen-verbreitung-ursachen/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-thrust-epidemic/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/zungenpressen-verbreitung-ursachen/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/epidemie-poussee-linguale/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/she-tui-wenti-liuxingbing/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-thrust-epidemic/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/blog/zungenpressen-verbreitung-ursachen/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-epidemic/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungenpressen-verbreitung-ursachen/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/epidemie-poussee-linguale/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/she-tui-wenti-liuxingbing/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-thrust-epidemic/"/>
         <lastmod>2025-09-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/de/blog/taeglich-ueben-wissenschaft/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/daily-practice-science/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/taeglich-ueben-wissenschaft/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/science-pratique-quotidienne/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/mei-ri-lianxi-kexue/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/daily-practice-science/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/blog/taeglich-ueben-wissenschaft/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/daily-practice-science/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/taeglich-ueben-wissenschaft/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/science-pratique-quotidienne/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/mei-ri-lianxi-kexue/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/daily-practice-science/"/>
         <lastmod>2025-10-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/de/blog/zungengeschicklichkeit-nicht-kraft/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-agility-not-strength/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/zungengeschicklichkeit-nicht-kraft/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/agilite-pas-force-langue/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/she-tou-linghuoxing-bu-shi-liliang/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-agility-not-strength/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/blog/zungengeschicklichkeit-nicht-kraft/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-agility-not-strength/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungengeschicklichkeit-nicht-kraft/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/agilite-pas-force-langue/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/she-tou-linghuoxing-bu-shi-liliang/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-agility-not-strength/"/>
         <lastmod>2025-10-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/de/blog/600-mal-schlucken-pro-tag/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/swallowing-600-times-a-day/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/600-mal-schlucken-pro-tag/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/avaler-600-fois-par-jour/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/mei-tian-tunyan-600-ci/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/swallowing-600-times-a-day/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/blog/600-mal-schlucken-pro-tag/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/swallowing-600-times-a-day/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/600-mal-schlucken-pro-tag/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/avaler-600-fois-par-jour/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/mei-tian-tunyan-600-ci/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/swallowing-600-times-a-day/"/>
         <lastmod>2025-11-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/de/blog/deutsches-franzoesisches-englisches-r/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/german-french-english-r/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/deutsches-franzoesisches-englisches-r/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/r-allemand-r-francais-r-anglais/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/de-fa-ying-r-yin-bijiao/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/german-french-english-r/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/blog/deutsches-franzoesisches-englisches-r/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/german-french-english-r/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/deutsches-franzoesisches-englisches-r/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/r-allemand-r-francais-r-anglais/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/de-fa-ying-r-yin-bijiao/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/german-french-english-r/"/>
         <lastmod>2025-11-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/de/blog/zungenband-kontroverse/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-tie-controversy/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/zungenband-kontroverse/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/frein-de-langue-controverse/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/she-xizhang-zhengyi/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-tie-controversy/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/blog/zungenband-kontroverse/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-tie-controversy/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungenband-kontroverse/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/frein-de-langue-controverse/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/she-xizhang-zhengyi/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-tie-controversy/"/>
         <lastmod>2025-12-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/de/blog/zungenubungen-wirksamkeit-wissenschaft/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/nsome-tongue-exercise-science/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/zungenubungen-wirksamkeit-wissenschaft/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/exercices-oraux-non-verbaux-science/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/fei-yuyan-kouqiang-lianxi-kexue/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/nsome-tongue-exercise-science/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/blog/zungenubungen-wirksamkeit-wissenschaft/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/nsome-tongue-exercise-science/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungenubungen-wirksamkeit-wissenschaft/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/exercices-oraux-non-verbaux-science/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/fei-yuyan-kouqiang-lianxi-kexue/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/nsome-tongue-exercise-science/"/>
         <lastmod>2025-12-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/de/blog/zungenruheposition-alveolarfortsatz/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-home-base-alveolar-ridge/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/zungenruheposition-alveolarfortsatz/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/position-repos-langue/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/she-tou-xiuxi-weizhi/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/tongue-home-base-alveolar-ridge/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/blog/zungenruheposition-alveolarfortsatz/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-home-base-alveolar-ridge/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungenruheposition-alveolarfortsatz/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/position-repos-langue/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/she-tou-xiuxi-weizhi/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/tongue-home-base-alveolar-ridge/"/>
         <lastmod>2025-12-31</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/de/blog/mandarin-retroflexlaute-toene/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/mandarin-retroflex-tones/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/mandarin-retroflexlaute-toene/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/retroflexes-mandarin-tons/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/putonghua-juanshe-yin-shengdiao/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/mandarin-retroflex-tones/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/blog/mandarin-retroflexlaute-toene/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/mandarin-retroflex-tones/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/mandarin-retroflexlaute-toene/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/retroflexes-mandarin-tons/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/putonghua-juanshe-yin-shengdiao/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/mandarin-retroflex-tones/"/>
         <lastmod>2026-02-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/de/blog/sigmatismus-lispeln-ratgeber/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/sigmatismus-lisp-sigmatisme/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/sigmatismus-lispeln-ratgeber/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/sigmatisme-zezaiement-guide/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/sigmatismus-lisp-sigmatisme/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/blog/sigmatismus-lispeln-ratgeber/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/sigmatismus-lisp-sigmatisme/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/sigmatismus-lispeln-ratgeber/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/sigmatisme-zezaiement-guide/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/sigmatismus-lisp-sigmatisme/"/>
         <lastmod>2026-02-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/de/blog/deutsches-r-mit-3-englisches-r-mit-8/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/german-r-age-3-english-r-age-8/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/deutsches-r-mit-3-englisches-r-mit-8/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/r-allemand-3-ans-r-anglais-8-ans/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/de-r-3-sui-ying-r-8-sui/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/german-r-age-3-english-r-age-8/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/blog/deutsches-r-mit-3-englisches-r-mit-8/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/german-r-age-3-english-r-age-8/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/deutsches-r-mit-3-englisches-r-mit-8/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/r-allemand-3-ans-r-anglais-8-ans/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/de-r-3-sui-ying-r-8-sui/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/german-r-age-3-english-r-age-8/"/>
         <lastmod>2026-02-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/de/blog/franzoesische-nasalvokale/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/french-nasal-vowels/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/franzoesische-nasalvokale/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/voyelles-nasales-francaises/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/faguo-biyin-muyin-jieshao/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/french-nasal-vowels/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/blog/franzoesische-nasalvokale/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/french-nasal-vowels/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/franzoesische-nasalvokale/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/voyelles-nasales-francaises/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/faguo-biyin-muyin-jieshao/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/french-nasal-vowels/"/>
         <lastmod>2026-02-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/de/blog/zungenbrecher-logopaedie/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/zungenbrecher-speech-therapy/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/zungenbrecher-logopaedie/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/virelangues-orthophonie/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/raokouling-yuyin-zhiliao/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/zungenbrecher-speech-therapy/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/blog/zungenbrecher-logopaedie/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/zungenbrecher-speech-therapy/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/zungenbrecher-logopaedie/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/virelangues-orthophonie/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/raokouling-yuyin-zhiliao/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/zungenbrecher-speech-therapy/"/>
         <lastmod>2026-03-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://grimasso.lorenzmaierhofer.com/de/blog/bilinguale-transferfehler-vs-stoerung/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://grimasso.lorenzmaierhofer.com/blog/bilingual-transfer-vs-disorder/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://grimasso.lorenzmaierhofer.com/de/blog/bilinguale-transferfehler-vs-stoerung/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://grimasso.lorenzmaierhofer.com/fr/blog/transfert-bilingue-vs-trouble/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://grimasso.lorenzmaierhofer.com/zh/blog/shuangyu-qianyi-vs-zhangai/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://grimasso.lorenzmaierhofer.com/blog/bilingual-transfer-vs-disorder/"/>
+        <loc>https://lorenzmaierhofer.com/grimasso/de/blog/bilinguale-transferfehler-vs-stoerung/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/grimasso/blog/bilingual-transfer-vs-disorder/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/grimasso/de/blog/bilinguale-transferfehler-vs-stoerung/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/grimasso/fr/blog/transfert-bilingue-vs-trouble/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://lorenzmaierhofer.com/grimasso/zh/blog/shuangyu-qianyi-vs-zhangai/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/grimasso/blog/bilingual-transfer-vs-disorder/"/>
         <lastmod>2026-03-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>

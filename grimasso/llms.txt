@@ -12,18 +12,18 @@ Grimasso helps children aged 4+ improve speech clarity, correct tongue thrust, a
 - GDPR compliant
 
 ## Pages
-- Home (EN): https://grimasso.lorenzmaierhofer.com/
-- Home (DE): https://grimasso.lorenzmaierhofer.com/de/
-- Home (FR): https://grimasso.lorenzmaierhofer.com/fr/
-- Home (ZH): https://grimasso.lorenzmaierhofer.com/zh/
-- For Speech-Language Pathologists (EN): https://grimasso.lorenzmaierhofer.com/for-slps/
-- Für Logopädinnen (DE): https://grimasso.lorenzmaierhofer.com/de/fuer-logopaedinnen/
-- Pour les professionnels (FR): https://grimasso.lorenzmaierhofer.com/fr/pour-les-professionnels/
-- 为专业人士 (ZH): https://grimasso.lorenzmaierhofer.com/zh/wei-zhuanye-renshi/
-- Blog (EN): https://grimasso.lorenzmaierhofer.com/blog/
-- Blog (DE): https://grimasso.lorenzmaierhofer.com/de/blog/
-- Blog (FR): https://grimasso.lorenzmaierhofer.com/fr/blog/
-- Blog (ZH): https://grimasso.lorenzmaierhofer.com/zh/blog/
+- Home (EN): https://lorenzmaierhofer.com/grimasso/
+- Home (DE): https://lorenzmaierhofer.com/grimasso/de/
+- Home (FR): https://lorenzmaierhofer.com/grimasso/fr/
+- Home (ZH): https://lorenzmaierhofer.com/grimasso/zh/
+- For Speech-Language Pathologists (EN): https://lorenzmaierhofer.com/grimasso/for-slps/
+- Für Logopädinnen (DE): https://lorenzmaierhofer.com/grimasso/de/fuer-logopaedinnen/
+- Pour les professionnels (FR): https://lorenzmaierhofer.com/grimasso/fr/pour-les-professionnels/
+- 为专业人士 (ZH): https://lorenzmaierhofer.com/grimasso/zh/wei-zhuanye-renshi/
+- Blog (EN): https://lorenzmaierhofer.com/grimasso/blog/
+- Blog (DE): https://lorenzmaierhofer.com/grimasso/de/blog/
+- Blog (FR): https://lorenzmaierhofer.com/grimasso/fr/blog/
+- Blog (ZH): https://lorenzmaierhofer.com/grimasso/zh/blog/
 
 ## Download
 - iOS App Store (US): https://apps.apple.com/us/app/grimasso/id6758241652

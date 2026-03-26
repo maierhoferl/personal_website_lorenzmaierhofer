@@ -11,4 +11,4 @@ Lorenz Maierhofer leads enterprise AI transformation at P&G, focusing on AI Fact
 - Projects: https://lorenzmaierhofer.com/projects.html
 
 ## Projects
-- Grimasso (iOS myofunctional therapy app for children): https://grimasso.lorenzmaierhofer.com/
+- Grimasso (iOS myofunctional therapy app for children): https://lorenzmaierhofer.com/grimasso/
