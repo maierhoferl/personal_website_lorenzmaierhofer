@@ -1,14 +1,42 @@
 # Lorenz Maierhofer
+
 > Senior Director, Global Lead for AI Factory, Agentic AI Products & AI Governance at Procter & Gamble. Based in Geneva, Switzerland.
 
-Lorenz Maierhofer leads enterprise AI transformation at P&G, focusing on AI Factory, Agentic AI, and AI Governance across global operations. Harvard Business School alumnus and Technische Universität Graz graduate.
+Lorenz Maierhofer is an AI and Data Science leader with expertise in AI Transformation, Generative AI, Agentic AI systems, and AI Governance. He leads the AI Factory at Procter & Gamble — the internal platform responsible for industrializing enterprise AI capabilities across one of the world's largest consumer goods companies. Alumni of Harvard Business School and Technische Universität Graz. Fluent in English and German.
+
+## About
+
+- Full name: Lorenz Maierhofer
+- Role: Senior Director, Global Lead — AI Factory, Agentic AI Products & AI Governance
+- Employer: Procter & Gamble (P&G)
+- Location: Geneva, Switzerland
+- Education: Harvard Business School; Technische Universität Graz
+- Expertise: AI Transformation, Generative AI, Agentic AI, Machine Learning, MLOps, AI Governance, FMCG/Consumer Goods, Digital Transformation
+- Languages: English, German
 
 ## Pages
-- About: https://lorenzmaierhofer.com/
-- About (DE): https://lorenzmaierhofer.com/de/
-- About (ZH): https://lorenzmaierhofer.com/zh/
-- News & Talks: https://lorenzmaierhofer.com/news.html
-- Projects: https://lorenzmaierhofer.com/projects.html
+
+- [Home](https://lorenzmaierhofer.com/): Main profile and biography
+- [News](https://lorenzmaierhofer.com/news.html): Articles, talks, and updates
+- [Projects](https://lorenzmaierhofer.com/projects.html): Technology projects including Grimasso
 
 ## Projects
-- Grimasso (iOS myofunctional therapy app for children): https://lorenzmaierhofer.com/grimasso/
+
+- [Grimasso](https://lorenzmaierhofer.com/grimasso/): iPhone/iPad app for children's oral motor and myofunctional therapy. Free on the App Store. Available in English, German, French, and Chinese (Simplified). Designed around evidence-based speech therapy principles.
+
+## Grimasso App Details
+
+- Platform: iOS (iPhone, iPad)
+- Price: Free
+- App Store: https://apps.apple.com/us/app/grimasso/id6758241652
+- Target users: Children ages 4–14, parents, speech-language pathologists (SLPs)
+- Key features: 100 exercises across 20 levels, mirror camera feedback, gamification (badges, streaks), parent dashboard, progress tracking
+- Medical context: Myofunctional therapy — addresses tongue thrust, mouth breathing, improper swallowing, articulation difficulties, post-frenectomy rehabilitation
+- Languages: English (US/AU/GB), German (DE/AT/CH), French (FR/BE/CH), Chinese Simplified (CN/TW/HK)
+- Rating: 4.8/5 (App Store)
+- For professionals: https://lorenzmaierhofer.com/grimasso/for-slps/
+
+## Links
+
+- LinkedIn: https://www.linkedin.com/in/lorenzmaierhofer/
+- Sitemap: https://lorenzmaierhofer.com/sitemap.xml
