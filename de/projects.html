@@ -34,6 +34,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://lorenzmaierhofer.com/de/"},
+        {"@type": "ListItem", "position": 2, "name": "Projekte", "item": "https://lorenzmaierhofer.com/de/projects.html"}
+    ]
+}
+</script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Projekte — Lorenz Maierhofer",
+    "url": "https://lorenzmaierhofer.com/de/projects.html",
+    "description": "KI- und Technologieprojekte von Lorenz Maierhofer, darunter Grimasso – eine myofunktionelle Therapie-App für Kinder.",
+    "author": {"@id": "https://lorenzmaierhofer.com/#person"},
+    "inLanguage": "de",
+    "hasPart": [
+        {
+            "@type": "MobileApplication",
+            "name": "Grimasso",
+            "description": "Eine spielerische iPhone- und iPad-App, die Kindern hilft, Zunge, Lippen und Kiefermuskeln durch 100 wissenschaftlich fundierte myofunktionelle Übungen über 20 Level zu stärken.",
+            "url": "https://lorenzmaierhofer.com/grimasso/de/",
+            "operatingSystem": "iOS",
+            "applicationCategory": "HealthApplication",
+            "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR", "availability": "https://schema.org/InStock"},
+            "author": {"@id": "https://lorenzmaierhofer.com/#person"}
+        }
+    ]
+}
+</script>
 </head>
 <body>
     <!-- Animated background -->
