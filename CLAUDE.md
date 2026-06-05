@@ -58,8 +58,8 @@ Local server needed for `linkedin_posts.json` fetch to work (CORS).
 **Key Features**
 - Playful, kid-friendly aesthetic with bright green primary color (#33C759)
 - Animated hero with floating bubbles, decorative emojis, wavy SVG dividers
-- 51 scientifically-designed exercises across 5 categories
-- Gamification elements: 10 levels, 25+ achievement badges, streak tracking
+- 100 scientifically-designed exercises across 5 categories
+- Gamification elements: 20 levels, 29 achievement badges, streak tracking
 - Comprehensive app features section (12 features with emoji icons)
 - "By the Numbers" statistics section with count-up animations
 - Parent-focused benefits messaging
