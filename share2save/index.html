@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/share2save/icon.png">
+    <title>Share2Save – Save Videos &amp; Audio for Offline Playback | iOS App</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Share any link to save videos and audio for offline playback. Downloads continue in the background. No buffering, no Wi-Fi needed. Your personal offline media library on iPhone and iPad.">
+    <meta name="keywords" content="video downloader, offline media, save video, background download, audio, mp4, player, private, no ads, iOS app, offline video, save audio">
+    <meta name="author" content="Lorenz Maierhofer">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Share2Save – Save Videos &amp; Audio for Offline Playback">
+    <meta property="og:description" content="Turn any link into your personal offline media library. Background downloads, no account, no ads, no tracking.">
+    <meta property="og:image" content="https://lorenzmaierhofer.com/share2save/icon.png">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://lorenzmaierhofer.com/share2save/">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Share2Save – Save Videos &amp; Audio for Offline Playback">
+    <meta name="twitter:description" content="Turn any link into your personal offline media library. Background downloads, no account, no ads, no tracking.">
+    <meta name="twitter:image" content="https://lorenzmaierhofer.com/share2save/icon.png">
+
+    <!-- Canonical & hreflang -->
+    <link rel="canonical" href="https://lorenzmaierhofer.com/share2save/">
+    <link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/share2save/">
+    <link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/share2save/de/">
+    <link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/share2save/">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "Share2Save",
+        "alternateName": "Share2Save – Offline Video & Audio Library",
+        "operatingSystem": "iOS",
+        "applicationCategory": "UtilitiesApplication",
+        "description": "Share2Save turns any link with video or audio into your personal offline library. Downloads continue in the background, even after closing the app. No account, no ads, no tracking — everything stored locally on your device.",
+        "image": "https://lorenzmaierhofer.com/share2save/icon.png",
+        "url": "https://lorenzmaierhofer.com/share2save/",
+        "downloadUrl": "https://lorenzmaierhofer.com/share2save/",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+                "@type": "Organization",
+                "name": "Apple App Store"
+            }
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Lorenz Maierhofer",
+            "url": "https://lorenzmaierhofer.com"
+        },
+        "keywords": "video downloader, offline media, save video, background download, no ads, privacy, iOS app",
+        "genre": "Utilities",
+        "contentRating": "4+",
+        "inLanguage": "en",
+        "softwareRequirements": "iOS 16.1 or later",
+        "areaServed": ["US", "GB", "AU", "CA", "DE", "AT", "CH", "FR", "IN", "BR"]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What types of links does Share2Save support?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Share2Save works with a broad range of video and audio URLs — including YouTube, Vimeo, and many podcast and media feeds. DRM-protected platforms (like Netflix or Spotify) cannot be downloaded, as their content is encrypted. Share2Save is designed for content you have the right to access."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does the download continue when the app is in the background?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Share2Save uses iOS Background URL Session technology so downloads continue even when you switch apps or lock your screen. On iOS 16.2 and later, a Live Activity widget on your Lock Screen shows real-time download progress."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much storage does it use?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Storage usage is entirely up to you. You can choose quality settings to balance file size versus quality: 1080p MP4 for the best quality, 720p for a middle ground, or audio-only for minimal storage. You can also delete saved files at any time."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is my data private? Does it send anything to the cloud?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Completely local. Share2Save requires no account and sends no data anywhere. Downloaded files are stored entirely on your device and never uploaded or shared. Nothing leaves your phone."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does it work offline?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes — that is the entire point. Once a file is downloaded, it is available indefinitely with no internet connection. Perfect for flights, commutes, travel, or anywhere you have limited data."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is Share2Save free?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. No subscription, no in-app purchases, no ads. Share2Save is completely free."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Lorenz Maierhofer",
+                "item": "https://lorenzmaierhofer.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Share2Save",
+                "item": "https://lorenzmaierhofer.com/share2save/"
+            }
+        ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="./share2save-styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/share2save/" class="nav-logo">
+                <span class="logo-text">Share2Save</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="/share2save/" class="nav-link active">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="/" class="nav-link back-to-main">&#8592; lorenzmaierhofer.com</a></li>
+            </ul>
+            <div class="nav-social">
+                <div class="s2s-lang-switcher">
+                    <a href="/share2save/" class="lang-switch active" title="English">EN</a>
+                    <a href="/share2save/de/" class="lang-switch" title="Deutsch">DE</a>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M12 17.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm0 1.5a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-17a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 12 2zm0 18a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 12 20zM4.22 4.22a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 0 1-1.06 1.06L4.22 5.28a.75.75 0 0 1 0-1.06zm13.44 13.44a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 0 1-1.06 1.06l-1.06-1.06a.75.75 0 0 1 0-1.06zM2 12a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5A.75.75 0 0 1 2 12zm18 0a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5A.75.75 0 0 1 20 12zM5.28 17.66a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0zm13.44-13.44a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0z"/>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/>
+                    </svg>
+                </button>
+            </div>
+            <button class="hamburger" id="hamburgerToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="ham-bar"></span>
+                <span class="ham-bar"></span>
+                <span class="ham-bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <!-- Hero Section -->
+        <section class="s2s-hero">
+            <!-- Animated geometric particles -->
+            <div class="s2s-particle" aria-hidden="true"></div>
+            <div class="s2s-particle" aria-hidden="true"></div>
+            <div class="s2s-particle" aria-hidden="true"></div>
+            <div class="s2s-particle" aria-hidden="true"></div>
+            <div class="s2s-particle" aria-hidden="true"></div>
+            <div class="s2s-particle" aria-hidden="true"></div>
+            <div class="s2s-particle" aria-hidden="true"></div>
+            <div class="s2s-particle" aria-hidden="true"></div>
+
+            <div class="hero-container">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                        Coming to App Store &middot; 10+ Languages &middot; Free
+                    </div>
+                    <h1 class="hero-title">
+                        Save Videos &amp; Audio.<br>
+                        <span class="s2s-name">Watch Anytime, Anywhere.</span>
+                    </h1>
+                    <p class="hero-tagline">
+                        Turn any link with video or audio into your personal offline library &mdash; no buffering, no data connection needed.
+                    </p>
+                    <div class="hero-cta-group">
+                        <a href="#" class="btn-s2s-primary">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                            Download on the App Store
+                        </a>
+                        <a href="#how-it-works" class="btn-s2s-secondary">
+                            See How It Works ↓
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-app-icon">
+                    <img src="./icon.png" alt="Share2Save App Icon — offline video and audio library for iOS" width="260" height="260">
+                </div>
+            </div>
+        </section>
+
+        <!-- Wave divider -->
+        <svg class="section-wave" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="rgba(37,99,235,0.07)"/></svg>
+
+        <!-- Screenshots Section -->
+        <section class="s2s-section" id="screenshots">
+            <div class="s2s-section-header">
+                <span class="s2s-section-label">See It in Action</span>
+                <h2 class="s2s-section-title">Your Offline Media Library</h2>
+                <p class="s2s-section-subtitle">Real app screenshots &mdash; save a link, watch it offline, manage your library.</p>
+            </div>
+
+            <div class="device-tabs">
+                <button class="device-tab active" data-device="iphone">iPhone</button>
+                <button class="device-tab" data-device="ipad">iPad</button>
+            </div>
+
+            <div class="screenshots-carousel" data-device="iphone">
+                <div class="screenshot-item">
+                    <img src="./screenshots/iphone-shareextension.png" alt="Share2Save share extension — queuing a download" loading="lazy">
+                    <span class="screenshot-label">One Tap to Queue</span>
+                </div>
+                <div class="screenshot-item">
+                    <img src="./screenshots/iphone-00_safari.png" alt="Share2Save share sheet in Safari" loading="lazy">
+                    <span class="screenshot-label">Save from Any Browser</span>
+                </div>
+                <div class="screenshot-item">
+                    <img src="./screenshots/iphone-downloads.png" alt="Share2Save active downloads screen" loading="lazy">
+                    <span class="screenshot-label">Background Downloads</span>
+                </div>
+                <div class="screenshot-item">
+                    <img src="./screenshots/iphone-library.png" alt="Share2Save media library" loading="lazy">
+                    <span class="screenshot-label">Your Media Library</span>
+                </div>
+                <div class="screenshot-item">
+                    <img src="./screenshots/iphone-settings.png" alt="Share2Save settings — quality options" loading="lazy">
+                    <span class="screenshot-label">Quality Control</span>
+                </div>
+            </div>
+
+            <div class="screenshots-carousel hidden" data-device="ipad">
+                <div class="screenshot-item">
+                    <img src="./screenshots/ipad-shareextension.png" alt="Share2Save share extension on iPad" loading="lazy">
+                    <span class="screenshot-label">One Tap to Queue</span>
+                </div>
+                <div class="screenshot-item">
+                    <img src="./screenshots/ipad-00_safari.png" alt="Share2Save share sheet in Safari on iPad" loading="lazy">
+                    <span class="screenshot-label">Save from Any Browser</span>
+                </div>
+                <div class="screenshot-item">
+                    <img src="./screenshots/ipad-downloads.png" alt="Share2Save downloads on iPad" loading="lazy">
+                    <span class="screenshot-label">Background Downloads</span>
+                </div>
+                <div class="screenshot-item">
+                    <img src="./screenshots/ipad-library.png" alt="Share2Save media library on iPad" loading="lazy">
+                    <span class="screenshot-label">Your Media Library</span>
+                </div>
+                <div class="screenshot-item">
+                    <img src="./screenshots/ipad-settings.png" alt="Share2Save settings on iPad" loading="lazy">
+                    <span class="screenshot-label">Quality Control</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wave divider -->
+        <svg class="section-wave" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C360,0 720,60 1080,30 C1260,15 1380,40 1440,30 L1440,60 L0,60 Z" fill="rgba(6,182,212,0.06)"/></svg>
+
+        <!-- How It Works Section -->
+        <section class="s2s-section" id="how-it-works">
+            <div class="s2s-section-header">
+                <span class="s2s-section-label">Simple &amp; Powerful</span>
+                <h2 class="s2s-section-title">Save Any Link in 3 Taps</h2>
+            </div>
+
+            <div class="how-it-works-visual">
+                <img src="./how-to-use.png" alt="Share2Save how-to-use: Share, Select, Watch Later" loading="lazy">
+            </div>
+
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Tap Share</h3>
+                    <p>In Safari, Chrome, or Firefox, tap the share button and select Share2Save from the share sheet.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>It Downloads</h3>
+                    <p>Share2Save downloads the video or audio in the background, even after you close the app.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Watch Offline</h3>
+                    <p>Open your library anytime &mdash; no internet needed. Resume exactly where you left off.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wave divider -->
+        <svg class="section-wave" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,20 C480,60 960,0 1440,40 L1440,60 L0,60 Z" fill="rgba(37,99,235,0.06)"/></svg>
+
+        <!-- Features Section -->
+        <section class="s2s-section" id="features">
+            <div class="s2s-section-header">
+                <span class="s2s-section-label">What Makes It Special</span>
+                <h2 class="s2s-section-title">Built for Offline. Built for Privacy.</h2>
+                <p class="s2s-section-subtitle">Every feature was designed for one goal: your media, available when you need it.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">📤</span>
+                    <h3>One Tap to Save</h3>
+                    <p>Share any video or audio URL from Safari, Chrome, or Firefox directly to Share2Save. Download starts immediately.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">⬇️</span>
+                    <h3>Background Downloads</h3>
+                    <p>Downloads continue while you switch apps, lock your screen, or do anything else. Your download won&rsquo;t be interrupted.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">🔒</span>
+                    <h3>Lock Screen Widget</h3>
+                    <p>A Live Activity widget shows real-time download progress directly on your Lock Screen. Requires iOS 16.2+.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">📱</span>
+                    <h3>Personal Media Library</h3>
+                    <p>Browse all saved content in a clean library with separate Video and Audio tabs. Resume exactly where you stopped.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">&#x29C9;</span>
+                    <h3>Picture in Picture</h3>
+                    <p>Pop the video into a floating overlay and keep watching while you use other apps. Multitask without missing a second.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">🎚️</span>
+                    <h3>Quality Control</h3>
+                    <p>Choose best available, 1080p MP4, 720p, or audio-only. Set it once in Settings and every download respects your preference.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">🛡️</span>
+                    <h3>Privacy First</h3>
+                    <p>No account required. No ads. No tracking. Everything is stored locally on your device &mdash; nothing is uploaded or shared.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wave divider -->
+        <svg class="section-wave" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,40 C360,10 720,50 1080,20 C1260,5 1380,45 1440,30 L1440,60 L0,60 Z" fill="rgba(6,182,212,0.05)"/></svg>
+
+        <!-- Statistics Section -->
+        <section class="s2s-stats-section">
+            <div class="s2s-section-header">
+                <span class="s2s-section-label">By the Numbers</span>
+                <h2 class="s2s-section-title">Everything You Need, Nothing You Don&rsquo;t</h2>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Languages</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Quality Options</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">0</span>
+                    <span class="stat-label">Ads &amp; Accounts</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Local Storage</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wave divider -->
+        <svg class="section-wave" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="rgba(79,70,229,0.06)"/></svg>
+
+        <!-- Benefits Section -->
+        <section class="s2s-section" id="benefits">
+            <div class="s2s-section-header">
+                <span class="s2s-section-label">Why Share2Save</span>
+                <h2 class="s2s-section-title">Your Media. Your Device. Your Rules.</h2>
+                <p class="s2s-section-subtitle">No cloud. No subscription. No compromise.</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <span class="benefit-icon" aria-hidden="true">✈️</span>
+                    <div class="benefit-content">
+                        <h3>Works on Airplanes</h3>
+                        <p>Download before you fly and watch entire playlists at 35,000 feet without paying for Wi-Fi.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon" aria-hidden="true">🔋</span>
+                    <div class="benefit-content">
+                        <h3>Saves Mobile Data</h3>
+                        <p>Download once on Wi-Fi, watch forever without burning your mobile data plan.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon" aria-hidden="true">📺</span>
+                    <div class="benefit-content">
+                        <h3>Full-Screen Experience</h3>
+                        <p>Immersive full-screen playback with Picture in Picture support for true multitasking.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon" aria-hidden="true">🛡️</span>
+                    <div class="benefit-content">
+                        <h3>Zero Tracking</h3>
+                        <p>No analytics, no data sent anywhere. Your viewing habits are your business, not ours.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon" aria-hidden="true">⚡</span>
+                    <div class="benefit-content">
+                        <h3>Instant Playback</h3>
+                        <p>No buffering, no loading spinners. Files play from local storage at full speed, instantly.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon" aria-hidden="true">🌍</span>
+                    <div class="benefit-content">
+                        <h3>Available in 10+ Languages</h3>
+                        <p>The app is fully localized so the interface feels native wherever you are in the world.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Strip -->
+        <section class="s2s-trust-section">
+            <div class="trust-grid">
+                <div class="trust-item"><span aria-hidden="true">🔒</span> <span>No account required</span></div>
+                <div class="trust-item"><span aria-hidden="true">📵</span> <span>No ads, ever</span></div>
+                <div class="trust-item"><span aria-hidden="true">📴</span> <span>Works fully offline</span></div>
+                <div class="trust-item">
+                    <span aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                    </span>
+                    <span>iPhone &amp; iPad</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wave divider -->
+        <svg class="section-wave" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,20 C480,60 960,0 1440,40 L1440,60 L0,60 Z" fill="rgba(37,99,235,0.05)"/></svg>
+
+        <!-- FAQ Section -->
+        <section class="s2s-section" id="faq">
+            <div class="s2s-section-header">
+                <span class="s2s-section-label">Questions?</span>
+                <h2 class="s2s-section-title">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What types of links does Share2Save support?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Share2Save works with a broad range of video and audio URLs &mdash; including YouTube, Vimeo, and many podcast and media feeds. DRM-protected platforms (like Netflix or Spotify) cannot be downloaded, as their content is encrypted. Share2Save is designed for content you have the right to access.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Does the download continue when the app is in the background?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Share2Save uses iOS Background URL Session technology so downloads continue even when you switch apps or lock your screen. On iOS 16.2 and later, a Live Activity widget on your Lock Screen shows real-time download progress.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How much storage does it use?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Entirely up to you. Choose quality settings to balance file size and quality: 1080p MP4 for the best quality, 720p for a middle ground, or audio-only for minimal storage. You can delete saved files at any time.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Is my data private? Does it send anything to the cloud?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Completely local. Share2Save requires no account and sends no data anywhere. Downloaded files are stored entirely on your device and never uploaded or shared. Nothing leaves your phone.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Does it work offline?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes &mdash; that is the entire point. Once a file is downloaded, it is available indefinitely with no internet connection. Perfect for flights, commutes, or anywhere you have limited data.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Is Share2Save free?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. No subscription, no in-app purchases, no ads. Share2Save is completely free.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="s2s-cta-section">
+            <h2>Your Media. Everywhere. Offline.</h2>
+            <p>Download Share2Save for free on iPhone and iPad.</p>
+            <a href="#" class="btn-s2s-primary">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                Download on the App Store
+            </a>
+            <p class="cta-badge">Free &middot; iPhone &amp; iPad &middot; iOS 16+</p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="s2s-footer">
+        <div class="footer-logo">Share2Save</div>
+        <p class="footer-tagline">Offline video &amp; audio library for iOS. An app by <a href="/" style="color:var(--s2s-primary);text-decoration:none;">Lorenz Maierhofer</a>.</p>
+        <div class="footer-links">
+            <a href="/share2save/privacy.txt">Privacy Policy</a>
+            <a href="/share2save/de/">Deutsch</a>
+            <a href="/">lorenzmaierhofer.com</a>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="./share2save-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+Share2Save – Privacy Policy
+Last updated: June 2026
+
+Share2Save does not collect, store, or transmit any personal data.
+
+- No account is required to use Share2Save.
+- No analytics or tracking libraries are included.
+- No data is sent to any server operated by the developer.
+- All downloaded files are stored locally on your device.
+- The app uses standard HTTPS connections via iOS URLSession for downloading media.
+- Downloads are performed using iOS Background URL Session; no data is stored outside your device.
+
+The app includes a compliance notice reminding users that they are responsible for ensuring they have the right to download any content they save.
+
+Contact: lorenz@lorenzmaierhofer.com
+Website: https://lorenzmaierhofer.com
