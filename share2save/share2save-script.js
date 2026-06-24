@@ -6,24 +6,23 @@
 
 // Auto language detection & redirect (first visit only)
 (function () {
-  document.addEventListener('click', function (e) {
-    if (e.target.closest('.lang-switch')) {
-      localStorage.setItem('langChosen', '1');
-    }
-  });
-
   if (localStorage.getItem('langChosen')) return;
 
   const lang = ((navigator.languages && navigator.languages[0]) || navigator.language || 'en').toLowerCase();
   const path = window.location.pathname;
 
-  const current = path.includes('/share2save/de/') ? 'de' : 'en';
-  const target = lang.startsWith('de') ? 'de' : 'en';
+  // Only redirect away from the English root
+  if (!path.match(/^\/share2save\/?$/)) return;
 
-  if (target === current) return;
-  if (current !== 'en') return; // only redirect from English root
+  const localeMap = {
+    ar: '/share2save/ar/', zh: '/share2save/zh/', de: '/share2save/de/',
+    fr: '/share2save/fr/', hi: '/share2save/hi/', id: '/share2save/id/',
+    pt: '/share2save/pt/', ru: '/share2save/ru/', es: '/share2save/es/'
+  };
 
-  if (target === 'de') window.location.replace('/share2save/de/');
+  const prefix = lang.slice(0, 2);
+  const target = localeMap[prefix];
+  if (target) window.location.replace(target);
 })();
 
 document.addEventListener('DOMContentLoaded', () => {

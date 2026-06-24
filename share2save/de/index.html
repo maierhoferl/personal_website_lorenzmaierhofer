@@ -28,8 +28,16 @@
 
     <!-- Canonical & hreflang -->
     <link rel="canonical" href="https://lorenzmaierhofer.com/share2save/de/">
-    <link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/share2save/de/">
-    <link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/share2save/">
+    <link rel="alternate" hreflang="en"      href="https://lorenzmaierhofer.com/share2save/">
+    <link rel="alternate" hreflang="ar"      href="https://lorenzmaierhofer.com/share2save/ar/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://lorenzmaierhofer.com/share2save/zh/">
+    <link rel="alternate" hreflang="de"      href="https://lorenzmaierhofer.com/share2save/de/">
+    <link rel="alternate" hreflang="fr"      href="https://lorenzmaierhofer.com/share2save/fr/">
+    <link rel="alternate" hreflang="hi"      href="https://lorenzmaierhofer.com/share2save/hi/">
+    <link rel="alternate" hreflang="id"      href="https://lorenzmaierhofer.com/share2save/id/">
+    <link rel="alternate" hreflang="pt-BR"   href="https://lorenzmaierhofer.com/share2save/pt/">
+    <link rel="alternate" hreflang="ru"      href="https://lorenzmaierhofer.com/share2save/ru/">
+    <link rel="alternate" hreflang="es"      href="https://lorenzmaierhofer.com/share2save/es/">
     <link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/share2save/">
 
     <!-- Structured Data -->
@@ -155,8 +163,18 @@
             </ul>
             <div class="nav-social">
                 <div class="s2s-lang-switcher">
-                    <a href="/share2save/" class="lang-switch" title="English">EN</a>
-                    <a href="/share2save/de/" class="lang-switch active" title="Deutsch">DE</a>
+                    <select class="lang-select" aria-label="Language" onchange="localStorage.setItem('langChosen','1');window.location.href=this.value">
+                        <option value="/share2save/">EN</option>
+                        <option value="/share2save/ar/">AR</option>
+                        <option value="/share2save/zh/">ZH</option>
+                        <option value="/share2save/de/" selected>DE</option>
+                        <option value="/share2save/fr/">FR</option>
+                        <option value="/share2save/hi/">HI</option>
+                        <option value="/share2save/id/">ID</option>
+                        <option value="/share2save/pt/">PT</option>
+                        <option value="/share2save/ru/">RU</option>
+                        <option value="/share2save/es/">ES</option>
+                    </select>
                 </div>
                 <button class="theme-toggle" id="themeToggle" aria-label="Design umschalten">
                     <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
@@ -568,8 +586,7 @@
         <p class="footer-tagline">Offline-Video- und Audiobibliothek für iOS. Eine App von <a href="/" style="color:var(--s2s-primary);text-decoration:none;">Lorenz Maierhofer</a>.</p>
         <div class="footer-links">
             <a href="#datenschutz">Datenschutz</a>
-            <a href="/share2save/">English</a>
-            <a href="/de/">lorenzmaierhofer.com</a>
+            <a href="/">lorenzmaierhofer.com</a>
         </div>
     </footer>
 

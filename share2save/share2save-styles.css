@@ -229,28 +229,77 @@ p, li, a, span, div {
 /* Language switcher */
 .s2s-lang-switcher {
     display: flex;
-    gap: 0.25rem;
     align-items: center;
 }
 
-.s2s-lang-switcher .lang-switch {
+.lang-select {
+    background: transparent;
+    border: 1px solid var(--s2s-primary);
+    color: var(--text-primary, #e2e8f0);
+    border-radius: 6px;
     padding: 0.3rem 0.5rem;
-    font-size: 0.7rem;
-    border-radius: 4px;
+    font-size: 0.75rem;
     font-weight: 700;
     font-family: var(--s2s-font);
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%232563EB' d='M0 0l5 6 5-6z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.4rem center;
+    padding-right: 1.4rem;
 }
 
-.s2s-lang-switcher .lang-switch.active {
-    background: var(--s2s-primary);
-    color: #fff;
-    border-color: var(--s2s-primary);
-}
-
-.s2s-lang-switcher .lang-switch:not(.active):hover {
-    color: var(--s2s-primary);
+.lang-select:hover {
     border-color: var(--s2s-primary);
     box-shadow: 0 0 10px rgba(37, 99, 235, 0.25);
+}
+
+.lang-select option {
+    background: #1e293b;
+    color: #e2e8f0;
+}
+
+/* RTL support for Arabic */
+html[dir="rtl"] body {
+    direction: rtl;
+}
+
+html[dir="rtl"] .nav-container {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .nav-menu {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .hero-container {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .benefit-card {
+    border-left: none;
+    border-right: 3px solid var(--s2s-primary);
+}
+
+html[dir="rtl"] .lang-select {
+    background-position: left 0.4rem center;
+    padding-right: 0.5rem;
+    padding-left: 1.4rem;
+    direction: ltr;
+}
+
+html[dir="rtl"] .s2s-section-header,
+html[dir="rtl"] .hero-text,
+html[dir="rtl"] .step-card,
+html[dir="rtl"] .feature-card,
+html[dir="rtl"] .faq-question {
+    text-align: right;
+}
+
+html[dir="rtl"] .faq-icon {
+    margin-right: auto;
+    margin-left: 0;
 }
 
 /* Back to main site link */
