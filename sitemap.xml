@@ -992,16 +992,170 @@
     <url>
         <loc>https://lorenzmaierhofer.com/share2save/</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/share2save/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://lorenzmaierhofer.com/share2save/ar/"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lorenzmaierhofer.com/share2save/zh/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/share2save/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/share2save/fr/"/>
+        <xhtml:link rel="alternate" hreflang="hi" href="https://lorenzmaierhofer.com/share2save/hi/"/>
+        <xhtml:link rel="alternate" hreflang="id" href="https://lorenzmaierhofer.com/share2save/id/"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lorenzmaierhofer.com/share2save/pt/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://lorenzmaierhofer.com/share2save/ru/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://lorenzmaierhofer.com/share2save/es/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/share2save/"/>
+        <lastmod>2026-07-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://lorenzmaierhofer.com/share2save/ar/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/share2save/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://lorenzmaierhofer.com/share2save/ar/"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lorenzmaierhofer.com/share2save/zh/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/share2save/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/share2save/fr/"/>
+        <xhtml:link rel="alternate" hreflang="hi" href="https://lorenzmaierhofer.com/share2save/hi/"/>
+        <xhtml:link rel="alternate" hreflang="id" href="https://lorenzmaierhofer.com/share2save/id/"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lorenzmaierhofer.com/share2save/pt/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://lorenzmaierhofer.com/share2save/ru/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://lorenzmaierhofer.com/share2save/es/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/share2save/"/>
+        <lastmod>2026-07-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lorenzmaierhofer.com/share2save/zh/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/share2save/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://lorenzmaierhofer.com/share2save/ar/"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lorenzmaierhofer.com/share2save/zh/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/share2save/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/share2save/fr/"/>
+        <xhtml:link rel="alternate" hreflang="hi" href="https://lorenzmaierhofer.com/share2save/hi/"/>
+        <xhtml:link rel="alternate" hreflang="id" href="https://lorenzmaierhofer.com/share2save/id/"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lorenzmaierhofer.com/share2save/pt/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://lorenzmaierhofer.com/share2save/ru/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://lorenzmaierhofer.com/share2save/es/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/share2save/"/>
+        <lastmod>2026-07-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://lorenzmaierhofer.com/share2save/de/</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/share2save/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://lorenzmaierhofer.com/share2save/ar/"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lorenzmaierhofer.com/share2save/zh/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/share2save/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/share2save/fr/"/>
+        <xhtml:link rel="alternate" hreflang="hi" href="https://lorenzmaierhofer.com/share2save/hi/"/>
+        <xhtml:link rel="alternate" hreflang="id" href="https://lorenzmaierhofer.com/share2save/id/"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lorenzmaierhofer.com/share2save/pt/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://lorenzmaierhofer.com/share2save/ru/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://lorenzmaierhofer.com/share2save/es/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/share2save/"/>
+        <lastmod>2026-07-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lorenzmaierhofer.com/share2save/fr/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/share2save/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://lorenzmaierhofer.com/share2save/ar/"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lorenzmaierhofer.com/share2save/zh/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/share2save/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/share2save/fr/"/>
+        <xhtml:link rel="alternate" hreflang="hi" href="https://lorenzmaierhofer.com/share2save/hi/"/>
+        <xhtml:link rel="alternate" hreflang="id" href="https://lorenzmaierhofer.com/share2save/id/"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lorenzmaierhofer.com/share2save/pt/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://lorenzmaierhofer.com/share2save/ru/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://lorenzmaierhofer.com/share2save/es/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/share2save/"/>
+        <lastmod>2026-07-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lorenzmaierhofer.com/share2save/hi/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/share2save/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://lorenzmaierhofer.com/share2save/ar/"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lorenzmaierhofer.com/share2save/zh/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/share2save/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/share2save/fr/"/>
+        <xhtml:link rel="alternate" hreflang="hi" href="https://lorenzmaierhofer.com/share2save/hi/"/>
+        <xhtml:link rel="alternate" hreflang="id" href="https://lorenzmaierhofer.com/share2save/id/"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lorenzmaierhofer.com/share2save/pt/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://lorenzmaierhofer.com/share2save/ru/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://lorenzmaierhofer.com/share2save/es/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/share2save/"/>
+        <lastmod>2026-07-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lorenzmaierhofer.com/share2save/id/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/share2save/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://lorenzmaierhofer.com/share2save/ar/"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lorenzmaierhofer.com/share2save/zh/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/share2save/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/share2save/fr/"/>
+        <xhtml:link rel="alternate" hreflang="hi" href="https://lorenzmaierhofer.com/share2save/hi/"/>
+        <xhtml:link rel="alternate" hreflang="id" href="https://lorenzmaierhofer.com/share2save/id/"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lorenzmaierhofer.com/share2save/pt/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://lorenzmaierhofer.com/share2save/ru/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://lorenzmaierhofer.com/share2save/es/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/share2save/"/>
+        <lastmod>2026-07-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lorenzmaierhofer.com/share2save/pt/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/share2save/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://lorenzmaierhofer.com/share2save/ar/"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lorenzmaierhofer.com/share2save/zh/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/share2save/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/share2save/fr/"/>
+        <xhtml:link rel="alternate" hreflang="hi" href="https://lorenzmaierhofer.com/share2save/hi/"/>
+        <xhtml:link rel="alternate" hreflang="id" href="https://lorenzmaierhofer.com/share2save/id/"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lorenzmaierhofer.com/share2save/pt/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://lorenzmaierhofer.com/share2save/ru/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://lorenzmaierhofer.com/share2save/es/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/share2save/"/>
+        <lastmod>2026-07-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lorenzmaierhofer.com/share2save/ru/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/share2save/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://lorenzmaierhofer.com/share2save/ar/"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lorenzmaierhofer.com/share2save/zh/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/share2save/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/share2save/fr/"/>
+        <xhtml:link rel="alternate" hreflang="hi" href="https://lorenzmaierhofer.com/share2save/hi/"/>
+        <xhtml:link rel="alternate" hreflang="id" href="https://lorenzmaierhofer.com/share2save/id/"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lorenzmaierhofer.com/share2save/pt/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://lorenzmaierhofer.com/share2save/ru/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://lorenzmaierhofer.com/share2save/es/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/share2save/"/>
+        <lastmod>2026-07-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lorenzmaierhofer.com/share2save/es/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/share2save/"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://lorenzmaierhofer.com/share2save/ar/"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://lorenzmaierhofer.com/share2save/zh/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/share2save/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/share2save/fr/"/>
+        <xhtml:link rel="alternate" hreflang="hi" href="https://lorenzmaierhofer.com/share2save/hi/"/>
+        <xhtml:link rel="alternate" hreflang="id" href="https://lorenzmaierhofer.com/share2save/id/"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lorenzmaierhofer.com/share2save/pt/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://lorenzmaierhofer.com/share2save/ru/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://lorenzmaierhofer.com/share2save/es/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/share2save/"/>
+        <lastmod>2026-07-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>

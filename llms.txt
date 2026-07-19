@@ -23,6 +23,18 @@ Lorenz Maierhofer is an AI and Data Science leader with expertise in AI Transfor
 ## Projects
 
 - [Grimasso](https://lorenzmaierhofer.com/grimasso/): iPhone/iPad app for children's oral motor and myofunctional therapy. Free on the App Store. Available in English, German, French, and Chinese (Simplified). Designed around evidence-based speech therapy principles.
+- [Share2Save](https://lorenzmaierhofer.com/share2save/): iPhone/iPad app — a personal offline media library. Save videos and audio from any link for offline viewing, with background downloads. Free on the App Store, no account, no ads, no tracking. Available in 10+ languages.
+
+## Share2Save App Details
+
+- Platform: iOS (iPhone, iPad), iOS 16.1+
+- Price: Free (no subscription, no in-app purchases, no ads)
+- App Store: https://apps.apple.com/us/app/share2save/id6766317237
+- What it does: Turns any link with video or audio into a personal offline library — share a link, it downloads in the background, watch or listen offline
+- Key features: offline media library with folders and search, one-tap save via iOS share sheet, background downloads with Lock Screen Live Activity, playback queue with shuffle and Picture in Picture, quality control (1080p/720p/audio-only), media conversion
+- Privacy: 100% local storage, no account, no analytics, no tracking
+- Languages: English, Arabic, Chinese (Simplified), German, French, Hindi, Indonesian, Portuguese (BR), Russian, Spanish
+- Details for AI agents: https://lorenzmaierhofer.com/share2save/llms.txt
 
 ## Grimasso App Details
 

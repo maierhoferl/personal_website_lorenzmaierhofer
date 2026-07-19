@@ -739,29 +739,19 @@ html[dir="rtl"] .faq-icon {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.6rem;
 }
 
 .screenshot-item img {
     width: auto;
-    max-height: 420px;
+    max-height: 480px;
     border-radius: 16px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3),
-                0 0 0 1px rgba(37, 99, 235, 0.15);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .screenshot-item img:hover {
     transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 16px 45px rgba(37, 99, 235, 0.25),
-                0 0 0 1px rgba(37, 99, 235, 0.3);
-}
-
-.screenshot-label {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: var(--text-secondary);
-    text-align: center;
+    box-shadow: 0 16px 45px rgba(37, 99, 235, 0.25);
 }
 
 /* ============================================
