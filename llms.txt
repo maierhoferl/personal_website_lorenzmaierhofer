@@ -18,23 +18,25 @@ Lorenz Maierhofer is an AI and Data Science leader with expertise in AI Transfor
 
 - [Home](https://lorenzmaierhofer.com/): Main profile and biography
 - [News](https://lorenzmaierhofer.com/news.html): Articles, talks, and updates
-- [Projects](https://lorenzmaierhofer.com/projects.html): Technology projects including Grimasso
+- [Projects](https://lorenzmaierhofer.com/projects.html): Technology projects including Grimasso and Offgrid Media
 
 ## Projects
 
 - [Grimasso](https://lorenzmaierhofer.com/grimasso/): iPhone/iPad app for children's oral motor and myofunctional therapy. Free on the App Store. Available in English, German, French, and Chinese (Simplified). Designed around evidence-based speech therapy principles.
-- [Share2Save](https://lorenzmaierhofer.com/share2save/): iPhone/iPad app — a personal offline media library. Save videos and audio from any link for offline viewing, with background downloads. Free on the App Store, no account, no ads, no tracking. Available in 10+ languages.
+- [Offgrid Media](https://lorenzmaierhofer.com/offgridmedia/): iPhone/iPad app — a private media library. Import the video and audio you already own from Files or Photos, organise it into folders, and play everything offline. Free, no account, no ads, no data collected. Available in 11 languages. Library-first personal media app.
 
-## Share2Save App Details
+## Offgrid Media App Details
 
 - Platform: iOS (iPhone, iPad), iOS 16.1+
 - Price: Free (no subscription, no in-app purchases, no ads)
-- App Store: https://apps.apple.com/us/app/share2save/id6766317237
-- What it does: Turns any link with video or audio into a personal offline library — share a link, it downloads in the background, watch or listen offline
-- Key features: offline media library with folders and search, one-tap save via iOS share sheet, background downloads with Lock Screen Live Activity, playback queue with shuffle and Picture in Picture, quality control (1080p/720p/audio-only), media conversion
-- Privacy: 100% local storage, no account, no analytics, no tracking
-- Languages: English, Arabic, Chinese (Simplified), German, French, Hindi, Indonesian, Portuguese (BR), Russian, Spanish
-- Details for AI agents: https://lorenzmaierhofer.com/share2save/llms.txt
+- App Store: https://apps.apple.com/us/app/offgrid-media (listing in preparation — the page shows a "coming soon" badge until it is published)
+- What it does: a personal media library for media you already own. Import video and audio from the Files app or the photo library, organise it into folders, and play it all offline. Adding from a link you have the right to keep is a secondary path.
+- Key features: import from Files and Photos, folders with search and video/audio filter, fully offline playback, shuffle and repeat, resume where you left off, Up Next queue, Picture in Picture, background audio with Lock Screen controls, convert to 720p/480p/audio-only, album art and metadata preserved, files visible in the iOS Files app
+- Not included: playback speed control, sleep timer, subtitles, iCloud or cross-device sync, macOS version
+- Privacy: no data collected. The App Store privacy manifest declares no tracking and no collected data types. No analytics or third-party SDKs, no backend, no cloud sync. Only permission requested is notifications.
+- Languages: English, Arabic, Bengali, Chinese (Simplified), German, French, Hindi, Indonesian, Portuguese (BR), Russian, Spanish
+- Privacy policy: https://lorenzmaierhofer.com/offgridmedia/privacy
+- Details for AI agents: https://lorenzmaierhofer.com/offgridmedia/llms.txt
 
 ## Grimasso App Details
 

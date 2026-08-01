@@ -13,6 +13,7 @@ Personal website for Lorenz Maierhofer, Senior Director and Global Lead for AI F
 - Root level: English pages (`index.html`, `news.html`, `projects.html`)
 - `/de/` folder: German pages (same structure)
 - `/grimasso/` folder: Quadrilingual Grimasso app subsite (EN, DE `/de/`, FR `/fr/`, ZH `/zh/`)
+- `/offgridmedia/` folder: 10-locale Offgrid Media app subsite — see below
 - Single shared `styles.css` and `script.js` (German/French pages reference via `../`)
 - `grimasso/grimasso-styles.css` and `grimasso/grimasso-script.js` for Grimasso branding
 - `linkedin_posts.json`: Configuration for dynamically loaded LinkedIn post embeds
@@ -90,6 +91,28 @@ Local server needed for `linkedin_posts.json` fetch to work (CORS).
 - Canonical URLs for each language version
 - Back-to-main links with proper localization (/de/ for German, /fr/ for French, / for Chinese)
 - Language switcher with active state highlighting (EN/FR/DE/ZH)
+
+## Offgrid Media Subsite
+
+**10-locale landing page for the Offgrid Media iOS app** (`/offgridmedia/`)
+
+- App source: `../share_to_save/` (directory name predates two renames: Share2Save → Kept → Offgrid Media). The former `/share2save/` subsite has been removed from this repo.
+- The app hardcodes `lorenzmaierhofer.com/offgridmedia/` and `/offgridmedia/privacy` in its App Store metadata and in-app Settings, so **neither URL may change**
+- Locales: EN at the root plus `ar de es fr hi id pt ru zh`, each with `index.html` and `privacy/index.html`; `ar` is `dir="rtl"`
+- `offgridmedia-styles.css` (deep navy + `#F2A93B` amber token layer) and `offgridmedia-script.js`; both loaded after the shared `styles.css` / `script.js`
+- Signature interaction: the hero "airplane mode" switch toggles `body.is-online`, which fades the connectivity grid while the library card stays lit
+- Scroll reveals are gated on `.ogm-anim` (added by JS) so content stays visible without JavaScript
+- `APP_STORE_URL` at the top of `offgridmedia-script.js` is `null`; set it to `https://apps.apple.com/us/app/offgrid-media` once that listing is published and every "coming soon" badge turns into a real App Store button. Do **not** point it at the old Share2Save listing (`id6766317237`)
+
+**Regenerating the pages**
+
+All 20 HTML files are generated, not hand-edited. The generator and its per-locale UI strings live in `offgridmedia/_build/` (`build.py`, `strings.py`, `strings_b.py`; run `python3 build.py` from that directory — the deploy workflow excludes `**/*.py`); marketing copy (hero lede, the seven feature cards, the rights notice) is read at build time from `../share_to_save/fastlane/metadata/<locale>/description.txt` and `fastlane/framing/titles/<locale>.strings` so the site never claims more than the reviewed App Store description. Small edits can be made directly in the HTML, but apply them to all 10 locales.
+
+**Accuracy constraints**
+
+- Never claim playback speed, sleep timer, subtitles, iCloud/cross-device sync, or a macOS version — none exist
+- Never lead with downloading or "save from any link"; that framing caused an App Review 5.2.3 rejection. Import is the primary path, links are secondary, and the notice "only add content you have the right to keep" stays on the page
+- The app has no analytics; the website does (Plausible). The privacy page states both
 
 ## File Conventions
 

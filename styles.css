@@ -233,63 +233,56 @@ body {
     width: 100%;
 }
 
-/* Share2Save spotlight nav item */
-.share2save-nav {
-    color: #00A3FF !important;
-    border: 1px solid rgba(0, 163, 255, 0.5);
+/* Offgrid Media spotlight nav item */
+.offgridmedia-nav {
+    color: #F2A93B !important;
+    border: 1px solid rgba(242, 169, 59, 0.5);
     border-radius: 4px;
     padding: 0.2rem 0.65rem;
     position: relative;
-    box-shadow: 0 0 8px rgba(0, 163, 255, 0.2), inset 0 0 6px rgba(0, 163, 255, 0.08);
-    animation: share2save-pulse 3s ease-in-out infinite;
+    box-shadow: 0 0 8px rgba(242, 169, 59, 0.18), inset 0 0 6px rgba(242, 169, 59, 0.07);
+    animation: offgrid-pulse 3s ease-in-out infinite;
     overflow: visible;
 }
 
-.share2save-nav::before {
-    content: '';
-    position: absolute;
-    inset: -1px;
-    border-radius: 4px;
-    background: radial-gradient(ellipse at center, rgba(0, 163, 255, 0.1) 0%, transparent 70%);
-    pointer-events: none;
-}
-
-.share2save-nav::after {
-    content: 'APP';
+.offgridmedia-nav::after {
+    content: 'SOON';
     position: absolute;
     top: -8px;
     right: -4px;
+    /* .nav-link::after is the underline: it pins left/bottom, which would
+       stretch this badge across the whole pill and hide the label. */
+    left: auto;
+    bottom: auto;
     font-size: 0.45rem;
     font-family: var(--font-mono);
     letter-spacing: 0.05em;
-    color: #00A3FF;
-    background: var(--bg-primary);
+    color: #F2A93B;
+    background: var(--bg-dark);
     padding: 0 2px;
     line-height: 1;
     width: auto !important;
     height: auto !important;
-    background-color: var(--bg-primary);
 }
 
-.share2save-nav:hover,
-.share2save-nav.active {
-    color: #00A3FF !important;
-    border-color: #00A3FF;
-    box-shadow: 0 0 16px rgba(0, 163, 255, 0.45), inset 0 0 10px rgba(0, 163, 255, 0.12);
+.offgridmedia-nav:hover,
+.offgridmedia-nav.active {
+    color: #F2A93B !important;
+    border-color: #F2A93B;
+    box-shadow: 0 0 16px rgba(242, 169, 59, 0.4), inset 0 0 10px rgba(242, 169, 59, 0.12);
     transform: scale(1.04);
-    background: rgba(0, 163, 255, 0.06);
+    background: rgba(242, 169, 59, 0.06);
 }
 
-/* Override the ::after underline animation for share2save-nav */
-.share2save-nav:hover::after,
-.share2save-nav.active::after {
+.offgridmedia-nav:hover::after,
+.offgridmedia-nav.active::after {
     width: auto !important;
-    background: var(--bg-primary) !important;
+    background: var(--bg-dark) !important;
 }
 
-@keyframes share2save-pulse {
-    0%, 100% { box-shadow: 0 0 8px rgba(0, 163, 255, 0.2), inset 0 0 6px rgba(0, 163, 255, 0.08); }
-    50% { box-shadow: 0 0 14px rgba(0, 163, 255, 0.38), inset 0 0 10px rgba(0, 163, 255, 0.14); }
+@keyframes offgrid-pulse {
+    0%, 100% { box-shadow: 0 0 8px rgba(242, 169, 59, 0.18), inset 0 0 6px rgba(242, 169, 59, 0.07); }
+    50% { box-shadow: 0 0 14px rgba(242, 169, 59, 0.34), inset 0 0 10px rgba(242, 169, 59, 0.13); }
 }
 
 /* Grimasso spotlight nav item */
@@ -1811,11 +1804,11 @@ body {
         display: block;
     }
 
-    /* Share2Save link keeps its blue glow in the dropdown */
-    .share2save-nav {
+    /* Offgrid Media link keeps its amber glow in the dropdown */
+    .offgridmedia-nav {
         margin: 0.5rem 1rem;
     }
-    .share2save-nav::after {
+    .offgridmedia-nav::after {
         display: block;
     }
 
