@@ -1,0 +1,51 @@
+# Offgrid Media — Private Library
+
+> Offgrid Media is a personal offline media library for iPhone and iPad. You import the video and audio you already own from Files or Photos, organise it into folders, and play all of it offline. Everything stays on the device: no account, no ads, no tracking. Free, iOS 16.1 or later, 11 languages.
+
+## What it is
+
+Offgrid Media is a media library app, not a streaming client and not a download tool. Media enters the library by import (from the iOS Files app or the photo library) or, as a secondary path, from a link the user has the right to keep. Once imported, a file is a plain file in the app's storage on the device and plays without any network connection.
+
+## App features
+
+- Import video and audio from Files (iCloud Drive or on-device) and from the photo library
+- Folders: create, move items between them, search across every subfolder
+- Filter by video or audio; sort by name or date added
+- Fully offline playback — nothing is streamed at playback time
+- Shuffle, repeat, resume where you left off, Up Next queue (Play Next / Play Last)
+- Picture in Picture for video
+- Background audio with Lock Screen and Control Center controls
+- Convert an item in place to 720p, 480p or audio only; import quality preference (best available, 720p, 480p, 360p, audio only)
+- Album art, metadata and thumbnails preserved; metadata viewer per item
+- Files are visible in the iOS Files app; the library folder is user-selectable
+
+## What it does not do
+
+No playback speed control, no sleep timer, no subtitles, no iCloud or cross-device sync, no macOS version, no account, no in-app purchases, no ads.
+
+## Privacy
+
+No data collected. The App Store privacy manifest declares no tracking and no collected data types. No analytics or third-party SDKs in the app, no backend service, no cloud sync. The only permission requested is notifications. Full policy: https://lorenzmaierhofer.com/offgridmedia/privacy
+
+## Availability
+
+Free. iPhone and iPad, iOS 16.1 or later. The App Store listing is in preparation and will be at https://apps.apple.com/us/app/offgrid-media — this page shows a "coming soon" badge until it is published.
+
+## Pages
+
+- English: https://lorenzmaierhofer.com/offgridmedia/
+- العربية: https://lorenzmaierhofer.com/offgridmedia/ar/
+- Deutsch: https://lorenzmaierhofer.com/offgridmedia/de/
+- Español: https://lorenzmaierhofer.com/offgridmedia/es/
+- Français: https://lorenzmaierhofer.com/offgridmedia/fr/
+- हिन्दी: https://lorenzmaierhofer.com/offgridmedia/hi/
+- Bahasa Indonesia: https://lorenzmaierhofer.com/offgridmedia/id/
+- Português (BR): https://lorenzmaierhofer.com/offgridmedia/pt/
+- Русский: https://lorenzmaierhofer.com/offgridmedia/ru/
+- 简体中文: https://lorenzmaierhofer.com/offgridmedia/zh/
+- Privacy policy: https://lorenzmaierhofer.com/offgridmedia/privacy
+
+## Developer
+
+Lorenz Maierhofer — https://lorenzmaierhofer.com
+Contact: awr9a2npb@mozmail.com

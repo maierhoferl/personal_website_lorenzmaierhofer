@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/offgridmedia/icon.png">
+    <title>निजता नीति – Offgrid Media</title>
+
+    <meta name="description" content="Offgrid Media कोई निजी डेटा इकट्ठा नहीं करता। कोई खाता नहीं, कोई एनालिटिक्स नहीं, कोई थर्ड-पार्टी SDK नहीं, कोई क्लाउड सिंक नहीं।">
+    
+    <meta name="author" content="Lorenz Maierhofer">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="निजता नीति – Offgrid Media">
+    <meta property="og:description" content="Offgrid Media कोई निजी डेटा इकट्ठा नहीं करता। कोई खाता नहीं, कोई एनालिटिक्स नहीं, कोई थर्ड-पार्टी SDK नहीं, कोई क्लाउड सिंक नहीं।">
+    <meta property="og:image" content="https://lorenzmaierhofer.com/offgridmedia/og-offgridmedia.jpg">
+    <meta property="og:image:alt" content="Offgrid Media – जो आप रखते हैं, सब ऑफ़लाइन">
+    <meta property="og:locale" content="hi_IN">
+    <meta property="og:url" content="https://lorenzmaierhofer.com/offgridmedia/hi/privacy">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="निजता नीति – Offgrid Media">
+    <meta name="twitter:description" content="Offgrid Media कोई निजी डेटा इकट्ठा नहीं करता। कोई खाता नहीं, कोई एनालिटिक्स नहीं, कोई थर्ड-पार्टी SDK नहीं, कोई क्लाउड सिंक नहीं।">
+    <meta name="twitter:image" content="https://lorenzmaierhofer.com/offgridmedia/og-offgridmedia.jpg">
+
+    <link rel="canonical" href="https://lorenzmaierhofer.com/offgridmedia/hi/privacy">
+    <link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/offgridmedia/privacy">
+    <link rel="alternate" hreflang="ar" href="https://lorenzmaierhofer.com/offgridmedia/ar/privacy">
+    <link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/offgridmedia/de/privacy">
+    <link rel="alternate" hreflang="es" href="https://lorenzmaierhofer.com/offgridmedia/es/privacy">
+    <link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/offgridmedia/fr/privacy">
+    <link rel="alternate" hreflang="hi" href="https://lorenzmaierhofer.com/offgridmedia/hi/privacy">
+    <link rel="alternate" hreflang="id" href="https://lorenzmaierhofer.com/offgridmedia/id/privacy">
+    <link rel="alternate" hreflang="pt-BR" href="https://lorenzmaierhofer.com/offgridmedia/pt/privacy">
+    <link rel="alternate" hreflang="ru" href="https://lorenzmaierhofer.com/offgridmedia/ru/privacy">
+    <link rel="alternate" hreflang="zh-Hans" href="https://lorenzmaierhofer.com/offgridmedia/zh/privacy">
+    <link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/offgridmedia/privacy">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="../../offgridmedia-styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/offgridmedia/hi/" class="nav-logo">
+                <img src="../../icon.png" alt="" class="logo-mark" width="26" height="26">
+                <span class="logo-text">Offgrid Media</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="/offgridmedia/hi/" class="nav-link">परिचय</a></li>
+                <li><a href="/offgridmedia/hi/#features" class="nav-link">फ़ीचर</a></li>
+                <li><a href="/offgridmedia/hi/privacy" class="nav-link active">निजता</a></li>
+                <li><a href="/" class="nav-link back-to-main">&#8592; lorenzmaierhofer.com</a></li>
+            </ul>
+            <div class="nav-social">
+                <div class="ogm-lang-switcher">
+                    <select class="lang-select" aria-label="Language" onchange="localStorage.setItem('langChosen','1');window.location.href=this.value">
+                        <option value="/offgridmedia/privacy">EN</option>
+                        <option value="/offgridmedia/ar/privacy">AR</option>
+                        <option value="/offgridmedia/de/privacy">DE</option>
+                        <option value="/offgridmedia/es/privacy">ES</option>
+                        <option value="/offgridmedia/fr/privacy">FR</option>
+                        <option value="/offgridmedia/hi/privacy" selected>HI</option>
+                        <option value="/offgridmedia/id/privacy">ID</option>
+                        <option value="/offgridmedia/pt/privacy">PT</option>
+                        <option value="/offgridmedia/ru/privacy">RU</option>
+                        <option value="/offgridmedia/zh/privacy">ZH</option>
+                    </select>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="थीम बदलें">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 17.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm0 1.5a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-17a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 12 2zm0 18a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 12 20zM4.22 4.22a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 0 1-1.06 1.06L4.22 5.28a.75.75 0 0 1 0-1.06zm13.44 13.44a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 0 1-1.06 1.06l-1.06-1.06a.75.75 0 0 1 0-1.06zM2 12a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5A.75.75 0 0 1 2 12zm18 0a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5A.75.75 0 0 1 20 12zM5.28 17.66a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0zm13.44-13.44a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0z"/></svg><svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
+                </button>
+            </div>
+            <button class="hamburger" id="hamburgerToggle" aria-label="मेन्यू खोलें" aria-expanded="false">
+                <span class="ham-bar"></span><span class="ham-bar"></span><span class="ham-bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="main-content ogm-doc">
+        <div class="ogm-shell-narrow">
+            <h1>निजता नीति</h1>
+            <p class="ogm-doc-meta">Offgrid Media &middot; अंतिम अद्यतन: 1 अगस्त 2026</p>
+            <p><strong>Offgrid Media कोई भी निजी डेटा इकट्ठा, संग्रहित या प्रेषित नहीं करता।</strong> न कोई खाता है, न कोई सर्वर सेवा, न एनालिटिक्स। आपकी लाइब्रेरी आपके डिवाइस पर रखी फ़ाइलों का समूह है, और वहीं रहती है।</p>
+            <h2>ऐप क्या इकट्ठा करता है</h2>
+            <p>कुछ नहीं। ऐप का App Store प्राइवेसी मैनिफ़ेस्ट बताता है कि कोई ट्रैकिंग नहीं और कोई डेटा प्रकार इकट्ठा नहीं किया जाता। ऐप में कोई विज्ञापन पहचानकर्ता, क्रैश रिपोर्टिंग सेवा या थर्ड-पार्टी एनालिटिक्स/मार्केटिंग SDK नहीं है।</p>
+            <h2>आपका मीडिया कहाँ रहता है</h2>
+            <ul>
+                <li>आप जो कुछ इंपोर्ट करते हैं वह आपके डिवाइस के एक फ़ोल्डर में लिखा जाता है। कौन-सा फ़ोल्डर, यह आप सेटिंग्स में चुनते हैं।</li>
+                <li>ऐप iOS की फ़ाइल्स ऐप के साथ काम करता है, इसलिए वही फ़ाइलें आप ख़ुद देख और प्रबंधित कर सकते हैं।</li>
+                <li>कोई क्लाउड सिंक नहीं है और किसी तरह का अपलोड नहीं होता। यदि आप ऐसा फ़ोल्डर चुनते हैं जिसे iCloud Drive सिंक करता है, तो वह सिंकिंग आपकी अपनी iCloud सेटिंग्स के तहत Apple करता है, ऐप नहीं।</li>
+            </ul>
+            <h2>ऐप नेटवर्क कब इस्तेमाल करता है</h2>
+            <ul>
+                <li><strong>प्लेबैक कभी नेटवर्क इस्तेमाल नहीं करता।</strong> फ़ाइलें लोकल स्टोरेज से चलती हैं।</li>
+                <li><strong>लिंक से जोड़ने पर करता है।</strong> यदि आप कोई लिंक पेस्ट या शेयर करते हैं, तो ऐप उस पते और उससे जुड़े मीडिया सर्वर से HTTPS पर संपर्क कर फ़ाइल लाता है। इस अनुरोध की कोई जानकारी डेवलपर को नहीं भेजी जाती।</li>
+                <li><strong>सेटिंग्स में दिए लिंक</strong> सामान्य रूप से आपके ब्राउज़र में खुलते हैं।</li>
+            </ul>
+            <h2>अनुमतियाँ</h2>
+            <p>ऐप एक ही अनुमति माँगता है: नोटिफ़िकेशन, ताकि वह बता सके कि इंपोर्ट पूरा हुआ या विफल रहा। आप मना कर सकते हैं, ऐप फिर भी काम करेगा। फ़ोटो से इंपोर्ट iOS के मानक फ़ोटो पिकर से होता है, जो ऐप के बाहर चलता है और फ़ोटो लाइब्रेरी की अनुमति नहीं माँगता।</p>
+            <h2>डायग्नोस्टिक्स</h2>
+            <p>सेटिंग्स में एक लोकल गतिविधि लॉग है ताकि आप देख सकें कि ऐप ने क्या किया। यह कभी आपके डिवाइस से बाहर नहीं जाता और प्रविष्टियाँ दो दिन बाद अपने आप हट जाती हैं।</p>
+            <h2>बच्चे</h2>
+            <p>ऐप की रेटिंग 4+ है और यह किसी से भी, बच्चों से भी, कोई डेटा इकट्ठा नहीं करता।</p>
+            <h2>यह वेबसाइट</h2>
+            <p>ऐप से अलग: lorenzmaierhofer.com पेज-व्यू के समग्र आँकड़ों के लिए <a href="https://plausible.io/privacy-focused-web-analytics" target="_blank" rel="noopener">Plausible Analytics</a> इस्तेमाल करती है। Plausible कोई कुकी नहीं रखता और कोई निजी डेटा इकट्ठा नहीं करता। यह केवल वेबसाइट पर लागू है — ऐप में एनालिटिक्स बिल्कुल नहीं है।</p>
+            <h2>आपके जोड़े गए कंटेंट के बारे में</h2>
+            <p>कृपया केवल वही सामग्री जोड़ें जिसे रखने का आपको अधिकार है। किसी भी प्लेटफ़ॉर्म की सेवा शर्तों और लागू कानूनों का पालन पूरी तरह आपकी ज़िम्मेदारी है।</p>
+            <h2>बदलाव</h2>
+            <p>यदि यह नीति बदलती है, तो अद्यतन संस्करण नई तारीख के साथ इसी पेज पर प्रकाशित किया जाएगा।</p>
+            <h2>संपर्क</h2>
+            <p>निजता से जुड़े सवाल: <a href="mailto:awr9a2npb@mozmail.com">awr9a2npb@mozmail.com</a></p>
+            <p style="margin-top:2.5rem;"><a href="/offgridmedia/hi/">&larr; Offgrid Media पर वापस</a></p>
+        </div>
+    </main>
+
+    <footer class="ogm-footer">
+        <div class="ogm-footer-inner">
+            <div class="ogm-footer-brand">
+                <img src="../../icon.png" alt="" width="30" height="30">
+                <span>Offgrid Media<small>निजी लाइब्रेरी</small></span>
+            </div>
+            <nav class="ogm-footer-links" aria-label="फ़ुटर">
+                <a href="/offgridmedia/hi/privacy">निजता</a>
+                <a href="/offgridmedia/llms.txt">llms.txt</a>
+                <a href="/">lorenzmaierhofer.com</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../../script.js"></script>
+    <script src="../../offgridmedia-script.js"></script>
+</body>
+</html>

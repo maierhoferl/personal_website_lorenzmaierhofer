@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/offgridmedia/icon.png">
+    <title>Offgrid Media — личная офлайн-медиатека для iPhone и iPad</title>
+
+    <meta name="description" content="Offgrid Media — личная медиатека для iPhone и iPad. Импортируйте видео и аудио из Файлов или Фото, раскладывайте по папкам и слушайте и смотрите всё офлайн. Без аккаунта, без рекламы, без слежки.">
+    <meta name="keywords" content="медиатека,офлайн плеер,импорт видео,офлайн аудио,папки,коллекция,приватно,без рекламы">
+    <meta name="author" content="Lorenz Maierhofer">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Offgrid Media — ваша личная офлайн-медиатека">
+    <meta property="og:description" content="Импортируйте видео и аудио из Файлов или Фото, раскладывайте по папкам и воспроизводите всё офлайн. На устройстве. Без аккаунта.">
+    <meta property="og:image" content="https://lorenzmaierhofer.com/offgridmedia/og-offgridmedia.jpg">
+    <meta property="og:image:alt" content="Offgrid Media — всё, что вы храните, офлайн">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:url" content="https://lorenzmaierhofer.com/offgridmedia/ru/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Offgrid Media — ваша личная офлайн-медиатека">
+    <meta name="twitter:description" content="Импортируйте видео и аудио из Файлов или Фото, раскладывайте по папкам и воспроизводите всё офлайн. На устройстве. Без аккаунта.">
+    <meta name="twitter:image" content="https://lorenzmaierhofer.com/offgridmedia/og-offgridmedia.jpg">
+
+    <link rel="canonical" href="https://lorenzmaierhofer.com/offgridmedia/ru/">
+    <link rel="alternate" hreflang="en" href="https://lorenzmaierhofer.com/offgridmedia/">
+    <link rel="alternate" hreflang="ar" href="https://lorenzmaierhofer.com/offgridmedia/ar/">
+    <link rel="alternate" hreflang="de" href="https://lorenzmaierhofer.com/offgridmedia/de/">
+    <link rel="alternate" hreflang="es" href="https://lorenzmaierhofer.com/offgridmedia/es/">
+    <link rel="alternate" hreflang="fr" href="https://lorenzmaierhofer.com/offgridmedia/fr/">
+    <link rel="alternate" hreflang="hi" href="https://lorenzmaierhofer.com/offgridmedia/hi/">
+    <link rel="alternate" hreflang="id" href="https://lorenzmaierhofer.com/offgridmedia/id/">
+    <link rel="alternate" hreflang="pt-BR" href="https://lorenzmaierhofer.com/offgridmedia/pt/">
+    <link rel="alternate" hreflang="ru" href="https://lorenzmaierhofer.com/offgridmedia/ru/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://lorenzmaierhofer.com/offgridmedia/zh/">
+    <link rel="alternate" hreflang="x-default" href="https://lorenzmaierhofer.com/offgridmedia/">
+
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "Offgrid Media",
+        "alternateName": "Offgrid Media – Личная медиатека",
+        "applicationCategory": "EntertainmentApplication",
+        "applicationSubCategory": "Media Library",
+        "operatingSystem": "iOS 16.1 or later",
+        "softwareVersion": "1.0",
+        "description": "Добавляйте видео и аудио, которые у вас уже есть, — из Файлов, из Фото или по ссылке, которую вы вправе хранить, — и слушайте и смотрите всё офлайн в одном аккуратном месте.",
+        "image": "https://lorenzmaierhofer.com/offgridmedia/icon.png",
+        "screenshot": "https://lorenzmaierhofer.com/offgridmedia/screenshots/ru/iphone-01_library.webp",
+        "url": "https://lorenzmaierhofer.com/offgridmedia/ru/",
+        "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "RUB",
+                "availability": "https://schema.org/PreOrder",
+                "seller": {
+                        "@type": "Organization",
+                        "name": "Apple App Store"
+                }
+        },
+        "author": {
+                "@type": "Person",
+                "name": "Lorenz Maierhofer",
+                "url": "https://lorenzmaierhofer.com"
+        },
+        "featureList": [
+                "Импорт из Файлов и Фото",
+                "Порядок по-вашему",
+                "Создано для офлайна",
+                "Настоящий плеер",
+                "Фоновое аудио",
+                "Выберите качество",
+                "Без аккаунта. Без рекламы. Без слежки."
+        ],
+        "keywords": "медиатека,офлайн плеер,импорт видео,офлайн аудио,папки,коллекция,приватно,без рекламы",
+        "contentRating": "4+",
+        "inLanguage": "ru",
+        "isFamilyFriendly": true
+}
+    </script>
+
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+                {
+                        "@type": "Question",
+                        "name": "Нужен ли Offgrid Media интернет?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Нет. Всё, что попало в медиатеку, лежит на вашем устройстве и воспроизводится без сети. При воспроизведении ничего не транслируется, поэтому нет ни буферизации, ни соединения, которое может оборваться."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "Где хранятся мои файлы?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "В папке на вашем устройстве, внутри хранилища приложения. В настройках можно выбрать другую папку медиатеки, а поскольку приложение поддерживает приложение «Файлы», те же файлы видны и там. Ничего не выгружается, облачной синхронизации нет."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "Как добавить медиафайлы в медиатеку?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Импорт из «Файлов» (iCloud Drive или устройство), импорт из медиатеки «Фото» или добавление по ссылке, которую вы вправе хранить. Импорт — основной путь; ссылка — второстепенное удобство."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "Продолжается ли воспроизведение аудио в фоне?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Да. Включите фоновое аудио в настройках — воспроизведение продолжится при переключении приложений и блокировке экрана, с названием, обложкой и управлением на экране блокировки и в пункте управления. Видео можно вывести поверх других приложений в режиме «Картинка в картинке»."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "Собирает ли приложение данные?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Нет. У Offgrid Media нет аккаунта, сервера, аналитики и сторонних SDK. Манифест конфиденциальности в App Store заявляет: никакого отслеживания и никаких собираемых данных. Единственное запрашиваемое разрешение — уведомления."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "Сколько стоит Offgrid Media?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Нисколько. Без подписки, без встроенных покупок, без рекламы."
+                        }
+                }
+        ]
+}
+    </script>
+
+    <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+                {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Lorenz Maierhofer",
+                        "item": "https://lorenzmaierhofer.com/"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Offgrid Media",
+                        "item": "https://lorenzmaierhofer.com/offgridmedia/ru/"
+                }
+        ]
+}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../offgridmedia-styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/offgridmedia/ru/" class="nav-logo">
+                <img src="../icon.png" alt="" class="logo-mark" width="26" height="26">
+                <span class="logo-text">Offgrid Media</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#library" class="nav-link">Медиатека</a></li>
+                <li><a href="#features" class="nav-link">Возможности</a></li>
+                <li><a href="/offgridmedia/ru/privacy" class="nav-link">Конфиденциальность</a></li>
+                <li><a href="#faq" class="nav-link">Вопросы</a></li>
+                <li><a href="/" class="nav-link back-to-main">&#8592; lorenzmaierhofer.com</a></li>
+            </ul>
+            <div class="nav-social">
+                <div class="ogm-lang-switcher">
+                    <select class="lang-select" aria-label="Language" onchange="localStorage.setItem('langChosen','1');window.location.href=this.value">
+                        <option value="/offgridmedia/">EN</option>
+                        <option value="/offgridmedia/ar/">AR</option>
+                        <option value="/offgridmedia/de/">DE</option>
+                        <option value="/offgridmedia/es/">ES</option>
+                        <option value="/offgridmedia/fr/">FR</option>
+                        <option value="/offgridmedia/hi/">HI</option>
+                        <option value="/offgridmedia/id/">ID</option>
+                        <option value="/offgridmedia/pt/">PT</option>
+                        <option value="/offgridmedia/ru/" selected>RU</option>
+                        <option value="/offgridmedia/zh/">ZH</option>
+                    </select>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Сменить тему">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 17.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm0 1.5a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-17a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 12 2zm0 18a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 12 20zM4.22 4.22a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 0 1-1.06 1.06L4.22 5.28a.75.75 0 0 1 0-1.06zm13.44 13.44a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 0 1-1.06 1.06l-1.06-1.06a.75.75 0 0 1 0-1.06zM2 12a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5A.75.75 0 0 1 2 12zm18 0a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5A.75.75 0 0 1 20 12zM5.28 17.66a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0zm13.44-13.44a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0z"/></svg><svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
+                </button>
+            </div>
+            <button class="hamburger" id="hamburgerToggle" aria-label="Открыть меню" aria-expanded="false">
+                <span class="ham-bar"></span><span class="ham-bar"></span><span class="ham-bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <section class="ogm-hero">
+            <div class="ogm-grid" aria-hidden="true"></div>
+            <div class="ogm-hero-inner">
+                <div class="ogm-hero-copy">
+                    <p class="ogm-eyebrow">Offgrid Media &middot; Личная медиатека</p>
+                    <h1>Всё, что вы храните,<br><em>офлайн.</em></h1>
+                    <p class="ogm-lede">Добавляйте видео и аудио, которые у вас уже есть, — из Файлов, из Фото или по ссылке, которую вы вправе хранить, — и слушайте и смотрите всё офлайн в одном аккуратном месте.</p>
+
+                    <div class="ogm-cta-row">
+                        <span class="ogm-soon" data-live-label="Загрузить в App Store">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                            <span><b>Скоро в App Store</b><small>Бесплатно · iPhone и iPad</small></span>
+                        </span>
+                        <a href="#how" class="ogm-btn ogm-btn-ghost">Как это работает</a>
+                    </div>
+
+                    <div class="ogm-switch-row">
+                        <button class="ogm-switch" id="ogmSwitch" aria-pressed="true"
+                                data-label-offline="Авиарежим включён" data-label-online="Авиарежим выключен">
+                            <span class="ogm-switch-track"><span class="ogm-switch-knob"></span></span>
+                            <span class="ogm-switch-text">Авиарежим включён</span>
+                        </button>
+                        <p class="ogm-switch-hint" id="ogmSwitchHint"
+                           data-hint-offline="Попробуйте. Сети нет — медиатека всё равно играет."
+                           data-hint-online="Сеть вернулась. Для вашей медиатеки ничего не изменилось.">Попробуйте. Сети нет — медиатека всё равно играет.</p>
+                    </div>
+                </div>
+
+                <div class="ogm-stage">
+                    <div class="ogm-phone">
+                        <img src="../screenshots/ru/iphone-01_library.webp" alt="Ваша личная медиатека" width="660" height="1434">
+                    </div>
+                    <div class="ogm-readout" aria-hidden="true">
+                        <div class="ogm-chip ogm-chip-network">
+                            <span class="ogm-chip-label">Сеть</span>
+                            <span class="ogm-chip-value ogm-offline-only"><span class="ogm-dot ogm-dot-dead"></span>Нет соединения</span>
+                            <span class="ogm-chip-value ogm-online-only"><span class="ogm-dot ogm-dot-dead"></span>Подключено</span>
+                        </div>
+                        <div class="ogm-chip">
+                            <span class="ogm-chip-label">Ваша медиатека</span>
+                            <span class="ogm-chip-value"><span class="ogm-dot ogm-dot-live"></span>Воспроизводится</span>
+                        </div>
+                        <p class="ogm-chip-caption">Одинаково в обоих случаях. В этом весь смысл.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ogm-section ogm-section-alt" id="library">
+            <div class="ogm-shell">
+                <div class="ogm-head ogm-head-center ogm-reveal">
+                    <span class="ogm-label">Медиатека</span>
+                    <h2 class="ogm-h2">Одно аккуратное место для ваших собственных медиафайлов</h2>
+                    <p class="ogm-sub">Папки, поиск и фильтр по видео или аудио. Миниатюры берутся из самого файла, обложки и метаданные сохраняются.</p>
+                </div>
+
+                <div class="ogm-device-tabs" role="tablist" aria-label="Устройство">
+                    <button class="ogm-device-tab active" role="tab" aria-selected="true" data-device="iphone">iPhone</button>
+                    <button class="ogm-device-tab" role="tab" aria-selected="false" data-device="ipad">iPad</button>
+                </div>
+
+                <div class="ogm-shots" data-device="iphone" role="region" aria-label="iPhone" tabindex="0">
+                    <img src="../screenshots/ru/iphone-01_library.webp" alt="Ваша личная медиатека" loading="lazy" width="660" height="1434">
+                    <img src="../screenshots/ru/iphone-02_import.webp" alt="Импорт из Файлов или Фото" loading="lazy" width="660" height="1434">
+                    <img src="../screenshots/ru/iphone-03_folders.webp" alt="Разложите по папкам" loading="lazy" width="660" height="1434">
+                    <img src="../screenshots/ru/iphone-04_player.webp" alt="Воспроизведение офлайн" loading="lazy" width="660" height="1434">
+                    <img src="../screenshots/ru/iphone-05_actions.webp" alt="Конвертация, перенос, порядок" loading="lazy" width="660" height="1434">
+                    <img src="../screenshots/ru/iphone-06_settings.webp" alt="Ваше качество, ваши правила" loading="lazy" width="660" height="1434">
+                </div>
+
+                <div class="ogm-shots hidden" data-device="ipad" role="region" aria-label="iPad" tabindex="0">
+                    <img src="../screenshots/ru/ipad-01_library.webp" alt="Ваша личная медиатека" loading="lazy" width="720" height="960">
+                    <img src="../screenshots/ru/ipad-02_import.webp" alt="Импорт из Файлов или Фото" loading="lazy" width="720" height="960">
+                    <img src="../screenshots/ru/ipad-03_folders.webp" alt="Разложите по папкам" loading="lazy" width="720" height="960">
+                    <img src="../screenshots/ru/ipad-04_player.webp" alt="Воспроизведение офлайн" loading="lazy" width="720" height="960">
+                    <img src="../screenshots/ru/ipad-05_actions.webp" alt="Конвертация, перенос, порядок" loading="lazy" width="720" height="960">
+                    <img src="../screenshots/ru/ipad-06_settings.webp" alt="Ваше качество, ваши правила" loading="lazy" width="720" height="960">
+                </div>
+            </div>
+        </section>
+
+        <section class="ogm-section" id="how">
+            <div class="ogm-shell">
+                <div class="ogm-head ogm-reveal">
+                    <span class="ogm-label">Как это работает</span>
+                    <h2 class="ogm-h2">Импорт, порядок, воспроизведение</h2>
+                </div>
+                <div class="ogm-steps">
+                    <div class="ogm-step ogm-reveal">
+                        <span class="ogm-step-n">01</span>
+                        <h3>Импорт из Файлов или Фото</h3>
+                    </div>
+                    <div class="ogm-step ogm-reveal">
+                        <span class="ogm-step-n">02</span>
+                        <h3>Разложите по папкам</h3>
+                    </div>
+                    <div class="ogm-step ogm-reveal">
+                        <span class="ogm-step-n">03</span>
+                        <h3>Воспроизведение офлайн</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ogm-section ogm-section-alt" id="features">
+            <div class="ogm-shell">
+                <div class="ogm-head ogm-head-center ogm-reveal">
+                    <span class="ogm-label">Что она умеет</span>
+                    <h2 class="ogm-h2">Настоящий плеер, а не папка с файлами</h2>
+                    <p class="ogm-sub">Всё, что ниже, работает без сети.</p>
+                </div>
+                <div class="ogm-features">
+                    <div class="ogm-feature ogm-reveal">
+                        <span class="ogm-feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 20h16"/></svg></span>
+                        <h3>Импорт из Файлов и Фото</h3>
+                        <p>Добавляйте видео и аудио из iCloud Drive, с устройства или из медиатеки Фото. Всё попадает в вашу библиотеку и сразу готово к воспроизведению.</p>
+                    </div>
+                    <div class="ogm-feature ogm-reveal">
+                        <span class="ogm-feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span>
+                        <h3>Порядок по-вашему</h3>
+                        <p>Создавайте папки, перемещайте объекты между ними и ищите по всему, что вы сохранили. Фильтруйте по видео или аудио, когда нужно сосредоточиться.</p>
+                    </div>
+                    <div class="ogm-feature ogm-reveal">
+                        <span class="ogm-feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M9 18h6"/></svg></span>
+                        <h3>Создано для офлайна</h3>
+                        <p>Всё, что попало в библиотеку, остаётся на вашем устройстве. Без буферизации, без интернета, без потоковой передачи откуда бы то ни было.</p>
+                    </div>
+                    <div class="ogm-feature ogm-reveal">
+                        <span class="ogm-feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 4 12 8-12 8z"/></svg></span>
+                        <h3>Настоящий плеер</h3>
+                        <p>Воспроизведение по порядку или вперемешку, продолжение с того же места, очередь и «Картинка в картинке», пока вы работаете в других приложениях. Обложки и метаданные сохраняются.</p>
+                    </div>
+                    <div class="ogm-feature ogm-reveal">
+                        <span class="ogm-feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V6l10-2v12"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg></span>
+                        <h3>Фоновое аудио</h3>
+                        <p>Слушайте дальше, переключая приложения или блокируя экран.</p>
+                    </div>
+                    <div class="ogm-feature ogm-reveal">
+                        <span class="ogm-feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v18"/><path d="M12 8v13"/><path d="M19 3v18"/><circle cx="5" cy="8" r="2"/><circle cx="12" cy="16" r="2"/><circle cx="19" cy="10" r="2"/></svg></span>
+                        <h3>Выберите качество</h3>
+                        <p>Задайте предпочитаемое качество один раз в настройках — наилучшее доступное, 720p, 480p, 360p или только аудио.</p>
+                    </div>
+                    <div class="ogm-feature ogm-reveal">
+                        <span class="ogm-feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
+                        <h3>Без аккаунта. Без рекламы. Без слежки.</h3>
+                        <p>Offgrid Media хранит всё локально на вашем устройстве. Ничего не выгружается, ничем не делится, аккаунт не нужен.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ogm-section">
+            <div class="ogm-shell">
+                <div class="ogm-stats">
+                    <div class="ogm-stat">
+                        <span class="ogm-stat-n" data-count="11">11</span>
+                        <span class="ogm-stat-l">Языков</span>
+                    </div>
+                    <div class="ogm-stat">
+                        <span class="ogm-stat-n" data-count="0">0</span>
+                        <span class="ogm-stat-l">Аккаунтов, рекламы, трекеров</span>
+                    </div>
+                    <div class="ogm-stat">
+                        <span class="ogm-stat-n" data-count="100" data-suffix="%">100%</span>
+                        <span class="ogm-stat-l">На устройстве</span>
+                    </div>
+                    <div class="ogm-stat">
+                        <span class="ogm-stat-n">16.1+</span>
+                        <span class="ogm-stat-l">iOS, iPhone и iPad</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ogm-section ogm-section-alt" id="privacy">
+            <div class="ogm-shell">
+                <div class="ogm-head ogm-reveal">
+                    <span class="ogm-label">Конфиденциальность</span>
+                    <h2 class="ogm-h2">Нечего собирать, потому что некуда отправлять</h2>
+                    <p class="ogm-sub">У Offgrid Media нет аккаунта и нет собственного сервера. Манифест конфиденциальности в App Store заявляет: никакого отслеживания и никаких собираемых данных.</p>
+                </div>
+                <div class="ogm-privacy-grid">
+                    <div class="ogm-privacy-item ogm-reveal">
+                        <strong>Без аккаунта</strong>
+                        <span>Без регистрации, без входа, без профиля. Открыли приложение — и всё работает.</span>
+                    </div>
+                    <div class="ogm-privacy-item ogm-reveal">
+                        <strong>Без аналитики в приложении</strong>
+                        <span>Никаких SDK отслеживания, отчётов о сбоях и рекламных фреймворков.</span>
+                    </div>
+                    <div class="ogm-privacy-item ogm-reveal">
+                        <strong>Без облачной синхронизации</strong>
+                        <span>Ваша медиатека никуда не выгружается. Нет синхронизации с iCloud и нет службы резервного копирования.</span>
+                    </div>
+                    <div class="ogm-privacy-item ogm-reveal">
+                        <strong>Одно разрешение</strong>
+                        <span>Уведомления, чтобы приложение сообщило, когда импорт завершён. Больше оно ничего не запрашивает.</span>
+                    </div>
+                </div>
+                <a class="ogm-link" href="/offgridmedia/ru/privacy">Читать полную политику конфиденциальности &rarr;</a>
+            </div>
+        </section>
+
+        <section class="ogm-section" id="faq">
+            <div class="ogm-shell-narrow">
+                <div class="ogm-head ogm-reveal">
+                    <span class="ogm-label">Вопросы</span>
+                    <h2 class="ogm-h2">Частые вопросы</h2>
+                </div>
+                <div class="ogm-faq">
+                    <div class="ogm-faq-item">
+                        <button class="ogm-faq-q" aria-expanded="false">Нужен ли Offgrid Media интернет?<span class="ogm-faq-icon" aria-hidden="true">+</span></button>
+                        <div class="ogm-faq-a"><p>Нет. Всё, что попало в медиатеку, лежит на вашем устройстве и воспроизводится без сети. При воспроизведении ничего не транслируется, поэтому нет ни буферизации, ни соединения, которое может оборваться.</p></div>
+                    </div>
+                    <div class="ogm-faq-item">
+                        <button class="ogm-faq-q" aria-expanded="false">Где хранятся мои файлы?<span class="ogm-faq-icon" aria-hidden="true">+</span></button>
+                        <div class="ogm-faq-a"><p>В папке на вашем устройстве, внутри хранилища приложения. В настройках можно выбрать другую папку медиатеки, а поскольку приложение поддерживает приложение «Файлы», те же файлы видны и там. Ничего не выгружается, облачной синхронизации нет.</p></div>
+                    </div>
+                    <div class="ogm-faq-item">
+                        <button class="ogm-faq-q" aria-expanded="false">Как добавить медиафайлы в медиатеку?<span class="ogm-faq-icon" aria-hidden="true">+</span></button>
+                        <div class="ogm-faq-a"><p>Импорт из «Файлов» (iCloud Drive или устройство), импорт из медиатеки «Фото» или добавление по ссылке, которую вы вправе хранить. Импорт — основной путь; ссылка — второстепенное удобство.</p></div>
+                    </div>
+                    <div class="ogm-faq-item">
+                        <button class="ogm-faq-q" aria-expanded="false">Продолжается ли воспроизведение аудио в фоне?<span class="ogm-faq-icon" aria-hidden="true">+</span></button>
+                        <div class="ogm-faq-a"><p>Да. Включите фоновое аудио в настройках — воспроизведение продолжится при переключении приложений и блокировке экрана, с названием, обложкой и управлением на экране блокировки и в пункте управления. Видео можно вывести поверх других приложений в режиме «Картинка в картинке».</p></div>
+                    </div>
+                    <div class="ogm-faq-item">
+                        <button class="ogm-faq-q" aria-expanded="false">Собирает ли приложение данные?<span class="ogm-faq-icon" aria-hidden="true">+</span></button>
+                        <div class="ogm-faq-a"><p>Нет. У Offgrid Media нет аккаунта, сервера, аналитики и сторонних SDK. Манифест конфиденциальности в App Store заявляет: никакого отслеживания и никаких собираемых данных. Единственное запрашиваемое разрешение — уведомления.</p></div>
+                    </div>
+                    <div class="ogm-faq-item">
+                        <button class="ogm-faq-q" aria-expanded="false">Сколько стоит Offgrid Media?<span class="ogm-faq-icon" aria-hidden="true">+</span></button>
+                        <div class="ogm-faq-a"><p>Нисколько. Без подписки, без встроенных покупок, без рекламы.</p></div>
+                    </div>
+                </div>
+                <p class="ogm-note" style="margin-top:2.5rem;">Добавляйте только тот контент, который вы вправе хранить. Соблюдение условий использования любой платформы и применимого законодательства — исключительно ваша ответственность.</p>
+            </div>
+        </section>
+
+        <section class="ogm-close">
+            <h2>Ваша медиатека. Ваше устройство. Сигнал не нужен.</h2>
+            <p>Offgrid Media бесплатна, для iPhone и iPad, на 11 языках.</p>
+            <div class="ogm-cta-row">
+                <span class="ogm-soon" data-live-label="Загрузить в App Store">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                    <span><b>Скоро в App Store</b><small>Бесплатно · iOS 16.1+</small></span>
+                </span>
+            </div>
+            <p class="ogm-close-meta">Без аккаунта · Без рекламы · Без слежки</p>
+        </section>
+
+    </main>
+
+    <footer class="ogm-footer">
+        <div class="ogm-footer-inner">
+            <div class="ogm-footer-brand">
+                <img src="../icon.png" alt="" width="30" height="30">
+                <span>Offgrid Media<small>Личная медиатека</small></span>
+            </div>
+            <nav class="ogm-footer-links" aria-label="Подвал">
+                <a href="/offgridmedia/ru/privacy">Конфиденциальность</a>
+                <a href="/offgridmedia/llms.txt">llms.txt</a>
+                <a href="/">lorenzmaierhofer.com</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../offgridmedia-script.js"></script>
+</body>
+</html>

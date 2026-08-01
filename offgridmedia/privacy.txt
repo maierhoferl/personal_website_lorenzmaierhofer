@@ -1,0 +1,31 @@
+OFFGRID MEDIA — PRIVACY POLICY
+Last updated: 1 August 2026
+
+Offgrid Media does not collect, store or transmit any personal data.
+
+- No account. The app works without registration or sign-in, and there is no
+  backend service of any kind.
+- No data collected. The App Store privacy manifest declares no tracking and no
+  collected data types. The app contains no analytics, crash reporting,
+  advertising or other third-party SDKs.
+- Everything stays on the device. Imported media is written to a folder on the
+  device (selectable in Settings) and is never uploaded. There is no cloud sync
+  and no iCloud sync performed by the app.
+- Network use. Playback never uses the network. The app only makes network
+  requests when the user adds media from a link: it then contacts that address
+  and the media server it resolves to over HTTPS. Nothing is sent to the
+  developer.
+- Permissions. Notifications only, so the app can report that an import
+  finished or failed. Importing from Photos uses the standard iOS photo picker,
+  which runs out of process and needs no photo library access.
+- Diagnostics. Settings contains a local activity log that never leaves the
+  device; entries are deleted automatically after two days.
+- Your responsibility. Please only add content you have the right to keep.
+  Compliance with the terms of service of any platform and with applicable laws
+  is solely your responsibility.
+
+Note: the website lorenzmaierhofer.com uses Plausible Analytics (no cookies, no
+personal data) for aggregate page views. The app itself contains no analytics.
+
+Contact: awr9a2npb@mozmail.com
+Website: https://lorenzmaierhofer.com/offgridmedia/
