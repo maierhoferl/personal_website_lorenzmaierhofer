@@ -99,14 +99,18 @@ Local server needed for `linkedin_posts.json` fetch to work (CORS).
 - App source: `../share_to_save/` (directory name predates two renames: Share2Save → Kept → Offgrid Media). The former `/share2save/` subsite has been removed from this repo.
 - The app hardcodes `lorenzmaierhofer.com/offgridmedia/` and `/offgridmedia/privacy` in its App Store metadata and in-app Settings, so **neither URL may change**
 - Locales: EN at the root plus `ar de es fr hi id pt ru zh`, each with `index.html` and `privacy/index.html`; `ar` is `dir="rtl"`
-- `offgridmedia-styles.css` (deep navy + `#F2A93B` amber token layer) and `offgridmedia-script.js`; both loaded after the shared `styles.css` / `script.js`
+- `offgridmedia-styles.css` (deep navy + `#5CC8F7` icon-sky token layer, `--ogm-sky` / `--ogm-sky-dim`) and `offgridmedia-script.js`; both loaded after the shared `styles.css` / `script.js`. Palette is sampled from the app icon (navy field `#0A1631`–`#1B2E52`, sky strokes `#5CC8F7`, UI blue `#2F6FEC`); the `.offgridmedia-nav` spotlight badge in the root `styles.css` uses the same sky
 - Signature interaction: the hero "airplane mode" switch toggles `body.is-online`, which fades the connectivity grid while the library card stays lit
 - Scroll reveals are gated on `.ogm-anim` (added by JS) so content stays visible without JavaScript
 - `APP_STORE_URL` at the top of `offgridmedia-script.js` is `null`; set it to `https://apps.apple.com/us/app/offgrid-media` once that listing is published and every "coming soon" badge turns into a real App Store button. Do **not** point it at the old Share2Save listing (`id6766317237`)
 
 **Regenerating the pages**
 
-All 20 HTML files are generated, not hand-edited. The generator and its per-locale UI strings live in `offgridmedia/_build/` (`build.py`, `strings.py`, `strings_b.py`; run `python3 build.py` from that directory — the deploy workflow excludes `**/*.py`); marketing copy (hero lede, the seven feature cards, the rights notice) is read at build time from `../share_to_save/fastlane/metadata/<locale>/description.txt` and `fastlane/framing/titles/<locale>.strings` so the site never claims more than the reviewed App Store description. Small edits can be made directly in the HTML, but apply them to all 10 locales.
+All 20 HTML files are generated, not hand-edited. The generator and its per-locale UI strings live in `offgridmedia/_build/` (`build.py`, `strings.py`, `strings_b.py`; run `python3 build.py` from that directory — the deploy workflow excludes `**/*.py` and `**/*.sh`); marketing copy (hero lede, the seven feature cards, the rights notice) is read at build time from `../share_to_save/fastlane/metadata/<locale>/description.txt` and `fastlane/framing/titles/<locale>.strings` so the site never claims more than the reviewed App Store description. Small edits can be made directly in the HTML, but apply them to all 10 locales.
+
+**Regenerating the images**
+
+`offgridmedia/_build/make_assets.sh` (needs `magick` + `ffmpeg`) rebuilds every image asset from the app repo: `icon.png` from `OffgridMedia/Assets.xcassets/AppIcon.appiconset/icon-1024.png`, the per-locale `screenshots/<loc>/{iphone,ipad}-*.webp` from fastlane's `*_framed.png` (iPhone 17 Pro Max → 660×1434, iPad Pro 13 → 720×960), `preview.mp4` + `preview-poster.webp` as a crossfade of the unframed English shots, and the `og-offgridmedia.jpg` social card. Locale mapping is in the script (`zh` → `zh-Hans`, `pt` → `pt-BR`, …). The app's `fastlane/previews/` screen recordings are not used — they go stale faster than the screenshots.
 
 **Accuracy constraints**
 
