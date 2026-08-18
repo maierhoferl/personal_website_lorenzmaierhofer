@@ -26,6 +26,7 @@ LOCALES = {
     "zh": ("zh-Hans", "zh-Hans", "zh-Hans", "zh_CN", "ltr"),
 }
 ORDER = ["en", "ar", "de", "es", "fr", "hi", "id", "pt", "ru", "zh"]
+N_BLOCKS = 10  # feature sections in the store description
 SHOTS = ["01_library", "02_import", "03_folders", "04_player", "05_actions", "06_settings"]
 
 
@@ -39,18 +40,19 @@ def app_copy(loc):
     meta = LOCALES[loc][0]
     paras = [p.strip() for p in read(f"{APP}/metadata/{meta}/description.txt").split("\n\n") if p.strip()]
     blocks = []
-    for p in paras[2:]:
-        if p == "—":
-            break
+    for p in paras[2:-1]:
+        p = p.rstrip("—").strip()
+        if not p:
+            continue
         head, _, body = p.partition("\n")
         blocks.append((head.strip(), body.strip()))
-    assert len(blocks) == 7, f"{loc}: expected 7 blocks, got {len(blocks)}"
+    assert len(blocks) == N_BLOCKS, f"{loc}: expected {N_BLOCKS} blocks, got {len(blocks)}"
     # The store description shouts its section headings in caps; the page uses
     # sentence case instead (per-locale, because casing rules differ).
     heads = STRINGS[loc].get("feature_heads")
     if heads:
-        assert len(heads) == 7, f"{loc}: need 7 feature headings"
-        blocks = [(heads[i], blocks[i][1]) for i in range(7)]
+        assert len(heads) == N_BLOCKS, f"{loc}: need {N_BLOCKS} feature headings"
+        blocks = [(heads[i], blocks[i][1]) for i in range(N_BLOCKS)]
     rights = paras[-1]
     promo = read(f"{APP}/metadata/{meta}/promotional_text.txt")
     return {
@@ -88,6 +90,9 @@ FEATURE_ICONS = [
     '<path d="m6 4 12 8-12 8z"/>',
     '<path d="M9 18V6l10-2v12"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/>',
     '<path d="M5 3v18"/><path d="M12 8v13"/><path d="M19 3v18"/><circle cx="5" cy="8" r="2"/><circle cx="12" cy="16" r="2"/><circle cx="19" cy="10" r="2"/>',
+    '<path d="M4 6h10"/><path d="M4 12h10"/><path d="M4 18h10"/><path d="M18 4v16"/><circle cx="18" cy="12" r="2"/>',
+    '<path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M7 12h10"/><path d="M7 16h6"/>',
+    '<path d="M6 5h12"/><rect x="4" y="9" width="16" height="11" rx="2"/><path d="M10 13h4"/>',
     '<path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/>',
 ]
 

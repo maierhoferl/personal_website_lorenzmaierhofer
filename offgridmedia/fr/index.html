@@ -73,6 +73,9 @@
                 "Un vrai lecteur",
                 "Audio en arrière-plan",
                 "Choisissez votre qualité",
+                "Chapitres",
+                "Des dossiers entiers, d'un coup",
+                "Uniquement ce que vous utilisez",
                 "Aucun compte. Aucune pub. Aucun suivi."
         ],
         "keywords": "médiathèque,lecteur hors ligne,importer vidéo,audio hors ligne,dossiers,collection,privé",
@@ -108,7 +111,7 @@
                         "name": "Comment ajouter des médias à la médiathèque ?",
                         "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "Import depuis Fichiers (iCloud Drive ou appareil), import depuis votre photothèque, ou ajout via un lien que vous avez le droit de conserver. L'import est la voie principale ; le lien n'est qu'une commodité secondaire."
+                                "text": "Import depuis Fichiers (iCloud Drive ou appareil), import depuis votre photothèque, ou ajout via un lien que vous avez le droit de conserver — collez-le dans l'app, ou utilisez le menu Partager de votre navigateur et choisissez Offgrid Media. L'import est la voie principale ; le lien n'est qu'une commodité secondaire."
                         }
                 },
                 {
@@ -116,7 +119,7 @@
                         "name": "L'audio continue-t-il en arrière-plan ?",
                         "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "Oui. Activez l'audio en arrière-plan dans les Réglages : la lecture continue quand vous changez d'app ou verrouillez l'écran, avec titre, pochette et commandes sur l'écran verrouillé et dans le centre de contrôle. La vidéo peut flotter au-dessus des autres apps avec Picture in Picture."
+                                "text": "Oui. Activez l'audio en arrière-plan dans les Réglages : la lecture continue quand vous changez d'app ou verrouillez l'écran, avec titre, pochette et commandes sur l'écran verrouillé et dans le centre de contrôle. La vidéo peut flotter au-dessus des autres apps avec Picture in Picture. La vidéo se lit aussi en plein écran, et sur iPad l'app continue à côté d'une autre app en Split View."
                         }
                 },
                 {
@@ -350,9 +353,24 @@
                         <p>Réglez votre qualité préférée une fois dans les Réglages — la meilleure disponible, 720p, 480p, 360p ou audio seul.</p>
                     </div>
                     <div class="ogm-feature ogm-reveal">
+                        <span class="ogm-feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h10"/><path d="M4 12h10"/><path d="M4 18h10"/><path d="M18 4v16"/><circle cx="18" cy="12" r="2"/></svg></span>
+                        <h3>Chapitres</h3>
+                        <p>Les médias avec chapitres obtiennent une liste de chapitres dans la médiathèque et une barre de chapitres en bas du lecteur, pour aller droit au passage voulu.</p>
+                    </div>
+                    <div class="ogm-feature ogm-reveal">
+                        <span class="ogm-feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M7 12h10"/><path d="M7 16h6"/></svg></span>
+                        <h3>Des dossiers entiers, d&#x27;un coup</h3>
+                        <p>Importez un dossier et il arrive avec ses sous-dossiers intacts — copiez-le, ou déplacez-le hors de son emplacement d&#x27;origine. Sélectionnez plusieurs éléments à la fois pour les ajouter à une playlist, les archiver, les déplacer ou les supprimer.</p>
+                    </div>
+                    <div class="ogm-feature ogm-reveal">
+                        <span class="ogm-feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 5h12"/><rect x="4" y="9" width="16" height="11" rx="2"/><path d="M10 13h4"/></svg></span>
+                        <h3>Uniquement ce que vous utilisez</h3>
+                        <p>Désactivez l&#x27;Archive ou les Playlists dans les réglages et elles disparaissent de l&#x27;app. Rien n&#x27;est supprimé — réactivez-les et tout est toujours là.</p>
+                    </div>
+                    <div class="ogm-feature ogm-reveal">
                         <span class="ogm-feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
                         <h3>Aucun compte. Aucune pub. Aucun suivi.</h3>
-                        <p>Offgrid Media conserve tout localement sur votre appareil. Rien n&#x27;est téléversé, rien n&#x27;est partagé, aucun compte n&#x27;est requis.</p>
+                        <p>Offgrid conserve tout localement sur votre appareil. Rien n&#x27;est téléversé, rien n&#x27;est partagé, aucun compte n&#x27;est requis.</p>
                     </div>
                 </div>
             </div>
@@ -427,11 +445,11 @@
                     </div>
                     <div class="ogm-faq-item">
                         <button class="ogm-faq-q" aria-expanded="false">Comment ajouter des médias à la médiathèque ?<span class="ogm-faq-icon" aria-hidden="true">+</span></button>
-                        <div class="ogm-faq-a"><p>Import depuis Fichiers (iCloud Drive ou appareil), import depuis votre photothèque, ou ajout via un lien que vous avez le droit de conserver. L&#x27;import est la voie principale ; le lien n&#x27;est qu&#x27;une commodité secondaire.</p></div>
+                        <div class="ogm-faq-a"><p>Import depuis Fichiers (iCloud Drive ou appareil), import depuis votre photothèque, ou ajout via un lien que vous avez le droit de conserver — collez-le dans l&#x27;app, ou utilisez le menu Partager de votre navigateur et choisissez Offgrid Media. L&#x27;import est la voie principale ; le lien n&#x27;est qu&#x27;une commodité secondaire.</p></div>
                     </div>
                     <div class="ogm-faq-item">
                         <button class="ogm-faq-q" aria-expanded="false">L&#x27;audio continue-t-il en arrière-plan ?<span class="ogm-faq-icon" aria-hidden="true">+</span></button>
-                        <div class="ogm-faq-a"><p>Oui. Activez l&#x27;audio en arrière-plan dans les Réglages : la lecture continue quand vous changez d&#x27;app ou verrouillez l&#x27;écran, avec titre, pochette et commandes sur l&#x27;écran verrouillé et dans le centre de contrôle. La vidéo peut flotter au-dessus des autres apps avec Picture in Picture.</p></div>
+                        <div class="ogm-faq-a"><p>Oui. Activez l&#x27;audio en arrière-plan dans les Réglages : la lecture continue quand vous changez d&#x27;app ou verrouillez l&#x27;écran, avec titre, pochette et commandes sur l&#x27;écran verrouillé et dans le centre de contrôle. La vidéo peut flotter au-dessus des autres apps avec Picture in Picture. La vidéo se lit aussi en plein écran, et sur iPad l&#x27;app continue à côté d&#x27;une autre app en Split View.</p></div>
                     </div>
                     <div class="ogm-faq-item">
                         <button class="ogm-faq-q" aria-expanded="false">L&#x27;app collecte-t-elle des données ?<span class="ogm-faq-icon" aria-hidden="true">+</span></button>

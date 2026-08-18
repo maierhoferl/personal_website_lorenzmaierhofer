@@ -4,16 +4,22 @@
 
 ## What it is
 
-Offgrid Media is a media library app, not a streaming client and not a download tool. Media enters the library by import (from the iOS Files app or the photo library) or, as a secondary path, from a link the user has the right to keep. Once imported, a file is a plain file in the app's storage on the device and plays without any network connection.
+Offgrid Media is a media library app, not a streaming client and not a download tool. Media enters the library by import (from the iOS Files app or the photo library) or, as a secondary path, from a link the user has the right to keep — pasted into the app, or shared to it from a browser via the iOS share sheet. Once imported, a file is a plain file in the app's storage on the device and plays without any network connection.
 
 ## App features
 
 - Import video and audio from Files (iCloud Drive or on-device) and from the photo library
+- Add from a link: paste it in the app, or share it to Offgrid Media from a browser with the iOS share sheet
+- Import a whole folder with its subfolders intact — copy it in place or move it out
 - Folders: create, move items between them, search across every subfolder
 - Filter by video or audio; sort by name or date added
 - Fully offline playback — nothing is streamed at playback time
 - Shuffle, repeat, resume where you left off, Up Next queue (Play Next / Play Last)
-- Picture in Picture for video
+- Full-screen video player, Picture in Picture, and Split View alongside another app on iPad
+- Chapters: a chapter list in the library and a chapter strip in the player for media that has them
+- Playlists: create them, add several items at once, play from a playlist
+- Archive played items to keep them out of the main library without deleting them; multi-select to add to a playlist, archive, move or delete
+- Archive and Playlists can be switched off in Settings and disappear from the app; nothing is deleted
 - Background audio with Lock Screen and Control Center controls
 - Convert an item in place to 720p, 480p or audio only; import quality preference (best available, 720p, 480p, 360p, audio only)
 - Album art, metadata and thumbnails preserved; metadata viewer per item

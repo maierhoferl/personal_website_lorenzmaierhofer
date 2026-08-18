@@ -73,6 +73,9 @@
                 "Ein echter Player",
                 "Hintergrundwiedergabe",
                 "Wähle deine Qualität",
+                "Kapitel",
+                "Ganze Ordner auf einmal",
+                "Nur was du brauchst",
                 "Kein Konto. Keine Werbung. Kein Tracking."
         ],
         "keywords": "Mediathek,Offline-Player,Video importieren,Offline-Audio,Ordner,Sammlung,privat,werbefrei",
@@ -108,7 +111,7 @@
                         "name": "Wie kommen Medien in die Mediathek?",
                         "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "Import aus Dateien (iCloud Drive oder lokal), Import aus der Fotomediathek oder über einen Link, den du behalten darfst. Der Import ist der Hauptweg; der Link ist eine zusätzliche Bequemlichkeit."
+                                "text": "Import aus Dateien (iCloud Drive oder lokal), Import aus der Fotomediathek oder über einen Link, den du behalten darfst — entweder in der App einfügen oder im Browser über „Teilen“ Offgrid Media auswählen. Der Import ist der Hauptweg; der Link ist eine zusätzliche Bequemlichkeit."
                         }
                 },
                 {
@@ -116,7 +119,7 @@
                         "name": "Läuft Audio im Hintergrund weiter?",
                         "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "Ja. Aktiviere Hintergrundwiedergabe in den Einstellungen, dann läuft die Wiedergabe weiter, wenn du die App wechselst oder den Bildschirm sperrst — mit Titel, Cover und Steuerung auf dem Sperrbildschirm und im Kontrollzentrum. Videos laufen im Bild-in-Bild-Modus über anderen Apps weiter."
+                                "text": "Ja. Aktiviere Hintergrundwiedergabe in den Einstellungen, dann läuft die Wiedergabe weiter, wenn du die App wechselst oder den Bildschirm sperrst — mit Titel, Cover und Steuerung auf dem Sperrbildschirm und im Kontrollzentrum. Videos laufen im Bild-in-Bild-Modus über anderen Apps weiter. Videos laufen außerdem im Vollbild, und auf dem iPad spielt die App in Split View neben einer anderen App weiter."
                         }
                 },
                 {
@@ -350,9 +353,24 @@
                         <p>Stelle deine bevorzugte Qualität einmal in den Einstellungen ein — beste verfügbare, 720p, 480p, 360p oder nur Audio.</p>
                     </div>
                     <div class="ogm-feature ogm-reveal">
+                        <span class="ogm-feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h10"/><path d="M4 12h10"/><path d="M4 18h10"/><path d="M18 4v16"/><circle cx="18" cy="12" r="2"/></svg></span>
+                        <h3>Kapitel</h3>
+                        <p>Medien mit Kapiteln bekommen eine Kapitelliste in der Mediathek und eine Kapitelleiste unten im Player — so springst du direkt an die Stelle, die du suchst.</p>
+                    </div>
+                    <div class="ogm-feature ogm-reveal">
+                        <span class="ogm-feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M7 12h10"/><path d="M7 16h6"/></svg></span>
+                        <h3>Ganze Ordner auf einmal</h3>
+                        <p>Importiere einen Ordner, und er kommt samt Unterordnern an — kopiert oder aus dem Original verschoben. Wähle mehrere Titel gleichzeitig aus, um sie zu einer Playlist hinzuzufügen, zu archivieren, zu verschieben oder zu löschen.</p>
+                    </div>
+                    <div class="ogm-feature ogm-reveal">
+                        <span class="ogm-feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 5h12"/><rect x="4" y="9" width="16" height="11" rx="2"/><path d="M10 13h4"/></svg></span>
+                        <h3>Nur was du brauchst</h3>
+                        <p>Schalte Archiv oder Playlists in den Einstellungen aus, und sie verschwinden aus der App. Nichts wird gelöscht — schalte sie wieder ein, und alles ist noch da.</p>
+                    </div>
+                    <div class="ogm-feature ogm-reveal">
                         <span class="ogm-feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
                         <h3>Kein Konto. Keine Werbung. Kein Tracking.</h3>
-                        <p>Offgrid Media speichert alles lokal auf deinem Gerät. Nichts wird hochgeladen, nichts geteilt, kein Konto erforderlich.</p>
+                        <p>Offgrid speichert alles lokal auf deinem Gerät. Nichts wird hochgeladen, nichts geteilt, kein Konto erforderlich.</p>
                     </div>
                 </div>
             </div>
@@ -427,11 +445,11 @@
                     </div>
                     <div class="ogm-faq-item">
                         <button class="ogm-faq-q" aria-expanded="false">Wie kommen Medien in die Mediathek?<span class="ogm-faq-icon" aria-hidden="true">+</span></button>
-                        <div class="ogm-faq-a"><p>Import aus Dateien (iCloud Drive oder lokal), Import aus der Fotomediathek oder über einen Link, den du behalten darfst. Der Import ist der Hauptweg; der Link ist eine zusätzliche Bequemlichkeit.</p></div>
+                        <div class="ogm-faq-a"><p>Import aus Dateien (iCloud Drive oder lokal), Import aus der Fotomediathek oder über einen Link, den du behalten darfst — entweder in der App einfügen oder im Browser über „Teilen“ Offgrid Media auswählen. Der Import ist der Hauptweg; der Link ist eine zusätzliche Bequemlichkeit.</p></div>
                     </div>
                     <div class="ogm-faq-item">
                         <button class="ogm-faq-q" aria-expanded="false">Läuft Audio im Hintergrund weiter?<span class="ogm-faq-icon" aria-hidden="true">+</span></button>
-                        <div class="ogm-faq-a"><p>Ja. Aktiviere Hintergrundwiedergabe in den Einstellungen, dann läuft die Wiedergabe weiter, wenn du die App wechselst oder den Bildschirm sperrst — mit Titel, Cover und Steuerung auf dem Sperrbildschirm und im Kontrollzentrum. Videos laufen im Bild-in-Bild-Modus über anderen Apps weiter.</p></div>
+                        <div class="ogm-faq-a"><p>Ja. Aktiviere Hintergrundwiedergabe in den Einstellungen, dann läuft die Wiedergabe weiter, wenn du die App wechselst oder den Bildschirm sperrst — mit Titel, Cover und Steuerung auf dem Sperrbildschirm und im Kontrollzentrum. Videos laufen im Bild-in-Bild-Modus über anderen Apps weiter. Videos laufen außerdem im Vollbild, und auf dem iPad spielt die App in Split View neben einer anderen App weiter.</p></div>
                     </div>
                     <div class="ogm-faq-item">
                         <button class="ogm-faq-q" aria-expanded="false">Sammelt die App Daten?<span class="ogm-faq-icon" aria-hidden="true">+</span></button>

@@ -73,6 +73,9 @@
                 "一个真正的播放器",
                 "后台音频",
                 "选择您的画质",
+                "章节",
+                "整个文件夹，一次导入",
+                "只保留您需要的",
                 "无需账户。没有广告。不做追踪。"
         ],
         "keywords": "媒体库,离线播放器,导入视频,离线音频,文件夹,收藏,隐私,无广告",
@@ -108,7 +111,7 @@
                         "name": "怎样把媒体添加到媒体库？",
                         "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "从“文件”导入（iCloud Drive 或本机）、从照片图库导入，或通过您有权保存的链接添加。导入是主要方式；通过链接添加只是次要的便捷途径。"
+                                "text": "从“文件”导入（iCloud Drive 或本机）、从照片图库导入，或通过您有权保存的链接添加——将链接粘贴到应用内，或在浏览器中点“共享”并选择 Offgrid Media。导入是主要方式；通过链接添加只是次要的便捷途径。"
                         }
                 },
                 {
@@ -116,7 +119,7 @@
                         "name": "音频能在后台继续播放吗？",
                         "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "可以。在设置中开启后台音频后，切换应用或锁屏时播放会继续，锁定屏幕和控制中心会显示标题、封面和播放控制。视频还能通过画中画悬浮在其他应用之上。"
+                                "text": "可以。在设置中开启后台音频后，切换应用或锁屏时播放会继续，锁定屏幕和控制中心会显示标题、封面和播放控制。视频还能通过画中画悬浮在其他应用之上。视频也可全屏播放，在 iPad 上还能通过分屏（Split View）与另一个应用并排继续播放。"
                         }
                 },
                 {
@@ -350,9 +353,24 @@
                         <p>在设置中一次性选定偏好画质 — 最佳可用、720p、480p、360p 或仅音频。</p>
                     </div>
                     <div class="ogm-feature ogm-reveal">
+                        <span class="ogm-feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h10"/><path d="M4 12h10"/><path d="M4 18h10"/><path d="M18 4v16"/><circle cx="18" cy="12" r="2"/></svg></span>
+                        <h3>章节</h3>
+                        <p>带章节的媒体会在媒体库中显示章节列表，并在播放器底部显示章节栏，让您直接跳到想看的部分。</p>
+                    </div>
+                    <div class="ogm-feature ogm-reveal">
+                        <span class="ogm-feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M7 12h10"/><path d="M7 16h6"/></svg></span>
+                        <h3>整个文件夹，一次导入</h3>
+                        <p>导入文件夹时，其子文件夹结构原样保留 — 可以复制，也可以从原位置移动。一次选择多个项目，即可加入播放列表、归档、移动或删除。</p>
+                    </div>
+                    <div class="ogm-feature ogm-reveal">
+                        <span class="ogm-feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 5h12"/><rect x="4" y="9" width="16" height="11" rx="2"/><path d="M10 13h4"/></svg></span>
+                        <h3>只保留您需要的</h3>
+                        <p>在设置中关闭“归档”或“播放列表”，它们就会从应用中消失。不会删除任何内容 — 重新打开后，一切依然在那里。</p>
+                    </div>
+                    <div class="ogm-feature ogm-reveal">
                         <span class="ogm-feature-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
                         <h3>无需账户。没有广告。不做追踪。</h3>
-                        <p>Offgrid Media 将所有内容保存在您的设备本地。不上传、不共享，也不需要任何账户。</p>
+                        <p>Offgrid 将所有内容保存在您的设备本地。不上传、不共享，也不需要任何账户。</p>
                     </div>
                 </div>
             </div>
@@ -427,11 +445,11 @@
                     </div>
                     <div class="ogm-faq-item">
                         <button class="ogm-faq-q" aria-expanded="false">怎样把媒体添加到媒体库？<span class="ogm-faq-icon" aria-hidden="true">+</span></button>
-                        <div class="ogm-faq-a"><p>从“文件”导入（iCloud Drive 或本机）、从照片图库导入，或通过您有权保存的链接添加。导入是主要方式；通过链接添加只是次要的便捷途径。</p></div>
+                        <div class="ogm-faq-a"><p>从“文件”导入（iCloud Drive 或本机）、从照片图库导入，或通过您有权保存的链接添加——将链接粘贴到应用内，或在浏览器中点“共享”并选择 Offgrid Media。导入是主要方式；通过链接添加只是次要的便捷途径。</p></div>
                     </div>
                     <div class="ogm-faq-item">
                         <button class="ogm-faq-q" aria-expanded="false">音频能在后台继续播放吗？<span class="ogm-faq-icon" aria-hidden="true">+</span></button>
-                        <div class="ogm-faq-a"><p>可以。在设置中开启后台音频后，切换应用或锁屏时播放会继续，锁定屏幕和控制中心会显示标题、封面和播放控制。视频还能通过画中画悬浮在其他应用之上。</p></div>
+                        <div class="ogm-faq-a"><p>可以。在设置中开启后台音频后，切换应用或锁屏时播放会继续，锁定屏幕和控制中心会显示标题、封面和播放控制。视频还能通过画中画悬浮在其他应用之上。视频也可全屏播放，在 iPad 上还能通过分屏（Split View）与另一个应用并排继续播放。</p></div>
                     </div>
                     <div class="ogm-faq-item">
                         <button class="ogm-faq-q" aria-expanded="false">这个应用会收集数据吗？<span class="ogm-faq-icon" aria-hidden="true">+</span></button>
