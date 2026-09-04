@@ -98,7 +98,8 @@ Local server needed for `linkedin_posts.json` fetch to work (CORS).
 
 - App source: `../share_to_save/` (directory name predates two renames: Share2Save → Kept → Offgrid Media). The former `/share2save/` subsite has been removed from this repo.
 - The app hardcodes `lorenzmaierhofer.com/offgridmedia/` and `/offgridmedia/privacy` in its App Store metadata and in-app Settings, so **neither URL may change**
-- Locales: EN at the root plus `ar de es fr hi id pt ru zh`, each with `index.html` and `privacy/index.html`; `ar` is `dir="rtl"`
+- Locales: EN at the root plus `ar de es fr hi id pt ru zh`, each with `index.html`, `privacy/index.html` and `age-rating/index.html`; `ar` is `dir="rtl"`
+- The app is rated **16+**, driven solely by `unrestrictedWebAccess: true` in `../share_to_save/fastlane/metadata/app_rating_config.json`; every content descriptor there is `NONE`. `/offgridmedia/age-rating/` explains that, states the app ships no adult material, and states plainly that it does not stop anyone storing or playing such material (no content filter, age gate or parental mode). Copy lives in `_build/strings_age.py`; keep it in sync with that JSON
 - `offgridmedia-styles.css` (deep navy + `#5CC8F7` icon-sky token layer, `--ogm-sky` / `--ogm-sky-dim`) and `offgridmedia-script.js`; both loaded after the shared `styles.css` / `script.js`. Palette is sampled from the app icon (navy field `#0A1631`–`#1B2E52`, sky strokes `#5CC8F7`, UI blue `#2F6FEC`); the `.offgridmedia-nav` spotlight badge in the root `styles.css` uses the same sky
 - Signature interaction: the hero "airplane mode" switch toggles `body.is-online`, which fades the connectivity grid while the library card stays lit
 - Scroll reveals are gated on `.ogm-anim` (added by JS) so content stays visible without JavaScript
@@ -106,7 +107,9 @@ Local server needed for `linkedin_posts.json` fetch to work (CORS).
 
 **Regenerating the pages**
 
-All 20 HTML files are generated, not hand-edited. The generator and its per-locale UI strings live in `offgridmedia/_build/` (`build.py`, `strings.py`, `strings_b.py`; run `python3 build.py` from that directory — the deploy workflow excludes `**/*.py` and `**/*.sh`); marketing copy (hero lede, the seven feature cards, the rights notice) is read at build time from `../share_to_save/fastlane/metadata/<locale>/description.txt` and `fastlane/framing/titles/<locale>.strings` so the site never claims more than the reviewed App Store description. Small edits can be made directly in the HTML, but apply them to all 10 locales.
+All 20 HTML files are generated, not hand-edited. The generator and its per-locale UI strings live in `offgridmedia/_build/` (`build.py`, `strings.py`, `strings_b.py`; run `python3 build.py` from that directory, or `python3 build.py age` to regenerate only the age-rating pages — the deploy workflow excludes `**/*.py` and `**/*.sh`); marketing copy (hero lede, the seven feature cards, the rights notice) is read at build time from `../share_to_save/fastlane/metadata/<locale>/description.txt` and `fastlane/framing/titles/<locale>.strings` so the site never claims more than the reviewed App Store description. Small edits can be made directly in the HTML, but apply them to all 10 locales.
+
+`build.py`'s `app_copy()` currently asserts on the English description (`expected 10 blocks, got 12`) because the store description grew — fix `N_BLOCKS` and the per-locale `feature_heads` before regenerating the landing or privacy pages. `build.py age` is unaffected.
 
 **Regenerating the images**
 

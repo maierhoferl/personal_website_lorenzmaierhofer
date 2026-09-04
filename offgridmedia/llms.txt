@@ -33,6 +33,10 @@ No playback speed control, no sleep timer, no subtitles, no iCloud or cross-devi
 
 No data collected. The App Store privacy manifest declares no tracking and no collected data types. No analytics or third-party SDKs in the app, no backend service, no cloud sync. The only permission requested is notifications. Full policy: https://lorenzmaierhofer.com/offgridmedia/privacy
 
+## Age rating
+
+Rated 16+ on the App Store. The rating comes from a single questionnaire answer — unrestricted web access, because the app can fetch a media file from any address you give it. Every content descriptor is None: the app ships no content of any kind, adult or otherwise, and has no catalogue, feed, store or recommendations. It also does not filter what you add: any file you import or download is stored and played as-is, and there is no content filter, age gate or parental mode. Details: https://lorenzmaierhofer.com/offgridmedia/age-rating
+
 ## Availability
 
 Free. iPhone and iPad, iOS 16.1 or later. The App Store listing is in preparation and will be at https://apps.apple.com/us/app/offgrid-media — this page shows a "coming soon" badge until it is published.
@@ -50,6 +54,7 @@ Free. iPhone and iPad, iOS 16.1 or later. The App Store listing is in preparatio
 - Русский: https://lorenzmaierhofer.com/offgridmedia/ru/
 - 简体中文: https://lorenzmaierhofer.com/offgridmedia/zh/
 - Privacy policy: https://lorenzmaierhofer.com/offgridmedia/privacy
+- Age rating (16+): https://lorenzmaierhofer.com/offgridmedia/age-rating
 
 ## Developer
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the /offgridmedia/ landing + privacy pages for all 10 locales.
+"""Generate the /offgridmedia/ landing, privacy and age-rating pages for all 10 locales.
 
 Marketing copy (lede, the seven feature blocks, the rights notice) is taken
 verbatim from the app's App Store metadata in ../share_to_save/fastlane so the
@@ -8,6 +8,8 @@ site never claims something the reviewed description does not.
 import os
 import re
 import html
+
+from strings_age import AGE
 
 APP = "/Users/lorenzmaierhofer/claude-projects/share_to_save/fastlane"
 OUT = "/Users/lorenzmaierhofer/claude-projects/Personal_Website/offgridmedia"
@@ -120,7 +122,7 @@ def hreflangs(suffix):
 
 
 def nav(loc, t, root, active):
-    """Shared navbar. `active` is 'index' or 'privacy'."""
+    """Shared navbar. `active` is 'index', 'privacy' or 'age'."""
     home = "/offgridmedia/" if loc == "en" else f"/offgridmedia/{loc}/"
     back = {"de": "/de/", "zh": "/zh/"}.get(loc, "/")
     if active == "index":
@@ -130,10 +132,13 @@ def nav(loc, t, root, active):
                  f'                <li><a href="#faq" class="nav-link">{e(t["nav_faq"])}</a></li>')
         sel = lang_select(loc, "")
     else:
+        pa = " active" if active == "privacy" else ""
+        aa = " active" if active == "age" else ""
         links = (f'<li><a href="{home}" class="nav-link">{e(t["nav_overview"])}</a></li>\n'
                  f'                <li><a href="{home}#features" class="nav-link">{e(t["nav_features"])}</a></li>\n'
-                 f'                <li><a href="{home}privacy" class="nav-link active">{e(t["nav_privacy"])}</a></li>')
-        sel = lang_select(loc, "privacy")
+                 f'                <li><a href="{home}privacy" class="nav-link{pa}">{e(t["nav_privacy"])}</a></li>\n'
+                 f'                <li><a href="{home}age-rating" class="nav-link{aa}">{e(AGE[loc]["nav"])}</a></li>')
+        sel = lang_select(loc, "privacy" if active == "privacy" else "age-rating")
     return f'''<nav class="navbar">
         <div class="nav-container">
             <a href="{home}" class="nav-logo">
@@ -171,6 +176,7 @@ def footer(loc, t, root):
             </div>
             <nav class="ogm-footer-links" aria-label="{e(t["footer_nav"])}">
                 <a href="{home}privacy">{e(t["nav_privacy"])}</a>
+                <a href="{home}age-rating">{e(AGE[loc]["nav"])}</a>
                 <a href="/offgridmedia/llms.txt">llms.txt</a>
                 <a href="{"/de/" if loc == "de" else "/zh/" if loc == "zh" else "/"}">lorenzmaierhofer.com</a>
             </nav>
@@ -179,7 +185,7 @@ def footer(loc, t, root):
 
 
 def head(loc, t, root, site, page):
-    """page: 'index' | 'privacy'"""
+    """page: 'index' | 'privacy' | 'age'"""
     hl, og, direction = LOCALES[loc][2], LOCALES[loc][3], LOCALES[loc][4]
     if page == "index":
         url = "https://lorenzmaierhofer.com/offgridmedia/" if loc == "en" else f"https://lorenzmaierhofer.com/offgridmedia/{loc}/"
@@ -187,6 +193,14 @@ def head(loc, t, root, site, page):
         ogt, ogd = t["og_title"], t["og_desc"]
         suffix = ""
         extra = f'<meta name="keywords" content="{e(t["keywords"])}">'
+    elif page == "age":
+        a = AGE[loc]
+        url = ("https://lorenzmaierhofer.com/offgridmedia/age-rating" if loc == "en"
+               else f"https://lorenzmaierhofer.com/offgridmedia/{loc}/age-rating")
+        title, desc = a["title"], a["desc"]
+        ogt, ogd = a["title"], a["desc"]
+        suffix = "age-rating"
+        extra = ""
     else:
         url = ("https://lorenzmaierhofer.com/offgridmedia/privacy" if loc == "en"
                else f"https://lorenzmaierhofer.com/offgridmedia/{loc}/privacy")
@@ -246,7 +260,7 @@ def jsonld(loc, t, copy):
         "author": {"@type": "Person", "name": "Lorenz Maierhofer", "url": "https://lorenzmaierhofer.com"},
         "featureList": [b[0] for b in copy["blocks"]],
         "keywords": copy["keywords"],
-        "contentRating": "4+",
+        "contentRating": "16+",
         "inLanguage": LOCALES[loc][2],
         "isFamilyFriendly": True,
     }
@@ -504,6 +518,20 @@ def build_index(loc):
 '''
 
 
+def doc_body(items):
+    """Render a (kind, payload) list into the shared .ogm-doc markup."""
+    out = []
+    for kind, *rest in items:
+        if kind == "h2":
+            out.append(f"            <h2>{e(rest[0])}</h2>")
+        elif kind == "p":
+            out.append(f"            <p>{rest[0]}</p>")
+        elif kind == "ul":
+            lis = "\n".join(f"                <li>{x}</li>" for x in rest[0])
+            out.append(f"            <ul>\n{lis}\n            </ul>")
+    return "\n".join(out)
+
+
 def build_privacy(loc):
     t = STRINGS[loc]
     copy = app_copy(loc)
@@ -514,17 +542,7 @@ def build_privacy(loc):
     dir_attr = ' dir="rtl"' if direction == "rtl" else ""
     home = "/offgridmedia/" if loc == "en" else f"/offgridmedia/{loc}/"
 
-    body = []
-    for item in t["policy"]:
-        kind, text = item[0], item[1:]
-        if kind == "h2":
-            body.append(f"            <h2>{e(text[0])}</h2>")
-        elif kind == "p":
-            body.append(f"            <p>{text[0]}</p>")
-        elif kind == "ul":
-            lis = "\n".join(f"                <li>{x}</li>" for x in text[0])
-            body.append(f"            <ul>\n{lis}\n            </ul>")
-    body = "\n".join(body)
+    body = doc_body(t["policy"])
 
     return f'''<!DOCTYPE html>
 <html lang="{lang}"{dir_attr}>
@@ -557,13 +575,64 @@ def build_privacy(loc):
 '''
 
 
+def build_age(loc):
+    """The age-rating page: why the App Store rating is 16+."""
+    # Only the footer needs app metadata here, so read the subtitle directly
+    # instead of parsing the whole store description.
+    t = dict(STRINGS[loc], subtitle=read(f"{APP}/metadata/{LOCALES[loc][0]}/subtitle.txt"))
+    a = AGE[loc]
+    root = "../" if loc == "en" else "../../"
+    site = "../../" if loc == "en" else "../../../"
+    lang, direction = LOCALES[loc][2], LOCALES[loc][4]
+    dir_attr = ' dir="rtl"' if direction == "rtl" else ""
+    home = "/offgridmedia/" if loc == "en" else f"/offgridmedia/{loc}/"
+    body = doc_body(a["body"])
+
+    return f'''<!DOCTYPE html>
+<html lang="{lang}"{dir_attr}>
+<head>
+{head(loc, t, root, site, "age")}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{site}styles.css">
+    <link rel="stylesheet" href="{root}offgridmedia-styles.css">
+</head>
+<body>
+    {nav(loc, t, root, "age")}
+
+    <main class="main-content ogm-doc">
+        <div class="ogm-shell-narrow">
+            <h1>{e(a["h1"])}</h1>
+            <p class="ogm-doc-meta">Offgrid Media &middot; 16+ &middot; {e(a["updated"])}</p>
+{body}
+            <p style="margin-top:2.5rem;"><a href="{home}">&larr; {e(t["privacy_back"])}</a></p>
+        </div>
+    </main>
+
+    {footer(loc, t, root)}
+
+    <script src="{site}script.js"></script>
+    <script src="{root}offgridmedia-script.js"></script>
+</body>
+</html>
+'''
+
+
 if __name__ == "__main__":
+    import sys
     from strings import STRINGS
+    # `python3 build.py age` regenerates only the age-rating pages.
+    only = sys.argv[1] if len(sys.argv) > 1 else None
     for loc in ORDER:
         d = OUT if loc == "en" else f"{OUT}/{loc}"
         os.makedirs(f"{d}/privacy", exist_ok=True)
-        with open(f"{d}/index.html", "w", encoding="utf-8") as f:
-            f.write(build_index(loc))
-        with open(f"{d}/privacy/index.html", "w", encoding="utf-8") as f:
-            f.write(build_privacy(loc))
+        os.makedirs(f"{d}/age-rating", exist_ok=True)
+        with open(f"{d}/age-rating/index.html", "w", encoding="utf-8") as f:
+            f.write(build_age(loc))
+        if only != "age":
+            with open(f"{d}/index.html", "w", encoding="utf-8") as f:
+                f.write(build_index(loc))
+            with open(f"{d}/privacy/index.html", "w", encoding="utf-8") as f:
+                f.write(build_privacy(loc))
         print(f"built {loc}")
