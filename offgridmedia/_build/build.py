@@ -121,6 +121,18 @@ def hreflangs(suffix):
     return "\n    ".join(rows)
 
 
+# apple-account-notice: temporary, delete this function and its call when Apple restores the account
+def apple_notice(t):
+    """Banner about the disabled Apple developer account (2026-09-14, no ETA)."""
+    return ('<!-- apple-account-notice: temporary, delete this block when Apple restores the account -->\n'
+            '        <div class="apple-notice" role="status">\n'
+            '            <span class="apple-notice-icon" aria-hidden="true">&#9888;</span>\n'
+            f'            <p>{t["notice_html"]}</p>\n'
+            '        </div>\n'
+            '        <!-- /apple-account-notice -->')
+# /apple-account-notice
+
+
 def nav(loc, t, root, active):
     """Shared navbar. `active` is 'index', 'privacy' or 'age'."""
     home = "/offgridmedia/" if loc == "en" else f"/offgridmedia/{loc}/"
@@ -348,6 +360,8 @@ def build_index(loc):
     {nav(loc, t, root, "index")}
 
     <main class="main-content">
+
+        {apple_notice(t)}
 
         <section class="ogm-hero">
             <div class="ogm-grid" aria-hidden="true"></div>

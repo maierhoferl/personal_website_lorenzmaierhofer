@@ -531,3 +531,22 @@ STRINGS = {
 }
 
 STRINGS.update(STRINGS_B)
+
+# apple-account-notice: temporary, delete this block when Apple restores the account
+# Apple disabled the developer account on 2026-09-14; App Store links are dead until resolved.
+APPLE_NOTICE = {
+    "en": "<strong>App Store links are temporarily unavailable.</strong> Since 14 September 2026 Apple has disabled the developer account behind these apps while the scope of agent-assisted development is under review. Downloads will return as soon as Apple resolves it; there is currently no ETA.",
+    "de": "<strong>App-Store-Links sind derzeit nicht erreichbar.</strong> Seit dem 14. September 2026 hat Apple das Entwicklerkonto hinter diesen Apps deaktiviert, während der Umfang der agentengestützten Entwicklung geprüft wird. Die Downloads sind wieder verfügbar, sobald Apple den Fall geklärt hat; einen Zeitpunkt dafür gibt es derzeit nicht.",
+    "fr": "<strong>Les liens vers l’App Store sont temporairement indisponibles.</strong> Depuis le 14 septembre 2026, Apple a désactivé le compte développeur de ces applications, le temps d’examiner la portée du développement assisté par agents. Les téléchargements reviendront dès qu’Apple aura traité le dossier&nbsp;; aucune date n’est connue à ce jour.",
+    "es": "<strong>Los enlaces a la App Store no están disponibles temporalmente.</strong> Desde el 14 de septiembre de 2026, Apple ha desactivado la cuenta de desarrollador de estas apps mientras revisa el alcance del desarrollo asistido por agentes. Las descargas volverán en cuanto Apple lo resuelva; por ahora no hay una fecha prevista.",
+    "pt": "<strong>Os links da App Store estão temporariamente indisponíveis.</strong> Desde 14 de setembro de 2026, a Apple desativou a conta de desenvolvedor por trás destes aplicativos enquanto analisa o escopo do desenvolvimento assistido por agentes. Os downloads voltarão assim que a Apple resolver o caso; ainda não há previsão de prazo.",
+    "id": "<strong>Tautan App Store untuk sementara tidak tersedia.</strong> Sejak 14 September 2026, Apple menonaktifkan akun pengembang di balik aplikasi ini sementara cakupan pengembangan berbantuan agen sedang ditinjau. Unduhan akan kembali segera setelah Apple menyelesaikannya; saat ini belum ada perkiraan waktu.",
+    "ru": "<strong>Ссылки на App Store временно недоступны.</strong> С 14 сентября 2026 года Apple заблокировала аккаунт разработчика этих приложений на время проверки объёма разработки с участием ИИ-агентов. Загрузки вернутся, как только Apple завершит рассмотрение; сроков пока нет.",
+    "hi": "<strong>App Store लिंक फ़िलहाल उपलब्ध नहीं हैं।</strong> 14 सितम्बर 2026 से Apple ने इन ऐप्स के पीछे का डेवलपर अकाउंट निष्क्रिय कर दिया है, क्योंकि एजेंट-सहायता प्राप्त डेवलपमेंट के दायरे की समीक्षा चल रही है। Apple के समाधान करते ही डाउनलोड फिर से शुरू हो जाएंगे; फ़िलहाल कोई समय-सीमा तय नहीं है।",
+    "ar": "<strong>روابط App Store غير متاحة مؤقتًا.</strong> منذ 14 سبتمبر 2026، عطّلت Apple حساب المطوّر الخاص بهذه التطبيقات بينما تجري مراجعة نطاق التطوير بمساعدة الوكلاء. ستعود التنزيلات فور معالجة Apple للأمر؛ ولا يوجد موعد محدد حتى الآن.",
+    "zh": "<strong>App Store 链接暂时无法使用。</strong>自 2026 年 9 月 14 日起，Apple 停用了这些应用背后的开发者账号，目前正在审核智能体辅助开发的范围。待 Apple 处理完毕后即可恢复下载；目前尚无确切时间。",
+}
+
+for _loc, _html in APPLE_NOTICE.items():
+    STRINGS[_loc]["notice_html"] = _html
+# /apple-account-notice
