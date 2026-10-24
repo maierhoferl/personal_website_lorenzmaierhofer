@@ -2,7 +2,7 @@
 
 > Senior Director, Global Lead for AI Factory, Agentic AI Products & AI Governance at Procter & Gamble. Based in Geneva, Switzerland.
 
-Lorenz Maierhofer is an AI and Data Science leader with expertise in AI Transformation, Generative AI, Agentic AI systems, and AI Governance. He leads the AI Factory at Procter & Gamble — the internal platform responsible for industrializing enterprise AI capabilities across one of the world's largest consumer goods companies. Alumni of Harvard Business School and Technische Universität Graz. Fluent in English and German.
+Lorenz Maierhofer is an AI and Data Science leader with expertise in AI Transformation, Generative AI, Agentic AI systems, and AI Governance. He leads the AI Factory at Procter & Gamble — the internal platform responsible for industrializing enterprise AI capabilities across one of the world's largest consumer goods companies. Alumni of Harvard Business School and Technische Universität Graz. Fluent in English and German. Since October 2026 he is also accountable for Agentic Analytics and the transformation of insights generation at P&G.
 
 ## About
 
@@ -11,7 +11,7 @@ Lorenz Maierhofer is an AI and Data Science leader with expertise in AI Transfor
 - Employer: Procter & Gamble (P&G)
 - Location: Geneva, Switzerland
 - Education: Harvard Business School; Technische Universität Graz
-- Expertise: AI Transformation, Generative AI, Agentic AI, Machine Learning, MLOps, AI Governance, FMCG/Consumer Goods, Digital Transformation
+- Expertise: AI Transformation, Generative AI, Agentic AI, Agentic Analytics, Machine Learning, MLOps, AI Governance, FMCG/Consumer Goods, Digital Transformation
 - Languages: English, German
 
 ## Pages
