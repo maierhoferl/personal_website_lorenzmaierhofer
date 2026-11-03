@@ -4,9 +4,9 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from pg_ai_news import find_span, paragraphs, parse_page, validate  # noqa: E402
+from pg_ai_news import find_span, paragraphs, parse_page, validate, with_context  # noqa: E402
 
-TEXT = " ".join(paragraphs(
+TEXT = "\n".join(paragraphs(
     "<p>As Cohen put it, “AI without data is simply ‘A’…artificial.”</p>"
     "<p>Using AI, they were able to rapidly develop the Pantene Sunkiss Glow Spray,\n"
     "moving from insight to product concept in just days instead of weeks.</p>"))
@@ -51,8 +51,14 @@ TC = {**CAND, "url": "https://stockanalysis.com/stocks/pg/transcripts/1-q1-2027/
       "prefix": "https://stockanalysis.com/stocks/pg/transcripts/"}
 TM = {"title": "PG Q1 2027 Earnings Call Transcript", "date": "2026-10-22"}
 item, why = validate(TC, TM, {"is_ai": True, "excerpts": ["AI cut our planning time in half."]},
-                     " ".join(paras), set(), TODAY, 60, attribute)
+                     "\n".join(paras), set(), TODAY, 60, attribute)
 assert item and item["author"] == "Jane Exec, CFO", why
 assert not validate(TC, TM, {"is_ai": True, "excerpts": ["Is AI driving savings?"]},
-                    " ".join(paras), set(), TODAY, 60, attribute)[0]  # analyst words
+                    "\n".join(paras), set(), TODAY, 60, attribute)[0]  # analyst words
+
+# dangling opener gets the previous sentence of its paragraph; none available -> dropped
+CTX = "Old news.\nWe built agent tools for retailers. This is critical as agents shop.\nThis stands alone."
+assert with_context("This is critical as agents shop.", CTX) == "We built agent tools for retailers. This is critical as agents shop."
+assert with_context("This stands alone.", CTX) is None
+assert with_context("We built agent tools for retailers.", CTX) == "We built agent tools for retailers."
 print("ok")

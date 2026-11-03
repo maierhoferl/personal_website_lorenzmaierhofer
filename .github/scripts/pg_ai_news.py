@@ -63,6 +63,7 @@ def paragraphs(page_html: str) -> list[str]:
     # drop "related posts" teaser cards: verbatim, but not part of this article
     t = re.sub(r'<a\b[^>]*class="[^"]*blog-item[^"]*"[^>]*>.*?</a>', " ", t, flags=re.S | re.I)
     t = re.sub(r"<(script|style|noscript|svg|head)\b.*?</\1>", " ", t, flags=re.S | re.I)
+    t = re.sub(r"\s+", " ", t)  # source line breaks are not paragraph breaks
     t = re.sub(r"</?(p|div|br|li|h[1-6]|tr|td|section|article|blockquote|figcaption)\b[^>]*>", "\n", t, flags=re.I)
     t = html.unescape(re.sub(r"<[^>]+>", " ", t))
     return [p for p in (re.sub(r"\s+", " ", line).strip() for line in t.split("\n")) if p]
@@ -211,7 +212,11 @@ paragraphs from {what} ({url}).
 2. If is_ai is true, choose 1 to 3 passages that best carry the AI message, preferring \
 statements by named P&G leaders and concrete outcomes. Copy each passage character for \
 character from a single paragraph: whole sentences, no ellipses, no merging, no \
-rewording, no added words, at most {max_chars} characters each.
+rewording, no added words, at most {max_chars} characters each. Each passage must make \
+sense on its own to a reader who sees nothing else from the page: do not start with \
+words like "This", "That", "These", "It" or "They" that point back to an earlier \
+sentence. Pick a passage that names its subject, or start one sentence earlier; keep \
+passages short.
 3. If is_ai is false, return an empty excerpts list.
 
 Paragraphs:
@@ -271,6 +276,28 @@ def find_span(excerpt: str, text: str) -> str | None:
     return m.group(0) if m else None
 
 
+# Opening words that point back to an earlier sentence the reader cannot see.
+DANGLING_RE = re.compile(
+    r"(?:This|That|These|Those|It|Its|They|Their|Such|He|She|Here|Both|And|But|So|Also)\b")
+
+
+def with_context(span: str, text: str) -> str | None:
+    """If `span` opens by pointing back ("This is critical..."), prepend the previous
+    sentence of the same paragraph (paragraphs are "\n"-separated in `text`). Still one
+    contiguous, verbatim span. None if there is no such sentence or it stays dangling."""
+    for _ in range(2):  # ponytail: at most two sentences of lead-in, then give up
+        if not DANGLING_RE.match(span):
+            return span
+        i = text.find(span)
+        before = text[text.rfind("\n", 0, i) + 1:i]
+        ends = list(re.finditer(r'[.!?][\"”’)]?\s+(?=\S)', before.rstrip() + " "))
+        if not before.strip():
+            return None
+        start = ends[-2].end() if len(ends) > 1 else 0
+        span = before[start:] + span
+    return None if DANGLING_RE.match(span) else span
+
+
 def validate(cand: dict, meta: dict, picked: dict, text: str, existing: set,
              today: dt.date, max_age: int | None, attribute=None) -> tuple[dict | None, str]:
     url = cand["url"]
@@ -290,7 +317,11 @@ def validate(cand: dict, meta: dict, picked: dict, text: str, existing: set,
         span = find_span(e, text)
         if not span:
             return None, f"excerpt not verbatim: {e[:60]!r}"
-        spans.append(span)
+        span = with_context(span, text)  # dangling excerpt without context: dropped
+        if span and len(span) <= MAX_EXCERPT:
+            spans.append(span)
+    if not spans:
+        return None, "no excerpt makes sense on its own"
     if attribute:  # transcripts: author is whoever spoke the quoted words
         meta = {**meta, "author": attribute(spans)}
     if not all(meta.get(k) for k in ("title", "date", "author")):
@@ -382,7 +413,7 @@ def main() -> int:
             continue
         kind = "transcript" if src["type"] == "transcript" else "page"
         paras, meta, attribute = parse_page(kind, page, c)
-        text = " ".join(paras)
+        text = "\n".join(paras)  # "\n" marks paragraph ends for with_context
         if not manual and meta.get("date") and meta["date"] < cutoff.isoformat():
             seen["rejected"][c["url"]] = f"{today}: date {meta['date']} too old"
             summary(f"- REJECT {c['url']}: date {meta['date']} too old (no model call)")
