@@ -58,7 +58,11 @@ def fetch(url: str) -> str:
 
 def paragraphs(page_html: str) -> list[str]:
     """Visible text, one entry per block element."""
-    t = re.sub(r"<(script|style|noscript|svg|head)\b.*?</\1>", " ", page_html, flags=re.S | re.I)
+    main = re.search(r"<main\b.*?</main>", page_html, re.S | re.I)
+    t = main.group(0) if main else page_html
+    # drop "related posts" teaser cards: verbatim, but not part of this article
+    t = re.sub(r'<a\b[^>]*class="[^"]*blog-item[^"]*"[^>]*>.*?</a>', " ", t, flags=re.S | re.I)
+    t = re.sub(r"<(script|style|noscript|svg|head)\b.*?</\1>", " ", t, flags=re.S | re.I)
     t = re.sub(r"</?(p|div|br|li|h[1-6]|tr|td|section|article|blockquote|figcaption)\b[^>]*>", "\n", t, flags=re.I)
     t = html.unescape(re.sub(r"<[^>]+>", " ", t))
     return [p for p in (re.sub(r"\s+", " ", line).strip() for line in t.split("\n")) if p]

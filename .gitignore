@@ -16,3 +16,4 @@ do-work/
 
 # Original large images (keep optimized versions)
 Portrait1.png
+__pycache__/

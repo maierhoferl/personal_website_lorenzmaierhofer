@@ -35,4 +35,7 @@ assert not run(meta={**META, "date": "2026-01-01"})[0]  # too old
 assert run(meta={**META, "date": "2026-01-01"}, max_age=None)[0]  # manual seed: no age limit
 assert not run(existing=[CAND["url"]])[0]  # duplicate
 assert not validate(CAND, META, {"is_ai": False, "excerpts": []}, TEXT, set(), TODAY, 60)[0]
+# related-post teaser cards are not part of the article
+assert paragraphs('<main><p>Body.</p><a href="/blogs/y/" class="blog-item event_internal_link">'
+                  '<p>Teaser about AI.</p></a></main><p>Footer.</p>') == ["Body."]
 print("ok")
