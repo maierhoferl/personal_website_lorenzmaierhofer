@@ -109,8 +109,15 @@ def transcript_meta(page_html: str) -> dict:
             continue
         if d.get("@type") == "WebPage":
             title = re.sub(r"\s*&\s*Audio\s*$", "", d.get("name", "")).strip()
+    # StockAnalysis names AGMs and conferences "FY 2026 Earnings Call Transcript"; the h1 has the event
+    h1 = re.search(r"<h1[^>]*>([^<]+)</h1>", page_html)
+    if h1 and re.search(r"\bFY \d{4} Earnings Call\b", title):
+        title = f"Procter & Gamble (PG) Transcript: {html.unescape(h1.group(1)).strip()}"
     m = re.search(r'eventDate:"(\d{4}-\d{2}-\d{2})"', page_html)
     return {"title": title, "date": m.group(1) if m else ""}
+
+
+PG_ROLE = r",?\s*(?:The )?(?:Procter & Gamble|P&G)(?: Company)?$"
 
 
 def parse_page(kind: str, page: str, cand: dict) -> tuple[list[str], dict, object]:
@@ -118,12 +125,14 @@ def parse_page(kind: str, page: str, cand: dict) -> tuple[list[str], dict, objec
     if kind != "transcript":
         return paragraphs(page), cand.get("meta") or blog_meta(page), None
     # P&G executives only: analysts and the operator are never quoted
-    turns = [t for t in transcript_turns(page) if "Procter & Gamble" in t[1]]
+    # roles end ", Procter & Gamble", ", The Procter & Gamble Company" or ", P&G"
+    pg_role = PG_ROLE
+    turns = [t for t in transcript_turns(page) if re.search(pg_role, t[1])]
 
     def attribute(spans: list[str]) -> str:
         names = []
         for sp in spans:
-            who = next((f"{n}, {re.sub(r',?\s*Procter & Gamble$', '', r)}" for n, r, ps in turns
+            who = next((f"{n}, {re.sub(pg_role, '', r)}" for n, r, ps in turns
                         if find_span(sp, " ".join(ps))), None)
             if not who:
                 return ""  # excerpt crosses speaker turns: cannot attribute it
@@ -406,6 +415,10 @@ def main() -> int:
             break
         src = c["src"]
         c.update(prefix=src["allowed_url_prefix"], source=src["name"], channel=src["channel"])
+        if src["type"] == "transcript" and not re.search(r"-q[1-4]-\d{4}/$", c["url"]):
+            # AGM / investor conference (manual runs only; the collector takes quarterly calls)
+            c.update(channel="investor-event",
+                     source="Investor event transcript (StockAnalysis, data by Quartr)")
         try:
             page = fetch(c["url"])
         except Exception as e:

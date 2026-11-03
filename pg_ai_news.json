@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "date": "2026-10-13",
+      "title": "Procter & Gamble (PG) Transcript: AGM 2026",
+      "excerpts": [
+        "At P&G, we are leveraging AI to help us turn insight into impact and win with consumers in all we do. We view P&G as an amplifier of human potential. Our focus is on using AI to help employees work more effectively, make better decisions, and innovate faster.",
+        "We are committed to helping P&G people build the skills needed to succeed in an AI-enabled future."
+      ],
+      "source": "Investor event transcript (StockAnalysis, data by Quartr)",
+      "author": "Shailesh Jejurikar, Chairman of the Board, President, and CEO",
+      "channel": "investor-event",
+      "url": "https://stockanalysis.com/stocks/pg/transcripts/741550-agm-2026/",
+      "added": "manual",
+      "added_on": "2026-11-03"
+    },
+    {
       "date": "2026-10-05",
       "title": "The Four Priorities Powering P&G Product Supply",
       "excerpts": [
@@ -11,6 +25,20 @@
       "author": "Procter & Gamble",
       "channel": "blog",
       "url": "https://us.pg.com/blogs/product-supply-four-priorities/",
+      "added": "manual",
+      "added_on": "2026-11-03"
+    },
+    {
+      "date": "2026-09-10",
+      "title": "Procter & Gamble (PG) Transcript: Barclays 19th Annual Global Consumer Conference",
+      "excerpts": [
+        "We now have brought content creation fully in-house. We're leveraging AI capabilities to create more content with higher quality. We're able to deploy that content fully automated, across all platforms.",
+        "Molecular Discovery Suite is one of those elements, where we're using AI to just get access to new technologies faster and scale them faster."
+      ],
+      "source": "Investor event transcript (StockAnalysis, data by Quartr)",
+      "author": "Andre Schulten, CFO",
+      "channel": "investor-event",
+      "url": "https://stockanalysis.com/stocks/pg/transcripts/745219-barclays-19th-annual-global-consumer-conference/",
       "added": "manual",
       "added_on": "2026-11-03"
     },
@@ -39,6 +67,34 @@
       "author": "Procter & Gamble",
       "channel": "blog",
       "url": "https://us.pg.com/blogs/cannes-lions-international-festival-of-creativity/",
+      "added": "manual",
+      "added_on": "2026-11-03"
+    },
+    {
+      "date": "2026-06-10",
+      "title": "Procter & Gamble (PG) Transcript: The 6th Annual Evercore Consumer & Retail Conference",
+      "excerpts": [
+        "We've been focusing on harnessing that data into a core data lake, as well as the other piece that we are now able to do because of that foundational capability is our AI factory, which is where all the models sit, all of the digital products can be built upon, sit there, we can scale.",
+        "At the end of the day, I don't think there's going to be such a thing as an AI native company. I think it's just going to be a company, because everyone's going to have the AI, and the companies that have adopted it the best will be the ones that are outperforming in the marketplace."
+      ],
+      "source": "Investor event transcript (StockAnalysis, data by Quartr)",
+      "author": "Seth Cohen, CIO",
+      "channel": "investor-event",
+      "url": "https://stockanalysis.com/stocks/pg/transcripts/686730-the-6th-annual-evercore-consumer-retail-conference/",
+      "added": "manual",
+      "added_on": "2026-11-03"
+    },
+    {
+      "date": "2026-06-03",
+      "title": "Procter & Gamble (PG) Transcript: 23rd annual dbAccess Global Consumer Conference",
+      "excerpts": [
+        "We will leverage P&G's strength and unique capabilities to create the CPG company of the future. These strengths include unique innovation capabilities, advanced data lake and AI platforms, brand building reinvention to create deep consumer connection, and an industry-leading supply chain.",
+        "I've talked before about four technology toolboxes we're developing. The first one is really focused on that, how to extract data, how to use technology and AI to analyze data at scale, and how to replace internal reporting requirements and automate them fully."
+      ],
+      "source": "Investor event transcript (StockAnalysis, data by Quartr)",
+      "author": "Andre Schulten, CFO",
+      "channel": "investor-event",
+      "url": "https://stockanalysis.com/stocks/pg/transcripts/681905-23rd-annual-dbaccess-global-consumer-conference/",
       "added": "manual",
       "added_on": "2026-11-03"
     },
@@ -98,6 +154,20 @@
       "added_on": "2026-11-03"
     },
     {
+      "date": "2026-02-19",
+      "title": "Procter & Gamble (PG) Transcript: Consumer Analyst Group of New York Conference (CAGNY) 2026",
+      "excerpts": [
+        "Traditionally, molecular discovery has been a very costly and time-consuming process due to the needs to meet numerous technical, safety, and regulatory requirements. Typically, this process can span six to eight years of development. Our AI-powered molecular discovery suite has revolutionized this process. This groundbreaking tool, in the hands of our master scientists, allow us to identify new molecules in as little as six months.",
+        "While everyone is talking about artificial intelligence, let's be clear, AI without data is just A, artificial."
+      ],
+      "source": "Investor event transcript (StockAnalysis, data by Quartr)",
+      "author": "Seth Cohen, CIO",
+      "channel": "investor-event",
+      "url": "https://stockanalysis.com/stocks/pg/transcripts/556838-consumer-analyst-group-of-new-york-conference-cagny-2026/",
+      "added": "manual",
+      "added_on": "2026-11-03"
+    },
+    {
       "date": "2026-01-22",
       "title": "Procter & Gamble (PG) Q2 2026 Earnings Call Transcript",
       "excerpts": [
@@ -107,6 +177,47 @@
       "author": "Shailesh Jejurikar, CEO",
       "channel": "earnings",
       "url": "https://stockanalysis.com/stocks/pg/transcripts/402820-q2-2026/",
+      "added": "manual",
+      "added_on": "2026-11-03"
+    },
+    {
+      "date": "2025-12-02",
+      "title": "Procter & Gamble (PG) Transcript: Morgan Stanley Global Consumer & Retail Conference 2025",
+      "excerpts": [
+        "Instead of people taking product off the line, doing batch testing, every sensor on the line, every image on the line is fed into an AI tool, which determines whether the product quality is up to par or not, which then in return influences the center line of the manufacturing equipment.",
+        "We are in the process of fully automating and digitizing our demand forecasting with AI, financial forecasting with AI."
+      ],
+      "source": "Investor event transcript (StockAnalysis, data by Quartr)",
+      "author": "Andre Schulten, CFO",
+      "channel": "investor-event",
+      "url": "https://stockanalysis.com/stocks/pg/transcripts/423667-morgan-stanley-global-consumer-retail-conference-2025/",
+      "added": "manual",
+      "added_on": "2026-11-03"
+    },
+    {
+      "date": "2025-07-29",
+      "title": "Procter & Gamble (PG) Q4 2025 Earnings Call Transcript",
+      "excerpts": [
+        "For the Power Mop launch, the Swiffer team brought several top TikTok creators into their labs to learn about Power Mop from P&G scientists and create engaging communication. From there, the creators' social media content was tested with P&G's proprietary AI studios.",
+        "Swiffer Power Mop has become the largest product launch in Swiffer's history"
+      ],
+      "source": "Earnings call transcript (StockAnalysis, data by Quartr)",
+      "author": "Jon Moeller, President and CEO",
+      "channel": "earnings",
+      "url": "https://stockanalysis.com/stocks/pg/transcripts/335909-q4-2025/",
+      "added": "manual",
+      "added_on": "2026-11-03"
+    },
+    {
+      "date": "2025-06-05",
+      "title": "Procter & Gamble (PG) Transcript: 2025 dbAccess Global Consumer Conference",
+      "excerpts": [
+        "We're improving efficiency using AI tools for ad testing, improving quality, cost, and speed. Ads can now be tested and optimized in just a few days versus weeks at one-tenth the cost versus prior methods."
+      ],
+      "source": "Investor event transcript (StockAnalysis, data by Quartr)",
+      "author": "Shailesh Jejurikar, COO",
+      "channel": "investor-event",
+      "url": "https://stockanalysis.com/stocks/pg/transcripts/352403-2025-dbaccess-global-consumer-conference/",
       "added": "manual",
       "added_on": "2026-11-03"
     },
@@ -135,6 +246,97 @@
       "author": "Procter & Gamble",
       "channel": "blog",
       "url": "https://us.pg.com/blogs/how-ai-supplements-teamwork-and-innovation/",
+      "added": "manual",
+      "added_on": "2026-11-03"
+    },
+    {
+      "date": "2025-02-20",
+      "title": "Procter & Gamble (PG) Transcript: Consumer Analyst Group of New York Conference (CAGNY) 2025",
+      "excerpts": [
+        "Our Great Idea Generator proprietary platform is transforming the idea creation process by enabling concept development in minutes versus weeks, increasing the number of concepts created tenfold, viewing and editing in one to two hours versus 600-plus hours, and improving quality in the ideation process since the AI leverages an array of data sources well beyond what's available in the current processes."
+      ],
+      "source": "Investor event transcript (StockAnalysis, data by Quartr)",
+      "author": "Andre Schulten, CFO",
+      "channel": "investor-event",
+      "url": "https://stockanalysis.com/stocks/pg/transcripts/316762-consumer-analyst-group-of-new-york-conference-cagny-2025/",
+      "added": "manual",
+      "added_on": "2026-11-03"
+    },
+    {
+      "date": "2024-12-03",
+      "title": "Procter & Gamble (PG) Transcript: Morgan Stanley Global Consumer & Retail Conference",
+      "excerpts": [
+        "We've trained our own AI machine in order to very quickly give us a score on each content that we are about to launch. That allows us to test copy within a number of days instead of months at a fraction of the cost."
+      ],
+      "source": "Investor event transcript (StockAnalysis, data by Quartr)",
+      "author": "Andre Schulten, CFO",
+      "channel": "investor-event",
+      "url": "https://stockanalysis.com/stocks/pg/transcripts/260632-morgan-stanley-global-consumer-retail-conference/",
+      "added": "manual",
+      "added_on": "2026-11-03"
+    },
+    {
+      "date": "2024-11-21",
+      "title": "Procter & Gamble (PG) Transcript: Investor Day 2024",
+      "excerpts": [
+        "For example, we're transforming our sales call in India through advanced AI and machine learning. We've implemented a tailored approach for over 2 million stores using data-driven insights to provide neighborhood-level recommendations on product assortment and order quantities. This has resulted in over $50 million in incremental sales and $3.5 million in savings over the past two years, with much more opportunity ahead."
+      ],
+      "source": "Investor event transcript (StockAnalysis, data by Quartr)",
+      "author": "Jon Moeller, CEO",
+      "channel": "investor-event",
+      "url": "https://stockanalysis.com/stocks/pg/transcripts/255890-investor-day-2024/",
+      "added": "manual",
+      "added_on": "2026-11-03"
+    },
+    {
+      "date": "2024-06-04",
+      "title": "Procter & Gamble (PG) Transcript: 2024 Deutsche Bank dbAccess Global Consumer Conference",
+      "excerpts": [
+        "We have also moved to an artificial intelligence and machine learning platform-based ordering solution for distributors, leveraging daily data. This smart platform helps us predict distributor shipments and replenishment allocation across different distributors."
+      ],
+      "source": "Investor event transcript (StockAnalysis, data by Quartr)",
+      "author": "Shailesh Jejurikar, COO",
+      "channel": "investor-event",
+      "url": "https://stockanalysis.com/stocks/pg/transcripts/199803-2024-deutsche-bank-dbaccess-global-consumer-conference/",
+      "added": "manual",
+      "added_on": "2026-11-03"
+    },
+    {
+      "date": "2024-02-22",
+      "title": "Procter & Gamble (PG) Transcript: 2024 Consumer Analyst Group of New York (CAGNY) Conference",
+      "excerpts": [
+        "AI is not an objective for us: consumer, customer, employee, society, shareholder delight."
+      ],
+      "source": "Investor event transcript (StockAnalysis, data by Quartr)",
+      "author": "Jon Moeller, CEO",
+      "channel": "investor-event",
+      "url": "https://stockanalysis.com/stocks/pg/transcripts/167969-2024-consumer-analyst-group-of-new-york-cagny-conference/",
+      "added": "manual",
+      "added_on": "2026-11-03"
+    },
+    {
+      "date": "2024-01-23",
+      "title": "Procter & Gamble (PG) Q2 2024 Earnings Call Transcript",
+      "excerpts": [
+        "We're working in a new way with retailers on the totality of the supply chain, end-to-end, versus simply trying to optimize each piece. One example, using data and machine learning algorithms to optimize truck scheduling to minimize idle time for drivers. We're also using AI tools to optimize fill rates and for dynamic routing and sourcing optimization, $200 million-$300 million of savings opportunity across these areas."
+      ],
+      "source": "Earnings call transcript (StockAnalysis, data by Quartr)",
+      "author": "Jon Moeller, Chairman of the Board, President, and CEO",
+      "channel": "earnings",
+      "url": "https://stockanalysis.com/stocks/pg/transcripts/112833-q2-2024/",
+      "added": "manual",
+      "added_on": "2026-11-03"
+    },
+    {
+      "date": "2023-02-23",
+      "title": "Procter & Gamble (PG) Transcript: Consumer Analyst Group of New York",
+      "excerpts": [
+        "We're creating proprietary algorithms, leveraging artificial intelligence to digitally design molecules. In fabric care, we're using this capability together with virtual reality tools to reformulate perfuming molecules and formulations based on real-time raw material availability and cost data."
+      ],
+      "source": "Investor event transcript (StockAnalysis, data by Quartr)",
+      "author": "Jon Moeller, Chairman, President and CEO",
+      "channel": "investor-event",
+      "url": "https://stockanalysis.com/stocks/pg/transcripts/55173-consumer-analyst-group-of-new-york/",
       "added": "manual",
       "added_on": "2026-11-03"
     }

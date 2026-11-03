@@ -383,7 +383,7 @@ const loadPgAiNews = async () => {
         if (text) n.textContent = text;
         return n;
     };
-    const channels = { blog: 'P&G Blog', sec: 'SEC Filing', earnings: 'Earnings call', cagny: 'CAGNY', linkedin: 'LinkedIn' };
+    const channels = { blog: 'P&G Blog', sec: 'SEC Filing', earnings: 'Earnings call', 'investor-event': 'Investor event', cagny: 'CAGNY', linkedin: 'LinkedIn' };
     const lang = document.documentElement.lang || 'en';
     try {
         const { items } = await (await fetch('/pg_ai_news.json')).json();

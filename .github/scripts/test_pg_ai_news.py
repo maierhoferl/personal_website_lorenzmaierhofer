@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from pg_ai_news import find_span, paragraphs, parse_page, validate, with_context  # noqa: E402
+from pg_ai_news import PG_ROLE, find_span, paragraphs, parse_page, validate, with_context  # noqa: E402
 
 TEXT = "\n".join(paragraphs(
     "<p>As Cohen put it, “AI without data is simply ‘A’…artificial.”</p>"
@@ -61,4 +61,8 @@ CTX = "Old news.\nWe built agent tools for retailers. This is critical as agents
 assert with_context("This is critical as agents shop.", CTX) == "We built agent tools for retailers. This is critical as agents shop."
 assert with_context("This stands alone.", CTX) is None
 assert with_context("We built agent tools for retailers.", CTX) == "We built agent tools for retailers."
+import re  # noqa: E402
+for role in ("CFO, Procter & Gamble", "CFO, The Procter & Gamble Company", "CEO, P&G"):
+    assert re.sub(PG_ROLE, "", role) == role.split(",")[0], role
+assert not re.search(PG_ROLE, "Analyst, Barclays")
 print("ok")
