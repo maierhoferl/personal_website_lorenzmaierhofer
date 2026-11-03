@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from pg_ai_news import find_span, paragraphs, validate  # noqa: E402
+from pg_ai_news import find_span, paragraphs, parse_page, validate  # noqa: E402
 
 TEXT = " ".join(paragraphs(
     "<p>As Cohen put it, “AI without data is simply ‘A’…artificial.”</p>"
@@ -38,4 +38,21 @@ assert not validate(CAND, META, {"is_ai": False, "excerpts": []}, TEXT, set(), T
 # related-post teaser cards are not part of the article
 assert paragraphs('<main><p>Body.</p><a href="/blogs/y/" class="blog-item event_internal_link">'
                   '<p>Teaser about AI.</p></a></main><p>Footer.</p>') == ["Body."]
+# transcripts: only P&G speakers are quotable, and quotes are credited to who said them
+T = ''.join(f'<div class="text-lg font-bold text-default md:text-xl">{n}</div> <!--[0-->'
+            f'<div class="text-sm italic text-muted">{r}</div><p class="text-default mt-2">{x}</p>'
+            for n, r, x in [("Ann Analyst", "Analyst, Big Bank", "Is AI driving savings?"),
+                            ("Jane Exec", "CFO, Procter &amp; Gamble", "AI cut our planning time in half."),
+                            ("Operator", "", "Next question.")])
+T += '<script>eventDate:"2026-10-22"</script>'
+paras, meta, attribute = parse_page("transcript", T, {})
+assert paras == ["AI cut our planning time in half."] and meta["date"] == "2026-10-22"
+TC = {**CAND, "url": "https://stockanalysis.com/stocks/pg/transcripts/1-q1-2027/",
+      "prefix": "https://stockanalysis.com/stocks/pg/transcripts/"}
+TM = {"title": "PG Q1 2027 Earnings Call Transcript", "date": "2026-10-22"}
+item, why = validate(TC, TM, {"is_ai": True, "excerpts": ["AI cut our planning time in half."]},
+                     " ".join(paras), set(), TODAY, 60, attribute)
+assert item and item["author"] == "Jane Exec, CFO", why
+assert not validate(TC, TM, {"is_ai": True, "excerpts": ["Is AI driving savings?"]},
+                    " ".join(paras), set(), TODAY, 60, attribute)[0]  # analyst words
 print("ok")

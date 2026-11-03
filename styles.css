@@ -1422,6 +1422,10 @@ body {
     margin-bottom: 0;
 }
 
+.news-citation span {
+    display: block;
+}
+
 /* Topics Section */
 .topics-section {
     padding: var(--section-padding) 0;

@@ -383,7 +383,7 @@ const loadPgAiNews = async () => {
         if (text) n.textContent = text;
         return n;
     };
-    const channels = { blog: 'P&G Blog', sec: 'SEC Filing', earnings: 'Earnings', cagny: 'CAGNY', linkedin: 'LinkedIn' };
+    const channels = { blog: 'P&G Blog', sec: 'SEC Filing', earnings: 'Earnings call', cagny: 'CAGNY', linkedin: 'LinkedIn' };
     const lang = document.documentElement.lang || 'en';
     try {
         const { items } = await (await fetch('/pg_ai_news.json')).json();
@@ -396,12 +396,14 @@ const loadPgAiNews = async () => {
             meta.append(el('span', 'news-category', channels[item.channel] || item.channel), el('span', 'news-date', date));
             const h3 = el('h3');
             const titleLink = el('a', null, item.title);
-            const more = el('a', 'pg-ai-news-more', container.dataset.readMore || 'Read the full article');
+            const more = el('a', 'pg-ai-news-more', container.dataset.readMore || 'Read the original');
             for (const a of [titleLink, more]) Object.assign(a, { href: item.url, target: '_blank', rel: 'noopener' });
             h3.append(titleLink);
             content.append(meta, h3);
             item.excerpts.forEach((x) => content.append(el('blockquote', 'pg-ai-news-quote', x)));
-            content.append(more, el('p', 'news-citation', `${item.author}, ${item.source}`));
+            const cite = el('p', 'news-citation');
+            cite.append(el('span', null, item.author), el('span', null, item.source));
+            content.append(more, cite);
             card.append(content);
             container.append(card);
         });

@@ -1,5 +1,5 @@
 {
-  "_comment": "Approved official P&G sources for the weekly P&G AI News job. Only pages under allowed_url_prefix can be published. LinkedIn is manual-only (no public feed; scraping violates its terms). pginvestor.com blocks automated clients, so earnings releases come from the SEC copies (8-K Exhibit 99).",
+  "_comment": "Approved official P&G sources for the weekly P&G AI News job. Only pages under allowed_url_prefix can be published. LinkedIn is manual-only (no public feed; scraping violates its terms). pginvestor.com blocks automated clients, so earnings releases come from the SEC copies (8-K Exhibit 99). Earnings calls: P&G publishes no transcript itself, so the third-party transcript at StockAnalysis (data by Quartr) is used. It is free, plain HTML and allowed by robots.txt. Only P&G speakers' turns are quotable.",
   "sources": [
     {
       "id": "pg-blog",
@@ -16,6 +16,14 @@
       "channel": "sec",
       "url": "https://data.sec.gov/submissions/CIK0000080424.json",
       "allowed_url_prefix": "https://www.sec.gov/Archives/edgar/data/80424/"
+    },
+    {
+      "id": "earnings-transcripts",
+      "type": "transcript",
+      "name": "Earnings call transcript (StockAnalysis, data by Quartr)",
+      "channel": "earnings",
+      "url": "https://stockanalysis.com/stocks/pg/transcripts/",
+      "allowed_url_prefix": "https://stockanalysis.com/stocks/pg/transcripts/"
     }
   ]
 }

@@ -84,6 +84,54 @@ def blog_meta(page_html: str) -> dict:
     return {}
 
 
+def transcript_turns(page_html: str) -> list[tuple[str, str, list[str]]]:
+    """(speaker, role, paragraphs) per speaker turn of a StockAnalysis transcript.
+    Reads only transcript paragraphs, never the page's generated call summary."""
+    name_re = r'<div class="text-lg font-bold text-default md:text-xl">([^<]+)</div>'
+    parts = re.split(name_re, page_html)
+    turns = []
+    for name, seg in zip(parts[1::2], parts[2::2]):
+        role = re.search(r'^\s*(?:<!--[^>]*-->\s*)*<div class="text-sm italic text-muted">([^<]*)</div>', seg)
+        paras = [re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", p))).strip()
+                 for p in re.findall(r'<p class="text-default[^"]*">(.*?)</p>', seg, re.S)]
+        turns.append((html.unescape(name).strip(), html.unescape(role.group(1)).strip() if role else "",
+                      [x for x in paras if x]))
+    return turns
+
+
+def transcript_meta(page_html: str) -> dict:
+    title = ""
+    for block in re.findall(r'<script[^>]*application/ld\+json[^>]*>(.*?)</script>', page_html, re.S):
+        try:
+            d = json.loads(block)
+        except ValueError:
+            continue
+        if d.get("@type") == "WebPage":
+            title = re.sub(r"\s*&\s*Audio\s*$", "", d.get("name", "")).strip()
+    m = re.search(r'eventDate:"(\d{4}-\d{2}-\d{2})"', page_html)
+    return {"title": title, "date": m.group(1) if m else ""}
+
+
+def parse_page(kind: str, page: str, cand: dict) -> tuple[list[str], dict, object]:
+    """-> (paragraphs eligible for quoting, metadata, attribute(spans) or None)."""
+    if kind != "transcript":
+        return paragraphs(page), cand.get("meta") or blog_meta(page), None
+    # P&G executives only: analysts and the operator are never quoted
+    turns = [t for t in transcript_turns(page) if "Procter & Gamble" in t[1]]
+
+    def attribute(spans: list[str]) -> str:
+        names = []
+        for sp in spans:
+            who = next((f"{n}, {re.sub(r',?\s*Procter & Gamble$', '', r)}" for n, r, ps in turns
+                        if find_span(sp, " ".join(ps))), None)
+            if not who:
+                return ""  # excerpt crosses speaker turns: cannot attribute it
+            names.append(who)
+        return "; ".join(dict.fromkeys(names))
+
+    return [p for _, _, ps in turns for p in ps], transcript_meta(page), attribute
+
+
 # ---------- collectors (one per source type) ----------
 
 def collect_pg_blog(src: dict, cutoff: dt.date) -> list[dict]:
@@ -121,7 +169,16 @@ def collect_sec(src: dict, cutoff: dt.date) -> list[dict]:
     return out
 
 
-COLLECTORS = {"pg-blog": collect_pg_blog, "sec-edgar": collect_sec}
+def collect_transcripts(src: dict, cutoff: dt.date) -> list[dict]:
+    """Quarterly earnings calls only (no AGM/conference talks), newest first; the call
+    date is on the transcript page, so cap to the newest few to save model quota."""
+    index = fetch(src["url"])
+    links = sorted(set(re.findall(r'href="(/stocks/pg/transcripts/(\d+)-q[1-4]-\d{4}/)"', index)),
+                   key=lambda x: int(x[1]), reverse=True)
+    return [{"url": "https://stockanalysis.com" + path} for path, _ in links[:4]]
+
+
+COLLECTORS = {"pg-blog": collect_pg_blog, "sec-edgar": collect_sec, "transcript": collect_transcripts}
 
 
 # ---------- LLM: select, never write ----------
@@ -136,12 +193,21 @@ SCHEMA = {
     "additionalProperties": False,
 }
 
-PROMPT = """You curate a "P&G AI News" list on a personal website. Below are numbered \
-paragraphs from one official Procter & Gamble page ({url}).
+RULES = {
+    "page": ("one official Procter & Gamble page",
+             "artificial intelligence (AI, machine learning, generative or agentic AI, AI-driven "
+             "automation) is a core message of this page, not a passing mention, a list of "
+             "buzzwords, or legal/risk-factor boilerplate"),
+    "transcript": ("the remarks of P&G executives on a quarterly earnings call",
+                   "the executives make at least one substantive statement about artificial "
+                   "intelligence (AI, machine learning, generative or agentic AI, AI-driven "
+                   "automation): what P&G does with it or what it delivers, not a passing mention"),
+}
 
-1. Set is_ai to true only if artificial intelligence (AI, machine learning, generative or \
-agentic AI, AI-driven automation) is a core message of this page, not a passing mention, \
-a list of buzzwords, or legal/risk-factor boilerplate.
+PROMPT = """You curate a "P&G AI News" list on a personal website. Below are numbered \
+paragraphs from {what} ({url}).
+
+1. Set is_ai to true only if {rule}.
 2. If is_ai is true, choose 1 to 3 passages that best carry the AI message, preferring \
 statements by named P&G leaders and concrete outcomes. Copy each passage character for \
 character from a single paragraph: whole sentences, no ellipses, no merging, no \
@@ -152,7 +218,7 @@ Paragraphs:
 {paras}"""
 
 
-def select_excerpts(url: str, paras: list[str]) -> dict:
+def select_excerpts(url: str, paras: list[str], kind: str = "page") -> dict:
     from google import genai  # only needed for live runs
     from google.genai import types
 
@@ -170,7 +236,8 @@ def select_excerpts(url: str, paras: list[str]) -> dict:
         attempts=6, initial_delay=10, max_delay=120, http_status_codes=[429, 500, 503, 504])))
     resp = client.models.generate_content(
         model=MODEL,
-        contents=PROMPT.format(url=url, max_chars=MAX_EXCERPT, paras="\n\n".join(body)),
+        contents=PROMPT.format(what=RULES[kind][0], rule=RULES[kind][1], url=url,
+                               max_chars=MAX_EXCERPT, paras="\n\n".join(body)),
         config=types.GenerateContentConfig(
             response_mime_type="application/json", response_json_schema=SCHEMA),
     )
@@ -205,7 +272,7 @@ def find_span(excerpt: str, text: str) -> str | None:
 
 
 def validate(cand: dict, meta: dict, picked: dict, text: str, existing: set,
-             today: dt.date, max_age: int | None) -> tuple[dict | None, str]:
+             today: dt.date, max_age: int | None, attribute=None) -> tuple[dict | None, str]:
     url = cand["url"]
     if not url.startswith("https://") or not url.startswith(cand["prefix"]):
         return None, "url outside approved prefix"
@@ -224,6 +291,8 @@ def validate(cand: dict, meta: dict, picked: dict, text: str, existing: set,
         if not span:
             return None, f"excerpt not verbatim: {e[:60]!r}"
         spans.append(span)
+    if attribute:  # transcripts: author is whoever spoke the quoted words
+        meta = {**meta, "author": attribute(spans)}
     if not all(meta.get(k) for k in ("title", "date", "author")):
         return None, "missing title/date/author metadata"
     try:
@@ -311,19 +380,23 @@ def main() -> int:
         except Exception as e:
             summary(f"- SKIP {c['url']}: fetch failed ({e})")
             continue
-        paras = paragraphs(page)
+        kind = "transcript" if src["type"] == "transcript" else "page"
+        paras, meta, attribute = parse_page(kind, page, c)
         text = " ".join(paras)
-        meta = c.get("meta") or blog_meta(page)
+        if not manual and meta.get("date") and meta["date"] < cutoff.isoformat():
+            seen["rejected"][c["url"]] = f"{today}: date {meta['date']} too old"
+            summary(f"- REJECT {c['url']}: date {meta['date']} too old (no model call)")
+            continue
         try:
             picked = ({"is_ai": True, "excerpts": manual[c["url"]]} if manual
-                      else select_excerpts(c["url"], paras))
+                      else select_excerpts(c["url"], paras, kind))
             model_ok += not picked.get("no_call")
         except Exception as e:  # quota/API error: not marked seen, retried next run
             model_failed += 1
             summary(f"- SKIP {c['url']}: model call failed ({str(e)[:200]})")
             continue
         item, why = validate(c, meta, picked, text, existing, today,
-                             None if manual else MAX_AGE_DAYS)
+                             None if manual else MAX_AGE_DAYS, attribute)
         if item:
             added.append(item)
             existing.add(item["url"])
