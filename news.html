@@ -121,49 +121,103 @@
                     <span class="section-label">UPDATES</span>
                     <h1 class="page-title">Selected News</h1>
                     <p class="page-subtitle">Insights on AI transformation, industry trends, and professional updates</p>
+                    <nav class="page-toc" aria-label="On this page">
+                        <a href="#my-posts">My posts</a>
+                        <a href="#pg-ai-news">P&amp;G AI news</a>
+                        <a href="#topics">Topics I follow</a>
+                        <a href="#role-changes">Role changes</a>
+                    </nav>
                 </div>
             </div>
         </section>
 
-        <!-- LinkedIn Posts Section -->
-        <section class="linkedin-section">
-            <div class="section-container">
-                <div class="section-header">
-                    <span class="section-label">LINKEDIN</span>
-                    <h2 class="section-title">Selected Posts</h2>
-                </div>
-                <div class="linkedin-embeds" id="linkedinEmbeds">
-                    <!-- LinkedIn posts will be loaded dynamically from config.json -->
-                    <div class="linkedin-loading">Loading LinkedIn posts...</div>
-                </div>
-                <div class="linkedin-cta">
-                    <a href="https://www.linkedin.com/in/lorenz-maierhofer-27904a68/recent-activity/all/" target="_blank" class="btn btn-secondary">
-                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+        <!-- Two feeds: my LinkedIn posts (left) and P&G AI news (right, generated weekly from pg_ai_news.json) -->
+        <section class="feeds-section">
+            <div class="section-container feeds">
+                <div class="feed feed--mine" id="my-posts">
+                    <header class="feed-head">
+                        <h2 class="feed-title">My posts</h2>
+                        <p class="feed-sub">Selected posts from LinkedIn</p>
+                    </header>
+                    <div class="linkedin-embeds" id="linkedinEmbeds">
+                        <div class="linkedin-loading">Loading LinkedIn posts…</div>
+                    </div>
+                    <div class="linkedin-cta">
+                        <a href="https://www.linkedin.com/in/lorenz-maierhofer-27904a68/recent-activity/all/" target="_blank" rel="noopener" class="btn btn-secondary">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
                             <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                         </svg>
-                        <span>View all posts on LinkedIn</span>
-                    </a>
+                            <span>View all posts on LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="feed feed--pg" id="pg-ai-news">
+                    <header class="feed-head">
+                        <h2 class="feed-title">P&amp;G AI news</h2>
+                        <p class="feed-sub">Unchanged excerpts from official P&amp;G sources. Each one links to the full article.</p>
+                    </header>
+                    <div class="pg-ai-news-list" id="pgAiNews" data-read-more="Read the full article">
+                        <noscript><p class="linkedin-empty"><a href="https://us.pg.com/blogs/" target="_blank" rel="noopener">Browse the P&amp;G Blog</a></p></noscript>
+                        <div class="linkedin-loading">Loading P&amp;G AI news…</div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- P&G AI News: generated weekly by .github/workflows/pg-ai-news.yml from pg_ai_news.json -->
-        <section class="pg-ai-news-section">
+        <!-- Topics Section -->
+        <section class="topics-section" id="topics">
             <div class="section-container">
                 <div class="section-header">
-                    <span class="section-label">Official P&amp;G Channels</span>
-                    <h2 class="section-title">P&amp;G AI News</h2>
-                    <p class="pg-ai-news-note">Excerpts quoted unchanged from official P&amp;G sources. Follow each link for the full article.</p>
+                    <span class="section-label">INTERESTS</span>
+                    <h2 class="section-title">Topics I Follow</h2>
                 </div>
-                <div class="news-grid" id="pgAiNews" data-read-more="Read the full article →">
-                    <noscript><p class="linkedin-empty"><a href="https://us.pg.com/blogs/" target="_blank" rel="noopener">Browse the P&amp;G Blog</a></p></noscript>
-                    <div class="linkedin-loading">Loading P&amp;G AI news…</div>
+                <div class="topics-grid">
+                    <div class="topic-card">
+                        <div class="topic-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                            </svg>
+                        </div>
+                        <h3>AI in FMCG</h3>
+                        <p>Applications of artificial intelligence in fast-moving consumer goods industry</p>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/>
+                            </svg>
+                        </div>
+                        <h3>Predictive Analytics</h3>
+                        <p>Forecasting and optimization models for business decision making</p>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                                <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
+                            </svg>
+                        </div>
+                        <h3>Large Language Models</h3>
+                        <p>Enterprise applications of LLMs and generative AI technologies</p>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                            </svg>
+                        </div>
+                        <h3>Responsible AI</h3>
+                        <p>Ethics, governance, and responsible deployment of AI systems</p>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <section class="news-section">
+        <!-- Role changes -->
+        <section class="news-section" id="role-changes">
             <div class="section-container">
+                <div class="section-header">
+                    <span class="section-label">CAREER</span>
+                    <h2 class="section-title">Role changes</h2>
+                </div>
                 <div class="news-grid">
                     <!-- Featured News -->
                     <article class="news-card featured">
@@ -284,53 +338,6 @@
             </div>
         </section>
 
-        <!-- Topics Section -->
-        <section class="topics-section">
-            <div class="section-container">
-                <div class="section-header">
-                    <span class="section-label">INTERESTS</span>
-                    <h2 class="section-title">Topics I Follow</h2>
-                </div>
-                <div class="topics-grid">
-                    <div class="topic-card">
-                        <div class="topic-icon">
-                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                            </svg>
-                        </div>
-                        <h3>AI in FMCG</h3>
-                        <p>Applications of artificial intelligence in fast-moving consumer goods industry</p>
-                    </div>
-                    <div class="topic-card">
-                        <div class="topic-icon">
-                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
-                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/>
-                            </svg>
-                        </div>
-                        <h3>Predictive Analytics</h3>
-                        <p>Forecasting and optimization models for business decision making</p>
-                    </div>
-                    <div class="topic-card">
-                        <div class="topic-icon">
-                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
-                                <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
-                            </svg>
-                        </div>
-                        <h3>Large Language Models</h3>
-                        <p>Enterprise applications of LLMs and generative AI technologies</p>
-                    </div>
-                    <div class="topic-card">
-                        <div class="topic-icon">
-                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
-                                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
-                            </svg>
-                        </div>
-                        <h3>Responsible AI</h3>
-                        <p>Ethics, governance, and responsible deployment of AI systems</p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
     <!-- Footer -->

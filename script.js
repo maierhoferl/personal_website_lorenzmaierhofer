@@ -396,12 +396,12 @@ const loadPgAiNews = async () => {
             meta.append(el('span', 'news-category', channels[item.channel] || item.channel), el('span', 'news-date', date));
             const h3 = el('h3');
             const titleLink = el('a', null, item.title);
-            const more = el('a', 'pg-ai-news-more', container.dataset.readMore || 'Read the full article →');
+            const more = el('a', 'pg-ai-news-more', container.dataset.readMore || 'Read the full article');
             for (const a of [titleLink, more]) Object.assign(a, { href: item.url, target: '_blank', rel: 'noopener' });
             h3.append(titleLink);
             content.append(meta, h3);
             item.excerpts.forEach((x) => content.append(el('blockquote', 'pg-ai-news-quote', x)));
-            content.append(more, el('p', 'news-citation', `${item.source} · ${item.author} · ${date}`));
+            content.append(more, el('p', 'news-citation', `${item.author}, ${item.source}`));
             card.append(content);
             container.append(card);
         });
