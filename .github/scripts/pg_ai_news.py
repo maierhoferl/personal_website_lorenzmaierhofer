@@ -161,7 +161,9 @@ def select_excerpts(url: str, paras: list[str]) -> dict:
             break  # ponytail: keyword paragraphs only, capped; enough for blog posts and 8-K exhibits
         body.append(f"[{i}] {p}")
         used += len(p)
-    client = genai.Client()  # reads GEMINI_API_KEY
+    # reads GEMINI_API_KEY; free tier often answers 503 "high demand", so back off and retry
+    client = genai.Client(http_options=types.HttpOptions(retry_options=types.HttpRetryOptions(
+        attempts=6, initial_delay=10, max_delay=120, http_status_codes=[429, 500, 503, 504])))
     resp = client.models.generate_content(
         model=MODEL,
         contents=PROMPT.format(url=url, max_chars=MAX_EXCERPT, paras="\n\n".join(body)),
