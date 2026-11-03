@@ -1,0 +1,14 @@
+{
+  "rejected": {
+    "https://us.pg.com/blogs/pg-brand-innovation-supports-womens-health-longevity/": "2026-11-03: not AI-focused",
+    "https://us.pg.com/blogs/pg-earnings-first-quarter-2027/": "2026-11-03: not AI-focused",
+    "https://us.pg.com/blogs/meet-the-innovator-doing-laundry-in-space/": "2026-11-03: not AI-focused",
+    "https://us.pg.com/blogs/hispanic-heritage-month/": "2026-11-03: not AI-focused",
+    "https://us.pg.com/blogs/climate-initiatives-net-zero-ambition/": "2026-11-03: not AI-focused",
+    "https://us.pg.com/blogs/hbcyou-program/": "2026-11-03: not AI-focused"
+  },
+  "errors": {
+    "pg-blog": 0,
+    "sec-edgar": 0
+  }
+}
