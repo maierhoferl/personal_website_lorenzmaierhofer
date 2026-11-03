@@ -1,0 +1,78 @@
+# Weekly: collect new AI-related items from approved official P&G sources,
+# publish verbatim excerpts to pg_ai_news.json, and redeploy the site.
+name: P&G AI News
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"  # Mondays 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+  issues: write
+
+concurrency:
+  group: pg-ai-news
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install google-genai
+
+      - name: Validator self-check
+        run: python3 .github/scripts/test_pg_ai_news.py
+
+      - name: Collect P&G AI news
+        id: collect
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+          PG_NEWS_REPORT: ${{ runner.temp }}/pg_news_report.md
+        run: python3 .github/scripts/pg_ai_news.py
+
+      # Runs even when the collect step fails (a source broken two weeks running),
+      # so items from the healthy sources still publish.
+      - name: Commit and deploy
+        id: commit
+        if: always() && steps.collect.outcome != 'cancelled'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add pg_ai_news.json .github/pg_ai_news_seen.json
+          if git diff --cached --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          news_changed=$(git diff --cached --name-only | grep -c '^pg_ai_news.json$' || true)
+          git commit -m "chore(news): weekly P&G AI news update"
+          git push
+          # Pushes made with GITHUB_TOKEN do not trigger on: push, so start the deploy explicitly.
+          if [ "$news_changed" = "1" ]; then
+            gh workflow run static.yml --ref main
+          fi
+
+      # Email notification: GitHub mails the assignee when the issue is opened.
+      - name: Notify about published items
+        if: always() && steps.commit.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [ -f "$RUNNER_TEMP/pg_news_report.md" ] || { echo "Nothing published."; exit 0; }
+          n=$(grep -c '^### ' "$RUNNER_TEMP/pg_news_report.md")
+          gh issue create \
+            --title "P&G AI News: $n new item(s) published $(date -u +%F)" \
+            --body-file "$RUNNER_TEMP/pg_news_report.md" \
+            --assignee "${{ github.repository_owner }}"

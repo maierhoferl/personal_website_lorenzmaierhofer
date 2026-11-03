@@ -1,0 +1,101 @@
+{
+  "items": [
+    {
+      "date": "2026-10-05",
+      "title": "The Four Priorities Powering P&G Product Supply",
+      "excerpts": [
+        "Seamless Data and Touchless Flow is how we connect data and technology across our supply chain to make it smarter, more automated and more responsive. By connecting the right information and putting it to work through analytics, AI and automation, we can anticipate needs, make faster decisions and reduce unnecessary manual touchpoints.",
+        "P&G is also applying intelligent automation to quality control. Intelligent vision systems can perform precise quality checks, helping ensure products meet P&G’s high standards while reducing scrap waste."
+      ],
+      "source": "P&G Blog (us.pg.com)",
+      "author": "Procter & Gamble",
+      "channel": "blog",
+      "url": "https://us.pg.com/blogs/product-supply-four-priorities/",
+      "added": "manual",
+      "added_on": "2026-11-03"
+    },
+    {
+      "date": "2026-07-01",
+      "title": "Robots Don't Build Brands. People Do.",
+      "excerpts": [
+        "That's how P&G Chief Brand Officer Marc Pritchard opened his keynote at Cannes Lions 2026. While AI is transforming the way marketers work, Marc's message was clear: the future of brand building will always begin with human insight.",
+        "They then combined AI with human creativity to explore consumer insights, develop concepts, land on the brand idea \"Pantene Sunkiss Glow Spray for Strong Hair, Shinier than the Sun,\" create a package mock-up the same day and produce prototype advertising in a one-day shoot. The result: five times the assets, five times faster and at one-fifth the cost."
+      ],
+      "source": "P&G Blog (us.pg.com)",
+      "author": "Procter & Gamble",
+      "channel": "blog",
+      "url": "https://us.pg.com/blogs/cannes-lions-international-festival-of-creativity/",
+      "added": "manual",
+      "added_on": "2026-11-03"
+    },
+    {
+      "date": "2026-04-30",
+      "title": "Why ‘Consumer First’ Always Wins",
+      "excerpts": [
+        "The way we work is transforming. We can move faster, process more information, and identify patterns that weren’t visible before. AI is a powerful tool, but it works best when paired with human thinking. You still need to frame the right questions and decide what actually matters."
+      ],
+      "source": "P&G Blog (us.pg.com)",
+      "author": "Procter & Gamble",
+      "channel": "blog",
+      "url": "https://us.pg.com/blogs/data-talks-podcast/",
+      "added": "manual",
+      "added_on": "2026-11-03"
+    },
+    {
+      "date": "2026-04-13",
+      "title": "Seth Cohen on Accelerating AI Adoption for Lasting Business Impact",
+      "excerpts": [
+        "P&G is creating the CPG company of the future, with AI playing a key role in accelerating its transformation. At HumanX 2026, a conference that gathers 6,500 AI leaders, builders and inventors, P&G’s CIO Seth Cohen took the stage to share how the company embeds AI across its operations to turn insight into impact and deliver sustained, strong business results.",
+        "Cohen highlighted how P&G teams identified an unmet consumer need for sun protection in hair care. Using AI, they were able to rapidly develop the Pantene Sunkiss Glow Spray, moving from insight to product concept, packaging, and communications in just days instead of weeks.",
+        "Our ability to integrate data into operations is critical to enable AI. I realize AI today gets all the headlines but AI without data is simply “A” – it’s artificial."
+      ],
+      "source": "P&G Blog (us.pg.com)",
+      "author": "Procter & Gamble",
+      "channel": "blog",
+      "url": "https://us.pg.com/blogs/seth-cohen-humanx-accelerating-ai-adoption/",
+      "added": "manual",
+      "added_on": "2026-11-03"
+    },
+    {
+      "date": "2026-02-19",
+      "title": "P&G at the 2026 Consumer Analyst Group of New York (CAGNY) Conference",
+      "excerpts": [
+        "This is critical as we see the convergence of retail and media and how shopping agents and AI-based search affect how consumers shop."
+      ],
+      "source": "P&G Blog (us.pg.com)",
+      "author": "Procter & Gamble",
+      "channel": "blog",
+      "url": "https://us.pg.com/blogs/cagny-conference/",
+      "added": "manual",
+      "added_on": "2026-11-03"
+    },
+    {
+      "date": "2025-06-03",
+      "title": "Innovation at Scale: How P&G Transforms Business Through Technology",
+      "excerpts": [
+        "P&G's AI-driven insights have helped us better understand and anticipate your needs, reducing out-of-stock rates by 15% so products are available when and where you need them.",
+        "Technology will be integral to the future of P&G. We’re continuing to explore the latest technologies, including reasoning models and agentic AI, which may ultimately further help automate workflow and optimize supply chains and operations on an unprecedented scale."
+      ],
+      "source": "P&G Blog (us.pg.com)",
+      "author": "Procter & Gamble",
+      "channel": "blog",
+      "url": "https://us.pg.com/blogs/innovation-at-scale-transforming-business-through-technology/",
+      "added": "manual",
+      "added_on": "2026-11-03"
+    },
+    {
+      "date": "2025-04-03",
+      "title": "The Future of Collaboration: How AI is Supplementing Teamwork and Innovation at P&G",
+      "excerpts": [
+        "AI Can Be a Great “Teammate”: Research validates our approach, revealing that teams working with AI were about 12% faster. Even further, the combination of human collaboration and AI creates opportunities that enable peak performance, suggesting that the best results come from working with AI, not replacing human interaction.",
+        "“We continue to invest in training to ensure all employees become more proficient using AI technology in their respective roles to increase their impact,” said P&G Chief Information Officer Seth Cohen."
+      ],
+      "source": "P&G Blog (us.pg.com)",
+      "author": "Procter & Gamble",
+      "channel": "blog",
+      "url": "https://us.pg.com/blogs/how-ai-supplements-teamwork-and-innovation/",
+      "added": "manual",
+      "added_on": "2026-11-03"
+    }
+  ]
+}

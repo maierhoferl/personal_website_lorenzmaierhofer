@@ -372,6 +372,51 @@ if (document.readyState === 'loading') {
     loadLinkedInPosts();
 }
 
+// P&G AI News loader: renders /pg_ai_news.json (written by .github/scripts/pg_ai_news.py).
+// Content is machine-collected, so build with textContent only, never innerHTML.
+const loadPgAiNews = async () => {
+    const container = document.getElementById('pgAiNews');
+    if (!container) return;
+    const el = (tag, cls, text) => {
+        const n = document.createElement(tag);
+        if (cls) n.className = cls;
+        if (text) n.textContent = text;
+        return n;
+    };
+    const channels = { blog: 'P&G Blog', sec: 'SEC Filing', earnings: 'Earnings', cagny: 'CAGNY', linkedin: 'LinkedIn' };
+    const lang = document.documentElement.lang || 'en';
+    try {
+        const { items } = await (await fetch('/pg_ai_news.json')).json();
+        container.replaceChildren();
+        items.forEach((item) => {
+            const date = new Date(item.date + 'T00:00:00').toLocaleDateString(lang, { year: 'numeric', month: 'long', day: 'numeric' });
+            const card = el('article', 'news-card');
+            const content = el('div', 'news-content');
+            const meta = el('div', 'news-meta');
+            meta.append(el('span', 'news-category', channels[item.channel] || item.channel), el('span', 'news-date', date));
+            const h3 = el('h3');
+            const titleLink = el('a', null, item.title);
+            const more = el('a', 'pg-ai-news-more', container.dataset.readMore || 'Read the full article →');
+            for (const a of [titleLink, more]) Object.assign(a, { href: item.url, target: '_blank', rel: 'noopener' });
+            h3.append(titleLink);
+            content.append(meta, h3);
+            item.excerpts.forEach((x) => content.append(el('blockquote', 'pg-ai-news-quote', x)));
+            content.append(more, el('p', 'news-citation', `${item.source} · ${item.author} · ${date}`));
+            card.append(content);
+            container.append(card);
+        });
+    } catch (error) {
+        console.error('Error loading P&G AI news:', error);
+        container.replaceChildren(el('p', 'linkedin-error', 'Unable to load P&G AI news.'));
+    }
+};
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadPgAiNews);
+} else {
+    loadPgAiNews();
+}
+
 // Email obfuscation - reconstruct mailto links from data attributes
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.email-link').forEach(el => {

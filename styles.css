@@ -1265,6 +1265,58 @@ body {
     line-height: 1.6;
 }
 
+/* P&G AI News Section */
+.pg-ai-news-section {
+    padding: 2rem 0 var(--section-padding);
+}
+
+.pg-ai-news-note {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 0.75rem;
+}
+
+.pg-ai-news-section .news-card h3 a {
+    color: inherit;
+    text-decoration: none;
+    transition: var(--transition-base);
+}
+
+.pg-ai-news-section .news-card h3 a:hover {
+    color: var(--accent-cyan);
+    text-decoration: underline;
+}
+
+.pg-ai-news-quote {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    border-left: 3px solid var(--primary);
+    padding-left: 1rem;
+    margin: 0 0 1rem;
+}
+
+.pg-ai-news-more {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: var(--accent-cyan);
+    text-decoration: none;
+    margin-bottom: 0.75rem;
+    transition: var(--transition-base);
+}
+
+.pg-ai-news-more:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.news-card .news-citation {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    margin-bottom: 0;
+}
+
 /* Topics Section */
 .topics-section {
     padding: var(--section-padding) 0;

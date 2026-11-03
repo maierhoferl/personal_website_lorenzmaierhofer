@@ -121,6 +121,19 @@ All 20 HTML files are generated, not hand-edited. The generator and its per-loca
 - Never lead with downloading or "save from any link"; that framing caused an App Review 5.2.3 rejection. Import is the primary path, links are secondary, and the notice "only add content you have the right to keep" stays on the page
 - The app has no analytics; the website does (Plausible). The privacy page states both
 
+## P&G AI News (news.html)
+
+Weekly auto-published section of **verbatim excerpts** from official P&G sources, rendered on `news.html`, `de/news.html`, `zh/news.html` by `loadPgAiNews()` in `script.js` from `/pg_ai_news.json`.
+
+- `.github/workflows/pg-ai-news.yml` runs Mondays 06:00 UTC (and on demand). It runs `.github/scripts/pg_ai_news.py`, commits, then triggers `static.yml`, because a `GITHUB_TOKEN` push doesn't fire `on: push`
+- Approved sources: `.github/pg_ai_sources.json` (`pg-blog` = us.pg.com/blogs, `sec-edgar` = P&G 8-K Exhibit 99 / 10-K). Only URLs under a source's `allowed_url_prefix` can publish. pginvestor.com blocks bots (403), so earnings releases come via SEC. LinkedIn is manual-only (no feed, scraping against its terms)
+- Gemini (free tier; default `gemini-flash-latest`, the alias Google moves to the newest Flash release; pin a concrete model via repo variable `GEMINI_MODEL` if needed) only decides "is AI a core message" and **selects** passages. It never writes text. Title/author/date come from page JSON-LD or SEC filing metadata. Every excerpt must be an exact span of the page (only whitespace and quote/dash glyphs may differ), and the page's own span is what gets published. Nothing is summarised, so there is no AI label. Every card links to the full original
+- Limits: items no older than 60 days, at most 5 new per run. Rejected URLs go to `.github/pg_ai_news_seen.json` and aren't retried. Model/quota errors skip the page without marking it seen, so it is retried next run. A source failing two runs in a row turns the run red
+- Add items by hand from an approved source: put `{url: [excerpt, ...]}` in a JSON file, then run `python3 .github/scripts/pg_ai_news.py --manual file.json`. It goes through the same verbatim checks, with no age limit. To remove an item, delete it from `pg_ai_news.json` and add its URL to `rejected` in the seen file. LinkedIn items can't be fetched or checked, so add them straight to `pg_ai_news.json` with `"channel": "linkedin", "added": "manual"`, copying the post text verbatim
+- Repo secret `GEMINI_API_KEY` (Google AI Studio) and variable `SEC_USER_AGENT` (`lorenzmaierhofer.com`; the script appends ` news-bot`, because SEC rejects a bare domain)
+- When a run publishes something, the workflow opens a GitHub issue assigned to the repo owner that lists the new items. GitHub emails the assignee; that is the notification, with no SMTP or secrets involved. No issue is opened on no-change runs
+- Self-check: `python3 .github/scripts/test_pg_ai_news.py`
+
 ## File Conventions
 
 - When updating content, ensure changes are made to all relevant language versions (EN, DE, FR, ZH for Grimasso)
