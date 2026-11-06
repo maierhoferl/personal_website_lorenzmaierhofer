@@ -27,7 +27,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install google-genai
+        run: pip install "google-genai<3"  # 3.0 defaults to API v1, which lacks the -latest aliases
 
       - name: Validator self-check
         run: python3 .github/scripts/test_pg_ai_news.py
