@@ -35,6 +35,9 @@ jobs:
           fetch-depth: 0  # IndexNow step diffs against the pre-push commit
       - name: Setup Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b  # v5.0.0
+      # linkedin_posts.json is hand-edited; rebuild the feed so it never ships stale
+      - name: Build RSS feed
+        run: python3 .github/scripts/news_feed.py
       - name: Upload artifact
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa  # v3.0.1
         with:

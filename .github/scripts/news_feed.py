@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Write news.xml (RSS 2.0) from pg_ai_news.json. Run after any change to the JSON."""
+"""Write news.xml (RSS 2.0) from pg_ai_news.json + linkedin_posts.json. Run after any change to either."""
 import json
 from datetime import datetime, timezone
 from email.utils import format_datetime
@@ -14,6 +14,26 @@ SITE = "https://lorenzmaierhofer.com"
 
 def rfc822(day: str) -> str:
     return format_datetime(datetime.strptime(day, "%Y-%m-%d").replace(hour=12, tzinfo=timezone.utc))
+
+
+def my_posts() -> list:
+    """Lorenz's own LinkedIn posts. Only embed URLs are stored, so the date comes from the
+    post ID (top 41 bits = ms since epoch) and there is no text to quote."""
+    posts = json.loads((ROOT / "linkedin_posts.json").read_text())["linkedin"]["posts"]
+    out = []
+    for embed in posts:
+        urn = embed.rsplit("/", 1)[1]
+        day = datetime.fromtimestamp((int(urn.rsplit(":", 1)[1]) >> 22) / 1000, timezone.utc)
+        out.append({
+            "date": day.strftime("%Y-%m-%d"),
+            "title": f"LinkedIn post by Lorenz Maierhofer ({day:%d %b %Y})",
+            "excerpts": [],
+            "source": "LinkedIn",
+            "author": "Lorenz Maierhofer",
+            "channel": "my-posts",
+            "url": f"https://www.linkedin.com/feed/update/{urn}/",
+        })
+    return out
 
 
 def build(items: list) -> str:
@@ -38,11 +58,11 @@ def build(items: list) -> str:
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">\n'
         "<channel>"
-        "<title>P&amp;G AI News | Lorenz Maierhofer</title>"
-        f"<link>{SITE}/news.html#pg-ai-news</link>"
+        "<title>News | Lorenz Maierhofer</title>"
+        f"<link>{SITE}/news.html</link>"
         f'<atom:link href="{SITE}/news.xml" rel="self" type="application/rss+xml"/>'
-        "<description>Excerpts of official P&amp;G references to the impact of AI, "
-        "illustrating what P&amp;G&#8217;s AI platform and transformation drive.</description>"
+        "<description>Lorenz Maierhofer&#8217;s LinkedIn posts, plus excerpts of official P&amp;G "
+        "references to the impact of AI.</description>"
         "<language>en</language>"
         f"<lastBuildDate>{last}</lastBuildDate>\n"
         + "\n".join(out)
@@ -51,10 +71,14 @@ def build(items: list) -> str:
 
 
 if __name__ == "__main__":
-    feed = build(json.loads((ROOT / "pg_ai_news.json").read_text())["items"])
+    pg = json.loads((ROOT / "pg_ai_news.json").read_text())["items"]
+    mine = my_posts()
+    feed = build(pg + mine)
     # self-check: well-formed, one <item> per entry, newest first
     ch = ET.fromstring(feed).find("channel")
     dates = [datetime.strptime(d.text, "%a, %d %b %Y %H:%M:%S %z") for d in ch.iter("pubDate")]
     assert dates == sorted(dates, reverse=True)
+    assert len(dates) == len(pg) + len(mine)
+    assert all("2016" < p["date"] <= datetime.now(timezone.utc).strftime("%Y-%m-%d") for p in mine), "bad post ID"
     (ROOT / "news.xml").write_text(feed)
     print(f"news.xml: {len(dates)} items")
