@@ -200,6 +200,12 @@ body {
     gap: 2rem;
 }
 
+/* Six nav items: tighten spacing so the nav stays on one line down to 901px */
+@media (max-width: 1200px) and (min-width: 901px) {
+    .nav-menu { gap: 1rem; }
+    .nav-link { white-space: nowrap; letter-spacing: 0.04em; font-size: 0.8rem; }
+}
+
 .nav-link {
     font-family: var(--font-mono);
     font-size: 0.875rem;

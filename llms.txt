@@ -19,6 +19,7 @@ Lorenz Maierhofer is an AI and Data Science leader with expertise in AI Transfor
 - [Home](https://lorenzmaierhofer.com/): Main profile and biography
 - [News](https://lorenzmaierhofer.com/news.html): Articles, talks, and updates
 - [Projects](https://lorenzmaierhofer.com/projects.html): Technology projects including Grimasso and Offgrid Media
+- [Speaking](https://lorenzmaierhofer.com/speaking.html): Speaker bios (short/medium/long), headshots, talk topics and booking contact
 
 ## Projects
 
