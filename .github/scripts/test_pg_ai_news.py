@@ -65,4 +65,71 @@ import re  # noqa: E402
 for role in ("CFO, Procter & Gamble", "CFO, The Procter & Gamble Company", "CEO, P&G"):
     assert re.sub(PG_ROLE, "", role) == role.split(",")[0], role
 assert not re.search(PG_ROLE, "Analyst, Barclays")
+
+# ---------- resilience: fetch retries, redirect guard, model fallback ----------
+import io, types as _t, urllib.error  # noqa: E401,E402
+import pg_ai_news as m  # noqa: E402
+m.time.sleep = lambda s: None
+
+
+class Resp(io.BytesIO):
+    def __init__(self, body, url):
+        super().__init__(body); self.url = url
+        self.headers = _t.SimpleNamespace(get_content_charset=lambda: "utf-8")
+    def geturl(self): return self.url
+    def __enter__(self): return self
+    def __exit__(self, *a): pass
+
+
+def urlopen_seq(*outcomes):
+    it = iter(outcomes)
+    def fake(req, timeout):
+        o = next(it)
+        if isinstance(o, Exception): raise o
+        return Resp(b"page", o)
+    m.urllib.request.urlopen = fake
+
+
+U = "https://us.pg.com/blogs/x/"
+urlopen_seq(urllib.error.HTTPError(U, 503, "busy", {}, None), TimeoutError(), U)
+assert m.fetch(U) == "page"  # two transient failures, then success
+urlopen_seq(urllib.error.HTTPError(U, 404, "gone", {}, None))
+try: m.fetch(U); raise AssertionError("404 must not retry")
+except urllib.error.HTTPError: pass
+urlopen_seq("https://evil.example/x")
+try: m.fetch(U); raise AssertionError("off-site redirect accepted")
+except ValueError: pass
+
+
+class APIError(Exception):
+    def __init__(self, code): super().__init__(f"{code}"); self.code = code
+
+
+def fake_genai(behaviour):  # behaviour: model -> exception or response text
+    calls = []
+    class Models:
+        def generate_content(self, model, contents, config):
+            calls.append(model); b = behaviour[model]
+            if isinstance(b, Exception): raise b
+            return _t.SimpleNamespace(text=b, model_version=model)
+    ns = _t.SimpleNamespace
+    gtypes = ns(HttpOptions=lambda **k: None, HttpRetryOptions=lambda **k: None,
+                GenerateContentConfig=lambda **k: None)
+    genai = ns(Client=lambda **k: ns(models=Models()), types=gtypes, errors=ns(APIError=APIError))
+    sys.modules.update({"google": ns(genai=genai), "google.genai": genai})
+    return calls
+
+
+m.MODELS = ["a", "b"]
+P = ["We use AI to plan every launch across all categories."]
+calls = fake_genai({"a": APIError(503), "b": '{"is_ai": true, "excerpts": ["x", 3]}'})
+assert m.select_excerpts(U, P) == {"is_ai": True, "excerpts": ["x"]} and calls == ["a", "b"]
+calls = fake_genai({"a": "", "b": '{"is_ai": false, "excerpts": []}'})
+assert m.select_excerpts(U, P)["is_ai"] is False and calls == ["a", "b"]  # empty output falls through
+calls = fake_genai({"a": APIError(402), "b": "{}"})
+try: m.select_excerpts(U, P); raise AssertionError("402 must stop the run")
+except m.ModelDown: assert calls == ["a"]
+calls = fake_genai({"a": APIError(500), "b": "[]"})
+try: m.select_excerpts(U, P); raise AssertionError("bad output accepted")
+except ValueError: pass
 print("ok")

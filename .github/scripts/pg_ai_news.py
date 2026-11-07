@@ -15,10 +15,14 @@ filing metadata, excerpts are the matched spans cut from the page text itself.
 import argparse
 import datetime as dt
 import html
+import http.client
 import json
 import os
 import re
 import sys
+import time
+import urllib.error
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -29,7 +33,14 @@ SEEN = ROOT / ".github" / "pg_ai_news_seen.json"
 
 # Google-maintained alias for the newest Flash release, so model deprecations need no change here.
 # Pin a concrete model via repo variable GEMINI_MODEL if the alias ever misbehaves.
-MODEL = os.environ.get("GEMINI_MODEL") or "gemini-flash-latest"
+# GEMINI_MODEL may be a comma-separated fallback chain; each is tried in order per page.
+MODELS = [m.strip() for m in (os.environ.get("GEMINI_MODEL") or
+          "gemini-flash-latest,gemini-flash-lite-latest").split(",") if m.strip()] or ["gemini-flash-latest"]
+MODEL_FATAL = {401, 402, 403}  # bad key / no credits: no other model or page will work this run
+MAX_MODEL_FAILS = 3  # consecutive failed pages before the run stops calling the model
+RUN_BUDGET_S = 12 * 60  # stop starting new pages after this; the rest retry next run
+MAX_PAGE_BYTES = 20_000_000
+RETRY_HTTP = {408, 425, 429, 500, 502, 503, 504}
 MAX_AGE_DAYS = 60
 MAX_NEW = 5
 MAX_EXCERPT = 600
@@ -49,11 +60,29 @@ AI_RE = re.compile(
 
 # ---------- fetching & parsing ----------
 
-def fetch(url: str) -> str:
+def fetch(url: str, attempts: int = 3) -> str:
+    """GET with retries on transient errors (5xx/429/timeouts/resets, 10s then 30s backoff).
+    Refuses off-site redirects so content from another host never gets a P&G link."""
     ua = SEC_UA if "sec.gov" in url else WEB_UA
-    req = urllib.request.Request(url, headers={"User-Agent": ua, "Accept-Encoding": "identity"})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return r.read().decode(r.headers.get_content_charset() or "utf-8", errors="replace")
+    host = urllib.parse.urlsplit(url).hostname
+    for i in range(attempts):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": ua, "Accept-Encoding": "identity"})
+            with urllib.request.urlopen(req, timeout=60) as r:
+                final = r.geturl()
+                if not final.startswith("https://") or urllib.parse.urlsplit(final).hostname != host:
+                    raise ValueError(f"redirected off-site to {final}")
+                body = r.read(MAX_PAGE_BYTES + 1)
+                if len(body) > MAX_PAGE_BYTES:
+                    raise ValueError("page too large")
+                return body.decode(r.headers.get_content_charset() or "utf-8", errors="replace")
+        except urllib.error.HTTPError as e:
+            if e.code not in RETRY_HTTP or i == attempts - 1:
+                raise
+        except (urllib.error.URLError, http.client.HTTPException, TimeoutError, ConnectionError):
+            if i == attempts - 1:
+                raise
+        time.sleep(10 * 3 ** i)
 
 
 def paragraphs(page_html: str) -> list[str]:
@@ -75,7 +104,9 @@ def blog_meta(page_html: str) -> dict:
             d = json.loads(block)
         except ValueError:
             continue
-        if d.get("@type") == "BlogPosting":
+        d = next((x for x in (d if isinstance(d, list) else [d])
+                  if isinstance(x, dict) and x.get("@type") == "BlogPosting"), None)
+        if d:
             author = d.get("author") or {}
             return {
                 "title": re.sub(r"\s*\|\s*P&G\s*$", "", d.get("headline", "")).strip(),
@@ -107,7 +138,9 @@ def transcript_meta(page_html: str) -> dict:
             d = json.loads(block)
         except ValueError:
             continue
-        if d.get("@type") == "WebPage":
+        d = next((x for x in (d if isinstance(d, list) else [d])
+                  if isinstance(x, dict) and x.get("@type") == "WebPage"), None)
+        if d:
             title = re.sub(r"\s*&\s*Audio\s*$", "", d.get("name", "")).strip()
     # StockAnalysis names AGMs and conferences "FY 2026 Earnings Call Transcript"; the h1 has the event
     h1 = re.search(r"<h1[^>]*>([^<]+)</h1>", page_html)
@@ -232,9 +265,13 @@ Paragraphs:
 {paras}"""
 
 
+class ModelDown(Exception):
+    """Key/billing failure: every further call this run would fail too."""
+
+
 def select_excerpts(url: str, paras: list[str], kind: str = "page") -> dict:
     from google import genai  # only needed for live runs
-    from google.genai import types
+    from google.genai import errors, types
 
     hits = [p for p in paras if AI_RE.search(p) and len(p) > 40]
     if not hits:
@@ -245,20 +282,34 @@ def select_excerpts(url: str, paras: list[str], kind: str = "page") -> dict:
             break  # ponytail: keyword paragraphs only, capped; enough for blog posts and 8-K exhibits
         body.append(f"[{i}] {p}")
         used += len(p)
-    # reads GEMINI_API_KEY; free tier often answers 503 "high demand", so back off and retry
+    # reads GEMINI_API_KEY; free tier often answers 503 "high demand", so back off and retry.
+    # ponytail: worst case per model ~3 x 120s + 30s backoff; RUN_BUDGET_S bounds the run.
     client = genai.Client(http_options=types.HttpOptions(timeout=120_000, retry_options=types.HttpRetryOptions(
-        attempts=6, initial_delay=10, max_delay=120, http_status_codes=[429, 500, 503, 504])))
-    resp = client.models.generate_content(
-        model=MODEL,
-        contents=PROMPT.format(what=RULES[kind][0], rule=RULES[kind][1], url=url,
-                               max_chars=MAX_EXCERPT, paras="\n\n".join(body)),
-        config=types.GenerateContentConfig(
-            response_mime_type="application/json", response_json_schema=SCHEMA),
-    )
-    print(f"  model: {resp.model_version}")  # what the alias resolved to
-    if not resp.text:  # blocked or empty: treat as not publishable
-        return {"is_ai": False, "excerpts": []}
-    return json.loads(resp.text)
+        attempts=3, initial_delay=10, max_delay=60, http_status_codes=[429, 500, 502, 503, 504])))
+    prompt = PROMPT.format(what=RULES[kind][0], rule=RULES[kind][1], url=url,
+                           max_chars=MAX_EXCERPT, paras="\n\n".join(body))
+    last = None
+    for model in MODELS:  # fallback chain: an overloaded or retired model moves to the next
+        try:
+            resp = client.models.generate_content(
+                model=model, contents=prompt,
+                config=types.GenerateContentConfig(
+                    response_mime_type="application/json", response_json_schema=SCHEMA))
+            # empty/blocked or malformed output is an error (retried), never a silent "not AI"
+            d = json.loads(resp.text or "")
+            if not isinstance(d, dict) or not isinstance(d.get("is_ai"), bool):
+                raise ValueError(f"unexpected model output: {resp.text[:100]!r}")
+            d["excerpts"] = [e for e in d.get("excerpts") or [] if isinstance(e, str)]
+            print(f"  model: {resp.model_version}")  # what the alias resolved to
+            return d
+        except errors.APIError as e:
+            if e.code in MODEL_FATAL:
+                raise ModelDown(str(e)) from e
+            last = e
+        except ValueError as e:
+            last = e
+        print(f"  model {model} failed: {str(last)[:160]}")
+    raise last
 
 
 # ---------- validation (deterministic; the real safety net) ----------
@@ -354,6 +405,13 @@ def load(path: Path, default):
     return json.loads(path.read_text()) if path.exists() else default
 
 
+def save(path: Path, obj):
+    """Atomic write: a killed run never leaves half a JSON file to be committed."""
+    tmp = path.with_suffix(".tmp")
+    tmp.write_text(json.dumps(obj, indent=2, ensure_ascii=False) + "\n")
+    os.replace(tmp, path)
+
+
 def summary(line: str):
     print(line)
     if os.environ.get("GITHUB_STEP_SUMMARY"):
@@ -409,9 +467,13 @@ def main() -> int:
             cands += [dict(c, src=src) for c in found
                       if c["url"] not in existing and c["url"] not in seen["rejected"]]
 
-    added, model_ok, model_failed = [], 0, 0
+    added, model_ok, model_failed, model_streak = [], 0, 0, 0
+    deadline = time.monotonic() + RUN_BUDGET_S
     for c in cands:
         if not manual and len(added) >= MAX_NEW:
+            break
+        if not manual and time.monotonic() > deadline:
+            summary(f"- STOP time budget used; {c['url']} and later retried next run")
             break
         src = c["src"]
         c.update(prefix=src["allowed_url_prefix"], source=src["name"], channel=src["channel"])
@@ -425,7 +487,11 @@ def main() -> int:
             summary(f"- SKIP {c['url']}: fetch failed ({e})")
             continue
         kind = "transcript" if src["type"] == "transcript" else "page"
-        paras, meta, attribute = parse_page(kind, page, c)
+        try:
+            paras, meta, attribute = parse_page(kind, page, c)
+        except Exception as e:  # odd markup on one page must not stop the run
+            summary(f"- SKIP {c['url']}: parse failed ({e!r})")
+            continue
         text = "\n".join(paras)  # "\n" marks paragraph ends for with_context
         if not manual and meta.get("date") and meta["date"] < cutoff.isoformat():
             seen["rejected"][c["url"]] = f"{today}: date {meta['date']} too old"
@@ -435,12 +501,21 @@ def main() -> int:
             picked = ({"is_ai": True, "excerpts": manual[c["url"]]} if manual
                       else select_excerpts(c["url"], paras, kind))
             model_ok += not picked.get("no_call")
+            model_streak = 0
         except Exception as e:  # quota/API error: not marked seen, retried next run
             model_failed += 1
+            model_streak += 1
             summary(f"- SKIP {c['url']}: model call failed ({str(e)[:200]})")
+            if isinstance(e, ModelDown) or model_streak >= MAX_MODEL_FAILS:
+                summary("- STOP model unavailable; remaining pages retried next run")
+                break
             continue
-        item, why = validate(c, meta, picked, text, existing, today,
-                             None if manual else MAX_AGE_DAYS, attribute)
+        try:
+            item, why = validate(c, meta, picked, text, existing, today,
+                                 None if manual else MAX_AGE_DAYS, attribute)
+        except Exception as e:
+            summary(f"- SKIP {c['url']}: validation crashed ({e!r})")
+            continue
         if item:
             added.append(item)
             existing.add(item["url"])
@@ -453,11 +528,11 @@ def main() -> int:
     if not args.dry_run:
         if added:
             news["items"] = sorted(news["items"] + added, key=lambda i: i["date"], reverse=True)
-            NEWS.write_text(json.dumps(news, indent=2, ensure_ascii=False) + "\n")
+            save(NEWS, news)
             if os.environ.get("PG_NEWS_REPORT"):  # body of the notification issue
                 Path(os.environ["PG_NEWS_REPORT"]).write_text(report(added))
         if not manual:
-            SEEN.write_text(json.dumps(seen, indent=2, ensure_ascii=False) + "\n")
+            save(SEEN, seen)
     if model_failed and not model_ok:
         summary("FAIL: every model call failed (check GEMINI_API_KEY / GEMINI_MODEL / quota)")
         return 1

@@ -388,7 +388,8 @@ const loadPgAiNews = async () => {
     try {
         const { items } = await (await fetch('/pg_ai_news.json')).json();
         container.replaceChildren();
-        items.forEach((item) => {
+        // hand-added items skip the collector's checks: never render a non-https link (javascript: etc.)
+        items.filter((item) => /^https:\/\//.test(item.url) && Array.isArray(item.excerpts)).forEach((item) => {
             const date = new Date(item.date + 'T00:00:00').toLocaleDateString(lang, { year: 'numeric', month: 'long', day: 'numeric' });
             const card = el('article', 'news-card');
             const content = el('div', 'news-content');

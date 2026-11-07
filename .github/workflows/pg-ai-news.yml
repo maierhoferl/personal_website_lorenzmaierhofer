@@ -5,6 +5,7 @@ name: P&G AI News
 on:
   schedule:
     - cron: "0 6 * * 1"  # Mondays 06:00 UTC
+    - cron: "0 6 * * 4"  # Thursday catch-up: pages skipped by an outage Monday are retried
   workflow_dispatch:
 
 permissions:
@@ -19,16 +20,20 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 20  # a stalled model call once hung the job for 6h
+    timeout-minutes: 35  # a stalled model call once hung the job for 6h; script stops new pages at 12 min
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4.4.0
+        with:
+          persist-credentials: false  # the write token is only handed to the push below
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065  # v5.6.0
         with:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install "google-genai<3"  # 3.0 defaults to API v1, which lacks the -latest aliases
+        # exact pin: 3.0 defaults to API v1, which lacks the -latest aliases, and a new
+        # release never runs with the repo write token unreviewed. Bump by hand.
+        run: pip install --retries 5 --timeout 30 "google-genai==2.34.0"
 
       - name: Validator self-check
         run: python3 .github/scripts/test_pg_ai_news.py
@@ -59,10 +64,16 @@ jobs:
           fi
           news_changed=$(git diff --cached --name-only | grep -c '^pg_ai_news.json$' || true)
           git commit -m "chore(news): weekly P&G AI news update"
-          git push
+          remote="https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          # main may have moved during the run: rebase and retry instead of losing the update
+          for i in 1 2 3; do
+            git pull --rebase "$remote" main && git push "$remote" HEAD:main && break
+            [ "$i" = 3 ] && exit 1
+            sleep 15
+          done
           # Pushes made with GITHUB_TOKEN do not trigger on: push, so start the deploy explicitly.
           if [ "$news_changed" = "1" ]; then
-            gh workflow run static.yml --ref main
+            gh workflow run static.yml --ref main || { sleep 30; gh workflow run static.yml --ref main; }
           fi
 
       # Email notification: GitHub mails the assignee when the issue is opened.
