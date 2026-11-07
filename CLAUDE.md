@@ -135,6 +135,7 @@ News page layout (all three locales): a TOC row (`.page-toc`) under the title. T
 - Add items by hand from an approved source: put `{url: [excerpt, ...]}` in a JSON file, then run `python3 .github/scripts/pg_ai_news.py --manual file.json`. It goes through the same verbatim checks, with no age limit. To remove an item, delete it from `pg_ai_news.json` and add its URL to `rejected` in the seen file. LinkedIn items can't be fetched or checked, so add them straight to `pg_ai_news.json` with `"channel": "linkedin", "added": "manual"`, copying the post text verbatim
 - Repo secret `GEMINI_API_KEY` (Google AI Studio) and variable `SEC_USER_AGENT` (`lorenzmaierhofer.com`; the script appends ` news-bot`, because SEC rejects a bare domain)
 - When a run publishes something, the workflow opens a GitHub issue assigned to the repo owner that lists the new items. GitHub emails the assignee; that is the notification, with no SMTP or secrets involved. No issue is opened on no-change runs
+- RSS: `/news.xml` is generated from `pg_ai_news.json` by `.github/scripts/news_feed.py` (stdlib, self-checks well-formedness and order). The workflow runs it before committing; after a hand edit of the JSON, run it yourself. News pages link it via `<link rel="alternate">` and the `.feed-rss` button in the P&G feed head
 - Self-check: `python3 .github/scripts/test_pg_ai_news.py`
 
 ## File Conventions

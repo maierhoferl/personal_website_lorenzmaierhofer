@@ -1362,6 +1362,23 @@ body {
     line-height: 1.2;
 }
 
+.feed-rss {
+    position: absolute;
+    top: 0.9rem;
+    right: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent-cyan);
+    border: 1px solid currentColor;
+    padding: 0.15rem 0.5rem;
+    text-decoration: none;
+}
+
+.feed-rss:hover {
+    background: var(--accent-cyan);
+    color: var(--bg-dark);
+}
+
 .feed-sub {
     font-size: 0.85rem;
     color: var(--text-muted);
