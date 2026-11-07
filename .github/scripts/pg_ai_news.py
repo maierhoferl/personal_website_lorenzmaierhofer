@@ -246,7 +246,7 @@ def select_excerpts(url: str, paras: list[str], kind: str = "page") -> dict:
         body.append(f"[{i}] {p}")
         used += len(p)
     # reads GEMINI_API_KEY; free tier often answers 503 "high demand", so back off and retry
-    client = genai.Client(http_options=types.HttpOptions(retry_options=types.HttpRetryOptions(
+    client = genai.Client(http_options=types.HttpOptions(timeout=120_000, retry_options=types.HttpRetryOptions(
         attempts=6, initial_delay=10, max_delay=120, http_status_codes=[429, 500, 503, 504])))
     resp = client.models.generate_content(
         model=MODEL,

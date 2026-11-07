@@ -19,6 +19,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 20  # a stalled model call once hung the job for 6h
     steps:
       - uses: actions/checkout@v4
 
