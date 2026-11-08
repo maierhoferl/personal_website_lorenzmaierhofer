@@ -317,7 +317,7 @@ const loadLinkedInPosts = async () => {
     if (!container) return;
 
     try {
-        const response = await fetch('linkedin_posts.json');
+        const response = await fetch('/linkedin_posts.json');
         const config = await response.json();
 
         if (config.linkedin && config.linkedin.posts && config.linkedin.posts.length > 0) {
@@ -357,11 +357,11 @@ const loadLinkedInPosts = async () => {
                 }
             }
         } else {
-            container.innerHTML = '<p class="linkedin-empty">No LinkedIn posts configured. Add post URLs to config.json</p>';
+            container.innerHTML = '<p class="linkedin-empty">No LinkedIn posts configured. Add post URLs to linkedin_posts.json</p>';
         }
     } catch (error) {
         console.error('Error loading LinkedIn posts:', error);
-        container.innerHTML = '<p class="linkedin-error">Unable to load LinkedIn posts. Make sure config.json exists.</p>';
+        container.innerHTML = '<p class="linkedin-error">Unable to load LinkedIn posts. Make sure linkedin_posts.json exists.</p>';
     }
 };
 
