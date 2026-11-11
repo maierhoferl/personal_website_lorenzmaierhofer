@@ -1,6 +1,6 @@
 # lorenzmaierhofer.com
 
-Personal website of Lorenz Maierhofer, Senior Director and Global Lead for AI Factory, Agentic AI Products & AI Governance at Procter & Gamble.
+Personal website of Lorenz Maierhofer, Senior Director and Global Lead for Decision Engine, AI Factory, Agentic AI Products & AI Governance at Procter & Gamble.
 
 Live at **[lorenzmaierhofer.com](https://lorenzmaierhofer.com)**. Static HTML/CSS/JS, no build step, hosted on GitHub Pages.
 
