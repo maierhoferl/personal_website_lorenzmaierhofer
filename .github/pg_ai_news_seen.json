@@ -17,7 +17,12 @@
     "https://stockanalysis.com/stocks/pg/transcripts/718296-q1-2027/": "2026-11-03: not AI-focused",
     "https://us.pg.com/blogs/winning-in-north-america/": "2026-11-06: not AI-focused",
     "https://us.pg.com/blogs/care-out-loud/": "2026-11-16: date 2025-10-24 too old",
-    "https://us.pg.com/blogs/cpg-company-of-the-future/": "2026-11-23: not AI-focused"
+    "https://us.pg.com/blogs/cpg-company-of-the-future/": "2026-11-23: not AI-focused",
+    "https://us.pg.com/blogs/native-american-heritage-month/": "2026-11-26: date 2023-11-02 too old",
+    "https://stockanalysis.com/stocks/pg/transcripts/808142-q3-2010/": "2026-11-26: date 2010-04-29 too old",
+    "https://stockanalysis.com/stocks/pg/transcripts/808141-q4-2010/": "2026-11-26: date 2010-08-03 too old",
+    "https://stockanalysis.com/stocks/pg/transcripts/808140-q1-2011/": "2026-11-26: date 2010-10-27 too old",
+    "https://stockanalysis.com/stocks/pg/transcripts/808139-q2-2011/": "2026-11-26: date 2011-01-27 too old"
   },
   "errors": {
     "pg-blog": 0,
